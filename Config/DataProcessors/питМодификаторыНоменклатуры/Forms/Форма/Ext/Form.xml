@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНоменклатураМодификаторы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номенклатура модификаторы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номенклатура модификаторы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНоменклатураМодификаторыExtendedTooltip" id="121"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНоменклатура" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа номенклатура</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="ГруппаНоменклатураExtendedTooltip" id="122"/>
+					<ChildItems>
+						<Table name="ТаблицаНоменклатура" id="4">
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ТаблицаНоменклатура</DataPath>
+							<RowPictureDataPath>ТаблицаНоменклатура.DefaultPicture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ТаблицаНоменклатураКонтекстноеМеню" id="5"/>
+							<AutoCommandBar name="ТаблицаНоменклатураКоманднаяПанель" id="6">
+								<ChildItems>
+									<Button name="ТаблицаНоменклатураТолькоГруппы" id="109">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ТолькоГруппы</CommandName>
+										<ExtendedTooltip name="ТаблицаНоменклатураТолькоГруппыExtendedTooltip" id="123"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаНоменклатураExtendedTooltip" id="124"/>
+							<SearchStringAddition name="ТаблицаНоменклатураСтрокаПоиска" id="180">
+								<AdditionSource>
+									<Item>ТаблицаНоменклатура</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаНоменклатураСтрокаПоискаКонтекстноеМеню" id="181"/>
+								<ExtendedTooltip name="ТаблицаНоменклатураСтрокаПоискаРасширеннаяПодсказка" id="182"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаНоменклатураСостояниеПросмотра" id="183">
+								<AdditionSource>
+									<Item>ТаблицаНоменклатура</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаНоменклатураСостояниеПросмотраКонтекстноеМеню" id="184"/>
+								<ExtendedTooltip name="ТаблицаНоменклатураСостояниеПросмотраРасширеннаяПодсказка" id="185"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаНоменклатураУправлениеПоиском" id="186">
+								<AdditionSource>
+									<Item>ТаблицаНоменклатура</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаНоменклатураУправлениеПоискомКонтекстноеМеню" id="187"/>
+								<ExtendedTooltip name="ТаблицаНоменклатураУправлениеПоискомРасширеннаяПодсказка" id="188"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ТаблицаНоменклатураПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ТаблицаНоменклатураНаименование" id="7">
+									<DataPath>ТаблицаНоменклатура.Description</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ТаблицаНоменклатураНаименованиеКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ТаблицаНоменклатураНаименованиеExtendedTooltip" id="125"/>
+								</LabelField>
+								<LabelField name="ТаблицаНоменклатураКод" id="9">
+									<DataPath>ТаблицаНоменклатура.Code</DataPath>
+									<ContextMenu name="ТаблицаНоменклатураКодКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="ТаблицаНоменклатураКодExtendedTooltip" id="126"/>
+								</LabelField>
+								<LabelField name="ТаблицаНоменклатураОбщепитВидНоменклатуры" id="41">
+									<DataPath>~ТаблицаНоменклатура.ОбщепитВидНоменклатуры</DataPath>
+									<ContextMenu name="ТаблицаНоменклатураОбщепитВидНоменклатурыКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ТаблицаНоменклатураОбщепитВидНоменклатурыExtendedTooltip" id="142"/>
+								</LabelField>
+								<LabelField name="ТаблицаНоменклатураАртикул" id="13">
+									<DataPath>ТаблицаНоменклатура.Артикул</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="ТаблицаНоменклатураАртикулКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ТаблицаНоменклатураАртикулExtendedTooltip" id="128"/>
+								</LabelField>
+								<LabelField name="ТаблицаНоменклатураЕдиницаИзмерения" id="15">
+									<DataPath>ТаблицаНоменклатура.ЕдиницаИзмерения</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="ТаблицаНоменклатураЕдиницаИзмеренияКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="ТаблицаНоменклатураЕдиницаИзмеренияExtendedTooltip" id="129"/>
+								</LabelField>
+								<LabelField name="ТаблицаНоменклатураОбщепитОсновнаяЕдиницаИзмерения" id="59">
+									<DataPath>~ТаблицаНоменклатура.ОбщепитОсновнаяЕдиницаИзмерения</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="ТаблицаНоменклатураОбщепитОсновнаяЕдиницаИзмеренияКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ТаблицаНоменклатураОбщепитОсновнаяЕдиницаИзмеренияExtendedTooltip" id="150"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаМодификаторыИУнаследованные" id="117">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа модификаторы и унаследованные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа модификаторы и унаследованные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаМодификаторыИУнаследованныеExtendedTooltip" id="159"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаМодификаторы" id="3">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Модификаторы номенклатуры</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа модификаторы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаМодификаторыExtendedTooltip" id="160"/>
+							<ChildItems>
+								<Table name="Модификаторы" id="77">
+									<Representation>Tree</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Модификаторы</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<ContextMenu name="МодификаторыКонтекстноеМеню" id="78">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="МодификаторыКонтекстноеМенюДобавитьГруппуМодификаторов" id="207">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьГруппуМодификаторов</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Добавить набор модификаторов</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="МодификаторыКонтекстноеМенюДобавитьГруппуМодификаторовРасширеннаяПодсказка" id="208"/>
+											</Button>
+											<Button name="МодификаторыКонтекстноеМенюИзменитьМодификатор" id="213">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ИзменитьМодификатор</CommandName>
+												<ExtendedTooltip name="МодификаторыКонтекстноеМенюИзменитьМодификаторРасширеннаяПодсказка" id="214"/>
+											</Button>
+											<Button name="МодификаторыКонтекстноеМенюУдалить" id="209">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Модификаторы.StandardCommand.Delete</CommandName>
+												<ExtendedTooltip name="МодификаторыКонтекстноеМенюУдалитьРасширеннаяПодсказка" id="210"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="МодификаторыКоманднаяПанель" id="79">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="МодификаторыДобавить" id="119">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Модификаторы.StandardCommand.Add</CommandName>
+												<ExtendedTooltip name="МодификаторыДобавитьExtendedTooltip" id="161"/>
+											</Button>
+											<Button name="МодификаторыДобавитьГруппуМодификаторов" id="120">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьГруппуМодификаторов</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Добавить набор модификаторов</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="МодификаторыДобавитьГруппуМодификаторовExtendedTooltip" id="162"/>
+											</Button>
+											<Button name="МодификаторыИзменитьМодификатор" id="211">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ИзменитьМодификатор</CommandName>
+												<ExtendedTooltip name="МодификаторыИзменитьМодификаторРасширеннаяПодсказка" id="212"/>
+											</Button>
+											<Button name="МодификаторыУдалить" id="113">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Модификаторы.StandardCommand.Delete</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="МодификаторыУдалитьExtendedTooltip" id="164"/>
+											</Button>
+											<Button name="МодификаторыПодбор" id="215">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Подбор</CommandName>
+												<ExtendedTooltip name="МодификаторыПодборРасширеннаяПодсказка" id="216"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="МодификаторыExtendedTooltip" id="165"/>
+									<SearchStringAddition name="МодификаторыСтрокаПоиска" id="189">
+										<AdditionSource>
+											<Item>Модификаторы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="МодификаторыСтрокаПоискаКонтекстноеМеню" id="190"/>
+										<ExtendedTooltip name="МодификаторыСтрокаПоискаРасширеннаяПодсказка" id="191"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="МодификаторыСостояниеПросмотра" id="192">
+										<AdditionSource>
+											<Item>Модификаторы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="МодификаторыСостояниеПросмотраКонтекстноеМеню" id="193"/>
+										<ExtendedTooltip name="МодификаторыСостояниеПросмотраРасширеннаяПодсказка" id="194"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="МодификаторыУправлениеПоиском" id="195">
+										<AdditionSource>
+											<Item>Модификаторы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="МодификаторыУправлениеПоискомКонтекстноеМеню" id="196"/>
+										<ExtendedTooltip name="МодификаторыУправлениеПоискомРасширеннаяПодсказка" id="197"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnEditEnd">МодификаторыПриОкончанииРедактирования</Event>
+										<Event name="Selection">МодификаторыВыбор</Event>
+										<Event name="BeforeAddRow">МодификаторыПередНачаломДобавления</Event>
+										<Event name="BeforeDeleteRow">МодификаторыПередУдалением</Event>
+										<Event name="BeforeRowChange">МодификаторыПередНачаломИзменения</Event>
+									</Events>
+									<ChildItems>
+										<ColumnGroup name="МодификаторыГруппаМодификаторСтрока" id="116">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Модификаторы группа модификатор строка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Модификаторы группа модификатор строка</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="МодификаторыГруппаМодификаторСтрокаExtendedTooltip" id="166"/>
+											<ChildItems>
+												<InputField name="МодификаторыГруппаМодификаторов" id="114">
+													<DataPath>Модификаторы.ГруппаМодификатора</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МодификаторыГруппаМодификаторовКонтекстноеМеню" id="115"/>
+													<ExtendedTooltip name="МодификаторыГруппаМодификаторовExtendedTooltip" id="167"/>
+												</InputField>
+												<InputField name="МодификаторыМодификатор" id="80">
+													<DataPath>Модификаторы.Модификатор</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МодификаторыМодификаторКонтекстноеМеню" id="81"/>
+													<ExtendedTooltip name="МодификаторыМодификаторExtendedTooltip" id="168"/>
+													<Events>
+														<Event name="StartChoice">МодификаторыМодификаторНачалоВыбора</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<InputField name="МодификаторыЕдиницаИзмеренияМодификатора" id="82">
+											<DataPath>Модификаторы.ЕдиницаИзмеренияМодификатора</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Единица</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Единица измерения модификатора</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>8</Width>
+											<ContextMenu name="МодификаторыЕдиницаИзмеренияМодификатораКонтекстноеМеню" id="83"/>
+											<ExtendedTooltip name="МодификаторыЕдиницаИзмеренияМодификатораExtendedTooltip" id="169"/>
+										</InputField>
+										<InputField name="МодификаторыЦена" id="84">
+											<DataPath>Модификаторы.Цена</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>10</Width>
+											<ContextMenu name="МодификаторыЦенаКонтекстноеМеню" id="85"/>
+											<ExtendedTooltip name="МодификаторыЦенаExtendedTooltip" id="170"/>
+										</InputField>
+										<InputField name="МодификаторыМинимальноеКоличествоМодификаторов" id="90">
+											<DataPath>Модификаторы.МинимальноеКоличествоМодификаторов</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Мин. кол-во</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Минимальное количество модификаторов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="МодификаторыМинимальноеКоличествоМодификаторовКонтекстноеМеню" id="91"/>
+											<ExtendedTooltip name="МодификаторыМинимальноеКоличествоМодификаторовExtendedTooltip" id="171"/>
+										</InputField>
+										<InputField name="МодификаторыМаксимальноеКоличествоМодификаторов" id="92">
+											<DataPath>Модификаторы.МаксимальноеКоличествоМодификаторов</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Макс. кол-во</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Максимальное количество модификаторов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="МодификаторыМаксимальноеКоличествоМодификаторовКонтекстноеМеню" id="93"/>
+											<ExtendedTooltip name="МодификаторыМаксимальноеКоличествоМодификаторовExtendedTooltip" id="172"/>
+										</InputField>
+										<InputField name="МодификаторыНоменклатура" id="94">
+											<DataPath>Модификаторы.Номенклатура</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="МодификаторыНоменклатураКонтекстноеМеню" id="95"/>
+											<ExtendedTooltip name="МодификаторыНоменклатураExtendedTooltip" id="173"/>
+										</InputField>
+										<InputField name="МодификаторыКоличествоНоменклатуры" id="96">
+											<DataPath>Модификаторы.КоличествоНоменклатуры</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Количество</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Количество номенклатуры</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="МодификаторыКоличествоНоменклатурыКонтекстноеМеню" id="97"/>
+											<ExtendedTooltip name="МодификаторыКоличествоНоменклатурыExtendedTooltip" id="174"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаУнаследованные" id="118">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Унаследованные модификаторы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа унаследованные</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаУнаследованныеExtendedTooltip" id="175"/>
+							<ChildItems>
+								<Table name="УнаследованныеМодификаторы" id="98">
+									<Representation>List</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<ReadOnly>true</ReadOnly>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>УнаследованныеМодификаторы</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="УнаследованныеМодификаторыКонтекстноеМеню" id="99"/>
+									<AutoCommandBar name="УнаследованныеМодификаторыКоманднаяПанель" id="100"/>
+									<ExtendedTooltip name="УнаследованныеМодификаторыExtendedTooltip" id="176"/>
+									<SearchStringAddition name="УнаследованныеМодификаторыСтрокаПоиска" id="198">
+										<AdditionSource>
+											<Item>УнаследованныеМодификаторы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="УнаследованныеМодификаторыСтрокаПоискаКонтекстноеМеню" id="199"/>
+										<ExtendedTooltip name="УнаследованныеМодификаторыСтрокаПоискаРасширеннаяПодсказка" id="200"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="УнаследованныеМодификаторыСостояниеПросмотра" id="201">
+										<AdditionSource>
+											<Item>УнаследованныеМодификаторы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="УнаследованныеМодификаторыСостояниеПросмотраКонтекстноеМеню" id="202"/>
+										<ExtendedTooltip name="УнаследованныеМодификаторыСостояниеПросмотраРасширеннаяПодсказка" id="203"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="УнаследованныеМодификаторыУправлениеПоиском" id="204">
+										<AdditionSource>
+											<Item>УнаследованныеМодификаторы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="УнаследованныеМодификаторыУправлениеПоискомКонтекстноеМеню" id="205"/>
+										<ExtendedTooltip name="УнаследованныеМодификаторыУправлениеПоискомРасширеннаяПодсказка" id="206"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">УнаследованныеМодификаторыВыбор</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="УнаследованныеМодификаторыМодификатор" id="101">
+											<DataPath>УнаследованныеМодификаторы.Модификатор</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="УнаследованныеМодификаторыМодификаторКонтекстноеМеню" id="102"/>
+											<ExtendedTooltip name="УнаследованныеМодификаторыМодификаторExtendedTooltip" id="177"/>
+										</InputField>
+										<InputField name="УнаследованныеМодификаторыГруппаМодификаторов" id="103">
+											<DataPath>УнаследованныеМодификаторы.ГруппаМодификаторов</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="УнаследованныеМодификаторыГруппаМодификаторовКонтекстноеМеню" id="104"/>
+											<ExtendedTooltip name="УнаследованныеМодификаторыГруппаМодификаторовExtendedTooltip" id="178"/>
+										</InputField>
+										<InputField name="УнаследованныеМодификаторыОтКогоУнаследовали" id="107">
+											<DataPath>УнаследованныеМодификаторы.ОтКогоУнаследовали</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="УнаследованныеМодификаторыОтКогоУнаследовалиКонтекстноеМеню" id="108"/>
+											<ExtendedTooltip name="УнаследованныеМодификаторыОтКогоУнаследовалиExtendedTooltip" id="179"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.питМодификаторыНоменклатуры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаНоменклатура" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~ТаблицаНоменклатура.ОбщепитВидНоменклатуры</Field>
+				<Field>ТаблицаНоменклатура.Description</Field>
+				<Field>ТаблицаНоменклатура.IsFolder</Field>
+				<Field>ТаблицаНоменклатура.Ref</Field>
+				<Field>ТаблицаНоменклатура.НаименованиеПолное</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.Номенклатура</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Модификаторы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модификаторы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Модификатор" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Модификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.питМодификаторы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕдиницаИзмеренияМодификатора" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица измерения модификатора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.УпаковкиЕдиницыИзмерения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Цена" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="МинимальноеКоличествоМодификаторов" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Минимальное количество модификаторов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="МаксимальноеКоличествоМодификаторов" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Максимальное количество модификаторов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоНоменклатуры" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГруппаМодификатора" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор модификатора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.питГруппыМодификаторов</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="УнаследованныеМодификаторы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Унаследованные модификаторы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Модификатор" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Модификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.питМодификаторы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ГруппаМодификаторов" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор модификаторов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.питГруппыМодификаторов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="УдалитьДляБизнесЛанча" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для бизнес-ланча</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОтКогоУнаследовали" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>От кого унаследовали</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПредыдущийМодификатор" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущий модификатор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.питМодификаторы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПредыдущаяГруппаМодификатора" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущий набор модификатора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.питГруппыМодификаторов</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>МодификаторыГруппаМодификаторов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Модификаторы.Модификатор</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>МодификаторыМинимальноеКоличествоМодификаторов</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>МодификаторыМаксимальноеКоличествоМодификаторов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаНоменклатура.ЭтоГруппа</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаНоменклатура.питВидНоменклатуры</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.питВидыНоменклатуры.БизнесЛанч</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ТолькоГруппы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только группы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SpreadsheetShowGroups</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ТолькоГруппы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьГруппуМодификаторов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить группу модификаторов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить набор модификаторов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateFolder</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьГруппуМодификаторов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ИзменитьМодификатор" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить модификатор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить модификатор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИзменитьМодификатор</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Подбор" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Подбор</Action>
+		</Command>
+	</Commands>
+</Form>

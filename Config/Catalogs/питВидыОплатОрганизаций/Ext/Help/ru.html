@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html;charset=utf-8" http-equiv="content-type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.9600.18500"></meta></head><body>
+<h1><font color="#000080">Справочник «Виды оплат»</font></h1>
+<p class="Usual"></p>
+<table class="MsoNormalTable" style="WIDTH: 100%; BACKGROUND: papayawhip; mso-cellspacing: 1.5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm" cellpadding="0" width="100%" border="0"><tbody><tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; mso-yfti-lastrow: yes"><td style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM: #f0f0f0; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt">
+<p><strong><span>Назначение</span></strong></p></td></tr></tbody></table><p class="Usual">Справочник предназначен для хранения информации о различных видах оплаты товаров и услуг розничным покупателем. </p>
+<p class="Usual">Вид оплаты указывается в документе <a href="Document.ОтчетОРозничныхПродажах/Help">Отчет о розничных продажах</a> и <a href="Document.питВыпускБлюд/Help">Выпуск блюд</a> с хоз. операцией «Выпуск с розничной реализацией».</p>
+<p class="Usual">Каждый вид оплаты характеризуется <strong>Способом оплаты</strong>. Возможны следующие способы оплаты:</p>
+<ul><li>
+<p class="Usual">Наличные</p>
+</li>
+<li>
+<div>Платежная карта</div>
+</li>
+<li>
+<div>Банковский кредит</div>
+</li>
+<li>
+<div>Талоны и купоны</div>
+</li>
+<li>
+<div>Питание сотрудников</div>
+</li>
+<li>
+<div>За счет заведения</div>
+</li>
+<li>
+<div>Клубная карта</div>
+</li>
+<li>
+<div>Подарочный сертификат собственный</div>
+</li>
+<li>
+<div>Подарочный сертификат сторонний</div></li></ul><p>При вводе вида оплаты также необходимо указать контрагента, договор контрагента, счет учета расчетов. При необходимости можно указать процент банковской комиссии.</p>
+<p></p>
+<table class="MsoNormalTable" style="WIDTH: 100%; BACKGROUND: papayawhip; mso-cellspacing: 1.5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm" cellpadding="0" width="100%" border="0"><tbody><tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; mso-yfti-lastrow: yes"><td style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM: #f0f0f0; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt">
+<p><strong><span>Реквизиты</span></strong></p></td></tr></tbody></table><ul><li><strong>Способ оплаты.</strong> Предопределенный способ оплат. 
+</li>
+<li><strong>Наименование.</strong> Наименование Вида оплат.</li></ul><p></p>
+<table class="MsoNormalTable" style="WIDTH: 100%; BACKGROUND: papayawhip; mso-cellspacing: 1.5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm" cellpadding="0" width="100%" border="0"><tbody><tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; mso-yfti-lastrow: yes"><td style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM: #f0f0f0; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt">
+<p><strong><span>Закладка «Общие настройки»</span><span style="FONT-SIZE: 8pt; FONT-FAMILY: 'Vrinda','sans-serif'; mso-bidi-font-size: 12.0pt"><o:p></o:p></span></strong></p></td></tr></tbody></table><ul><li>
+<div align="justify">
+<div align="justify"><strong>Фискальный (требуется наличие в видах оплат фискального регистратора)</strong>.  Признак фискального типа оплат. </div></div>
+</li>
+<li><strong>Ведущий (является основным типом оплаты)</strong>. В документе продажи может присутствовать только одна оплата с признаком <strong>Ведущий</strong>. 
+</li>
+<li>
+<div align="justify">
+<div align="justify">
+<div align="justify"><strong>Разрешаются нулевые суммы.</strong> Разрешает указать нулевую сумму платежа по данному типу оплату для оформления факта продажи на нулевую сумму.</div></div></div>
+</li>
+<li>
+<div align="justify">
+<div align="justify"><strong>Персонификация платежа (необходимость детализации с помощью карточки).</strong> Определяет необходимость при вводе платежа по данному типу оплаты дополнительно указывать идентификационную карту.</div></div>
+</li>
+<li>
+<div align="justify">
+<div align="justify">
+<div align="justify"><strong>Организация.</strong> Организация, к которой относится данный вид оплат. Ссылается на справочник <a href="Catalog.Организации/Help">Организации</a>.  </div></div></div>
+</li>
+<li>
+<div align="justify">
+<div align="justify">
+<div align="justify"><strong>Контрагент</strong>. Контрагент, по договору с которым будет производится безналичная оплата. Ссылается на справочник <a href="Catalog.Контрагенты/Help">Контрагенты</a>.  </div></div></div>
+</li>
+<li>
+<div align="justify">
+<div align="justify">
+<div align="justify"><strong>Договор</strong>. Договор с банком-эквайрером на прием оплаты с помощью платежных карт в случае, если он заключен для отдельного типа безналичной оплаты. Для оплаты картой сотрудника или талоном будет использоваться индивидуальный договор, указанный для каждой отдельной карточки сотрудника (талона). Ссылается на справочник <a href="Catalog.ДоговорыКонтрагентов/Help">Договоры контрагентов</a>.</div></div></div>
+</li>
+<li>
+<div align="justify">
+<div align="justify">
+<div align="justify"><strong>Терминал. </strong>Эквайринговый терминал. Ссылается на справочник <a href="Catalog.ПодключаемоеОборудование/Help">Подключаемое оборудование</a>. </div></div></div>
+</li>
+<li>
+<div align="justify">
+<div align="justify">
+<div align="justify"><strong>Банковская комиссия. </strong>Процент банковской комиссии, взымаемой банком при безналичной оплате. </div></div></div>
+</li>
+<li>
+<div align="justify">
+<div align="justify"><strong>Вид операции. </strong>Обязательный реквизит для заполнения. Вид операции, используемый в обработке <a href="DataProcessor.питЗагрузкаИзДанныхПродажФронта/Help">Загрузка из чеков общепита</a> для определения  целевых документов. Могут быть: <strong>Списание</strong>, <strong>Реализация</strong>, <strong>Не загружать</strong>. При первом заполнении рабочей базы автоматически устанавливаются как <strong>Реализация</strong>.  </div></div></li></ul><ul><li>
+<div align="justify"><strong>Статья доходов и расходов.</strong> Ссылается на справочник <a href="Catalog.СтатьиРасходовЗарплата/Help">Статьи расходов</a>. </div></li></ul><p align="justify"></p>
+<table class="MsoNormalTable" style="WIDTH: 100%; BACKGROUND: papayawhip; mso-cellspacing: 1.5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm" cellpadding="0" width="100%" border="0"><tbody><tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; mso-yfti-lastrow: yes"><td style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM: #f0f0f0; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt">
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span><strong>Закладка «Фронт-офис»</strong></span><span style="FONT-SIZE: 8pt; FONT-FAMILY: 'Vrinda','sans-serif'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: RU"><o:p></o:p></span></p></td></tr></tbody></table><ul><li>
+<div align="justify"><strong>Имя группы.</strong> Имя группы используется во фронт-офисном ПО для группировки типов оплат (типы оплат с одинаковым значением данного реквизита будут группироваться вместе). </div>
+</li>
+<li>
+<div align="justify">
+<div align="justify"><strong>Порядковый номер кнопки</strong>. Порядковый номер кнопки типа оплаты во фронт-офисе.</div></div>
+</li>
+<li>
+<div align="justify">
+<div align="justify">
+<div align="justify"><strong>Цвет фона кнопки</strong>. Цвет фона кнопки типа оплаты во фронт-офисе.</div></div></div>
+</li>
+<li>
+<div align="justify">
+<div align="justify">
+<div align="justify"><strong>Цвет основной надписи</strong>. Цвет шрифта надписи 1 (верхней) кнопки типа оплаты во фронт-офисе.</div></div></div>
+</li>
+<li>
+<div align="justify">
+<div align="justify">
+<div align="justify"><strong>Цвет надписи в нижнем правом углу</strong>. Цвет шрифта надписи 2 (нижней правой) кнопки типа оплаты во фронт-офисе.</div></div></div>
+</li>
+<li>
+<div align="justify">
+<div align="justify"><strong>Цвет надписи в нижнем левом углу</strong>. Цвет шрифта надписи 2 (нижней левой) кнопки типа оплаты во фронт-офисе.</div></div></li></ul><div align="justify">
+<table class="MsoNormalTable" style="WIDTH: 100%; BACKGROUND: papayawhip; mso-cellspacing: 1.5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm" cellpadding="0" width="100%" border="0"><tbody><tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; mso-yfti-lastrow: yes"><td style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM: #f0f0f0; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt; PADDING-LEFT: 0.75pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 0.75pt">
+<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><b><span style="FONT-SIZE: 8pt; FONT-FAMILY: 'Verdana','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: RU; mso-bidi-font-family: 'Times New Roman'">Способ вызова</span></b><span style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman','serif'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: RU"><o:p></o:p></span></p></td></tr></tbody></table></div>
+<p align="justify"></p>
+<div align="justify">Общепит - Нормативно-справочная информация - Виды оплат </div>
+<p></p>
+<p> </p>
+<p> </p></body></html>

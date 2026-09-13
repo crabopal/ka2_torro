@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка отображения свойств товаров на витрине</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Отмена" id="51">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Отмена</CommandName>
+				<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="52"/>
+			</Button>
+			<Button name="ОК" id="49">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОК</CommandName>
+				<ExtendedTooltip name="ОКРасширеннаяПодсказка" id="50"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="101">
+			<VerticalAlign>Center</VerticalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>auto</BackColor>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="102"/>
+			<ChildItems>
+				<PictureDecoration name="Декорация2" id="103">
+					<Picture>
+						<xr:Ref>CommonPicture.Маг1С_Информация</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="105"/>
+				</PictureDecoration>
+				<LabelDecoration name="ДекорацияНачало1" id="43">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>На витрину можно выгрузить реквизиты и дополнительные реквизиты. Они будут отображаться в карточке товара в том порядке, как настроено в этой форме. Если значение реквизита не заполнено - он показываться не будет.
+
+Так же можно настроить, по каким реквизитам и дополнительным реквизитам на витрине будет работать фильтр.
+
+Для фильтра нельзя использовать реквизиты строкового типа.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияНачало1КонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ДекорацияНачало1РасширеннаяПодсказка" id="45"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПредупреждение" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа предупреждение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа предупреждение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<VerticalAlign>Center</VerticalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>auto</BackColor>
+			<ExtendedTooltip name="ГруппаПредупреждениеРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<PictureDecoration name="Декорация1" id="60">
+					<PictureSize>AutoSize</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.Маг1С_Предупреждение</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="62"/>
+				</PictureDecoration>
+				<LabelDecoration name="ДекорацияНачало2" id="55">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть дополнительные реквизиты, которые используются и в номенклатуре, и в характеристиках. Такие реквизиты могут не корректно отображаться на витрине.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияНачало2КонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ДекорацияНачало2РасширеннаяПодсказка" id="57"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ВыгружаемыеСвойстваТоваров" id="1">
+			<Representation>List</Representation>
+			<SelectionMode>SingleRow</SelectionMode>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ВыгружаемыеСвойстваТоваров</DataPath>
+			<RowPictureDataPath>ВыгружаемыеСвойстваТоваров.ИндексКартинки</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.Маг1ССтатусыОшибок</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</RowsPicture>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВыгружаемыеСвойстваТоваровКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ВыгружаемыеСвойстваТоваровКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ВыгружаемыеСвойстваТоваровДобавить" id="41">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.ВыгружаемыеСвойстваТоваров.StandardCommand.Add</CommandName>
+						<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровДобавитьРасширеннаяПодсказка" id="42"/>
+					</Button>
+					<Button name="Подбор" id="26">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Подбор</CommandName>
+						<ExtendedTooltip name="ПодборРасширеннаяПодсказка" id="27"/>
+					</Button>
+					<ButtonGroup name="ВыгружаемыеСвойстваТоваровГруппаПереместить" id="32">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выгружаемые свойства товаров группа переместить</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выгружаемые свойства товаров группа переместить</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Representation>Compact</Representation>
+						<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровГруппаПереместитьРасширеннаяПодсказка" id="33"/>
+						<ChildItems>
+							<Button name="ВыгружаемыеСвойстваТоваровПереместитьВверх" id="28">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ВыгружаемыеСвойстваТоваров.StandardCommand.MoveUp</CommandName>
+								<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровПереместитьВверхРасширеннаяПодсказка" id="29"/>
+							</Button>
+							<Button name="ВыгружаемыеСвойстваТоваровПереместитьВниз" id="30">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ВыгружаемыеСвойстваТоваров.StandardCommand.MoveDown</CommandName>
+								<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровПереместитьВнизРасширеннаяПодсказка" id="31"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Button name="ВыгружаемыеСвойстваТоваровУдалить" id="39">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.ВыгружаемыеСвойстваТоваров.StandardCommand.Delete</CommandName>
+						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+						<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровУдалитьРасширеннаяПодсказка" id="40"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ВыгружаемыеСвойстваТоваровСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ВыгружаемыеСвойстваТоваров</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыгружаемыеСвойстваТоваровСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВыгружаемыеСвойстваТоваровСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ВыгружаемыеСвойстваТоваров</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыгружаемыеСвойстваТоваровСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВыгружаемыеСвойстваТоваровУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ВыгружаемыеСвойстваТоваров</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыгружаемыеСвойстваТоваровУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ВыгружаемыеСвойстваТоваровВыбор</Event>
+				<Event name="BeforeAddRow">ВыгружаемыеСвойстваТоваровПередНачаломДобавления</Event>
+				<Event name="AfterDeleteRow">ВыгружаемыеСвойстваТоваровПослеУдаления</Event>
+			</Events>
+			<ChildItems>
+				<CheckBoxField name="ВыгружаемыеСвойстваТоваровИспользоватьДляФильтра" id="20">
+					<DataPath>ВыгружаемыеСвойстваТоваров.ИспользоватьДляФильтра</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать для фильтра</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderPicture>
+						<xr:Ref>StdPicture.FilterCriterion</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыгружаемыеСвойстваТоваровИспользоватьДляФильтраКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровИспользоватьДляФильтраРасширеннаяПодсказка" id="22"/>
+					<Events>
+						<Event name="OnChange">ВыгружаемыеСвойстваТоваровИспользоватьДляФильтраПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<ColumnGroup name="ВыгружаемыеСвойстваТоваровГруппаРеквизит" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгружаемые свойства товаров группа реквизит</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгружаемые свойства товаров группа реквизит</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровГруппаРеквизитРасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<InputField name="ВыгружаемыеСвойстваТоваровПредставление" id="23">
+							<DataPath>ВыгружаемыеСвойстваТоваров.Представление</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизит</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВыгружаемыеСвойстваТоваровПредставлениеКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровПредставлениеРасширеннаяПодсказка" id="25"/>
+						</InputField>
+						<InputField name="ВыгружаемыеСвойстваТоваровНаборРеквизитов" id="34">
+							<DataPath>ВыгружаемыеСвойстваТоваров.ПредставлениеНаборов</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<ContextMenu name="ВыгружаемыеСвойстваТоваровНаборРеквизитовКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ВыгружаемыеСвойстваТоваровНаборРеквизитовРасширеннаяПодсказка" id="36"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НастройкиВитрины" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>НастройкиВитрины</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="НастройкиУчетнойСистемы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки учетной системы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ВыгружаемыеСвойстваТоваров" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгружаемые свойства товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="СвойствоТовара" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойство товара</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>500</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Порядок" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порядок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИспользоватьДляФильтра" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать для фильтра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Представление" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеНаборов" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление наборов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДоступноИспользованиеДляФильтра" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступно использование для фильтра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИспользуетсяДляХарактеристик" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Используется для характеристик</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИндексКартинки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Подбор" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Подбор</Action>
+		</Command>
+		<Command name="ОК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+		</Command>
+		<Command name="Отмена" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отмена</Action>
+		</Command>
+	</Commands>
+</Form>

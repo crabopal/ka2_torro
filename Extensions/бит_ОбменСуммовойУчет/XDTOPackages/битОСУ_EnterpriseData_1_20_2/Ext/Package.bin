@@ -1,0 +1,7 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20/bit-pnpo">
+	<import namespace="http://www.1c.ru/SSL/Exchange/Message"/>
+	<import namespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.ПоступлениеТоваровУслуг" base="d2p1:Object" open="true" sequenced="true">
+		<property name="битОСУ_ЭтоУПД" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+</package>

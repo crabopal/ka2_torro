@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСоздатьОбращениеВТехническуюПоддержку" id="55">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьОбращениеВТехническуюПоддержку</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьОбращениеВТехническуюПоддержкуРасширеннаяПодсказка" id="56"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ФайлыСПроблемамиОтправки" id="1">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<SelectionMode>SingleRow</SelectionMode>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ФайлыСПроблемамиОтправки</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SearchHistory</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ФайлыСПроблемамиОтправкиКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ФайлыСПроблемамиОтправкиКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ФайлыСПроблемамиОтправкиОбновитьИзФайлаНаДиске" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОбновитьИзФайлаНаДиске</CommandName>
+						<ExtendedTooltip name="ФайлыСПроблемамиОтправкиОбновитьИзФайлаНаДискеРасширеннаяПодсказка" id="33"/>
+					</Button>
+					<Button name="ФайлыСПроблемамиОтправкиПометитьНаУдаление" id="28">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПометитьНаУдаление</CommandName>
+						<ExtendedTooltip name="ФайлыСПроблемамиОтправкиПометитьНаУдалениеРасширеннаяПодсказка" id="29"/>
+					</Button>
+					<Button name="ФайлыСПроблемамиОтправкиПовторитьОтправку" id="30">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПовторитьОтправку</CommandName>
+						<ExtendedTooltip name="ФайлыСПроблемамиОтправкиПовторитьОтправкуРасширеннаяПодсказка" id="31"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ФайлыСПроблемамиОтправкиРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ФайлыСПроблемамиОтправкиСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ФайлыСПроблемамиОтправки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ФайлыСПроблемамиОтправкиСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ФайлыСПроблемамиОтправкиСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ФайлыСПроблемамиОтправкиСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ФайлыСПроблемамиОтправки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ФайлыСПроблемамиОтправкиСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ФайлыСПроблемамиОтправкиСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ФайлыСПроблемамиОтправкиУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ФайлыСПроблемамиОтправки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ФайлыСПроблемамиОтправкиУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ФайлыСПроблемамиОтправкиУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ФайлыПроблемамиОтправкиВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ФайлыПроблемамиОтправкиФайл" id="14">
+					<DataPath>ФайлыСПроблемамиОтправки.Файл</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CellHyperlink>true</CellHyperlink>
+					<OpenButton>true</OpenButton>
+					<ContextMenu name="ФайлыПроблемамиОтправкиФайлКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ФайлыПроблемамиОтправкиФайлРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="ФайлыПроблемамиОтправкиВладелецФайла" id="17">
+					<DataPath>ФайлыСПроблемамиОтправки.ВладелецФайла</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CellHyperlink>true</CellHyperlink>
+					<OpenButton>true</OpenButton>
+					<ContextMenu name="ФайлыПроблемамиОтправкиВладелецФайлаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ФайлыПроблемамиОтправкиВладелецФайлаРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<ColumnGroup name="ФайлыПроблемамиОтправкиГруппа1" id="40">
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ФайлыПроблемамиОтправкиГруппа1РасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<InputField name="ФайлыПроблемамиОтправкиДатаВозникновения" id="20">
+							<DataPath>ФайлыСПроблемамиОтправки.ДатаВозникновения</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ФайлыПроблемамиОтправкиДатаВозникновенияКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ФайлыПроблемамиОтправкиДатаВозникновенияРасширеннаяПодсказка" id="22"/>
+						</InputField>
+						<InputField name="ФайлыПроблемамиОтправкиПричина" id="23">
+							<DataPath>ФайлыСПроблемамиОтправки.Причина</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проблема</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ФайлыПроблемамиОтправкиПричинаКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ФайлыПроблемамиОтправкиПричинаРасширеннаяПодсказка" id="25"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+		<InputField name="ФайлыПроблемамиОтправкиПричинаПодробно" id="34">
+			<DataPath>Items.ФайлыСПроблемамиОтправки.CurrentData.Причина</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проблема</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ФайлыПроблемамиОтправкиПричинаПодробноКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ФайлыПроблемамиОтправкиПричинаПодробноРасширеннаяПодсказка" id="36"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ФайлыСПроблемамиОтправки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файлы с проблемами отправки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Файл" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ВладелецФайла" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Владелец файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ДатаВозникновения" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата возникновения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Причина" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Причина</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФайлПредставление" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипВладельца" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип владельца</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="УзелОбмена" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Узел обмена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиВитрины" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки витрины</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="НастройкиУчетнойСистемы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки учетной системы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьИзФайлаНаДиске" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить из файла на диске...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить из файла на диске</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.OpenFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьИзФайлаНаДиске</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>Use</CurrentRowUse>
+		</Command>
+		<Command name="ПометитьНаУдаление" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MarkToDelete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПометитьНаУдаление</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>Use</CurrentRowUse>
+		</Command>
+		<Command name="ПовторитьОтправку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повторить отправку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повторить отправку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПовторитьОтправку</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>Use</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьОбращениеВТехническуюПоддержку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Техподдержка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать обращение в техническую поддержку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НадписьОбращениеВТехническуюПоддержкуНажатие</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="НастройкиВитрины">
+			<Type/>
+		</Parameter>
+	</Parameters>
+</Form>

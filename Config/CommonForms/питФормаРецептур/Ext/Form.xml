@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTitle>false</AutoTitle>
+	<CommandSet>
+		<ExcludedCommand>Create</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="ГруппаКоманднаяПанель" id="176">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ГруппаКоманднаяПанельExtendedTooltip" id="177"/>
+			<ChildItems>
+				<Popup name="ПодменюСоздать" id="178">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рецептура</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет о продажах</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ПодменюСоздатьExtendedTooltip" id="179"/>
+					<ChildItems>
+						<Button name="СоздатьРецептуруПриготовление" id="180">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.СоздатьРецептуруПриготовление</CommandName>
+							<ExtendedTooltip name="СоздатьРецептуруПриготовлениеРасширеннаяПодсказка" id="181"/>
+						</Button>
+						<Button name="СоздатьРецептуруРазделка" id="182">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.СоздатьРецептуруРазделка</CommandName>
+							<ExtendedTooltip name="СоздатьРецептуруРазделкаРасширеннаяПодсказка" id="183"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+				<ButtonGroup name="ГруппаКнопкиКоманднойПанели" id="184">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопки командной панели</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопки командной панели</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CommandSource>Form</CommandSource>
+					<ExtendedTooltip name="ГруппаКнопкиКоманднойПанелиРасширеннаяПодсказка" id="185"/>
+					<ChildItems>
+						<ButtonGroup name="ГруппаВажныеКоманды" id="186">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Важные команды</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Важные команды</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаВажныеКомандыРасширеннаяПодсказка" id="187"/>
+						</ButtonGroup>
+					</ChildItems>
+				</ButtonGroup>
+				<Button name="ФормаСправка" id="198">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Help</CommandName>
+					<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+					<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="199"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<Table name="СписокРецептур" id="15">
+			<CommandBarLocation>None</CommandBarLocation>
+			<Height>5</Height>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>СписокРецептур</DataPath>
+			<RowPictureDataPath>СписокРецептур.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокРецептурКонтекстноеМеню" id="16"/>
+			<AutoCommandBar name="СписокРецептурКоманднаяПанель" id="17"/>
+			<ExtendedTooltip name="СписокРецептурРасширеннаяПодсказка" id="88"/>
+			<SearchStringAddition name="СписокРецептурСтрокаПоиска" id="89">
+				<AdditionSource>
+					<Item>СписокРецептур</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокРецептурСтрокаПоискаКонтекстноеМеню" id="90"/>
+				<ExtendedTooltip name="СписокРецептурСтрокаПоискаРасширеннаяПодсказка" id="91"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокРецептурСостояниеПросмотра" id="92">
+				<AdditionSource>
+					<Item>СписокРецептур</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокРецептурСостояниеПросмотраКонтекстноеМеню" id="93"/>
+				<ExtendedTooltip name="СписокРецептурСостояниеПросмотраРасширеннаяПодсказка" id="94"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокРецептурУправлениеПоиском" id="95">
+				<AdditionSource>
+					<Item>СписокРецептур</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокРецептурУправлениеПоискомКонтекстноеМеню" id="96"/>
+				<ExtendedTooltip name="СписокРецептурУправлениеПоискомРасширеннаяПодсказка" id="97"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Наименование" id="200">
+					<DataPath>СписокРецептур.Наименование</DataPath>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="201"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="202"/>
+				</LabelField>
+				<LabelField name="СписокРецептурДата" id="18">
+					<DataPath>СписокРецептур.Date</DataPath>
+					<ContextMenu name="СписокРецептурДатаКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="СписокРецептурДатаРасширеннаяПодсказка" id="98"/>
+				</LabelField>
+				<LabelField name="СписокРецептурНомер" id="20">
+					<DataPath>СписокРецептур.Number</DataPath>
+					<ContextMenu name="СписокРецептурНомерКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокРецептурНомерРасширеннаяПодсказка" id="99"/>
+				</LabelField>
+				<LabelField name="СписокРецептурВидОперации" id="22">
+					<DataPath>~СписокРецептур.ВидОперации</DataPath>
+					<ContextMenu name="СписокРецептурВидОперацииКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СписокРецептурВидОперацииРасширеннаяПодсказка" id="100"/>
+				</LabelField>
+				<LabelField name="СписокРецептурДатаНачала" id="48">
+					<DataPath>СписокРецептур.ДатаНачала</DataPath>
+					<ContextMenu name="СписокРецептурДатаНачалаКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="СписокРецептурДатаНачалаРасширеннаяПодсказка" id="101"/>
+				</LabelField>
+				<LabelField name="СписокРецептурДатаКонца" id="50">
+					<DataPath>СписокРецептур.ДатаКонца</DataPath>
+					<ContextMenu name="СписокРецептурДатаКонцаКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="СписокРецептурДатаКонцаРасширеннаяПодсказка" id="102"/>
+				</LabelField>
+				<LabelField name="СписокРецептурКоличество" id="36">
+					<DataPath>СписокРецептур.Количество</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество номенклатуры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="СписокРецептурКоличествоКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="СписокРецептурКоличествоРасширеннаяПодсказка" id="103"/>
+				</LabelField>
+				<LabelField name="СписокРецептурЕдиницаИзмерения" id="32">
+					<DataPath>~СписокРецептур.ЕдиницаИзмерения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица измерения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>8</Width>
+					<ContextMenu name="СписокРецептурЕдиницаИзмеренияКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СписокРецептурЕдиницаИзмеренияРасширеннаяПодсказка" id="104"/>
+				</LabelField>
+				<LabelField name="СписокРецептурКоэффициент" id="34">
+					<DataPath>~СписокРецептур.Коэффициент</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>К.</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коэффициент</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>6</Width>
+					<ContextMenu name="СписокРецептурКоэффициентКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="СписокРецептурКоэффициентРасширеннаяПодсказка" id="105"/>
+				</LabelField>
+				<LabelField name="НомерРецептуры" id="86">
+					<DataPath>СписокРецептур.НомерРецептуры</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер рецептуры по сборнику рецептур</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="НомерРецептурыКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="НомерРецептурыРасширеннаяПодсказка" id="106"/>
+				</LabelField>
+				<LabelField name="СписокРецептурОрганизация" id="24">
+					<DataPath>СписокРецептур.Организация</DataPath>
+					<ContextMenu name="СписокРецептурОрганизацияКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="СписокРецептурОрганизацияРасширеннаяПодсказка" id="107"/>
+				</LabelField>
+				<LabelField name="Выход" id="84">
+					<DataPath>СписокРецептур.Выход</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выход блюда в граммах по сборнику рецептур</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>15</Width>
+					<ContextMenu name="ВыходКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="ВыходРасширеннаяПодсказка" id="108"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<Table name="СоставРецептуры" id="8">
+			<Representation>List</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состав выбранной рецептуры</v8:content>
+				</v8:item>
+			</Title>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СоставРецептурыКонтекстноеМеню" id="9"/>
+			<AutoCommandBar name="СоставРецептурыКоманднаяПанель" id="10"/>
+			<ExtendedTooltip name="СоставРецептурыРасширеннаяПодсказка" id="109"/>
+			<SearchStringAddition name="СоставРецептурыСтрокаПоиска" id="110">
+				<AdditionSource>
+					<Item>СоставРецептуры</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставРецептурыСтрокаПоискаКонтекстноеМеню" id="111"/>
+				<ExtendedTooltip name="СоставРецептурыСтрокаПоискаРасширеннаяПодсказка" id="112"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СоставРецептурыСостояниеПросмотра" id="113">
+				<AdditionSource>
+					<Item>СоставРецептуры</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставРецептурыСостояниеПросмотраКонтекстноеМеню" id="114"/>
+				<ExtendedTooltip name="СоставРецептурыСостояниеПросмотраРасширеннаяПодсказка" id="115"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СоставРецептурыУправлениеПоиском" id="116">
+				<AdditionSource>
+					<Item>СоставРецептуры</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставРецептурыУправлениеПоискомКонтекстноеМеню" id="117"/>
+				<ExtendedTooltip name="СоставРецептурыУправлениеПоискомРасширеннаяПодсказка" id="118"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="СоставРецептурыНоменклатура" id="152">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставРецептурыНоменклатураКонтекстноеМеню" id="153"/>
+					<ExtendedTooltip name="СоставРецептурыНоменклатураРасширеннаяПодсказка" id="154"/>
+				</InputField>
+				<InputField name="СоставРецептурыУпаковка" id="173">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.Упаковка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед.изм</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставРецептурыУпаковкаКонтекстноеМеню" id="174"/>
+					<ExtendedTooltip name="СоставРецептурыУпаковкаРасширеннаяПодсказка" id="175"/>
+				</InputField>
+				<InputField name="СоставРецептурыКоличествоУпаковокБрутто" id="140">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.КоличествоУпаковокБрутто</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Брутто</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставРецептурыКоличествоУпаковокБруттоКонтекстноеМеню" id="141"/>
+					<ExtendedTooltip name="СоставРецептурыКоличествоУпаковокБруттоРасширеннаяПодсказка" id="142"/>
+				</InputField>
+				<InputField name="СоставРецептурыПроцентПотерьПриХолоднойОбработке" id="158">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.ПроцентПотерьПриХолоднойОбработке</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>% потерь при ХО</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставРецептурыПроцентПотерьПриХолоднойОбработкеКонтекстноеМеню" id="159"/>
+					<ExtendedTooltip name="СоставРецептурыПроцентПотерьПриХолоднойОбработкеРасширеннаяПодсказка" id="160"/>
+				</InputField>
+				<InputField name="СоставРецептурыКоличествоУпаковокНетто" id="146">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.КоличествоУпаковокНетто</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нетто</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставРецептурыКоличествоУпаковокНеттоКонтекстноеМеню" id="147"/>
+					<ExtendedTooltip name="СоставРецептурыКоличествоУпаковокНеттоРасширеннаяПодсказка" id="148"/>
+				</InputField>
+				<InputField name="СоставРецептурыПроцентПотерьПриГорячейОбработке" id="155">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.ПроцентПотерьПриГорячейОбработке</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>% потерь при ГО</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставРецептурыПроцентПотерьПриГорячейОбработкеКонтекстноеМеню" id="156"/>
+					<ExtendedTooltip name="СоставРецептурыПроцентПотерьПриГорячейОбработкеРасширеннаяПодсказка" id="157"/>
+				</InputField>
+				<InputField name="СоставРецептурыКоличествоУпаковокВыход" id="143">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.КоличествоУпаковокВыход</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выход</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставРецептурыКоличествоУпаковокВыходКонтекстноеМеню" id="144"/>
+					<ExtendedTooltip name="СоставРецептурыКоличествоУпаковокВыходРасширеннаяПодсказка" id="145"/>
+				</InputField>
+				<InputField name="СоставРецептурыРецептура" id="164">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.Рецептура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставРецептурыРецептураКонтекстноеМеню" id="165"/>
+					<ExtendedTooltip name="СоставРецептурыРецептураРасширеннаяПодсказка" id="166"/>
+				</InputField>
+				<CheckBoxField name="СоставРецептурыСпеция" id="167">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.Специя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СоставРецептурыСпецияКонтекстноеМеню" id="168"/>
+					<ExtendedTooltip name="СоставРецептурыСпецияРасширеннаяПодсказка" id="169"/>
+				</CheckBoxField>
+				<InputField name="СоставРецептурыСтатьяКалькуляции" id="170">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.СтатьяКалькуляции</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставРецептурыСтатьяКалькуляцииКонтекстноеМеню" id="171"/>
+					<ExtendedTooltip name="СоставРецептурыСтатьяКалькуляцииРасширеннаяПодсказка" id="172"/>
+				</InputField>
+				<CheckBoxField name="СоставРецептурыЗапретитьЗамены" id="128">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.ЗапретитьЗамены</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СоставРецептурыЗапретитьЗаменыКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="СоставРецептурыЗапретитьЗаменыРасширеннаяПодсказка" id="130"/>
+				</CheckBoxField>
+				<InputField name="СоставРецептурыЗамена" id="125">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.Замена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставРецептурыЗаменаКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="СоставРецептурыЗаменаРасширеннаяПодсказка" id="127"/>
+				</InputField>
+				<InputField name="СоставРецептурыКоэффициентЗамены" id="149">
+					<DataPath>Items.СписокРецептур.CurrentData.Ингредиенты.КоэффициентЗамены</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставРецептурыКоэффициентЗаменыКонтекстноеМеню" id="150"/>
+					<ExtendedTooltip name="СоставРецептурыКоэффициентЗаменыРасширеннаяПодсказка" id="151"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокРецептур" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список рецептур</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.питРецептура</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЭтоВРецептурах" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это в рецептурах</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТоварыНоменклатура" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьРецептуруПриготовление" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приготовление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать рецептуру приготовления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьРецептуруПриготовление</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьРецептуруРазделка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать рецептуру разделки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьРецептуруРазделка</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

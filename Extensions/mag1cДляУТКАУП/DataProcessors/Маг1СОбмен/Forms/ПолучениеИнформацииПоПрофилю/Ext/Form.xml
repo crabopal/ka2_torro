@@ -1,0 +1,970 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Сервис mag1c</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="СоздатьНовуюВитрину" id="227">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.СоздатьНовуюВитрину</CommandName>
+				<ExtendedTooltip name="СоздатьНовуюВитринуРасширеннаяПодсказка" id="228"/>
+			</Button>
+			<Button name="ФормаОбращениеВТехническуюПоддержку" id="231">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбращениеВТехническуюПоддержку</CommandName>
+				<ExtendedTooltip name="ФормаОбращениеВТехническуюПоддержкуРасширеннаяПодсказка" id="232"/>
+			</Button>
+			<Button name="ФормаОчиститьЛокальныйКешНастроек" id="229">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОчиститьЛокальныйКешНастроек</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаОчиститьЛокальныйКешНастроекРасширеннаяПодсказка" id="230"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СтраницыОсновное" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы основное</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы основное</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыОсновноеРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="СтраницаВыполненияОперацииОжидание" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выполнения операции ожидание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выполнения операции ожидание</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаВыполненияОперацииОжиданиеРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация25" id="5">
+							<PictureSize>AutoSize</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.Маг1СДлительнаяОперация48</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация25КонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="Декорация25РасширеннаяПодсказка" id="7"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияОперацияВыполняется" id="8">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполняется проверка профиля пользователя Портала 1С:ИТС.
+Пожалуйста, подождите...</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияОперацияВыполняетсяКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ДекорацияОперацияВыполняетсяРасширеннаяПодсказка" id="10"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаВыборВитрины" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выбор витрины</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выбор витрины</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<VerticalAlign>Top</VerticalAlign>
+					<ExtendedTooltip name="СтраницаВыборВитриныРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<UsualGroup name="Группа28" id="41">
+							<Group>Vertical</Group>
+							<VerticalSpacing>Double</VerticalSpacing>
+							<ExtendedTooltip name="Группа28РасширеннаяПодсказка" id="42"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаВитриныЭтойБазы" id="43">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Витрины, подключенные к этой базе</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа витрины этой базы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>AlwaysHorizontal</Group>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<Representation>NormalSeparation</Representation>
+									<ExtendedTooltip name="ГруппаВитриныЭтойБазыРасширеннаяПодсказка" id="44"/>
+									<ChildItems>
+										<LabelDecoration name="ГруппаВитриныЭтойБазыОтступ" id="53">
+											<Width>4</Width>
+											<ContextMenu name="ГруппаВитриныЭтойБазыОтступКонтекстноеМеню" id="54"/>
+											<ExtendedTooltip name="ГруппаВитриныЭтойБазыОтступРасширеннаяПодсказка" id="55"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа75" id="56">
+											<Group>Vertical</Group>
+											<VerticalSpacing>Half</VerticalSpacing>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа75РасширеннаяПодсказка" id="57"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаВитриныЭтойБазыСписок1" id="58">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа витрины этой базы список1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа витрины этой базы список1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<VerticalSpacing>OneAndHalf</VerticalSpacing>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВитриныЭтойБазыСписок1РасширеннаяПодсказка" id="59"/>
+												</UsualGroup>
+												<LabelDecoration name="ДекорацияНетВитринЭтойБазы" id="184">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>К этой базе витрины не подключены</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияНетВитринЭтойБазыКонтекстноеМеню" id="185"/>
+													<ExtendedTooltip name="ДекорацияНетВитринЭтойБазыРасширеннаяПодсказка" id="186"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСтраницыMag1c" id="204">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы mag1c, подключенные к этой базе</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа витрины этой базы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>AlwaysHorizontal</Group>
+									<Collapsed>true</Collapsed>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<Representation>NormalSeparation</Representation>
+									<ExtendedTooltip name="ГруппаСтраницыMag1cРасширеннаяПодсказка" id="205"/>
+									<ChildItems>
+										<LabelDecoration name="ГруппаСтраницыMag1cОтступ" id="233">
+											<Width>4</Width>
+											<ContextMenu name="ГруппаСтраницыMag1cОтступКонтекстноеМеню" id="234"/>
+											<ExtendedTooltip name="ГруппаСтраницыMag1cОтступРасширеннаяПодсказка" id="235"/>
+										</LabelDecoration>
+										<UsualGroup name="ГруппаСтраницыMag1cСписок" id="222">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа витрины этой базы список</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа витрины этой базы список</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<VerticalSpacing>OneAndHalf</VerticalSpacing>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСтраницыMag1cСписокРасширеннаяПодсказка" id="223"/>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаВитриныДругихБаз" id="71">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Витрины, подключенные к другим базам</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Если перенастроить интеграцию на эту базу, то на веб-витрине будут скрыты все товары, которые были опубликованы ранее.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Collapsed>true</Collapsed>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<Representation>NormalSeparation</Representation>
+									<ExtendedTooltip name="ГруппаВитриныДругихБазРасширеннаяПодсказка" id="72"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаВитриныДругихБазДоп" id="84">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа26</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа26</v8:content>
+												</v8:item>
+											</ToolTip>
+											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+											<Group>AlwaysHorizontal</Group>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВитриныДругихБазДопРасширеннаяПодсказка" id="85"/>
+											<ChildItems>
+												<LabelDecoration name="ГруппаВитриныДругихБазОтступ" id="86">
+													<Width>4</Width>
+													<ContextMenu name="ГруппаВитриныДругихБазОтступКонтекстноеМеню" id="87"/>
+													<ExtendedTooltip name="ГруппаВитриныДругихБазОтступРасширеннаяПодсказка" id="88"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаВитриныДругихБазСписок" id="89">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа витрины этой базы список</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа витрины этой базы список</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<VerticalSpacing>OneAndHalf</VerticalSpacing>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВитриныДругихБазСписокРасширеннаяПодсказка" id="90"/>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПолучениеИнформацииПоПрофилюОшибка" id="122">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница получение информации по профилю ошибка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница получение информации по профилю ошибка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Top</VerticalAlign>
+					<ExtendedTooltip name="СтраницаПолучениеИнформацииПоПрофилюОшибкаРасширеннаяПодсказка" id="123"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияОшибка" id="124">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация ошибка</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>AutoSize</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.Маг1СПодготовкаВитриныОтложена</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияОшибкаКонтекстноеМеню" id="125"/>
+							<ExtendedTooltip name="ДекорацияОшибкаРасширеннаяПодсказка" id="126"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияНадписьОшибка" id="127">
+							<MaxWidth>57</MaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При выполнении проверки профиля пользователя Портала 1С:ИТС что-то пошло не так((( Подробную информацию можно получить в &lt;link ОткрытьЖурналРегистрации&gt;журнале регистрации&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияНадписьОшибкаКонтекстноеМеню" id="128"/>
+							<ExtendedTooltip name="ДекорацияНадписьОшибкаРасширеннаяПодсказка" id="129"/>
+							<Events>
+								<Event name="URLProcessing">ДекорацияНадписьОшибка2ОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="НадписьОбращениеВТехническуюПоддержку2" id="132">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Чтобы сообщить нам о проблеме, перейдите, пожалуйста, по этой &lt;link Техподдержка&gt;ссылке&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьОбращениеВТехническуюПоддержку2КонтекстноеМеню" id="133"/>
+							<ExtendedTooltip name="НадписьОбращениеВТехническуюПоддержку2РасширеннаяПодсказка" id="134"/>
+							<Events>
+								<Event name="URLProcessing">НадписьОбращениеВТехническуюПоддержкуОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="ДекорацияТекстОшибки1" id="187">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текст ошибки:
+
+Ошибка работы с Интернет:  Превышено время ожидания
+{mag1cДляУНФ Обработка.Маг1СНастройка.МодульМенеджера(320)}: Ответ = Соединение.ОтправитьДляОбработки(Запрос);
+{mag1cДляУНФ Обработка.Маг1СНастройка.МодульМенеджера(1407)}:  СтрокаСпискаВитрин = СоздатьВитрину(НастройкиВитрины, ПараметрыАвторизации);
+{(1)}:Обработки.Маг1СНастройка.СоздатьВитринуВФоновомЗадании(Параметры[0],Параметры[1])
+{ОбщийМодуль.ОбщегоНазначения.Модуль(5262)}: Выполнить ИмяМетода + "(" + ПараметрыСтрока + ")";
+{ОбщийМодуль.ДлительныеОперации.Модуль(1067)}:  ОбщегоНазначения.ВыполнитьМетодКонфигурации(ИмяПроцедуры, ПараметрыВызова);
+{ОбщийМодуль.ДлительныеОперации.Модуль(1057)}:  ВызватьПроцедуру(ВсеПараметры.ИмяПроцедуры, ВсеПараметры.ПараметрыПроцедуры);
+
+по причине:
+Ошибка работы с Интернет:  Превышено время ожидания</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияТекстОшибки1КонтекстноеМеню" id="188"/>
+							<ExtendedTooltip name="ДекорацияТекстОшибки1РасширеннаяПодсказка" id="189"/>
+							<Events>
+								<Event name="URLProcessing">НадписьОбращениеВТехническуюПоддержкуОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаВитриныЭтойБазы1" id="236">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Витрины, подключенные к этой базе</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа витрины этой базы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<Behavior>Usual</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаВитриныЭтойБазы1РасширеннаяПодсказка" id="237"/>
+							<ChildItems>
+								<LabelDecoration name="ГруппаВитриныЭтойБазыОтступ1" id="238">
+									<Width>4</Width>
+									<ContextMenu name="ГруппаВитриныЭтойБазыОтступ1КонтекстноеМеню" id="239"/>
+									<ExtendedTooltip name="ГруппаВитриныЭтойБазыОтступ1РасширеннаяПодсказка" id="240"/>
+								</LabelDecoration>
+								<UsualGroup name="Группа76" id="241">
+									<Group>Vertical</Group>
+									<VerticalSpacing>Half</VerticalSpacing>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа76РасширеннаяПодсказка" id="242"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаВитриныЭтойБазыСписок2" id="243">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа витрины этой базы список1</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа витрины этой базы список1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<VerticalSpacing>OneAndHalf</VerticalSpacing>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВитриныЭтойБазыСписок2РасширеннаяПодсказка" id="244"/>
+										</UsualGroup>
+										<LabelDecoration name="ДекорацияНетВитринЭтойБазы2" id="245">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>К этой базе витрины не подключены</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияНетВитринЭтойБазы2КонтекстноеМеню" id="246"/>
+											<ExtendedTooltip name="ДекорацияНетВитринЭтойБазы2РасширеннаяПодсказка" id="247"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОграниченияПрофиля" id="135">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выполнено ошибка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выполнено ошибка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаОграниченияПрофиляРасширеннаяПодсказка" id="136"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияОшибка1" id="137">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация ошибка</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>AutoSize</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.Маг1СПодготовкаВитриныОтложена</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияОшибка1КонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="ДекорацияОшибка1РасширеннаяПодсказка" id="139"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияНадписьОшибка1" id="140">
+							<MaxWidth>61</MaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Для используемого логина интернет-поддержки создание витрин ограничено. Для получения более подробной информации напишите, пожалуйста, в адрес &lt;link ывафыв&gt;Техподдержки&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ContextMenu name="ДекорацияНадписьОшибка1КонтекстноеМеню" id="141"/>
+							<ExtendedTooltip name="ДекорацияНадписьОшибка1РасширеннаяПодсказка" id="142"/>
+							<Events>
+								<Event name="URLProcessing">НадписьОбращениеВТехническуюПоддержкуОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПереподключениеВитриныОшибка" id="171">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница получение информации по профилю ошибка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница получение информации по профилю ошибка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаПереподключениеВитриныОшибкаРасширеннаяПодсказка" id="172"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияОшибка2" id="173">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация ошибка</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>AutoSize</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.Маг1СПодготовкаВитриныОтложена</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияОшибка2КонтекстноеМеню" id="174"/>
+							<ExtendedTooltip name="ДекорацияОшибка2РасширеннаяПодсказка" id="175"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияНадписьОшибка2" id="176">
+							<MaxWidth>57</MaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При перенастройке витрины что-то пошло не так((( Подробную информацию можно получить в &lt;link ОткрытьЖурналРегистрации&gt;журнале регистрации&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияНадписьОшибка2КонтекстноеМеню" id="177"/>
+							<ExtendedTooltip name="ДекорацияНадписьОшибка2РасширеннаяПодсказка" id="178"/>
+							<Events>
+								<Event name="URLProcessing">ДекорацияНадписьОшибка2ОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="НадписьОбращениеВТехническуюПоддержку3" id="190">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Чтобы сообщить нам о проблеме, перейдите, пожалуйста, по этой &lt;link Техподдержка&gt;ссылке&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьОбращениеВТехническуюПоддержку3КонтекстноеМеню" id="191"/>
+							<ExtendedTooltip name="НадписьОбращениеВТехническуюПоддержку3РасширеннаяПодсказка" id="192"/>
+							<Events>
+								<Event name="URLProcessing">НадписьОбращениеВТехническуюПоддержкуОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="ДекорацияТекстОшибки2" id="193">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текст ошибки:
+
+Ошибка работы с Интернет:  Превышено время ожидания
+{mag1cДляУНФ Обработка.Маг1СНастройка.МодульМенеджера(320)}: Ответ = Соединение.ОтправитьДляОбработки(Запрос);
+{mag1cДляУНФ Обработка.Маг1СНастройка.МодульМенеджера(1407)}:  СтрокаСпискаВитрин = СоздатьВитрину(НастройкиВитрины, ПараметрыАвторизации);
+{(1)}:Обработки.Маг1СНастройка.СоздатьВитринуВФоновомЗадании(Параметры[0],Параметры[1])
+{ОбщийМодуль.ОбщегоНазначения.Модуль(5262)}: Выполнить ИмяМетода + "(" + ПараметрыСтрока + ")";
+{ОбщийМодуль.ДлительныеОперации.Модуль(1067)}:  ОбщегоНазначения.ВыполнитьМетодКонфигурации(ИмяПроцедуры, ПараметрыВызова);
+{ОбщийМодуль.ДлительныеОперации.Модуль(1057)}:  ВызватьПроцедуру(ВсеПараметры.ИмяПроцедуры, ВсеПараметры.ПараметрыПроцедуры);
+
+по причине:
+Ошибка работы с Интернет:  Превышено время ожидания</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияТекстОшибки2КонтекстноеМеню" id="194"/>
+							<ExtendedTooltip name="ДекорацияТекстОшибки2РасширеннаяПодсказка" id="195"/>
+							<Events>
+								<Event name="URLProcessing">НадписьОбращениеВТехническуюПоддержкуОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПерезапускПрограммы" id="196">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница перезапуск программы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выполнено ошибка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаПерезапускПрограммыРасширеннаяПодсказка" id="197"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияОшибка3" id="198">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация ошибка</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>AutoSize</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.Маг1СПодготовкаВитриныОтложена</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияОшибка3КонтекстноеМеню" id="199"/>
+							<ExtendedTooltip name="ДекорацияОшибка3РасширеннаяПодсказка" id="200"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияНадписьОшибка3" id="201">
+							<MaxWidth>57</MaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расширение для работы с mag1c обновлено. Перед продолжением работы рекомендуем &lt;link ПерезапуститьПрограмму&gt;перезапустить программу&lt;/&gt;.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияНадписьОшибка3КонтекстноеМеню" id="202"/>
+							<ExtendedTooltip name="ДекорацияНадписьОшибка3РасширеннаяПодсказка" id="203"/>
+							<Events>
+								<Event name="URLProcessing">ДекорацияНадписьОшибка3ОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="АдресПриложенияВИнтернете" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес приложения в интернете</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛогинИПП" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин ИПП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Витрины" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Витрины</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ИдентификаторЗадания" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыСобытия" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры события</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ЗакрытьФормуБезусловно" id="6">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПрофильПользователя" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="БезопасныйРежимРасширения" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Безопасный режим расширения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СинонимРасширения" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синоним расширения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияПлатформыПодходит" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия платформы подходит</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПоказатьСписокДругихВитрин" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать список других витрин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторИБ" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимФормы" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументСсылка" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеСсылки" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание ссылки</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Действие" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="Контрагент" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеИнвайта" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание инвайта</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Объект" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Маг1СОбмен</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьНовуюВитрину" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новую витрину</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новую витрину</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьНовуюВитрину</Action>
+		</Command>
+		<Command name="ОчиститьЛокальныйКешНастроек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить локальный кеш настроек</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить локальный кеш настроек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьЛокальныйКешНастроек</Action>
+		</Command>
+		<Command name="ОбращениеВТехническуюПоддержку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Техподдержка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обращение в техническую поддержку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НадписьОбращениеВТехническуюПоддержкуНачальнаяСтраницаНажатие</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="АдресПриложенияВИнтернете">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ЛогинИПП">
+			<Type/>
+		</Parameter>
+		<Parameter name="ПоказатьСписокДругихВитрин">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ДокументСсылка">
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+		</Parameter>
+		<Parameter name="РежимФормы">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Организация">
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Parameter>
+		<Parameter name="Контрагент">
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

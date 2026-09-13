@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Мегапрайс - Набор номенклатуры</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="СписокРеквизитовОбновитьСписокРеквизитов" id="89">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьСписокРеквизитов</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обновить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="СписокРеквизитовОбновитьСписокРеквизитовРасширеннаяПодсказка" id="90"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<CheckBoxField name="ИспользоватьДляОтбора" id="41">
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьДляОтбораКонтекстноеМеню" id="42"/>
+			<ExtendedTooltip name="ИспользоватьДляОтбораРасширеннаяПодсказка" id="43"/>
+		</CheckBoxField>
+		<Pages name="Страницы" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="59"/>
+			<Events>
+				<Event name="OnCurrentPageChange">СтраницыПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="Набор" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НаборРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<Table name="ОформлениеСтрок" id="7">
+							<Representation>List</Representation>
+							<SkipOnInput>true</SkipOnInput>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ОформлениеСтрок</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОформлениеСтрокКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="ОформлениеСтрокКоманднаяПанель" id="9"/>
+							<ExtendedTooltip name="ОформлениеСтрокРасширеннаяПодсказка" id="10"/>
+							<SearchStringAddition name="ОформлениеСтрокСтрокаПоиска" id="11">
+								<AdditionSource>
+									<Item>ОформлениеСтрок</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОформлениеСтрокСтрокаПоискаКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ОформлениеСтрокСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОформлениеСтрокСостояниеПросмотра" id="14">
+								<AdditionSource>
+									<Item>ОформлениеСтрок</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОформлениеСтрокСостояниеПросмотраКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ОформлениеСтрокСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОформлениеСтрокУправлениеПоиском" id="17">
+								<AdditionSource>
+									<Item>ОформлениеСтрок</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОформлениеСтрокУправлениеПоискомКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="ОформлениеСтрокУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ОформлениеСтрокВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ОформлениеСтрокНомерСтроки" id="20">
+									<DataPath>Объект.ОформлениеСтрок.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>7</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ОформлениеСтрокНомерСтрокиКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ОформлениеСтрокНомерСтрокиРасширеннаяПодсказка" id="22"/>
+								</LabelField>
+								<InputField name="ОформлениеСтрокГруппаНоменклатуры" id="23">
+									<DataPath>Объект.ОформлениеСтрок.ГруппаНоменклатуры</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОформлениеСтрокГруппаНоменклатурыКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ОформлениеСтрокГруппаНоменклатурыРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ОформлениеСтрокТоварнаяКатегория" id="26">
+									<DataPath>Объект.ОформлениеСтрок.ТоварнаяКатегория</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОформлениеСтрокТоварнаяКатегорияКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ОформлениеСтрокТоварнаяКатегорияРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="ОформлениеСтрокЦеноваяГруппа" id="29">
+									<DataPath>Объект.ОформлениеСтрок.ЦеноваяГруппа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОформлениеСтрокЦеноваяГруппаКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ОформлениеСтрокЦеноваяГруппаРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="ОформлениеСтрокПроизводитель" id="32">
+									<DataPath>Объект.ОформлениеСтрок.Производитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОформлениеСтрокПроизводительКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ОформлениеСтрокПроизводительРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="ОформлениеСтрокРейтингПродаж" id="55">
+									<DataPath>Объект.ОформлениеСтрок.РейтингПродаж</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОформлениеСтрокРейтингПродажКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ОформлениеСтрокРейтингПродажРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<InputField name="ОформлениеСтрокДатаНоменклатуры" id="44">
+									<DataPath>Объект.ОформлениеСтрок.ДатаНоменклатуры</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОформлениеСтрокДатаНоменклатурыКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ОформлениеСтрокДатаНоменклатурыРасширеннаяПодсказка" id="46"/>
+								</InputField>
+								<ColumnGroup name="Оформление" id="47">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Оформление</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Оформление</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="ОформлениеРасширеннаяПодсказка" id="48"/>
+									<ChildItems>
+										<InputField name="ОформлениеСтрокЦветСтроки" id="35">
+											<DataPath>Объект.ОформлениеСтрок.ЦветСтроки</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<SkipOnInput>true</SkipOnInput>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Фон строки</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>15</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ОформлениеСтрокЦветСтрокиКонтекстноеМеню" id="36"/>
+											<ExtendedTooltip name="ОформлениеСтрокЦветСтрокиРасширеннаяПодсказка" id="37"/>
+										</InputField>
+										<InputField name="ОформлениеСтрокЦветТекста" id="49">
+											<DataPath>Объект.ОформлениеСтрок.ЦветТекста</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<SkipOnInput>true</SkipOnInput>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>15</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ОформлениеСтрокЦветТекстаКонтекстноеМеню" id="50"/>
+											<ExtendedTooltip name="ОформлениеСтрокЦветТекстаРасширеннаяПодсказка" id="51"/>
+										</InputField>
+										<InputField name="ОформлениеСтрокШрифтСтроки" id="38">
+											<DataPath>Объект.ОформлениеСтрок.ШрифтСтроки</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<SkipOnInput>true</SkipOnInput>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шрифт текста</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>15</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ОформлениеСтрокШрифтСтрокиКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="ОформлениеСтрокШрифтСтрокиРасширеннаяПодсказка" id="40"/>
+										</InputField>
+										<CheckBoxField name="ОформлениеСтрокВсяСтрока" id="52">
+											<DataPath>Объект.ОформлениеСтрок.Полностью</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Вся строка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Всю строку</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОформлениеСтрокВсяСтрокаКонтекстноеМеню" id="53"/>
+											<ExtendedTooltip name="ОформлениеСтрокВсяСтрокаРасширеннаяПодсказка" id="54"/>
+										</CheckBoxField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаСписокРеквизитов" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список реквизитов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница список реквизитов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаСписокРеквизитовРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<Table name="СписокРеквизитов" id="64">
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СписокРеквизитов</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СписокРеквизитовКонтекстноеМеню" id="65"/>
+							<AutoCommandBar name="СписокРеквизитовКоманднаяПанель" id="66"/>
+							<ExtendedTooltip name="СписокРеквизитовРасширеннаяПодсказка" id="67"/>
+							<SearchStringAddition name="СписокРеквизитовСтрокаПоиска" id="68">
+								<AdditionSource>
+									<Item>СписокРеквизитов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРеквизитовСтрокаПоискаКонтекстноеМеню" id="69"/>
+								<ExtendedTooltip name="СписокРеквизитовСтрокаПоискаРасширеннаяПодсказка" id="70"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокРеквизитовСостояниеПросмотра" id="71">
+								<AdditionSource>
+									<Item>СписокРеквизитов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРеквизитовСостояниеПросмотраКонтекстноеМеню" id="72"/>
+								<ExtendedTooltip name="СписокРеквизитовСостояниеПросмотраРасширеннаяПодсказка" id="73"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокРеквизитовУправлениеПоиском" id="74">
+								<AdditionSource>
+									<Item>СписокРеквизитов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРеквизитовУправлениеПоискомКонтекстноеМеню" id="75"/>
+								<ExtendedTooltip name="СписокРеквизитовУправлениеПоискомРасширеннаяПодсказка" id="76"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокРеквизитовНомерСтроки" id="77">
+									<DataPath>Объект.СписокРеквизитов.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокРеквизитовНомерСтрокиКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="СписокРеквизитовНомерСтрокиРасширеннаяПодсказка" id="79"/>
+								</LabelField>
+								<CheckBoxField name="СписокРеквизитовПометка" id="80">
+									<DataPath>Объект.СписокРеквизитов.Пометка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СписокРеквизитовПометкаКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="СписокРеквизитовПометкаРасширеннаяПодсказка" id="82"/>
+									<Events>
+										<Event name="OnChange">СписокРеквизитовПометкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="СписокРеквизитовПредставление" id="86">
+									<DataPath>Объект.СписокРеквизитов.Представление</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокРеквизитовПредставлениеКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="СписокРеквизитовПредставлениеРасширеннаяПодсказка" id="88"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.мегапрайсНаборыНоменклатуры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОформлениеСтрокЦветСтроки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ОформлениеСтрок.ЦветСтроки</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Цвет&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОформлениеСтрокШрифтСтроки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ОформлениеСтрок.ШрифтСтроки</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Шрифт&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОформлениеСтрокЦветТекста</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ОформлениеСтрок.ЦветТекста</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Текст&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьСписокРеквизитов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список реквизитов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСписокРеквизитов</Action>
+		</Command>
+	</Commands>
+</Form>

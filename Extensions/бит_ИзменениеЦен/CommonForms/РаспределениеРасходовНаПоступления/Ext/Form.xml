@@ -1,0 +1,1015 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Распределение расходов на себестоимость товаров и работ</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ПеренестиВДокумент" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ПеренестиВДокументРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer" callType="After">бит_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаСуммы" id="71">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Суммы</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСуммыРасширеннаяПодсказка" id="72"/>
+			<ChildItems>
+				<InputField name="СуммаКРаспределению" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>К распределению</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СуммаКРаспределениюКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="СуммаКРаспределениюРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<LabelDecoration name="Валюта" id="98">
+					<ContextMenu name="ВалютаКонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="100"/>
+				</LabelDecoration>
+				<LabelField name="СуммаНеРаспределено" id="59">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не распределено</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>style:ТекстСправочнойНадписи</TitleTextColor>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<Width>5</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<MarkNegatives>true</MarkNegatives>
+					<TextColor>style:ТекстСправочнойНадписи</TextColor>
+					<ContextMenu name="СуммаНеРаспределеноКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="СуммаНеРаспределеноРасширеннаяПодсказка" id="61"/>
+				</LabelField>
+				<LabelDecoration name="ВалютаНеРаспределено" id="114">
+					<TextColor>style:ТекстСправочнойНадписи</TextColor>
+					<ContextMenu name="ВалютаНеРаспределеноКонтекстноеМеню" id="115"/>
+					<ExtendedTooltip name="ВалютаНеРаспределеноРасширеннаяПодсказка" id="116"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКРаспределению" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К распределению</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКРаспределениюРасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<RadioButtonField name="ВариантРаспределения" id="46">
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Пропорционально количеству</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ПоКоличеству</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Пропорционально сумме</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ПоСумме</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Пропорционально весу</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ПоВесу</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Пропорционально объему</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ПоОбъему</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ВариантРаспределенияКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ВариантРаспределенияРасширеннаяПодсказка" id="48"/>
+				</RadioButtonField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="СписокДокументов" id="3">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокДокументовКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокДокументовКоманднаяПанель" id="5">
+				<ChildItems>
+					<Button name="СписокДокументовУдалить" id="81">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<ExtendedTooltip name="СписокДокументовУдалитьРасширеннаяПодсказка" id="82"/>
+					</Button>
+					<Button name="СписокДокументовНайти" id="83">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<ExtendedTooltip name="СписокДокументовНайтиРасширеннаяПодсказка" id="84"/>
+					</Button>
+					<Button name="СписокДокументовОтменитьПоиск" id="85">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<ExtendedTooltip name="СписокДокументовОтменитьПоискРасширеннаяПодсказка" id="86"/>
+					</Button>
+					<Button name="СписокДокументовСортироватьСписокПоВозрастанию" id="91">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<ExtendedTooltip name="СписокДокументовСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="92"/>
+					</Button>
+					<Button name="СписокДокументовСортироватьСписокПоУбыванию" id="93">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<ExtendedTooltip name="СписокДокументовСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="94"/>
+					</Button>
+					<Button name="СписокДокументовПереместитьВниз" id="89">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<ExtendedTooltip name="СписокДокументовПереместитьВнизРасширеннаяПодсказка" id="90"/>
+					</Button>
+					<Button name="СписокДокументовПереместитьВверх" id="87">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<ExtendedTooltip name="СписокДокументовПереместитьВверхРасширеннаяПодсказка" id="88"/>
+					</Button>
+					<Button name="СписокДокументовРаспределить" id="54">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<ExtendedTooltip name="СписокДокументовРаспределитьРасширеннаяПодсказка" id="55"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокДокументовРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокДокументовСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>СписокДокументов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокДокументовСтрокаПоискаКонтекстноеМеню" id="10"/>
+				<ExtendedTooltip name="СписокДокументовСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокДокументовСостояниеПросмотра" id="12">
+				<AdditionSource>
+					<Item>СписокДокументов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="СписокДокументовСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СписокДокументовСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокДокументовУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>СписокДокументов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокДокументовУправлениеПоискомКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="СписокДокументовУправлениеПоискомРасширеннаяПодсказка" id="21"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnChange" callType="After">бит_СписокДокументовПриИзмененииПосле</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="СписокДокументовДокумент" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ приобретения товаров</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceParameters>
+						<app:item name="Отбор.ХозяйственнаяОперация">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="v8:FixedArray">
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаУПоставщика</Value>
+									</v8:Value>
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаЧерезПодотчетноеЛицо</Value>
+									</v8:Value>
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаУПоставщикаРеглУчет</Value>
+									</v8:Value>
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаПоИмпорту</Value>
+									</v8:Value>
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаВСтранахЕАЭС</Value>
+									</v8:Value>
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаВСтранахЕАЭСТоварыВПути</Value>
+									</v8:Value>
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаПоИмпортуТоварыВПути</Value>
+									</v8:Value>
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаУПоставщикаТоварыВПути</Value>
+									</v8:Value>
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаУПоставщикаФактуровкаПоставки</Value>
+									</v8:Value>
+									<v8:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаВСтранахЕАЭСФактуровкаПоставки</Value>
+									</v8:Value>
+								</Value>
+							</app:value>
+						</app:item>
+					</ChoiceParameters>
+					<ContextMenu name="СписокДокументовДокументКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="СписокДокументовДокументРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="СписокДокументовПартнер" id="34">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поставщик</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокДокументовПартнерКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="СписокДокументовПартнерРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="СписокДокументовВалюта" id="51">
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокДокументовВалютаКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="СписокДокументовВалютаРасширеннаяПодсказка" id="53"/>
+				</InputField>
+				<InputField name="СписокДокументовРаспределено" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Распределено</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокДокументовРаспределеноКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="СписокДокументовРаспределеноРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<ColumnGroup name="ГруппаКоэффициентов" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коэффициенты</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ExtendedTooltip name="ГруппаКоэффициентовРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<InputField name="СписокДокументовСумма" id="31">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сумма</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMarkIncomplete>false</AutoMarkIncomplete>
+							<ContextMenu name="СписокДокументовСуммаКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="СписокДокументовСуммаРасширеннаяПодсказка" id="33"/>
+						</InputField>
+						<InputField name="СписокДокументовКоличество" id="37">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество (различные ед.изм)</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMarkIncomplete>false</AutoMarkIncomplete>
+							<ContextMenu name="СписокДокументовКоличествоКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="СписокДокументовКоличествоРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<ColumnGroup name="СписокДокументовГруппаВес" id="122">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вес</v8:content>
+								</v8:item>
+							</Title>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="СписокДокументовГруппаВесРасширеннаяПодсказка" id="123"/>
+							<ChildItems>
+								<PictureField name="СписокДокументовОшибкаКоэффициентВес" id="119">
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.СтатусыОшибок</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="СписокДокументовОшибкаКоэффициентВесКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="СписокДокументовОшибкаКоэффициентВесРасширеннаяПодсказка" id="121"/>
+								</PictureField>
+								<InputField name="СписокДокументовВес" id="40">
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вес</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterPicture>
+										<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</FooterPicture>
+									<AutoMarkIncomplete>false</AutoMarkIncomplete>
+									<ContextMenu name="СписокДокументовВесКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="СписокДокументовВесРасширеннаяПодсказка" id="42"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="СписокДокументовГруппаОбъем" id="124">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список документов группа объем</v8:content>
+								</v8:item>
+							</Title>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="СписокДокументовГруппаОбъемРасширеннаяПодсказка" id="125"/>
+							<ChildItems>
+								<PictureField name="СписокДокументовОшибкаКоэффициентОбъем" id="126">
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.СтатусыОшибок</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="СписокДокументовОшибкаКоэффициентОбъемКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="СписокДокументовОшибкаКоэффициентОбъемРасширеннаяПодсказка" id="128"/>
+								</PictureField>
+								<InputField name="СписокДокументовОбъем" id="95">
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Объем</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMarkIncomplete>false</AutoMarkIncomplete>
+									<ContextMenu name="СписокДокументовОбъемКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="СписокДокументовОбъемРасширеннаяПодсказка" id="97"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+		<Button name="ПоказатьБазуРаспределения" id="117">
+			<Type>Hyperlink</Type>
+			<CommandName>0</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расшифровать документы по номенклатуре</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ПоказатьБазуРаспределенияРасширеннаяПодсказка" id="118"/>
+		</Button>
+		<UsualGroup name="ГруппаПредупреждение" id="101">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предупреждение</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПредупреждениеРасширеннаяПодсказка" id="102"/>
+			<ChildItems>
+				<PictureDecoration name="ПредупреждениеДекорацияКартинка" id="103">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>123232</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ПредупреждениеДекорацияКартинкаКонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="ПредупреждениеДекорацияКартинкаРасширеннаяПодсказка" id="105"/>
+				</PictureDecoration>
+				<LabelDecoration name="ПредупреждениеДекорацияТекст" id="106">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>1</Height>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В документах поступления есть строки с незаполненным коэффициентом. Распределение не будет произведено на данные строки.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Bottom</VerticalAlign>
+					<ContextMenu name="ПредупреждениеДекорацияТекстКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="ПредупреждениеДекорацияТекстРасширеннаяПодсказка" id="108"/>
+				</LabelDecoration>
+				<Button name="ОткрытьОтчет" id="112">
+					<Type>Hyperlink</Type>
+					<CommandName>0</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>(Показать строки)</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОткрытьОтчетРасширеннаяПодсказка" id="113"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.20">
+		<Title>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Распределение расходов на себестоимость товаров и работ</v8:content>
+			</v8:item>
+		</Title>
+		<AutoTitle>false</AutoTitle>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<ChildItems>
+				<Button name="ПеренестиВДокумент" id="1">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ПеренестиВДокументРасширеннаяПодсказка" id="2"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаСуммы" id="71">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Суммы</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаСуммыРасширеннаяПодсказка" id="72"/>
+				<ChildItems>
+					<InputField name="СуммаКРаспределению" id="43">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>К распределению</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="СуммаКРаспределениюКонтекстноеМеню" id="44"/>
+						<ExtendedTooltip name="СуммаКРаспределениюРасширеннаяПодсказка" id="45"/>
+					</InputField>
+					<LabelDecoration name="Валюта" id="98">
+						<ContextMenu name="ВалютаКонтекстноеМеню" id="99"/>
+						<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="100"/>
+					</LabelDecoration>
+					<LabelField name="СуммаНеРаспределено" id="59">
+						<ReadOnly>true</ReadOnly>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Не распределено</v8:content>
+							</v8:item>
+						</Title>
+						<TitleTextColor>style:ТекстСправочнойНадписи</TitleTextColor>
+						<HorizontalAlign>Right</HorizontalAlign>
+						<Width>5</Width>
+						<HorizontalStretch>false</HorizontalStretch>
+						<MarkNegatives>true</MarkNegatives>
+						<TextColor>style:ТекстСправочнойНадписи</TextColor>
+						<ContextMenu name="СуммаНеРаспределеноКонтекстноеМеню" id="60"/>
+						<ExtendedTooltip name="СуммаНеРаспределеноРасширеннаяПодсказка" id="61"/>
+					</LabelField>
+					<LabelDecoration name="ВалютаНеРаспределено" id="114">
+						<TextColor>style:ТекстСправочнойНадписи</TextColor>
+						<ContextMenu name="ВалютаНеРаспределеноКонтекстноеМеню" id="115"/>
+						<ExtendedTooltip name="ВалютаНеРаспределеноРасширеннаяПодсказка" id="116"/>
+					</LabelDecoration>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаКРаспределению" id="76">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>К распределению</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Vertical</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаКРаспределениюРасширеннаяПодсказка" id="77"/>
+				<ChildItems>
+					<RadioButtonField name="ВариантРаспределения" id="46">
+						<TitleLocation>None</TitleLocation>
+						<RadioButtonType>Auto</RadioButtonType>
+						<ChoiceList>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пропорционально количеству</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">ПоКоличеству</Value>
+								</xr:Value>
+							</xr:Item>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пропорционально сумме</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">ПоСумме</Value>
+								</xr:Value>
+							</xr:Item>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пропорционально весу</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">ПоВесу</Value>
+								</xr:Value>
+							</xr:Item>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пропорционально объему</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">ПоОбъему</Value>
+								</xr:Value>
+							</xr:Item>
+						</ChoiceList>
+						<ContextMenu name="ВариантРаспределенияКонтекстноеМеню" id="47"/>
+						<ExtendedTooltip name="ВариантРаспределенияРасширеннаяПодсказка" id="48"/>
+					</RadioButtonField>
+				</ChildItems>
+			</UsualGroup>
+			<Table name="СписокДокументов" id="3">
+				<Representation>List</Representation>
+				<AutoInsertNewRow>true</AutoInsertNewRow>
+				<EnableStartDrag>true</EnableStartDrag>
+				<EnableDrag>true</EnableDrag>
+				<FileDragMode>AsFile</FileDragMode>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Список документов</v8:content>
+					</v8:item>
+				</Title>
+				<RowFilter xsi:nil="true"/>
+				<ContextMenu name="СписокДокументовКонтекстноеМеню" id="4"/>
+				<AutoCommandBar name="СписокДокументовКоманднаяПанель" id="5">
+					<ChildItems>
+						<Button name="СписокДокументовУдалить" id="81">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="СписокДокументовУдалитьРасширеннаяПодсказка" id="82"/>
+						</Button>
+						<Button name="СписокДокументовНайти" id="83">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="СписокДокументовНайтиРасширеннаяПодсказка" id="84"/>
+						</Button>
+						<Button name="СписокДокументовОтменитьПоиск" id="85">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="СписокДокументовОтменитьПоискРасширеннаяПодсказка" id="86"/>
+						</Button>
+						<Button name="СписокДокументовСортироватьСписокПоВозрастанию" id="91">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="СписокДокументовСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="92"/>
+						</Button>
+						<Button name="СписокДокументовСортироватьСписокПоУбыванию" id="93">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="СписокДокументовСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="94"/>
+						</Button>
+						<Button name="СписокДокументовПереместитьВниз" id="89">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="СписокДокументовПереместитьВнизРасширеннаяПодсказка" id="90"/>
+						</Button>
+						<Button name="СписокДокументовПереместитьВверх" id="87">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="СписокДокументовПереместитьВверхРасширеннаяПодсказка" id="88"/>
+						</Button>
+						<Button name="СписокДокументовРаспределить" id="54">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="СписокДокументовРаспределитьРасширеннаяПодсказка" id="55"/>
+						</Button>
+					</ChildItems>
+				</AutoCommandBar>
+				<ExtendedTooltip name="СписокДокументовРасширеннаяПодсказка" id="6"/>
+				<SearchStringAddition name="СписокДокументовСтрокаПоиска" id="7">
+					<AdditionSource>
+						<Item>СписокДокументов</Item>
+						<Type>SearchStringRepresentation</Type>
+					</AdditionSource>
+					<ContextMenu name="СписокДокументовСтрокаПоискаКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="СписокДокументовСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+				</SearchStringAddition>
+				<ViewStatusAddition name="СписокДокументовСостояниеПросмотра" id="12">
+					<AdditionSource>
+						<Item>СписокДокументов</Item>
+						<Type>ViewStatusRepresentation</Type>
+					</AdditionSource>
+					<HorizontalLocation>Left</HorizontalLocation>
+					<ContextMenu name="СписокДокументовСостояниеПросмотраКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокДокументовСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+				</ViewStatusAddition>
+				<SearchControlAddition name="СписокДокументовУправлениеПоиском" id="17">
+					<AdditionSource>
+						<Item>СписокДокументов</Item>
+						<Type>SearchControl</Type>
+					</AdditionSource>
+					<ContextMenu name="СписокДокументовУправлениеПоискомКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="СписокДокументовУправлениеПоискомРасширеннаяПодсказка" id="21"/>
+				</SearchControlAddition>
+				<ChildItems>
+					<InputField name="СписокДокументовДокумент" id="66">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Документ приобретения товаров</v8:content>
+							</v8:item>
+						</Title>
+						<EditMode>EnterOnInput</EditMode>
+						<ChoiceParameters>
+							<app:item name="Отбор.ХозяйственнаяОперация">
+								<app:value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation/>
+									<Value xsi:type="v8:FixedArray">
+										<v8:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation/>
+											<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаУПоставщика</Value>
+										</v8:Value>
+										<v8:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation/>
+											<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаЧерезПодотчетноеЛицо</Value>
+										</v8:Value>
+										<v8:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation/>
+											<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаУПоставщикаРеглУчет</Value>
+										</v8:Value>
+										<v8:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation/>
+											<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаПоИмпорту</Value>
+										</v8:Value>
+										<v8:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation/>
+											<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаВСтранахЕАЭС</Value>
+										</v8:Value>
+										<v8:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation/>
+											<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаВСтранахЕАЭСТоварыВПути</Value>
+										</v8:Value>
+										<v8:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation/>
+											<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаПоИмпортуТоварыВПути</Value>
+										</v8:Value>
+										<v8:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation/>
+											<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаУПоставщикаТоварыВПути</Value>
+										</v8:Value>
+										<v8:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation/>
+											<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаУПоставщикаФактуровкаПоставки</Value>
+										</v8:Value>
+										<v8:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation/>
+											<Value xsi:type="xr:DesignTimeRef">Enum.ХозяйственныеОперации.EnumValue.ЗакупкаВСтранахЕАЭСФактуровкаПоставки</Value>
+										</v8:Value>
+									</Value>
+								</app:value>
+							</app:item>
+						</ChoiceParameters>
+						<ContextMenu name="СписокДокументовДокументКонтекстноеМеню" id="67"/>
+						<ExtendedTooltip name="СписокДокументовДокументРасширеннаяПодсказка" id="68"/>
+					</InputField>
+					<InputField name="СписокДокументовПартнер" id="34">
+						<ReadOnly>true</ReadOnly>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поставщик</v8:content>
+							</v8:item>
+						</Title>
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="СписокДокументовПартнерКонтекстноеМеню" id="35"/>
+						<ExtendedTooltip name="СписокДокументовПартнерРасширеннаяПодсказка" id="36"/>
+					</InputField>
+					<InputField name="СписокДокументовВалюта" id="51">
+						<Visible>false</Visible>
+						<ReadOnly>true</ReadOnly>
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="СписокДокументовВалютаКонтекстноеМеню" id="52"/>
+						<ExtendedTooltip name="СписокДокументовВалютаРасширеннаяПодсказка" id="53"/>
+					</InputField>
+					<InputField name="СписокДокументовРаспределено" id="56">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Распределено</v8:content>
+							</v8:item>
+						</Title>
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="СписокДокументовРаспределеноКонтекстноеМеню" id="57"/>
+						<ExtendedTooltip name="СписокДокументовРаспределеноРасширеннаяПодсказка" id="58"/>
+					</InputField>
+					<ColumnGroup name="ГруппаКоэффициентов" id="64">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Коэффициенты</v8:content>
+							</v8:item>
+						</Title>
+						<Group>Horizontal</Group>
+						<ShowInHeader>true</ShowInHeader>
+						<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+						<ExtendedTooltip name="ГруппаКоэффициентовРасширеннаяПодсказка" id="65"/>
+						<ChildItems>
+							<InputField name="СписокДокументовСумма" id="31">
+								<ReadOnly>true</ReadOnly>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Сумма</v8:content>
+									</v8:item>
+								</Title>
+								<EditMode>EnterOnInput</EditMode>
+								<AutoMarkIncomplete>false</AutoMarkIncomplete>
+								<ContextMenu name="СписокДокументовСуммаКонтекстноеМеню" id="32"/>
+								<ExtendedTooltip name="СписокДокументовСуммаРасширеннаяПодсказка" id="33"/>
+							</InputField>
+							<InputField name="СписокДокументовКоличество" id="37">
+								<ReadOnly>true</ReadOnly>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Количество (различные ед.изм)</v8:content>
+									</v8:item>
+								</Title>
+								<EditMode>EnterOnInput</EditMode>
+								<AutoMarkIncomplete>false</AutoMarkIncomplete>
+								<ContextMenu name="СписокДокументовКоличествоКонтекстноеМеню" id="38"/>
+								<ExtendedTooltip name="СписокДокументовКоличествоРасширеннаяПодсказка" id="39"/>
+							</InputField>
+							<ColumnGroup name="СписокДокументовГруппаВес" id="122">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Вес</v8:content>
+									</v8:item>
+								</Title>
+								<Group>InCell</Group>
+								<ExtendedTooltip name="СписокДокументовГруппаВесРасширеннаяПодсказка" id="123"/>
+								<ChildItems>
+									<PictureField name="СписокДокументовОшибкаКоэффициентВес" id="119">
+										<TitleLocation>None</TitleLocation>
+										<EditMode>EnterOnInput</EditMode>
+										<ValuesPicture>
+											<xr:Ref>CommonPicture.СтатусыОшибок</xr:Ref>
+											<xr:LoadTransparent>false</xr:LoadTransparent>
+										</ValuesPicture>
+										<FileDragMode>AsFile</FileDragMode>
+										<ContextMenu name="СписокДокументовОшибкаКоэффициентВесКонтекстноеМеню" id="120"/>
+										<ExtendedTooltip name="СписокДокументовОшибкаКоэффициентВесРасширеннаяПодсказка" id="121"/>
+									</PictureField>
+									<InputField name="СписокДокументовВес" id="40">
+										<ReadOnly>true</ReadOnly>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Вес</v8:content>
+											</v8:item>
+										</Title>
+										<EditMode>EnterOnInput</EditMode>
+										<FooterPicture>
+											<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
+											<xr:LoadTransparent>false</xr:LoadTransparent>
+										</FooterPicture>
+										<AutoMarkIncomplete>false</AutoMarkIncomplete>
+										<ContextMenu name="СписокДокументовВесКонтекстноеМеню" id="41"/>
+										<ExtendedTooltip name="СписокДокументовВесРасширеннаяПодсказка" id="42"/>
+									</InputField>
+								</ChildItems>
+							</ColumnGroup>
+							<ColumnGroup name="СписокДокументовГруппаОбъем" id="124">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список документов группа объем</v8:content>
+									</v8:item>
+								</Title>
+								<Group>InCell</Group>
+								<ExtendedTooltip name="СписокДокументовГруппаОбъемРасширеннаяПодсказка" id="125"/>
+								<ChildItems>
+									<PictureField name="СписокДокументовОшибкаКоэффициентОбъем" id="126">
+										<TitleLocation>None</TitleLocation>
+										<EditMode>EnterOnInput</EditMode>
+										<ValuesPicture>
+											<xr:Ref>CommonPicture.СтатусыОшибок</xr:Ref>
+											<xr:LoadTransparent>false</xr:LoadTransparent>
+										</ValuesPicture>
+										<FileDragMode>AsFile</FileDragMode>
+										<ContextMenu name="СписокДокументовОшибкаКоэффициентОбъемКонтекстноеМеню" id="127"/>
+										<ExtendedTooltip name="СписокДокументовОшибкаКоэффициентОбъемРасширеннаяПодсказка" id="128"/>
+									</PictureField>
+									<InputField name="СписокДокументовОбъем" id="95">
+										<ReadOnly>true</ReadOnly>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Объем</v8:content>
+											</v8:item>
+										</Title>
+										<EditMode>EnterOnInput</EditMode>
+										<AutoMarkIncomplete>false</AutoMarkIncomplete>
+										<ContextMenu name="СписокДокументовОбъемКонтекстноеМеню" id="96"/>
+										<ExtendedTooltip name="СписокДокументовОбъемРасширеннаяПодсказка" id="97"/>
+									</InputField>
+								</ChildItems>
+							</ColumnGroup>
+						</ChildItems>
+					</ColumnGroup>
+				</ChildItems>
+			</Table>
+			<Button name="ПоказатьБазуРаспределения" id="117">
+				<Type>Hyperlink</Type>
+				<CommandName>0</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Расшифровать документы по номенклатуре</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ПоказатьБазуРаспределенияРасширеннаяПодсказка" id="118"/>
+			</Button>
+			<UsualGroup name="ГруппаПредупреждение" id="101">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Предупреждение</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаПредупреждениеРасширеннаяПодсказка" id="102"/>
+				<ChildItems>
+					<PictureDecoration name="ПредупреждениеДекорацияКартинка" id="103">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>123232</v8:content>
+							</v8:item>
+						</Title>
+						<PictureSize>Proportionally</PictureSize>
+						<FileDragMode>AsFile</FileDragMode>
+						<ContextMenu name="ПредупреждениеДекорацияКартинкаКонтекстноеМеню" id="104"/>
+						<ExtendedTooltip name="ПредупреждениеДекорацияКартинкаРасширеннаяПодсказка" id="105"/>
+					</PictureDecoration>
+					<LabelDecoration name="ПредупреждениеДекорацияТекст" id="106">
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<Height>1</Height>
+						<TextColor>style:ПоясняющийТекст</TextColor>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>В документах поступления есть строки с незаполненным коэффициентом. Распределение не будет произведено на данные строки.</v8:content>
+							</v8:item>
+						</Title>
+						<VerticalAlign>Bottom</VerticalAlign>
+						<ContextMenu name="ПредупреждениеДекорацияТекстКонтекстноеМеню" id="107"/>
+						<ExtendedTooltip name="ПредупреждениеДекорацияТекстРасширеннаяПодсказка" id="108"/>
+					</LabelDecoration>
+					<Button name="ОткрытьОтчет" id="112">
+						<Type>Hyperlink</Type>
+						<CommandName>0</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>(Показать строки)</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ОткрытьОтчетРасширеннаяПодсказка" id="113"/>
+					</Button>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

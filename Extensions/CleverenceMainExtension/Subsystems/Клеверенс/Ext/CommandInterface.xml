@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="DataProcessor.КлеверенсТСД_ОчисткаНастроекMobileSMARTS.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.КлеверенсТСД_ИнформацияОРасширении.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="DataProcessor.КлеверенсТСД_ОчисткаНастроекMobileSMARTS.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Клеверенс_Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.КлеверенсТСД_ИнформацияОРасширении.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Клеверенс_Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.Клеверенс_ОткрытьОсновнуюОбработку">
+			<CommandGroup>CommandGroup.Клеверенс_Работа</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.Клеверенс_ВыгрузитьСправочники">
+			<CommandGroup>CommandGroup.Клеверенс_Работа</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.КлеверенсТСД_ОчисткаНастроекMobileSMARTS.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Клеверенс_Сервис</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.КлеверенсТСД_ИнформацияОРасширении.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Клеверенс_Сервис</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.Клеверенс_ВерсияРасширения">
+			<CommandGroup>CommandGroup.Клеверенс_Сервис</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Клеверенс_Работа</Group>
+		<Group>CommandGroup.Клеверенс_Сервис</Group>
+	</GroupsOrder>
+</CommandInterface>

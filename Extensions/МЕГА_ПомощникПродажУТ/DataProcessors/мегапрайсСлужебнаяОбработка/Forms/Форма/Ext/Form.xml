@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Мега - Служебная обработка</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Scale>90</Scale>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаКнопкаУдалить" id="4">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СделатьЗапрос</CommandName>
+				<TextColor>#FFFFFF</TextColor>
+				<BackColor>#333333</BackColor>
+				<ExtendedTooltip name="ФормаКнопкаУдалитьРасширеннаяПодсказка" id="5"/>
+			</Button>
+			<Button name="ФормаЗаписатьНоменклатуру" id="50">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаписатьНоменклатуру</CommandName>
+				<TextColor>#FFFFFF</TextColor>
+				<BackColor>#333333</BackColor>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Записать Мегадату</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗаписатьНоменклатуруРасширеннаяПодсказка" id="51"/>
+			</Button>
+			<Button name="ФормаОчистить" id="55">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Очистить</CommandName>
+				<ExtendedTooltip name="ФормаОчиститьРасширеннаяПодсказка" id="56"/>
+			</Button>
+			<Button name="ПерейтиНаСайтРазработчика" id="36">
+				<Type>CommandBarHyperlink</Type>
+				<Representation>PictureAndText</Representation>
+				<Width>22</Width>
+				<Height>1</Height>
+				<CommandName>Form.Command.SubSysПерейтиНаСайтРазработчика</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>SubSystems.ru</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ПерейтиНаСайтРазработчикаExtendedTooltip" id="37"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="52">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Служебная обработка для заполнения дат по номенклатуре, которая была в базе. Подробности &lt;link https://subsystems.ru/solutions/megaprays-nomenklatura/megadata/&gt;https://subsystems.ru/solutions/megaprays-nomenklatura/megadata/&lt;/&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="54"/>
+		</LabelDecoration>
+		<Table name="ТаблицаНоменклатуры" id="14">
+			<Visible>false</Visible>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТаблицаНоменклатуры</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаНоменклатурыКонтекстноеМеню" id="15"/>
+			<AutoCommandBar name="ТаблицаНоменклатурыКоманднаяПанель" id="16">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаНоменклатурыРасширеннаяПодсказка" id="17"/>
+			<SearchStringAddition name="ТаблицаНоменклатурыСтрокаПоиска" id="18">
+				<AdditionSource>
+					<Item>ТаблицаНоменклатуры</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаНоменклатурыСтрокаПоискаКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="ТаблицаНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаНоменклатурыСостояниеПросмотра" id="21">
+				<AdditionSource>
+					<Item>ТаблицаНоменклатуры</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="22"/>
+				<ExtendedTooltip name="ТаблицаНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаНоменклатурыУправлениеПоиском" id="24">
+				<AdditionSource>
+					<Item>ТаблицаНоменклатуры</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаНоменклатурыУправлениеПоискомКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="ТаблицаНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЖурналСообщенийНомерСтроки" id="27">
+					<DataPath>Объект.ТаблицаНоменклатуры.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналСообщенийНомерСтрокиКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ЖурналСообщенийНомерСтрокиРасширеннаяПодсказка" id="29"/>
+				</LabelField>
+				<InputField name="ЖурналСообщенийНоменклатура" id="41">
+					<DataPath>Объект.ТаблицаНоменклатуры.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналСообщенийНоменклатураКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ЖурналСообщенийНоменклатураРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ЖурналСообщенийДата" id="44">
+					<DataPath>Объект.ТаблицаНоменклатуры.Дата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналСообщенийДатаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ЖурналСообщенийДатаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ЖурналСообщенийДатаМегапрайс" id="47">
+					<DataPath>Объект.ТаблицаНоменклатуры.ДатаМегапрайс</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЖурналСообщенийДатаМегапрайсКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ЖурналСообщенийДатаМегапрайсРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.мегапрайсСлужебнаяОбработка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СделатьЗапрос" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать запрос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать запрос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьТаблицуНоменклатуры</Action>
+		</Command>
+		<Command name="SubSysПерейтиНаСайтРазработчика" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Sub sys перейти на сайт разработчика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Sub sys перейти на сайт разработчика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SubSysПерейтиНаСайтРазработчика</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаписатьНоменклатуру" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать номенклатуру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать номенклатуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьНоменклатуру</Action>
+		</Command>
+		<Command name="Очистить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Очистить</Action>
+		</Command>
+	</Commands>
+</Form>

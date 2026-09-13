@@ -1,0 +1,1523 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка использования своего веб-адреса</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<VerticalSpacing>Double</VerticalSpacing>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСоздатьОбращениеВТехническуюПоддержку" id="237">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьОбращениеВТехническуюПоддержку</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьОбращениеВТехническуюПоддержкуРасширеннаяПодсказка" id="238"/>
+			</Button>
+			<ButtonGroup name="ФормаГруппа1" id="243">
+				<ExtendedTooltip name="ФормаГруппа1РасширеннаяПодсказка" id="244"/>
+				<ChildItems>
+					<Button name="Сохранить" id="57">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.Сохранить</CommandName>
+						<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="58"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="176">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="177"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДоменноеИмя" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа доменное имя</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа доменное имя</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДоменноеИмяРасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДоменПользователя" id="214">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа домен пользователя</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа домен пользователя</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДоменПользователяРасширеннаяПодсказка" id="215"/>
+							<ChildItems>
+								<InputField name="ДоменПользователя" id="1">
+									<DataPath>ДоменПользователя</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Веб-адрес</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="ДоменПользователяКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="ДоменПользователяРасширеннаяПодсказка" id="3"/>
+									<Events>
+										<Event name="OnChange">ДоменПользователяПриИзменении</Event>
+									</Events>
+								</InputField>
+								<Button name="Отключить" id="212">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.Отключить</CommandName>
+									<ExtendedTooltip name="ОтключитьРасширеннаяПодсказка" id="213"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="ПанельПроверкаДоменаПользователя" id="106">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Панель проверка домена пользователя</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Панель проверка домена пользователя</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ПанельПроверкаДоменаПользователяРасширеннаяПодсказка" id="107"/>
+							<ChildItems>
+								<Page name="СтраницаПроверкаДоменаПользователяОжидание" id="108">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя ожидание</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя ожидание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<ExtendedTooltip name="СтраницаПроверкаДоменаПользователяОжиданиеРасширеннаяПодсказка" id="109"/>
+									<ChildItems>
+										<UsualGroup name="Группа1" id="247">
+											<HorizontalStretch>true</HorizontalStretch>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>auto</BackColor>
+											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="248"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияКартинкаПроверкаАдресаСайтаОжидание" id="110">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация картинка проверка адреса сайта ожидание</v8:content>
+														</v8:item>
+													</Title>
+													<PictureSize>AutoSize</PictureSize>
+													<Picture>
+														<xr:Ref>CommonPicture.Маг1СДлительнаяОперация16</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияКартинкаПроверкаАдресаСайтаОжиданиеКонтекстноеМеню" id="111"/>
+													<ExtendedTooltip name="ДекорацияКартинкаПроверкаАдресаСайтаОжиданиеРасширеннаяПодсказка" id="112"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияНадписьПроверкаАдресаСайтаОжидание" id="113">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка доступности адреса...</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияНадписьПроверкаАдресаСайтаОжиданиеКонтекстноеМеню" id="114"/>
+													<ExtendedTooltip name="ДекорацияНадписьПроверкаАдресаСайтаОжиданиеРасширеннаяПодсказка" id="115"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаПроверкаДоменаПользователяНеВыполнялась" id="116">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя не выполнялась</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя не выполнялась</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<ExtendedTooltip name="СтраницаПроверкаДоменаПользователяНеВыполняласьРасширеннаяПодсказка" id="117"/>
+									<ChildItems>
+										<UsualGroup name="Группа2" id="249">
+											<HorizontalStretch>true</HorizontalStretch>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>auto</BackColor>
+											<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="250"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияКартинкаПроверкаАдресаСайтаНеВыполнялась" id="118">
+													<Width>2</Width>
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация картинка проверка адреса сайта не выполнялась</v8:content>
+														</v8:item>
+													</Title>
+													<PictureSize>AutoSize</PictureSize>
+													<Picture>
+														<xr:Ref>CommonPicture.Маг1С_Информация</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияКартинкаПроверкаАдресаСайтаНеВыполняласьКонтекстноеМеню" id="119"/>
+													<ExtendedTooltip name="ДекорацияКартинкаПроверкаАдресаСайтаНеВыполняласьРасширеннаяПодсказка" id="120"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияНадписьПроверкаАдресаСайтаНеВыполнялась" id="121">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Адрес сайта не задан.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияНадписьПроверкаАдресаСайтаНеВыполняласьКонтекстноеМеню" id="122"/>
+													<ExtendedTooltip name="ДекорацияНадписьПроверкаАдресаСайтаНеВыполняласьРасширеннаяПодсказка" id="123"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаПроверкаДоменаПользователяУспешно" id="124">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя успешно</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя успешно</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<ExtendedTooltip name="СтраницаПроверкаДоменаПользователяУспешноРасширеннаяПодсказка" id="125"/>
+									<ChildItems>
+										<UsualGroup name="Группа3" id="251">
+											<HorizontalStretch>true</HorizontalStretch>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>auto</BackColor>
+											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="252"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияКартинкаПроверкаАдресаСайтаУспешно" id="126">
+													<Width>2</Width>
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация картинка проверка адреса сайта ожидание</v8:content>
+														</v8:item>
+													</Title>
+													<PictureSize>AutoSize</PictureSize>
+													<Picture>
+														<xr:Ref>CommonPicture.Маг1С_Успешно</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияКартинкаПроверкаАдресаСайтаУспешноКонтекстноеМеню" id="127"/>
+													<ExtendedTooltip name="ДекорацияКартинкаПроверкаАдресаСайтаУспешноРасширеннаяПодсказка" id="128"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияНадписьПроверкаАдресаСайтаУспешно" id="129">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Адрес сайта доступен для подключения к веб-витрине</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияНадписьПроверкаАдресаСайтаУспешноКонтекстноеМеню" id="130"/>
+													<ExtendedTooltip name="ДекорацияНадписьПроверкаАдресаСайтаУспешноРасширеннаяПодсказка" id="131"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаПроверкаДоменаПользователяНедоступна" id="132">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя недоступна</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя недоступна</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<ExtendedTooltip name="СтраницаПроверкаДоменаПользователяНедоступнаРасширеннаяПодсказка" id="133"/>
+									<ChildItems>
+										<UsualGroup name="Группа4" id="253">
+											<HorizontalStretch>true</HorizontalStretch>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>auto</BackColor>
+											<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="254"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияКартинкаПроверкаАдресаСайтаНедоступен" id="134">
+													<Width>2</Width>
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация картинка проверка адреса сайта недоступен</v8:content>
+														</v8:item>
+													</Title>
+													<PictureSize>AutoSize</PictureSize>
+													<Picture>
+														<xr:Ref>CommonPicture.Маг1С_Предупреждение</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияКартинкаПроверкаАдресаСайтаНедоступенКонтекстноеМеню" id="135"/>
+													<ExtendedTooltip name="ДекорацияКартинкаПроверкаАдресаСайтаНедоступенРасширеннаяПодсказка" id="136"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияНадписьПроверкаАдресаСайтаНедоступен" id="137">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>К такому адресу уже подключена другая веб-витрина</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияНадписьПроверкаАдресаСайтаНедоступенКонтекстноеМеню" id="138"/>
+													<ExtendedTooltip name="ДекорацияНадписьПроверкаАдресаСайтаНедоступенРасширеннаяПодсказка" id="139"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаПроверкаДоменаПользователяОшибка" id="140">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя ошибка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя ошибка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<ExtendedTooltip name="СтраницаПроверкаДоменаПользователяОшибкаРасширеннаяПодсказка" id="141"/>
+									<ChildItems>
+										<UsualGroup name="Группа5" id="255">
+											<HorizontalStretch>true</HorizontalStretch>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>auto</BackColor>
+											<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="256"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияКартинкаПроверкаАдресаСайтаОшибка" id="142">
+													<Width>2</Width>
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация картинка проверка адреса сайта ожидание</v8:content>
+														</v8:item>
+													</Title>
+													<PictureSize>AutoSize</PictureSize>
+													<Picture>
+														<xr:Ref>CommonPicture.Маг1С_Ошибка</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияКартинкаПроверкаАдресаСайтаОшибкаКонтекстноеМеню" id="143"/>
+													<ExtendedTooltip name="ДекорацияКартинкаПроверкаАдресаСайтаОшибкаРасширеннаяПодсказка" id="144"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияНадписьПроверкаАдресаСайтаОшибка" id="145">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Что-то пошло не так... (подробнее - см. &lt;link ОткрытьЖурналРегистрации&gt;Журнал регистрации&lt;/&gt;) &lt;link ПовторитьПроверкуДоменаПользователя&gt;Повторить&lt;/&gt;</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияНадписьПроверкаАдресаСайтаОшибкаКонтекстноеМеню" id="146"/>
+													<ExtendedTooltip name="ДекорацияНадписьПроверкаАдресаСайтаОшибкаРасширеннаяПодсказка" id="147"/>
+													<Events>
+														<Event name="URLProcessing">ДекорацияНадписьПроверкаАдресаСайтаОшибкаОбработкаНавигационнойСсылки</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаПроверкаДоменаПользователяЗарегистрирован" id="148">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя зарегистрирован</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя зарегистрирован</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<ExtendedTooltip name="СтраницаПроверкаДоменаПользователяЗарегистрированРасширеннаяПодсказка" id="149"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияКартинкаДоменноеИмяСтатусПодключен" id="181">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация картинка проверка адреса сайта ожидание</v8:content>
+												</v8:item>
+											</Title>
+											<PictureSize>AutoSize</PictureSize>
+											<Picture>
+												<xr:Ref>CommonPicture.Маг1С_Успешно</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияКартинкаДоменноеИмяСтатусПодключенКонтекстноеМеню" id="182"/>
+											<ExtendedTooltip name="ДекорацияКартинкаДоменноеИмяСтатусПодключенРасширеннаяПодсказка" id="183"/>
+										</PictureDecoration>
+										<PictureDecoration name="ДекорацияКартинкаДоменноеИмяСтатусОшибка" id="184">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация картинка проверка адреса сайта ожидание</v8:content>
+												</v8:item>
+											</Title>
+											<PictureSize>AutoSize</PictureSize>
+											<Picture>
+												<xr:Ref>CommonPicture.Маг1С_Предупреждение</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияКартинкаДоменноеИмяСтатусОшибкаКонтекстноеМеню" id="185"/>
+											<ExtendedTooltip name="ДекорацияКартинкаДоменноеИмяСтатусОшибкаРасширеннаяПодсказка" id="186"/>
+										</PictureDecoration>
+										<PictureDecoration name="ДекорацияКартинкаДоменноеИмяСтатусПроверка" id="178">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация картинка проверка адреса сайта не выполнялась</v8:content>
+												</v8:item>
+											</Title>
+											<PictureSize>AutoSize</PictureSize>
+											<Picture>
+												<xr:Ref>CommonPicture.Маг1С_Информация</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияКартинкаДоменноеИмяСтатусПроверкаКонтекстноеМеню" id="179"/>
+											<ExtendedTooltip name="ДекорацияКартинкаДоменноеИмяСтатусПроверкаРасширеннаяПодсказка" id="180"/>
+										</PictureDecoration>
+										<LabelDecoration name="ДекорацияДоменноеИмяСтатус" id="153">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Статус: Работает</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияДоменноеИмяСтатусКонтекстноеМеню" id="154"/>
+											<ExtendedTooltip name="ДекорацияДоменноеИмяСтатусРасширеннаяПодсказка" id="155"/>
+											<Events>
+												<Event name="URLProcessing">ДекорацияИнформацияОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаПроверкаДоменаПользователяБудетОтключен" id="165">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя недоступна</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница проверка домена пользователя недоступна</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<ExtendedTooltip name="СтраницаПроверкаДоменаПользователяБудетОтключенРасширеннаяПодсказка" id="166"/>
+									<ChildItems>
+										<UsualGroup name="Группа6" id="257">
+											<HorizontalStretch>true</HorizontalStretch>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>auto</BackColor>
+											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="258"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияКартинкаПроверкаАдресаБудетОтключен" id="167">
+													<Width>2</Width>
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация картинка проверка адреса сайта недоступен</v8:content>
+														</v8:item>
+													</Title>
+													<PictureSize>AutoSize</PictureSize>
+													<Picture>
+														<xr:Ref>CommonPicture.Маг1С_Предупреждение</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияКартинкаПроверкаАдресаБудетОтключенКонтекстноеМеню" id="168"/>
+													<ExtendedTooltip name="ДекорацияКартинкаПроверкаАдресаБудетОтключенРасширеннаяПодсказка" id="169"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияНадписьПроверкаАдресаБудетОтключен" id="170">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>При сохранении текущее подключенное имя домена будет отключено от витрины</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияНадписьПроверкаАдресаБудетОтключенКонтекстноеМеню" id="171"/>
+													<ExtendedTooltip name="ДекорацияНадписьПроверкаАдресаБудетОтключенРасширеннаяПодсказка" id="172"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройкиДоменаПользователя" id="104">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки домена пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки домена пользователя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиДоменаПользователяРасширеннаяПодсказка" id="105"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкиДоменаПользователяЗаголовок" id="205">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки домена пользователя заголовок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<HorizontalSpacing>Half</HorizontalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиДоменаПользователяЗаголовокРасширеннаяПодсказка" id="206"/>
+					<ChildItems>
+						<InputField name="НастройкиДоменаПользователя" id="101">
+							<DataPath>НастройкиДоменаПользователя</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки ресурсных записей</v8:content>
+								</v8:item>
+							</Title>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>3</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>3</MaxHeight>
+							<VerticalStretch>false</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите веб-адрес и скопируйте отсуюда настройки ресурсных записей</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="НастройкиДоменаПользователяКонтекстноеМеню" id="102"/>
+							<ExtendedTooltip name="НастройкиДоменаПользователяРасширеннаяПодсказка" id="103"/>
+						</InputField>
+						<Button name="СкопироватьНастройкиДоменаВБуферОбмена" id="210">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Command.СкопироватьНастройкиДоменаВБуферОбмена</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Копировать</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СкопироватьНастройкиДоменаВБуферОбменаРасширеннаяПодсказка" id="211"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ДекорацияНастройкиДоменаПользователяПоясненение" id="98">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Витрина будет открываться по указанному веб-адресу только после того, как вы добавите все указанные ресурсные записи 
+в личном кабинете сервиса, через который вы регистрировали доменное имя. Инструкции по добавлению записей обычно 
+размещены на сайтах сервисов. Например, &lt;link https://www.nic.ru/help/rabota-s-resursnymi-zapisyami_11686.html&gt;Работа с ресурсными записями на nic.ru&lt;/&gt; или &lt;link https://help.reg.ru/support/dns-servery-i-nastroyka-zony/nastroyka-resursnykh-zapisey-dns/nastroyka-resursnykh-zapisey-v-lichnom-kabinete&gt;Настройка ресурсных записей на reg.ru&lt;/&gt;</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияНастройкиДоменаПользователяПоясненениеКонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="ДекорацияНастройкиДоменаПользователяПоясненениеРасширеннаяПодсказка" id="100"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаТипСертификатаЗаголовок" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>SSL-сертификат домена:</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Веб-витрина работает только через защищенный протокол https, поэтому необходим сертификат безопасности, соотвествующий указанному веб-адресу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаТипСертификатаЗаголовокРасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаТипСертификата" id="163">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тип сертификата</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тип сертификата</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаТипСертификатаРасширеннаяПодсказка" id="164"/>
+					<ChildItems>
+						<RadioButtonField name="ТипСертификатаДоменаПользователя" id="239">
+							<DataPath>ТипСертификатаДоменаПользователя</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текст подсказки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+							<RadioButtonType>Tumbler</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Получать автоматическии</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Automatic</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Использовать загруженный</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Manual</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ТипСертификатаДоменаПользователяКонтекстноеМеню" id="240"/>
+							<ExtendedTooltip name="ТипСертификатаДоменаПользователяРасширеннаяПодсказка" id="241">
+								<AutoMaxWidth>false</AutoMaxWidth>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">ТипСертификатаДоменаПользователяПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<UsualGroup name="ГруппаСертификатРучнойПоля" id="156">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа сертификат ручной поля</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа сертификат ручной поля</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСертификатРучнойПоляРасширеннаяПодсказка" id="157"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаИнформацияОТекущемСертификате" id="71">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа информация о текущем сертификате</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа информация о текущем сертификате</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>AlwaysHorizontal</Group>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>auto</BackColor>
+									<ExtendedTooltip name="ГруппаИнформацияОТекущемСертификатеРасширеннаяПодсказка" id="72"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияКартинкаДекорацияСертификатСтатусПодключен" id="187">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация картинка проверка адреса сайта ожидание</v8:content>
+												</v8:item>
+											</Title>
+											<PictureSize>AutoSize</PictureSize>
+											<Picture>
+												<xr:Ref>CommonPicture.Маг1С_Успешно</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияКартинкаДекорацияСертификатСтатусПодключенКонтекстноеМеню" id="188"/>
+											<ExtendedTooltip name="ДекорацияКартинкаДекорацияСертификатСтатусПодключенРасширеннаяПодсказка" id="189"/>
+										</PictureDecoration>
+										<PictureDecoration name="ДекорацияКартинкаДекорацияСертификатСтатусОшибка" id="190">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация картинка проверка адреса сайта ожидание</v8:content>
+												</v8:item>
+											</Title>
+											<PictureSize>AutoSize</PictureSize>
+											<Picture>
+												<xr:Ref>CommonPicture.Маг1С_Ошибка</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияКартинкаДекорацияСертификатСтатусОшибкаКонтекстноеМеню" id="191"/>
+											<ExtendedTooltip name="ДекорацияКартинкаДекорацияСертификатСтатусОшибкаРасширеннаяПодсказка" id="192"/>
+										</PictureDecoration>
+										<PictureDecoration name="ДекорацияКартинкаДекорацияСертификатСтатусПроверка" id="193">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация картинка проверка адреса сайта не выполнялась</v8:content>
+												</v8:item>
+											</Title>
+											<PictureSize>AutoSize</PictureSize>
+											<Picture>
+												<xr:Ref>CommonPicture.Маг1С_Информация</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияКартинкаДекорацияСертификатСтатусПроверкаКонтекстноеМеню" id="194"/>
+											<ExtendedTooltip name="ДекорацияКартинкаДекорацияСертификатСтатусПроверкаРасширеннаяПодсказка" id="195"/>
+										</PictureDecoration>
+										<UsualGroup name="ГруппаИнформацияОТекущемСертификатеТекст" id="245">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа информация о текущем сертификате текст</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа информация о текущем сертификате текст</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаИнформацияОТекущемСертификатеТекстРасширеннаяПодсказка" id="246"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияСертификатИнформация" id="68">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Действует до 24.12.2025</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияСертификатИнформацияКонтекстноеМеню" id="69"/>
+													<ExtendedTooltip name="ДекорацияСертификатИнформацияРасширеннаяПодсказка" id="70"/>
+													<Events>
+														<Event name="URLProcessing">ДекорацияИнформацияОбработкаНавигационнойСсылки</Event>
+													</Events>
+												</LabelDecoration>
+												<Button name="ЗагрузитьНовыйСертификат" id="64">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ЗагрузитьНовыйСертификат</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Загрузить новый</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ЗагрузитьНовыйСертификатРасширеннаяПодсказка" id="65"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<Pages name="ГруппаЗагрузкаСертификата" id="196">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа загрузка сертификата</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа загрузка сертификата</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>TabsOnTop</PagesRepresentation>
+									<ExtendedTooltip name="ГруппаЗагрузкаСертификатаРасширеннаяПодсказка" id="197"/>
+									<Events>
+										<Event name="OnCurrentPageChange">ГруппаЗагрузкаСертификатаПриСменеСтраницы</Event>
+									</Events>
+									<ChildItems>
+										<Page name="ГруппаЗагрузкаСертификатаИзНесколькихФайлов" id="200">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По частям</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа загрузка сертификата из нескольких файлов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаЗагрузкаСертификатаИзНесколькихФайловРасширеннаяПодсказка" id="201"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаСертификат" id="42">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сертификат</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сертификат</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<VerticalSpacing>Half</VerticalSpacing>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСертификатРасширеннаяПодсказка" id="43"/>
+													<ChildItems>
+														<InputField name="Сертификат" id="7">
+															<DataPath>Сертификат</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сертификат</v8:content>
+																</v8:item>
+															</Title>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MultiLine>true</MultiLine>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<AutoMarkIncomplete>true</AutoMarkIncomplete>
+															<ContextMenu name="СертификатКонтекстноеМеню" id="8"/>
+															<ExtendedTooltip name="СертификатРасширеннаяПодсказка" id="9"/>
+														</InputField>
+														<Button name="ЗагрузитьСертификат" id="33">
+															<Type>Hyperlink</Type>
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<CommandName>Form.Command.ЗагрузитьСертификат</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Заполнить из файла</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ЗагрузитьСертификатРасширеннаяПодсказка" id="34"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаЦепочкаСертификатов" id="44">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа цепочка сертификатов</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа цепочка сертификатов</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<VerticalSpacing>Half</VerticalSpacing>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаЦепочкаСертификатовРасширеннаяПодсказка" id="45"/>
+													<ChildItems>
+														<InputField name="ЦепочкаСертификатов" id="13">
+															<DataPath>ЦепочкаСертификатов</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Цепочка промежуточных и корневой сертификаты</v8:content>
+																</v8:item>
+															</Title>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MultiLine>true</MultiLine>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<AutoMarkIncomplete>true</AutoMarkIncomplete>
+															<ContextMenu name="ЦепочкаСертификатовКонтекстноеМеню" id="14"/>
+															<ExtendedTooltip name="ЦепочкаСертификатовРасширеннаяПодсказка" id="15"/>
+														</InputField>
+														<Button name="ЗагрузитьЦепочкуСертификатов" id="40">
+															<Type>Hyperlink</Type>
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<CommandName>Form.Command.ЗагрузитьЦепочкуСертификатов</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Заполнить из файла</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ЗагрузитьЦепочкуСертификатовРасширеннаяПодсказка" id="41"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаКлюч" id="46">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа ключ</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа ключ</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<VerticalSpacing>Half</VerticalSpacing>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКлючРасширеннаяПодсказка" id="47"/>
+													<ChildItems>
+														<InputField name="Ключ" id="10">
+															<DataPath>Ключ</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Приватный (закрытый) ключ</v8:content>
+																</v8:item>
+															</Title>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MultiLine>true</MultiLine>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<AutoMarkIncomplete>true</AutoMarkIncomplete>
+															<ContextMenu name="КлючКонтекстноеМеню" id="11"/>
+															<ExtendedTooltip name="КлючРасширеннаяПодсказка" id="12"/>
+														</InputField>
+														<Button name="ЗагрузитьКлюч" id="53">
+															<Type>Hyperlink</Type>
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<CommandName>Form.Command.ЗагрузитьКлюч</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Заполнить из файла</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ЗагрузитьКлючРасширеннаяПодсказка" id="54"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+										<Page name="ГруппаЗагрузкаСертификатаОднимФайлом" id="198">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Целиком</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа загрузка сертификата одним файлом</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<ExtendedTooltip name="ГруппаЗагрузкаСертификатаОднимФайломРасширеннаяПодсказка" id="199"/>
+											<ChildItems>
+												<InputField name="СертификатОднимФайлом" id="219">
+													<DataPath>СертификатОднимФайлом</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сертификат, цепочка промежуточных и корневой сертификаты, приватный (закрытый) ключ</v8:content>
+														</v8:item>
+													</Title>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MultiLine>true</MultiLine>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ContextMenu name="СертификатОднимФайломКонтекстноеМеню" id="220"/>
+													<ExtendedTooltip name="СертификатОднимФайломРасширеннаяПодсказка" id="221"/>
+												</InputField>
+												<Button name="ЗагрузитьСертификатОднимФайлом" id="224">
+													<Type>Hyperlink</Type>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<CommandName>Form.Command.ЗагрузитьСертификатОднимФайлом</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Заполнить из файла</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ЗагрузитьСертификатОднимФайломРасширеннаяПодсказка" id="225"/>
+												</Button>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДоменПользователя" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Домен пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипСертификатаДоменаПользователя" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип сертификата домена пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Сертификат" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сертификат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Ключ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦепочкаСертификатов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цепочка сертификатов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтрокаСпискаВитрин" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка списка витрин</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="НастройкиДоменаПользователя" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки домена пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыСобытия" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры события</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ДоменПользователяПрошелПроверку" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Домен пользователя прошел проверку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗарегистрированныйДоменПользователя" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрированный домен пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛогинИПП" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин ИПП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьТекущийСертификат" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать текущий сертификат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СертификатОднимФайлом" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сертификат одним файлом</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="EMailДляОтправкиУведомлений" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>email для важных сообщений о работе витрины</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ЕстьПлатныйТариф" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть платный тариф</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьСертификат" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сертификат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сертификат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Маг1С_Заполнить</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьСертификат</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ЗагрузитьКлюч" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить ключ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить ключ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Маг1С_Заполнить</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьКлюч</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ЗагрузитьЦепочкуСертификатов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить цепочку сертификатов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить цепочку сертификатов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Маг1С_Заполнить</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьЦепочкуСертификатов</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="Сохранить" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сохранить</Action>
+		</Command>
+		<Command name="ЗагрузитьНовыйСертификат" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить новый сертификат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить новый сертификат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьНовыйСертификат</Action>
+		</Command>
+		<Command name="СкопироватьНастройкиДоменаВБуферОбмена" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать настройки домена в буфер обмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать настройки домена в буфер обмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Маг1С_СкопироватьВБуфер</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СкопироватьНастройкиДоменаВБуферОбмена</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="Отключить" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить от витрины</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отключить</Action>
+		</Command>
+		<Command name="ЗагрузитьСертификатОднимФайлом" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сертификат одним файлом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сертификат одним файлом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Маг1С_Заполнить</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьСертификатОднимФайлом</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СоздатьОбращениеВТехническуюПоддержку" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Техподдержка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать обращение в техническую поддержку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НадписьОбращениеВТехническуюПоддержкуНажатие</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ДоменПользователя">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ТипСертификатаДоменаПользователя">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СтрокаСпискаВитрин">
+			<Type/>
+		</Parameter>
+		<Parameter name="ЛогинИПП">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ЗарегистрированныйДоменПользователя">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="EMailДляОтправкиУведомлений">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ЕстьПлатныйТариф">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

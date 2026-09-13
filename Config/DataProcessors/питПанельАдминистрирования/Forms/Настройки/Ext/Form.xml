@@ -1,0 +1,2267 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияРелиз" id="6">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+			<ContextMenu name="ДекорацияРелизКонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="ДекорацияРелизРасширеннаяПодсказка" id="8"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаНастройки" id="152">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>120</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="153"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкиЛево" id="154">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>60</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиЛевоРасширеннаяПодсказка" id="155"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОбщие" id="44">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Общие</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа общие</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаОбщиеРасширеннаяПодсказка" id="45"/>
+							<ChildItems>
+								<InputField name="питПрефиксШтрихКода" id="20">
+									<DataPath>НаборКонстант.питПрефиксШтрихКода</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Префикс штрихкода</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="питПрефиксШтрихКодаКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="питПрефиксШтрихКодаРасширеннаяПодсказка" id="22">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Префикс, который  используется при формировании штрихкодов общепита (в справочнике "Карточки" при нажатии на кнопку "Сформировать штрихкод").</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питПрефиксШтрихКодаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питПрефиксШтрихКодаДекорация" id="146">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Префикс, который  используется при формировании штрихкодов общепита (в справочнике "Карточки" при нажатии на кнопку "Сформировать штрихкод").</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питПрефиксШтрихКодаДекорацияКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="питПрефиксШтрихКодаДекорацияРасширеннаяПодсказка" id="148"/>
+								</LabelDecoration>
+								<InputField name="питНормативнаяЦена" id="17">
+									<DataPath>НаборКонстант.питНормативнаяЦена</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="питНормативнаяЦенаКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="питНормативнаяЦенаРасширеннаяПодсказка" id="19">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Нормативный тип цен, использующийся в объектах "Общепит".</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питНормативнаяЦенаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питНормативнаяЦенаДекорация" id="149">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Нормативный тип цен, использующийся в объектах "Общепит".</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питНормативнаяЦенаДекорацияКонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="питНормативнаяЦенаДекорацияРасширеннаяПодсказка" id="151"/>
+								</LabelDecoration>
+								<InputField name="питМоментФормированияНормативнойЦены" id="392">
+									<DataPath>НаборКонстант.питМоментФормированияНормативнойЦены</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="питМоментФормированияНормативнойЦеныКонтекстноеМеню" id="393"/>
+									<ExtendedTooltip name="питМоментФормированияНормативнойЦеныРасширеннаяПодсказка" id="394"/>
+									<Events>
+										<Event name="OnChange">питМоментФормированияНормативнойЦеныПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питИспользоватьВидыОбработкиСырьяДекорация1" id="398">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Регистрация нормативной цены при проведении документов приобретения или перемещения в производство.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питИспользоватьВидыОбработкиСырьяДекорация1КонтекстноеМеню" id="399"/>
+									<ExtendedTooltip name="питИспользоватьВидыОбработкиСырьяДекорация1РасширеннаяПодсказка" id="400"/>
+								</LabelDecoration>
+								<CheckBoxField name="питИспользоватьВидыОбработкиСырья" id="75">
+									<DataPath>НаборКонстант.питИспользоватьВидыОбработкиСырья</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питИспользоватьВидыОбработкиСырьяКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="питИспользоватьВидыОбработкиСырьяРасширеннаяПодсказка" id="77">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Признак использования механизма видов обработок сырья</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питИспользоватьВидыОбработкиСырьяПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelDecoration name="питИспользоватьВидыОбработкиСырьяДекорация" id="158">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Признак использования механизма видов обработок сырья</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питИспользоватьВидыОбработкиСырьяДекорацияКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="питИспользоватьВидыОбработкиСырьяДекорацияРасширеннаяПодсказка" id="160"/>
+								</LabelDecoration>
+								<InputField name="питРежимКорректировкиКоличестваВИнвентаризации" id="122">
+									<DataPath>НаборКонстант.питРежимКорректировкиКоличестваВИнвентаризации</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Опредяет режим корректировки количества в документе "Инвентаризация товаров общепита" по умолчанию</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="питРежимКорректировкиКоличестваВИнвентаризацииКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="питРежимКорректировкиКоличестваВИнвентаризацииРасширеннаяПодсказка" id="124">
+										<AutoMaxWidth>false</AutoMaxWidth>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питРежимКорректировкиКоличестваВИнвентаризацииПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питРежимКорректировкиКоличестваВИнвентаризацииДекорация" id="161">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Опредяет режим корректировки количества в документе "Инвентаризация товаров общепита" по умолчанию</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питРежимКорректировкиКоличестваВИнвентаризацииДекорацияКонтекстноеМеню" id="162"/>
+									<ExtendedTooltip name="питРежимКорректировкиКоличестваВИнвентаризацииДекорацияРасширеннаяПодсказка" id="163"/>
+								</LabelDecoration>
+								<InputField name="питОтклонениеОтБазовойВеличиныПриЗаполненииАктаПроработки" id="128">
+									<DataPath>НаборКонстант.питОтклонениеОтБазовойВеличиныПриЗаполненииАктаПроработки</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="питОтклонениеОтБазовойВеличиныПриЗаполненииАктаПроработкиКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="питОтклонениеОтБазовойВеличиныПриЗаполненииАктаПроработкиРасширеннаяПодсказка" id="130">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<HorizontalStretch>true</HorizontalStretch>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Определяет процент отклонения от базовой величины при заполнении акта проработки на основании рецептур</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питОтклонениеОтБазовойВеличиныПриЗаполненииАктаПроработкиПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питОтклонениеОтБазовойВеличиныПриЗаполненииАктаПроработкиДекорация" id="164">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Определяет процент отклонения от базовой величины при заполнении акта проработки на основании рецептур</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питОтклонениеОтБазовойВеличиныПриЗаполненииАктаПроработкиДекорацияКонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="питОтклонениеОтБазовойВеличиныПриЗаполненииАктаПроработкиДекорацияРасширеннаяПодсказка" id="166"/>
+								</LabelDecoration>
+								<InputField name="питКоличествоДляРасчетаПоФормулеВРецептурах" id="137">
+									<DataPath>НаборКонстант.питКоличествоДляРасчетаПоФормулеВРецептурах</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="питКоличествоДляРасчетаПоФормулеВРецептурахКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="питКоличествоДляРасчетаПоФормулеВРецептурахРасширеннаяПодсказка" id="139">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройка определяет, к какому количеству будет применяться формула для рассчитываемых строк в рецептурах </v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питКоличествоДляРасчетаПоФормулеВРецептурахПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питКоличествоДляРасчетаПоФормулеВРецептурахДекорация" id="167">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка определяет, к какому количеству будет применяться формула для рассчитываемых строк в рецептурах </v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питКоличествоДляРасчетаПоФормулеВРецептурахДекорацияКонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="питКоличествоДляРасчетаПоФормулеВРецептурахДекорацияРасширеннаяПодсказка" id="169"/>
+								</LabelDecoration>
+								<InputField name="питЕдиницаИзмеренияВыходаВРецептурах" id="140">
+									<DataPath>НаборКонстант.питЕдиницаИзмеренияВыходаВРецептурах</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="питЕдиницаИзмеренияВыходаВРецептурахКонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="питЕдиницаИзмеренияВыходаВРецептурахРасширеннаяПодсказка" id="142">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Весовая единица измерения, которая используется для подсчета выхода блюда в рецептурах</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питЕдиницаИзмеренияВыходаВРецептурахПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питЕдиницаИзмеренияВыходаВРецептурахДекорация" id="170">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Весовая единица измерения, которая используется для подсчета выхода блюда в рецептурах</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питЕдиницаИзмеренияВыходаВРецептурахДекорацияКонтекстноеМеню" id="171"/>
+									<ExtendedTooltip name="питЕдиницаИзмеренияВыходаВРецептурахДекорацияРасширеннаяПодсказка" id="172"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТиповыеДокументы" id="52">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подкладные документы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа типовые документы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаТиповыеДокументыРасширеннаяПодсказка" id="53"/>
+							<ChildItems>
+								<CheckBoxField name="питФормироватьТиповыеДокументыПриЗаписиДокументаПит" id="35">
+									<DataPath>НаборКонстант.питФормироватьТиповыеДокументыПриЗаписиДокументапит</DataPath>
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Автоформирование типовых документов</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питФормироватьТиповыеДокументыПриЗаписиДокументаПитКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="питФормироватьТиповыеДокументыПриЗаписиДокументаПитРасширеннаяПодсказка" id="37">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Активизация  флага включает автоматическое формирование типовых документов по документам общепит в момент их записи.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питФормироватьТиповыеДокументыПриЗаписиДокументапитПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="питФормироватьДокументыПроизводства22" id="72">
+									<DataPath>НаборКонстант.питФормироватьДокументыПроизводства22</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Определяет необходимость формирования подкладных документов новой схемы производства версии 2.2</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питФормироватьДокументыПроизводства22КонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="питФормироватьДокументыПроизводства22РасширеннаяПодсказка" id="74">
+										<AutoMaxWidth>false</AutoMaxWidth>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питФормироватьДокументыПроизводства22ПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="питФормироватьСпецификацииПоРецептурам" id="41">
+									<DataPath>НаборКонстант.питФормироватьСпецификацииПоРецептурам</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питФормироватьСпецификацииПоРецептурамКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="питФормироватьСпецификацииПоРецептурамРасширеннаяПодсказка" id="43">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Определяет необходимость формирования ресурсных спецификаций по документам "Рецептура"</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питФормироватьСпецификацииПоРецептурамПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="питФормироватьРазрешенияНаЗаменуПоРегистрациямЗамен" id="116">
+									<DataPath>НаборКонстант.питФормироватьРазрешенияНаЗаменуПоРегистрациямЗамен</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питФормироватьРазрешенияНаЗаменуПоРегистрациямЗаменКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="питФормироватьРазрешенияНаЗаменуПоРегистрациямЗаменРасширеннаяПодсказка" id="118">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Определяет необходимость формирования документов "Разрешение на замену" по документам "Регистрация замен"</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питФормироватьРазрешенияНаЗаменуПоРегистрациямЗаменПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="питФормироватьСкладскиеАктыПоИнвентаризацииТоваров" id="119">
+									<DataPath>НаборКонстант.питФормироватьСкладскиеАктыПоИнвентаризацииТоваров</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Определяет необходимость формирования документов "Оприходование излишков товаров" и "Списание недостач товаров" по "Инвентаризации товаров общепита"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питФормироватьСкладскиеАктыПоИнвентаризацииТоваровКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="питФормироватьСкладскиеАктыПоИнвентаризацииТоваровРасширеннаяПодсказка" id="121">
+										<AutoMaxWidth>false</AutoMaxWidth>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питФормироватьСкладскиеАктыПоИнвентаризацииТоваровПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="питФормироватьОприходованиеИзлишковПоВыпускуБлюд" id="69">
+									<DataPath>НаборКонстант.питФормироватьОприходованиеИзлишковПоВыпускуБлюд</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питФормироватьОприходованиеИзлишковПоВыпускуБлюдКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="питФормироватьОприходованиеИзлишковПоВыпускуБлюдРасширеннаяПодсказка" id="71">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Определяет необходимость формирования документов "Оприходование излишков" по недостающим ингредиентам в документах "Выпуск блюд", но только при условии, что для цеховой кладовой не установлено использование ордерной схемы при отражении излишков, недостач, пересортицы и порчи.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питФормироватьОприходованиеИзлишковПоВыпускуБлюдПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="питСтатьяОприходованияИзлишков" id="66">
+									<DataPath>НаборКонстант.питСтатьяОприходованияИзлишков</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статья оприходования излишков</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceParameters>
+										<app:item name="Отбор.КонтролироватьЗаполнениеАналитики">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="питСтатьяОприходованияИзлишковКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="питСтатьяОприходованияИзлишковРасширеннаяПодсказка" id="68">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Статья доходов для подстановки в типовой документ "Оприходование излишков товаров"</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питСтатьяОприходованияИзлишковПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питСтатьяОприходованияИзлишковДекорация" id="173">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статья доходов для подстановки в типовой документ "Оприходование излишков товаров"</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питСтатьяОприходованияИзлишковДекорацияКонтекстноеМеню" id="174"/>
+									<ExtendedTooltip name="питСтатьяОприходованияИзлишковДекорацияРасширеннаяПодсказка" id="175"/>
+								</LabelDecoration>
+								<CheckBoxField name="питИспользоватьОтложенноеПроведениеВыпускаБлюд" id="131">
+									<DataPath>НаборКонстант.питИспользоватьОтложенноеПроведениеВыпускаБлюд</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питИспользоватьОтложенноеПроведениеВыпускаБлюдКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="питИспользоватьОтложенноеПроведениеВыпускаБлюдРасширеннаяПодсказка" id="133">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Определяет необходимость использовать очередь проведения для документов "Выпуск блюд"</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питИспользоватьОтложенноеПроведениеВыпускаБлюдПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="питОстанавливатьОбработкуОчередиПриВозникновенииОшибок" id="134">
+									<DataPath>НаборКонстант.питОстанавливатьОбработкуОчередиПриВозникновенииОшибок</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питОстанавливатьОбработкуОчередиПриВозникновенииОшибокКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="питОстанавливатьОбработкуОчередиПриВозникновенииОшибокРасширеннаяПодсказка" id="136">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройка определяет поведение системы при возникновении ошибки обработки очереди отложенного проведения. В случае, если настройка не установлена, то обработка действий будет продолжена начиная со следующего необработанного документа.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питОстанавливатьОбработкуОчередиПриВозникновенииОшибокПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="питСмещатьДатыТиповыхДокументов" id="143">
+									<DataPath>НаборКонстант.питСмещатьДатыТиповыхДокументов</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питСмещатьДатыТиповыхДокументовКонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="питСмещатьДатыТиповыхДокументовРасширеннаяПодсказка" id="145">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>При включенной настройке подкладные документы будут формироваться со смещением по времени для их правильного расположения на оси времени. Например, для документа "Выпуск блюд" подкладной документ "Оприходование излишков товаров" будет сформирован на более раннюю по времени дату, чем "Производство без заказа" и т.д. Время подкладных документов вычисляется автоматически исходя из времени документа общепит.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питСмещатьДатыТиповыхДокументовПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="питОбновлятьКоэффициентДокументаИсточникаПоРегистрацииЗамен" id="375">
+									<DataPath>НаборКонстант.питОбновлятьКоэффициентДокументаИсточникаПоРегистрацииЗамен</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питОбновлятьКоэффициентДокументаИсточникаПоРегистрацииЗаменКонтекстноеМеню" id="376"/>
+									<ExtendedTooltip name="питОбновлятьКоэффициентДокументаИсточникаПоРегистрацииЗаменРасширеннаяПодсказка" id="377">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройка влияет на автоматическое обновление коэффициента замены в исходном документе "Регистрация замен" по подкладному документу при включенном флаге обратимости. Например для позиции номенклатуры с коэффициентом 23 обратный коэффициент будет равен 1/23=0.043. Если же посчитать обратный коэффициент от 0.043, то из-за погрешности округления получим уже 23.256.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питОбновлятьКоэффициентДокументаИсточникаПоРегистрацииЗаменПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаТиповыеДокументы1" id="106">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки для производства 2.2</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа типовые документы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Collapsible</Behavior>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<Representation>NormalSeparation</Representation>
+									<ExtendedTooltip name="ГруппаТиповыеДокументы1РасширеннаяПодсказка" id="107"/>
+									<ChildItems>
+										<InputField name="питПодразделениеПроизводстваПолуфабрикатов" id="81">
+											<DataPath>НаборКонстант.питПодразделениеПроизводстваПолуфабрикатов</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подразделение пр-ва полуфабрикатов</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Left</TitleLocation>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="питПодразделениеПроизводстваПолуфабрикатовКонтекстноеМеню" id="82"/>
+											<ExtendedTooltip name="питПодразделениеПроизводстваПолуфабрикатовРасширеннаяПодсказка" id="83">
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Определяет место, откуда будет браться подразделение при формировании документов "Производство без заказа" по выпуску блюд для вложенных полуфабрикатов. Если выбрано "Подразделение рецептуры" и оно будет отличаться от подразделения в шапке выпуска блюд, то дополнительно будет создан документ "Движение продукции и материалов" с перемещением выпущенного полуфабриката из цеховой кладовой указанной в рецептуре в цеховую кладовую выпуска блюд</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+											<Events>
+												<Event name="OnChange">питПодразделениеПроизводстваПолуфабрикатовПриИзменении</Event>
+											</Events>
+										</InputField>
+										<LabelDecoration name="питПодразделениеПроизводстваПолуфабрикатовДекорация" id="176">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветМикротекста</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Определяет место, откуда будет браться подразделение при формировании документов "Производство без заказа" по выпуску блюд для вложенных полуфабрикатов. Если выбрано "Подразделение рецептуры" и оно будет отличаться от подразделения в шапке выпуска блюд, то дополнительно будет создан документ "Движение продукции и материалов" с перемещением выпущенного полуфабриката из цеховой кладовой указанной в рецептуре в цеховую кладовую выпуска блюд</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="питПодразделениеПроизводстваПолуфабрикатовДекорацияКонтекстноеМеню" id="177"/>
+											<ExtendedTooltip name="питПодразделениеПроизводстваПолуфабрикатовДекорацияРасширеннаяПодсказка" id="178"/>
+										</LabelDecoration>
+										<CheckBoxField name="питПеремещатьБлюдаСРазрешенныхКладовых" id="92">
+											<DataPath>НаборКонстант.питПеремещатьБлюдаСРазрешенныхКладовых</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="питПеремещатьБлюдаСРазрешенныхКладовыхКонтекстноеМеню" id="93"/>
+											<ExtendedTooltip name="питПеремещатьБлюдаСРазрешенныхКладовыхРасширеннаяПодсказка" id="94">
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>При формировании типовых документов по документу "Выпуск блюд" для блюд и полуфабрикатов, не разрешенных к приготовлению в случае их нехватки в кладовой производства будет дополнительно произведен поиск остатков в разрешенных цеховых кладовых и в случае их обнаружения - произведено перемещение остатков в кладовую производства</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+											<Events>
+												<Event name="OnChange">питПеремещатьБлюдаСРазрешенныхКладовыхПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="питОрганизацияПеремещенияДляРеализации" id="95">
+											<DataPath>НаборКонстант.питОрганизацияПеремещенияДляРеализации</DataPath>
+											<TitleLocation>Left</TitleLocation>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="питОрганизацияПеремещенияДляРеализацииКонтекстноеМеню" id="96"/>
+											<ExtendedTooltip name="питОрганизацияПеремещенияДляРеализацииРасширеннаяПодсказка" id="97">
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Настройка определяет, какая организация будет указана в подкладном документе "Двжиение продукции и материалов" для документа "Выпуск блюд с розничной реализацией": непосредственно указанная в документе "Выпуск блюд с розничной реализацией" или из кассы ккм документа</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+											<Events>
+												<Event name="OnChange">питОрганизацияПеремещенияДляРеализацииПриИзменении</Event>
+											</Events>
+										</InputField>
+										<LabelDecoration name="питОрганизацияПеремещенияДляРеализацииДекорация" id="179">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветМикротекста</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Настройка определяет, какая организация будет указана в подкладном документе "Движиение продукции и материалов" для документа "Выпуск блюд с розничной реализацией": непосредственно указанная в документе "Выпуск блюд с розничной реализацией" или из кассы ккм документа</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="питОрганизацияПеремещенияДляРеализацииДекорацияКонтекстноеМеню" id="180"/>
+											<ExtendedTooltip name="питОрганизацияПеремещенияДляРеализацииДекорацияРасширеннаяПодсказка" id="181"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНастройкиУчетаАлкоголя" id="378">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учет алкоголя</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учет алкоголя</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаНастройкиУчетаАлкоголяРасширеннаяПодсказка" id="379"/>
+							<ChildItems>
+								<CheckBoxField name="питВЖурналеАлкоПродукцииИспользоватьТолькоАкты" id="380">
+									<DataPath>НаборКонстант.питВЖурналеАлкоПродукцииИспользоватьТолькоАкты</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При заполнении документа "Акт списания ЕГАИС" использовать только акты</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питВЖурналеАлкоПродукцииИспользоватьТолькоАктыКонтекстноеМеню" id="381"/>
+									<ExtendedTooltip name="питВЖурналеАлкоПродукцииИспользоватьТолькоАктыРасширеннаяПодсказка" id="382">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>При установленном флаге документ "Акт списания ЕГАИС" заполняется только по "Чекам Общепита" алкогольной тары без учета движений. При снятом флаге "Чеки Общепита" используются по настройкам в регистре, для остальной номенклатуры строки заполнения вычисляются по движениям.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питВЖурналеАлкоПродукцииИспользоватьТолькоАктыПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelDecoration name="питНадписьПереходКРегиструАлкоСоответствий" id="383">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настроить использование "Чеков Общепита" по складам</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="питНадписьПереходКРегиструАлкоСоответствийКонтекстноеМеню" id="384"/>
+									<ExtendedTooltip name="питНадписьПереходКРегиструАлкоСоответствийРасширеннаяПодсказка" id="385"/>
+									<Events>
+										<Event name="Click">питНадписьПереходКРегиструАлкоСоответствийНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<CheckBoxField name="питИспользоватьМаркиИСКассовыхСистемПриПроизводстве" id="386">
+									<DataPath>НаборКонстант.питИспользоватьМаркиИСКассовыхСистемПриПроизводстве</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Использовать марки ЕГАИС кассовых систем при производстве</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питИспользоватьМаркиИСКассовыхСистемПриПроизводствеКонтекстноеМеню" id="387"/>
+									<ExtendedTooltip name="питИспользоватьМаркиИСКассовыхСистемПриПроизводствеРасширеннаяПодсказка" id="388">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>    Для отражения использования марок алкоголя при приготовлении система требует оформления документов "Чек общепита" с видом операции "Учет алкоголя" или документов "Акт вскрытия тары".
+    По умолчанию, система использует только марки документа "Акт вскрытия тары". Эта настройка позволяет использовать и марки документов "Чек общепита".</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питИспользоватьМаркиИСКассовыхСистемПриПроизводствеПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="питСписаниеМарокИСПриПроизводстве" id="389">
+									<DataPath>НаборКонстант.питСписаниеМарокИСПриПроизводстве</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Списание марок крепкого алкоголя при производстве</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="питСписаниеМарокИСПриПроизводствеКонтекстноеМеню" id="390"/>
+									<ExtendedTooltip name="питСписаниеМарокИСПриПроизводствеРасширеннаяПодсказка" id="391">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>    Для того чтобы отразить факт приготовления блюд с использованием алкогольных ингредиентов в ЕГАИС, с 01.03.2024 при проведении документов выпуск блюд будут списываться с остатков доступные марки. Эта настройка отвечает за ситуации, когда это необходимо делать.
+	Если выбрать "Не использовать", система в момент проведения операции пропустит списание марок.	
+	Если выбрать "Исключать целевые документы", система будет выполнять списание марок только для документов, которые не являются целевыми. Этот вариант рекомендуется использовать, если кассовая система умеет выгружать использованные при продаже и приготовлении марки.	
+	Если выбрать "Во всех документах", система всегда будет выполнять анализ и списание марок.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питСписаниеМарокИСПриПроизводствеПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНастройкиПраво" id="156">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>60</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиПравоРасширеннаяПодсказка" id="157"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПроизводство" id="46">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Производство блюд</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа производство</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПроизводствоРасширеннаяПодсказка" id="47"/>
+							<ChildItems>
+								<InputField name="питСтатьяЗатратПроизводство" id="32">
+									<DataPath>НаборКонстант.питСтатьяЗатратПроизводство</DataPath>
+									<Visible>false</Visible>
+									<TitleLocation>Top</TitleLocation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="питСтатьяЗатратПроизводствоКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="питСтатьяЗатратПроизводствоРасширеннаяПодсказка" id="34"/>
+									<Events>
+										<Event name="OnChange">питСтатьяЗатратПроизводствоПриИзменении</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="питНеИзменятьРежимСписанияВПроизводствоПоНастройке" id="57">
+									<DataPath>НаборКонстант.питНеИзменятьРежимСписанияВПроизводствоПоНастройке</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питНеИзменятьРежимСписанияВПроизводствоПоНастройкеКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="питНеИзменятьРежимСписанияВПроизводствоПоНастройкеРасширеннаяПодсказка" id="59">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Признак использования настройки режима списания в производство, Истина - не использовать.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питНеИзменятьРежимСписанияВПроизводствоПоНастройкеПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="питРежимРасчетаСписанияВПроизводство" id="54">
+									<DataPath>НаборКонстант.питРежимРасчетаСписанияВПроизводство</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="питРежимРасчетаСписанияВПроизводствоКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="питРежимРасчетаСписанияВПроизводствоРасширеннаяПодсказка" id="56">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройка задает режим расчета списания в производство: по норме, по факту или по норме первого проведения.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питРежимРасчетаСписанияВПроизводствоПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питРежимРасчетаСписанияВПроизводствоДекорация" id="182">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка задает режим расчета списания в производство: по норме, по факту или по норме первого проведения.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питРежимРасчетаСписанияВПроизводствоДекорацияКонтекстноеМеню" id="183"/>
+									<ExtendedTooltip name="питРежимРасчетаСписанияВПроизводствоДекорацияРасширеннаяПодсказка" id="184"/>
+								</LabelDecoration>
+								<InputField name="питСтатьяКалькуляцииПоУмолчанию" id="63">
+									<DataPath>НаборКонстант.питСтатьяКалькуляцииПоУмолчанию</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статья калькуляции по умолчанию</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="питСтатьяКалькуляцииПоУмолчаниюКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="питСтатьяКалькуляцииПоУмолчаниюРасширеннаяПодсказка" id="65">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Статья калькуляции, которая автоматически подставляется при создании документов общепит, таких как "Выпуск блюд" и "Рецептура".</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питСтатьяКалькуляцииПоУмолчаниюПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питСтатьяКалькуляцииПоУмолчаниюДекорация" id="185">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статья калькуляции, которая автоматически подставляется при создании документов общепит, таких как "Выпуск блюд" и "Рецептура".</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питСтатьяКалькуляцииПоУмолчаниюДекорацияКонтекстноеМеню" id="186"/>
+									<ExtendedTooltip name="питСтатьяКалькуляцииПоУмолчаниюДекорацияРасширеннаяПодсказка" id="187"/>
+								</LabelDecoration>
+								<CheckBoxField name="питИскатьРецептурыПоВсемОрганизациям" id="60">
+									<DataPath>НаборКонстант.питИскатьРецептурыПоВсемОрганизациям</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питИскатьРецептурыПоВсемОрганизациямКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="питИскатьРецептурыПоВсемОрганизациямРасширеннаяПодсказка" id="62">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Признак того, что поиск рецептуры для блюд будет производиться без отбора по организации.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питИскатьРецептурыПоВсемОрганизациямПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="питНеИспользоватьСезонныеПроценты" id="14">
+									<DataPath>НаборКонстант.питНеИспользоватьСезонныеПроценты</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питНеИспользоватьСезонныеПроцентыКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="питНеИспользоватьСезонныеПроцентыРасширеннаяПодсказка" id="16">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Признак использования сезонных процентов, Истина - не использовать.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питНеИспользоватьСезонныеПроцентыПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="питВосприниматьБлюдоБезРецептурыКакТовар" id="98">
+									<DataPath>НаборКонстант.питВосприниматьБлюдоБезРецептурыКакТовар</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питВосприниматьБлюдоБезРецептурыКакТоварКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="питВосприниматьБлюдоБезРецептурыКакТоварРасширеннаяПодсказка" id="100">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<HorizontalStretch>true</HorizontalStretch>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>В производственных документах "Выпуск блюд" и "План-меню" в случае, если для добавляемого блюда не будет найдена актуальная рецептура по выбранному подразделению, то оно будет восприниматься как товар и не попадет в производство.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питВосприниматьБлюдоБезРецептурыКакТоварПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="питРежимПриготовленияПолуфабрикатов" id="125">
+									<DataPath>НаборКонстант.питРежимПриготовленияПолуфабрикатов</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="питРежимПриготовленияПолуфабрикатовКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="питРежимПриготовленияПолуфабрикатовРасширеннаяПодсказка" id="127">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Режим приготовления полуфабрикатов, который будет использоваться в производственных документах по умолчанию</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питРежимПриготовленияПолуфабрикатовПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питРежимПриготовленияПолуфабрикатовДекорация" id="188">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Режим приготовления полуфабрикатов, который будет использоваться в производственных документах по умолчанию</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питРежимПриготовленияПолуфабрикатовДекорацияКонтекстноеМеню" id="189"/>
+									<ExtendedTooltip name="питРежимПриготовленияПолуфабрикатовДекорацияРасширеннаяПодсказка" id="190"/>
+								</LabelDecoration>
+								<InputField name="питВидПроизводстваМодификаторов" id="108">
+									<DataPath>НаборКонстант.питВидПроизводстваМодификаторов</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Режим приготовления блюд модификаторов по умолчанию</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="питВидПроизводстваМодификаторовКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="питВидПроизводстваМодификаторовРасширеннаяПодсказка" id="110">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Режим приготовления блюд модификаторов, который будет использоваться в производственных документах по умолчанию</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питВидПроизводстваМодификаторовПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питВидПроизводстваМодификаторовДекорация" id="191">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Режим приготовления блюд модификаторов, который будет использоваться в производственных документах по умолчанию</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питВидПроизводстваМодификаторовДекорацияКонтекстноеМеню" id="192"/>
+									<ExtendedTooltip name="питВидПроизводстваМодификаторовДекорацияРасширеннаяПодсказка" id="193"/>
+								</LabelDecoration>
+								<CheckBoxField name="питЗаполнятьНоменклатуруСкладаВЗаказеНаПеремещениеВНоменклатуруПроизводства" id="212">
+									<DataPath>НаборКонстант.питЗаполнятьНоменклатуруСкладаВЗаказеНаПеремещениеВНоменклатуруПроизводства</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питЗаполнятьНоменклатуруСкладаВЗаказеНаПеремещениеВНоменклатуруПроизводстваКонтекстноеМеню" id="213"/>
+									<ExtendedTooltip name="питЗаполнятьНоменклатуруСкладаВЗаказеНаПеремещениеВНоменклатуруПроизводстваРасширеннаяПодсказка" id="214"/>
+									<Events>
+										<Event name="OnChange">питЗаполнятьНоменклатуруСкладаВЗаказеНаПеремещениеВНоменклатуруПроизводстваПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelDecoration name="питЗаполнятьНоменклатуруСкладаВЗаказеНаПеремещениеВНоменклатуруПроизводстваДекорация" id="215">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка определяет обязательность заполнения номенклатуры склада в заказном документе</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питЗаполнятьНоменклатуруСкладаВЗаказеНаПеремещениеВНоменклатуруПроизводстваДекорацияКонтекстноеМеню" id="216"/>
+									<ExtendedTooltip name="питЗаполнятьНоменклатуруСкладаВЗаказеНаПеремещениеВНоменклатуруПроизводстваДекорацияРасширеннаяПодсказка" id="217"/>
+								</LabelDecoration>
+								<CheckBoxField name="питИспользоватьПриоритетыПриготовления" id="352">
+									<DataPath>НаборКонстант.питИспользоватьПриоритетыПриготовления</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питИспользоватьПриоритетыПриготовленияКонтекстноеМеню" id="353"/>
+									<ExtendedTooltip name="питИспользоватьПриоритетыПриготовленияРасширеннаяПодсказка" id="354"/>
+									<Events>
+										<Event name="OnChange">питИспользоватьПриоритетыПриготовленияПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelDecoration name="питИспользоватьПриоритетыПриготовленияДекорация" id="355">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка определяет необходимость использования приоритетов приготовления блюд при автоматическом создании документов "Выпуск блюд" и "План-меню", а также в рабочем месте "Производство по планам-меню"</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питИспользоватьПриоритетыПриготовленияДекорацияКонтекстноеМеню" id="356"/>
+									<ExtendedTooltip name="питИспользоватьПриоритетыПриготовленияДекорацияРасширеннаяПодсказка" id="357"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаХЭХ" id="50">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ХЭХ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ХЭХ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаХЭХРасширеннаяПодсказка" id="51"/>
+							<ChildItems>
+								<InputField name="питСпособРасчетаКоличестваХЭХ" id="26">
+									<DataPath>НаборКонстант.питСпособРасчетаКоличестваХЭХ</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="питСпособРасчетаКоличестваХЭХКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="питСпособРасчетаКоличестваХЭХРасширеннаяПодсказка" id="28">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройка определяет способ расчета химико-энергетических характеристик: по количеству "брутто", количеству "нетто" либо количеству "выход".</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питСпособРасчетаКоличестваХЭХПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питСпособРасчетаКоличестваХЭХДекорация" id="194">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка определяет способ расчета химико-энергетических характеристик: по количеству "брутто", количеству "нетто" либо количеству "выход".</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питСпособРасчетаКоличестваХЭХДекорацияКонтекстноеМеню" id="195"/>
+									<ExtendedTooltip name="питСпособРасчетаКоличестваХЭХДекорацияРасширеннаяПодсказка" id="196"/>
+								</LabelDecoration>
+								<InputField name="питСпособРасчетаКалорийности" id="23">
+									<DataPath>НаборКонстант.питСпособРасчетаКалорийности</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="питСпособРасчетаКалорийностиКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="питСпособРасчетаКалорийностиРасширеннаяПодсказка" id="25">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройка определяет способ расчета калорийности: суммированием либо по заданной формуле.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питСпособРасчетаКалорийностиПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питСпособРасчетаКалорийностиДекорация" id="197">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка определяет способ расчета калорийности: суммированием либо по заданной формуле.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питСпособРасчетаКалорийностиДекорацияКонтекстноеМеню" id="198"/>
+									<ExtendedTooltip name="питСпособРасчетаКалорийностиДекорацияРасширеннаяПодсказка" id="199"/>
+								</LabelDecoration>
+								<InputField name="питФормулаРасчетаКалорийности" id="38">
+									<DataPath>НаборКонстант.питФормулаРасчетаКалорийности</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceButton>true</ChoiceButton>
+									<OpenButton>true</OpenButton>
+									<ContextMenu name="питФормулаРасчетаКалорийностиКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="питФормулаРасчетаКалорийностиРасширеннаяПодсказка" id="40">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Формула по которой рассчитывается калорийность при условии, что стоит режим расчета "по формуле".</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питФормулаРасчетаКалорийностиПриИзменении</Event>
+										<Event name="StartChoice">питФормулаРасчетаКалорийностиНачалоВыбора</Event>
+										<Event name="Opening">питФормулаРасчетаКалорийностиОткрытие</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питФормулаРасчетаКалорийностиДекорация" id="200">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формула по которой рассчитывается калорийность при условии, что стоит режим расчета "по формуле".</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питФормулаРасчетаКалорийностиДекорацияКонтекстноеМеню" id="201"/>
+									<ExtendedTooltip name="питФормулаРасчетаКалорийностиДекорацияРасширеннаяПодсказка" id="202"/>
+								</LabelDecoration>
+								<InputField name="питЕдиницаИзмеренияПоКлассификаторуДляХЭХ" id="11">
+									<DataPath>НаборКонстант.питЕдиницаИзмеренияПоКлассификаторуДляХЭХ</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="питЕдиницаИзмеренияПоКлассификаторуДляХЭХКонтекстноеМеню" id="12"/>
+									<ExtendedTooltip name="питЕдиницаИзмеренияПоКлассификаторуДляХЭХРасширеннаяПодсказка" id="13">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Единица измерения для химико-энергетических характеристик.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питЕдиницаИзмеренияПоКлассификаторуДляХЭХПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питЕдиницаИзмеренияПоКлассификаторуДляХЭХДекорация" id="203">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Единица измерения для химико-энергетических характеристик.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питЕдиницаИзмеренияПоКлассификаторуДляХЭХДекорацияКонтекстноеМеню" id="204"/>
+									<ExtendedTooltip name="питЕдиницаИзмеренияПоКлассификаторуДляХЭХДекорацияРасширеннаяПодсказка" id="205"/>
+								</LabelDecoration>
+								<InputField name="питГруппаХЭХПоУмолчанию" id="78">
+									<DataPath>НаборКонстант.питГруппаХЭХПоУмолчанию</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ХЭХ по умолчанию</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="питГруппаХЭХПоУмолчаниюКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="питГруппаХЭХПоУмолчаниюРасширеннаяПодсказка" id="80">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа ХЭХ, которая используется по умолчанию при заполнении химико-энергетических характеристик</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питГруппаХЭХПоУмолчаниюПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="питГруппаХЭХПоУмолчаниюДекорация" id="206">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ХЭХ, которая используется по умолчанию при заполнении химико-энергетических характеристик</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питГруппаХЭХПоУмолчаниюДекорацияКонтекстноеМеню" id="207"/>
+									<ExtendedTooltip name="питГруппаХЭХПоУмолчаниюДекорацияРасширеннаяПодсказка" id="208"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОбменСФронтОфисом" id="101">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обмены</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа производство</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаОбменСФронтОфисомРасширеннаяПодсказка" id="102"/>
+							<ChildItems>
+								<CheckBoxField name="питВыполнятьПроведениеЧековОбщепита" id="103">
+									<DataPath>НаборКонстант.питВыполнятьПроведениеЧековОбщепита</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="питВыполнятьПроведениеЧековОбщепитаКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="питВыполнятьПроведениеЧековОбщепитаРасширеннаяПодсказка" id="105">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Признак использования механизма проведения чеков Общепита</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">питВыполнятьПроведениеЧековОбщепитаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаЗагрузкаIIKO" id="111">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа загрузка IIKO</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа загрузка IIKO</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<VerticalSpacing>Single</VerticalSpacing>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗагрузкаIIKOРасширеннаяПодсказка" id="112"/>
+									<ChildItems>
+										<InputField name="питСлужебнаяНоменклатураМодификатора" id="113">
+											<DataPath>НаборКонстант.питСлужебнаяНоменклатураМодификатора</DataPath>
+											<TitleLocation>Left</TitleLocation>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="питСлужебнаяНоменклатураМодификатораКонтекстноеМеню" id="114"/>
+											<ExtendedTooltip name="питСлужебнаяНоменклатураМодификатораРасширеннаяПодсказка" id="115">
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Предопределенная номенклатура основной позиции, используемая в документах "Чеки Общепита" при загрузке из iiko.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+											<Events>
+												<Event name="OnChange">питСлужебнаяНоменклатураМодификатораПриИзменении</Event>
+											</Events>
+										</InputField>
+										<LabelDecoration name="питСлужебнаяНоменклатураМодификатораДекорация" id="209">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<TextColor>style:ЦветМикротекста</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Предопределенная номенклатура основной позиции, используемая в документах "Чеки Общепита" при загрузке из iiko.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="питСлужебнаяНоменклатураМодификатораДекорацияКонтекстноеМеню" id="210"/>
+											<ExtendedTooltip name="питСлужебнаяНоменклатураМодификатораДекорацияРасширеннаяПодсказка" id="211"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаОбменСЭвотором" id="358">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обмен с Эвотором</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа производство</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<Representation>NormalSeparation</Representation>
+									<ExtendedTooltip name="ГруппаОбменСЭвоторомРасширеннаяПодсказка" id="359"/>
+									<ChildItems>
+										<InputField name="питТипОплатыНаличные" id="360">
+											<DataPath>НаборКонстант.питТипОплатыНаличные</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наличные</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ContextMenu name="питТипОплатыНаличныеКонтекстноеМеню" id="361"/>
+											<ExtendedTooltip name="питТипОплатыНаличныеРасширеннаяПодсказка" id="362"/>
+											<Events>
+												<Event name="OnChange">питВыполнятьПроведениеЧековОбщепитаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="питТипОплатыЭлектронно" id="363">
+											<DataPath>НаборКонстант.питТипОплатыЭлектронно</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Электронно</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ContextMenu name="питТипОплатыЭлектронноКонтекстноеМеню" id="364"/>
+											<ExtendedTooltip name="питТипОплатыЭлектронноРасширеннаяПодсказка" id="365"/>
+											<Events>
+												<Event name="OnChange">питВыполнятьПроведениеЧековОбщепитаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="питТипОплатыПредоплата" id="366">
+											<DataPath>НаборКонстант.питТипОплатыПредоплата</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Предоплата</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ContextMenu name="питТипОплатыПредоплатаКонтекстноеМеню" id="367"/>
+											<ExtendedTooltip name="питТипОплатыПредоплатаРасширеннаяПодсказка" id="368"/>
+											<Events>
+												<Event name="OnChange">питВыполнятьПроведениеЧековОбщепитаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="питТипОплатыПостоплата" id="369">
+											<DataPath>НаборКонстант.питТипОплатыПостоплата</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Постоплата</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ContextMenu name="питТипОплатыПостоплатаКонтекстноеМеню" id="370"/>
+											<ExtendedTooltip name="питТипОплатыПостоплатаРасширеннаяПодсказка" id="371"/>
+											<Events>
+												<Event name="OnChange">питВыполнятьПроведениеЧековОбщепитаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="питТипОплатыВстречноеПредоставление" id="372">
+											<DataPath>НаборКонстант.питТипОплатыВстречноеПредоставление</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Встречное предоставление</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ContextMenu name="питТипОплатыВстречноеПредоставлениеКонтекстноеМеню" id="373"/>
+											<ExtendedTooltip name="питТипОплатыВстречноеПредоставлениеРасширеннаяПодсказка" id="374"/>
+											<Events>
+												<Event name="OnChange">питВыполнятьПроведениеЧековОбщепитаПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаХАССП" id="218">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ХАССП</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа производство</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаХАССПРасширеннаяПодсказка" id="219"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаХасспОперации" id="334">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Узлы операций</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа хассп операции</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаХасспОперацииРасширеннаяПодсказка" id="335"/>
+									<ChildItems>
+										<UsualGroup name="питХАССПФормаУзлаОперацииГруппа" id="342">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла операции группа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла операции группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПФормаУзлаОперацииГруппаРасширеннаяПодсказка" id="343"/>
+											<ChildItems>
+												<InputField name="питХАССПФормаУзлаОперации" id="344">
+													<DataPath>НаборКонстант.питХАССПФормаУзлаОперации</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Форма узла</v8:content>
+														</v8:item>
+													</Title>
+													<Width>10</Width>
+													<ContextMenu name="питХАССПФормаУзлаОперацииКонтекстноеМеню" id="345"/>
+													<ExtendedTooltip name="питХАССПФормаУзлаОперацииРасширеннаяПодсказка" id="346"/>
+													<Events>
+														<Event name="OnChange">питХАССПФормаУзлаОперацииПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="питХАССПЦветУзлаОперацииГруппа" id="232">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла операции группа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла операции группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПЦветУзлаОперацииГруппаРасширеннаяПодсказка" id="233"/>
+											<ChildItems>
+												<InputField name="питХАССПЦветУзлаОперации" id="226">
+													<DataPath>НаборКонстант.питХАССПЦветУзлаОперации</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Цвет узла</v8:content>
+														</v8:item>
+													</Title>
+													<Width>10</Width>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="питХАССПЦветУзлаОперацииКонтекстноеМеню" id="227"/>
+													<ExtendedTooltip name="питХАССПЦветУзлаОперацииРасширеннаяПодсказка" id="228"/>
+													<Events>
+														<Event name="OnChange">питХАССПЦветПриИзменении</Event>
+														<Event name="StartChoice">питХАССПЦветНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="питХАССПЦветУзлаОперацииПримерЦвета" id="234">
+													<Width>13</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<TextColor>style:ЦветМикротекста</TextColor>
+													<BorderColor>#000000</BorderColor>
+													<Border width="1">
+														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+													</Border>
+													<ContextMenu name="питХАССПЦветУзлаОперацииПримерЦветаКонтекстноеМеню" id="235"/>
+													<ExtendedTooltip name="питХАССПЦветУзлаОперацииПримерЦветаРасширеннаяПодсказка" id="236"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="питХАССПЦветРамкиУзлаОперацииГруппа" id="239">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет рамки узла операции группа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПЦветРамкиУзлаОперацииГруппаРасширеннаяПодсказка" id="240"/>
+											<ChildItems>
+												<InputField name="питХАССПЦветРамкиУзлаОперации" id="241">
+													<DataPath>НаборКонстант.питХАССПЦветРамкиУзлаОперации</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Цвет рамки узла</v8:content>
+														</v8:item>
+													</Title>
+													<Width>10</Width>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="питХАССПЦветРамкиУзлаОперацииКонтекстноеМеню" id="242"/>
+													<ExtendedTooltip name="питХАССПЦветРамкиУзлаОперацииРасширеннаяПодсказка" id="243"/>
+													<Events>
+														<Event name="OnChange">питХАССПЦветПриИзменении</Event>
+														<Event name="StartChoice">питХАССПЦветНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="питХАССПЦветРамкиУзлаОперацииПримерЦвета" id="247">
+													<Width>13</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<TextColor>style:ЦветМикротекста</TextColor>
+													<BorderColor>#000000</BorderColor>
+													<Border width="1">
+														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+													</Border>
+													<ContextMenu name="питХАССПЦветРамкиУзлаОперацииПримерЦветаКонтекстноеМеню" id="248"/>
+													<ExtendedTooltip name="питХАССПЦветРамкиУзлаОперацииПримерЦветаРасширеннаяПодсказка" id="249"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="питХАССПЦветВыделенногоУзлаОперацииГруппа" id="250">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет выделенного узла операции группа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПЦветВыделенногоУзлаОперацииГруппаРасширеннаяПодсказка" id="251"/>
+											<ChildItems>
+												<InputField name="питХАССПЦветВыделенногоУзлаОперации" id="252">
+													<DataPath>НаборКонстант.питХАССПЦветВыделенногоУзлаОперации</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Цвет выделенного узла</v8:content>
+														</v8:item>
+													</Title>
+													<Width>10</Width>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="питХАССПЦветВыделенногоУзлаОперацииКонтекстноеМеню" id="253"/>
+													<ExtendedTooltip name="питХАССПЦветВыделенногоУзлаОперацииРасширеннаяПодсказка" id="254"/>
+													<Events>
+														<Event name="OnChange">питХАССПЦветПриИзменении</Event>
+														<Event name="StartChoice">питХАССПЦветНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="питХАССПЦветВыделенногоУзлаОперацииПримерЦвета" id="255">
+													<Width>13</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<TextColor>style:ЦветМикротекста</TextColor>
+													<BorderColor>#000000</BorderColor>
+													<Border width="1">
+														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+													</Border>
+													<ContextMenu name="питХАССПЦветВыделенногоУзлаОперацииПримерЦветаКонтекстноеМеню" id="256"/>
+													<ExtendedTooltip name="питХАССПЦветВыделенногоУзлаОперацииПримерЦветаРасширеннаяПодсказка" id="257"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="питХАССПЦветРамкиВыделенногоУзлаОперацииГруппа" id="258">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет выделенного узла группа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПЦветРамкиВыделенногоУзлаОперацииГруппаРасширеннаяПодсказка" id="259"/>
+											<ChildItems>
+												<InputField name="питХАССПЦветРамкиВыделенногоУзлаОперации" id="260">
+													<DataPath>НаборКонстант.питХАССПЦветРамкиВыделенногоУзлаОперации</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Цвет рамки выделенного узла</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Left</TitleLocation>
+													<Width>10</Width>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="питХАССПЦветРамкиВыделенногоУзлаОперацииКонтекстноеМеню" id="261"/>
+													<ExtendedTooltip name="питХАССПЦветРамкиВыделенногоУзлаОперацииРасширеннаяПодсказка" id="262"/>
+													<Events>
+														<Event name="OnChange">питХАССПЦветПриИзменении</Event>
+														<Event name="StartChoice">питХАССПЦветНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="питХАССПЦветРамкиВыделенногоУзлаОперацииПримерЦвета" id="263">
+													<Width>13</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<TextColor>style:ЦветМикротекста</TextColor>
+													<BorderColor>#000000</BorderColor>
+													<Border width="1">
+														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+													</Border>
+													<ContextMenu name="питХАССПЦветРамкиВыделенногоУзлаОперацииПримерЦветаКонтекстноеМеню" id="264"/>
+													<ExtendedTooltip name="питХАССПЦветРамкиВыделенногоУзлаОперацииПримерЦветаРасширеннаяПодсказка" id="265"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаХасспНоменклатура" id="336">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Узлы номенклатуры</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа операции</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаХасспНоменклатураРасширеннаяПодсказка" id="337"/>
+									<ChildItems>
+										<UsualGroup name="питХАССПФормаУзлаНоменклатурыГруппа" id="347">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла операции группа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла операции группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПФормаУзлаНоменклатурыГруппаРасширеннаяПодсказка" id="348"/>
+											<ChildItems>
+												<InputField name="питХАССПФормаУзлаНоменклатуры" id="349">
+													<DataPath>НаборКонстант.питХАССПФормаУзлаНоменклатуры</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Форма узла</v8:content>
+														</v8:item>
+													</Title>
+													<Width>10</Width>
+													<ContextMenu name="питХАССПФормаУзлаНоменклатурыКонтекстноеМеню" id="350"/>
+													<ExtendedTooltip name="питХАССПФормаУзлаНоменклатурыРасширеннаяПодсказка" id="351"/>
+													<Events>
+														<Event name="OnChange">питХАССПФормаУзлаНоменклатурыПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="питХАССПЦветУзлаНоменклатурыГруппа" id="302">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Цвет узла номенклатуры</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПЦветУзлаНоменклатурыГруппаРасширеннаяПодсказка" id="303"/>
+											<ChildItems>
+												<InputField name="питХАССПЦветУзлаНоменклатуры" id="304">
+													<DataPath>НаборКонстант.питХАССПЦветУзлаНоменклатуры</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Цвет узла</v8:content>
+														</v8:item>
+													</Title>
+													<Width>10</Width>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="питХАССПЦветУзлаНоменклатурыКонтекстноеМеню" id="305"/>
+													<ExtendedTooltip name="питХАССПЦветУзлаНоменклатурыРасширеннаяПодсказка" id="306"/>
+													<Events>
+														<Event name="OnChange">питХАССПЦветПриИзменении</Event>
+														<Event name="StartChoice">питХАССПЦветНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="питХАССПЦветУзлаНоменклатурыПримерЦвета" id="307">
+													<Width>13</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<TextColor>style:ЦветМикротекста</TextColor>
+													<BorderColor>#000000</BorderColor>
+													<Border width="1">
+														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+													</Border>
+													<ContextMenu name="питХАССПЦветУзлаНоменклатурыПримерЦветаКонтекстноеМеню" id="308"/>
+													<ExtendedTooltip name="питХАССПЦветУзлаНоменклатурыПримерЦветаРасширеннаяПодсказка" id="309"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="питХАССПЦветРамкиУзлаНоменклатурыГруппа" id="310">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет рамки узла операции группа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПЦветРамкиУзлаНоменклатурыГруппаРасширеннаяПодсказка" id="311"/>
+											<ChildItems>
+												<InputField name="питХАССПЦветРамкиУзлаНоменклатуры" id="312">
+													<DataPath>НаборКонстант.питХАССПЦветРамкиУзлаНоменклатуры</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Цвет рамки узла</v8:content>
+														</v8:item>
+													</Title>
+													<Width>10</Width>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="питХАССПЦветРамкиУзлаНоменклатурыКонтекстноеМеню" id="313"/>
+													<ExtendedTooltip name="питХАССПЦветРамкиУзлаНоменклатурыРасширеннаяПодсказка" id="314"/>
+													<Events>
+														<Event name="OnChange">питХАССПЦветПриИзменении</Event>
+														<Event name="StartChoice">питХАССПЦветНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="питХАССПЦветРамкиУзлаНоменклатурыПримерЦвета" id="315">
+													<Width>13</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<TextColor>style:ЦветМикротекста</TextColor>
+													<BorderColor>#000000</BorderColor>
+													<Border width="1">
+														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+													</Border>
+													<ContextMenu name="питХАССПЦветРамкиУзлаНоменклатурыПримерЦветаКонтекстноеМеню" id="316"/>
+													<ExtendedTooltip name="питХАССПЦветРамкиУзлаНоменклатурыПримерЦветаРасширеннаяПодсказка" id="317"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="питХАССПЦветВыделенногоУзлаНоменклатурыГруппа" id="318">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет выделенного узла операции группа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПЦветВыделенногоУзлаНоменклатурыГруппаРасширеннаяПодсказка" id="319"/>
+											<ChildItems>
+												<InputField name="питХАССПЦветВыделенногоУзлаНоменклатуры" id="320">
+													<DataPath>НаборКонстант.питХАССПЦветВыделенногоУзлаНоменклатуры</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Цвет выделенного узла</v8:content>
+														</v8:item>
+													</Title>
+													<Width>10</Width>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="питХАССПЦветВыделенногоУзлаНоменклатурыКонтекстноеМеню" id="321"/>
+													<ExtendedTooltip name="питХАССПЦветВыделенногоУзлаНоменклатурыРасширеннаяПодсказка" id="322"/>
+													<Events>
+														<Event name="OnChange">питХАССПЦветПриИзменении</Event>
+														<Event name="StartChoice">питХАССПЦветНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="питХАССПЦветВыделенногоУзлаНоменклатурыПримерЦвета" id="323">
+													<Width>13</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<TextColor>style:ЦветМикротекста</TextColor>
+													<BorderColor>#000000</BorderColor>
+													<Border width="1">
+														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+													</Border>
+													<ContextMenu name="питХАССПЦветВыделенногоУзлаНоменклатурыПримерЦветаКонтекстноеМеню" id="324"/>
+													<ExtendedTooltip name="питХАССПЦветВыделенногоУзлаНоменклатурыПримерЦветаРасширеннаяПодсказка" id="325"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="питХАССПЦветРамкиВыделенногоУзлаНоменклатурыГруппа" id="326">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет выделенного узла группа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПЦветРамкиВыделенногоУзлаНоменклатурыГруппаРасширеннаяПодсказка" id="327"/>
+											<ChildItems>
+												<InputField name="питХАССПЦветРамкиВыделенногоУзлаНоменклатуры" id="328">
+													<DataPath>НаборКонстант.питХАССПЦветРамкиВыделенногоУзлаНоменклатуры</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Цвет рамки выделенного узла</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Left</TitleLocation>
+													<Width>10</Width>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="питХАССПЦветРамкиВыделенногоУзлаНоменклатурыКонтекстноеМеню" id="329"/>
+													<ExtendedTooltip name="питХАССПЦветРамкиВыделенногоУзлаНоменклатурыРасширеннаяПодсказка" id="330"/>
+													<Events>
+														<Event name="OnChange">питХАССПЦветПриИзменении</Event>
+														<Event name="StartChoice">питХАССПЦветНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="питХАССПЦветРамкиВыделенногоУзлаНоменклатурыПримерЦвета" id="331">
+													<Width>13</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<TextColor>style:ЦветМикротекста</TextColor>
+													<BorderColor>#000000</BorderColor>
+													<Border width="1">
+														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+													</Border>
+													<ContextMenu name="питХАССПЦветРамкиВыделенногоУзлаНоменклатурыПримерЦветаКонтекстноеМеню" id="332"/>
+													<ExtendedTooltip name="питХАССПЦветРамкиВыделенногоУзлаНоменклатурыПримерЦветаРасширеннаяПодсказка" id="333"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаХасспСвязиУзлов" id="338">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Связи узлов</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа операции</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаХасспСвязиУзловРасширеннаяПодсказка" id="339"/>
+									<ChildItems>
+										<UsualGroup name="питХАССПЦветСвязиГруппа" id="266">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет связи группа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПЦветСвязиГруппаРасширеннаяПодсказка" id="267"/>
+											<ChildItems>
+												<InputField name="питХАССПЦветСвязи" id="268">
+													<DataPath>НаборКонстант.питХАССПЦветСвязи</DataPath>
+													<Width>10</Width>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="питХАССПЦветСвязиКонтекстноеМеню" id="269"/>
+													<ExtendedTooltip name="питХАССПЦветСвязиРасширеннаяПодсказка" id="270"/>
+													<Events>
+														<Event name="OnChange">питХАССПЦветПриИзменении</Event>
+														<Event name="StartChoice">питХАССПЦветНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="питХАССПЦветСвязиПримерЦвета" id="271">
+													<Width>13</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<TextColor>style:ЦветМикротекста</TextColor>
+													<BorderColor>#000000</BorderColor>
+													<Border width="1">
+														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+													</Border>
+													<ContextMenu name="питХАССПЦветСвязиПримерЦветаКонтекстноеМеню" id="272"/>
+													<ExtendedTooltip name="питХАССПЦветСвязиПримерЦветаРасширеннаяПодсказка" id="273"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="питХАССПЦветВыделеннойСвязиГруппа" id="274">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет связи группа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПЦветВыделеннойСвязиГруппаРасширеннаяПодсказка" id="275"/>
+											<ChildItems>
+												<InputField name="питХАССПЦветВыделеннойСвязи" id="276">
+													<DataPath>НаборКонстант.питХАССПЦветВыделеннойСвязи</DataPath>
+													<Width>10</Width>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="питХАССПЦветВыделеннойСвязиКонтекстноеМеню" id="277"/>
+													<ExtendedTooltip name="питХАССПЦветВыделеннойСвязиРасширеннаяПодсказка" id="278"/>
+													<Events>
+														<Event name="OnChange">питХАССПЦветПриИзменении</Event>
+														<Event name="StartChoice">питХАССПЦветНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="питХАССПЦветВыделеннойСвязиПримерЦвета" id="279">
+													<Width>13</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<TextColor>style:ЦветМикротекста</TextColor>
+													<BorderColor>#000000</BorderColor>
+													<Border width="1">
+														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+													</Border>
+													<ContextMenu name="питХАССПЦветВыделеннойСвязиПримерЦветаКонтекстноеМеню" id="280"/>
+													<ExtendedTooltip name="питХАССПЦветВыделеннойСвязиПримерЦветаРасширеннаяПодсказка" id="281"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="питХАССПТолщинаСвязи" id="288">
+											<DataPath>НаборКонстант.питХАССПТолщинаСвязи</DataPath>
+											<Width>10</Width>
+											<SpinButton>true</SpinButton>
+											<ContextMenu name="питХАССПТолщинаСвязиКонтекстноеМеню" id="289"/>
+											<ExtendedTooltip name="питХАССПТолщинаСвязиРасширеннаяПодсказка" id="290"/>
+											<Events>
+												<Event name="OnChange">питХАССПТолщинаСвязиПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаХасспОбщие" id="340">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Общие</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа операции</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаХасспОбщиеРасширеннаяПодсказка" id="341"/>
+									<ChildItems>
+										<UsualGroup name="питХАССПЦветТекстаГруппа" id="291">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет текста группа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пит ХАССПЦвет узла группа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="питХАССПЦветТекстаГруппаРасширеннаяПодсказка" id="292"/>
+											<ChildItems>
+												<InputField name="питХАССПЦветТекста" id="293">
+													<DataPath>НаборКонстант.питХАССПЦветТекста</DataPath>
+													<Width>10</Width>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="питХАССПЦветТекстаКонтекстноеМеню" id="294"/>
+													<ExtendedTooltip name="питХАССПЦветТекстаРасширеннаяПодсказка" id="295"/>
+													<Events>
+														<Event name="OnChange">питХАССПЦветПриИзменении</Event>
+														<Event name="StartChoice">питХАССПЦветНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="питХАССПЦветТекстаПримерЦвета" id="296">
+													<Width>13</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Height>1</Height>
+													<TextColor>style:ЦветМикротекста</TextColor>
+													<BorderColor>#000000</BorderColor>
+													<Border width="1">
+														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+													</Border>
+													<ContextMenu name="питХАССПЦветТекстаПримерЦветаКонтекстноеМеню" id="297"/>
+													<ExtendedTooltip name="питХАССПЦветТекстаПримерЦветаРасширеннаяПодсказка" id="298"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="питХАССПРазмерТекста" id="299">
+											<DataPath>НаборКонстант.питХАССПРазмерТекста</DataPath>
+											<Width>10</Width>
+											<SpinButton>true</SpinButton>
+											<ContextMenu name="питХАССПРазмерТекстаКонтекстноеМеню" id="300"/>
+											<ExtendedTooltip name="питХАССПРазмерТекстаРасширеннаяПодсказка" id="301"/>
+											<Events>
+												<Event name="OnChange">питХАССПРазмерТекстаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="питХАССПТолщинаРамкиУзла" id="285">
+											<DataPath>НаборКонстант.питХАССПТолщинаРамкиУзла</DataPath>
+											<Width>10</Width>
+											<SpinButton>true</SpinButton>
+											<ContextMenu name="питХАССПТолщинаРамкиУзлаКонтекстноеМеню" id="286"/>
+											<ExtendedTooltip name="питХАССПТолщинаРамкиУзлаРасширеннаяПодсказка" id="287"/>
+											<Events>
+												<Event name="OnChange">питХАССПТолщинаРамкиУзлаПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="питХАССПЦветаДекорация" id="282">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ЦветМикротекста</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки отображения элементов дерева блок-схемы ХАССП</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="питХАССПЦветаДекорацияКонтекстноеМеню" id="283"/>
+									<ExtendedTooltip name="питХАССПЦветаДекорацияРасширеннаяПодсказка" id="284"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+</Form>

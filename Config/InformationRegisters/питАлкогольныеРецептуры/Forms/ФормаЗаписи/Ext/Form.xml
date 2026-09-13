@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Блюдо" id="1">
+			<DataPath>Запись.Блюдо</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="БлюдоКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="БлюдоРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Ингредиент" id="4">
+			<DataPath>Запись.Ингредиент</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ингредиент</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИнгредиентКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИнгредиентРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ГруппаАналогов" id="29">
+			<DataPath>Запись.ГруппаАналогов</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ГруппаАналоговКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ГруппаАналоговРасширеннаяПодсказка" id="31"/>
+		</InputField>
+		<UsualGroup name="ГруппаКоличествоБлюда" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа количество блюда</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа количество блюда</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКоличествоБлюдаРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<InputField name="КоличествоБлюда" id="7">
+					<DataPath>Запись.КоличествоБлюда</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КоличествоБлюдаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="КоличествоБлюдаРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<LabelField name="БлюдоЕдиницаИзмерения" id="18">
+					<DataPath>Запись.Блюдо.ЕдиницаИзмерения</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<Width>10</Width>
+					<ContextMenu name="БлюдоЕдиницаИзмеренияКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="БлюдоЕдиницаИзмеренияРасширеннаяПодсказка" id="20"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКоличествоИнгредиента" id="21">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа количество ингредиента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="ГруппаКоличествоИнгредиентаРасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<InputField name="КоличествоИнгредиента" id="10">
+					<DataPath>Запись.КоличествоИнгредиента</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество ингредиента</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КоличествоИнгредиентаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КоличествоИнгредиентаРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<LabelDecoration name="Декорация1" id="26">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>миллилитров</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="28"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.питАлкогольныеРецептуры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,1050 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Веб-страница документа в сервисе mag1c</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСоздатьОбращениеВТехническуюПоддержку" id="154">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьОбращениеВТехническуюПоддержку</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьОбращениеВТехническуюПоддержкуРасширеннаяПодсказка" id="155"/>
+			</Button>
+			<Button name="ФормаОчиститьЛокальныйКешНастроек" id="156">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОчиститьЛокальныйКешНастроек</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаОчиститьЛокальныйКешНастроекРасширеннаяПодсказка" id="157"/>
+			</Button>
+			<Button name="Получить" id="47">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Получить</CommandName>
+				<ExtendedTooltip name="ПолучитьРасширеннаяПодсказка" id="48"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаДействияФормы" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа действия формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа действия формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДействияФормыРасширеннаяПодсказка" id="27"/>
+			<ChildItems>
+				<LabelField name="ДокументСсылка" id="95">
+					<DataPath>ДокументСсылка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Left</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ДокументСсылкаКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="ДокументСсылкаРасширеннаяПодсказка" id="97"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="СтраницыФормы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<VerticalStretch>true</VerticalStretch>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыФормыРасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<Page name="СтраницаНастройка" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаНастройкаРасширеннаяПодсказка" id="9"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСсылкаНастройка" id="146">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По ссылке можно просмотреть и оплатить заказ, скачать счет в течение</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ссылка настройка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСсылкаНастройкаРасширеннаяПодсказка" id="147"/>
+							<ChildItems>
+								<UsualGroup name="Группа2" id="144">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="145"/>
+									<ChildItems>
+										<RadioButtonField name="СрокДействияСсылки" id="1">
+											<DataPath>СрокДействияСсылки</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По ссылке можно просмотреть и оплатить заказ, скачать счет в течение</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Top</TitleLocation>
+											<RadioButtonType>Tumbler</RadioButtonType>
+											<ContextMenu name="СрокДействияСсылкиКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="СрокДействияСсылкиРасширеннаяПодсказка" id="3"/>
+										</RadioButtonField>
+										<UsualGroup name="ГруппаНастройки" id="53">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа настройки</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа настройки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="54"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияПодключенныеСпособыОплатыНастройка" id="44">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Оплата через Ю-Касса
+Оплата через СБП
+Получение счета на оплату</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияПодключенныеСпособыОплатыНастройкаКонтекстноеМеню" id="45"/>
+													<ExtendedTooltip name="ДекорацияПодключенныеСпособыОплатыНастройкаРасширеннаяПодсказка" id="46"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<Button name="ОткрытьНастройки" id="51">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьНастройки</CommandName>
+											<ExtendedTooltip name="ОткрытьНастройкиРасширеннаяПодсказка" id="52"/>
+										</Button>
+										<UsualGroup name="ГруппаНеЗаполненАдресСклада" id="103">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа не заполнен адрес склада</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа не заполнен адрес склада</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>auto</BackColor>
+											<ExtendedTooltip name="ГруппаНеЗаполненАдресСкладаРасширеннаяПодсказка" id="104"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияПредупреждение1" id="105">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация предупреждение1</v8:content>
+														</v8:item>
+													</Title>
+													<PictureSize>AutoSize</PictureSize>
+													<Picture>
+														<xr:Ref>CommonPicture.Маг1С_Предупреждение</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияПредупреждение1КонтекстноеМеню" id="106"/>
+													<ExtendedTooltip name="ДекорацияПредупреждение1РасширеннаяПодсказка" id="107"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияНеЗаполненАдресСклада" id="100">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>В карточке склада, указанного в документе, не заполнен адрес. Рекомендуем его &lt;link ОткрытьСклад&gt;заполнить&lt;/&gt; – так покупателю будет легче вас найти.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияНеЗаполненАдресСкладаКонтекстноеМеню" id="101"/>
+													<ExtendedTooltip name="ДекорацияНеЗаполненАдресСкладаРасширеннаяПодсказка" id="102"/>
+													<Events>
+														<Event name="URLProcessing">ДекорацияНеЗаполненАдресСкладаОбработкаНавигационнойСсылки</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОжидание" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ожидание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ожидание</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаОжиданиеРасширеннаяПодсказка" id="11"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация25" id="17">
+							<PictureSize>AutoSize</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.Маг1СДлительнаяОперация48</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация25КонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="Декорация25РасширеннаяПодсказка" id="19"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияОперацияВыполняется" id="14">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполняется формирование ссылки
+Пожалуйста, подождите...</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияОперацияВыполняетсяКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ДекорацияОперацияВыполняетсяРасширеннаяПодсказка" id="16"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаИнформация" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаИнформацияРасширеннаяПодсказка" id="13"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВременнаяСсылка" id="126">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По этой ссылке можно просмотреть и оплатить заказ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа временная ссылка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВременнаяСсылкаРасширеннаяПодсказка" id="127"/>
+							<ChildItems>
+								<InputField name="ВременнаяСсылка" id="20">
+									<DataPath>ВременнаяСсылкаОтображение</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>По этой ссылке можно просмотреть и оплатить заказ</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonPicture>
+										<xr:Ref>StdPicture.GotoExternalURL</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ChoiceButtonPicture>
+									<ContextMenu name="ВременнаяСсылкаКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ВременнаяСсылкаРасширеннаяПодсказка" id="22"/>
+									<Events>
+										<Event name="EditTextChange">ВременнаяСсылкаИзменениеТекстаРедактирования</Event>
+										<Event name="StartChoice">ВременнаяСсылкаНачалоВыбора</Event>
+										<Event name="Opening">ВременнаяСсылкаОткрытие</Event>
+									</Events>
+								</InputField>
+								<Button name="СкопироватьВБуферОбмена" id="124">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СкопироватьВБуферОбмена</CommandName>
+									<ExtendedTooltip name="СкопироватьВБуферОбменаРасширеннаяПодсказка" id="125"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИнформацияПоСсылке" id="98">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа информация по ссылке</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа информация по ссылке</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИнформацияПоСсылкеРасширеннаяПодсказка" id="99"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаИнформацияОбщая" id="158">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа информация общая</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа информация общая</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИнформацияОбщаяРасширеннаяПодсказка" id="159"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаИнформацияОплаты" id="160">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа информация оплаты</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа информация оплаты</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаИнформацияОплатыРасширеннаяПодсказка" id="161"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияПодключенныеСпособыОплатыИнформация" id="77">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Оплата через ЮKassa
+Оплата через СБП 
+Получение счета на оплату</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияПодключенныеСпособыОплатыИнформацияКонтекстноеМеню" id="78"/>
+													<ExtendedTooltip name="ДекорацияПодключенныеСпособыОплатыИнформацияРасширеннаяПодсказка" id="79"/>
+												</LabelDecoration>
+												<LabelDecoration name="ДекорацияСсылкаДействуетДо" id="23">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>действует до 14.06.2024 г. 14:00</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Right</HorizontalAlign>
+													<ContextMenu name="ДекорацияСсылкаДействуетДоКонтекстноеМеню" id="24"/>
+													<ExtendedTooltip name="ДекорацияСсылкаДействуетДоРасширеннаяПодсказка" id="25"/>
+												</LabelDecoration>
+												<Button name="Отозвать" id="40">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.Отозвать</CommandName>
+													<ExtendedTooltip name="ОтозватьРасширеннаяПодсказка" id="41"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<Button name="ОткрытьНастройкиРезультат" id="80">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьНастройки</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Открыть настройки</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьНастройкиРезультатРасширеннаяПодсказка" id="81"/>
+										</Button>
+										<UsualGroup name="Группа1" id="177">
+											<HorizontalAlign>Left</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>auto</BackColor>
+											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="178"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация1" id="179">
+													<Picture>
+														<xr:Ref>CommonPicture.Маг1С_Информация</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="Декорация1КонтекстноеМеню" id="180"/>
+													<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="181"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияИнвайтИнформация" id="118">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Покупатель может открыть эту ссылку, но ему запрещена регистрация витрине и оформление заказов (&lt;link м&gt;разрешить&lt;/&gt;)</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияИнвайтИнформацияКонтекстноеМеню" id="119"/>
+													<ExtendedTooltip name="ДекорацияИнвайтИнформацияРасширеннаяПодсказка" id="120"/>
+													<Events>
+														<Event name="URLProcessing">ДекорацияИнвайтИнформацияОбработкаНавигационнойСсылки</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРекламаmag1c" id="108">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Экономьте время и упростите работу с заказами с сервисом mag1c!</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа рекламаmag1c</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#E8EDF4</BackColor>
+							<ExtendedTooltip name="ГруппаРекламаmag1cРасширеннаяПодсказка" id="109"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаРекламаmag1cСодержимое" id="162">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа рекламаmag1c содержимое</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>#E8EDF4</BackColor>
+									<ExtendedTooltip name="ГруппаРекламаmag1cСодержимоеРасширеннаяПодсказка" id="163"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияЛогоMag1c" id="164">
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<PictureSize>AutoSize</PictureSize>
+											<Picture>
+												<xr:Ref>CommonPicture.Маг1СЛоготип</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ДекорацияЛогоMag1cКонтекстноеМеню" id="165"/>
+											<ExtendedTooltip name="ДекорацияЛогоMag1cРасширеннаяПодсказка" id="166"/>
+											<Events>
+												<Event name="Click">ДекорацияЛогоMag1cНажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<UsualGroup name="ГруппаРекламаДругиеВитрины" id="167">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Вы уже используете сервис веб-витрин mag1c, но для других организаций</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа реклама другие витрины</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Representation>NormalSeparation</Representation>
+											<ExtendedTooltip name="ГруппаРекламаДругиеВитриныРасширеннаяПодсказка" id="168"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияРекламаДругиеВитрины" id="169">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;link СоздатьВебВитрину&gt;Создайте&lt;/&gt; веб-витрину &lt;link https://v8.1c.ru/its/services/mag1c/&gt;mag1c&lt;/&gt; по этой организации прямо сейчас и предоставьте покупателям возможность самостоятельно создавать заказы. Они будут автоматически загружаться в вашу программу 1С.
+
+Все веб-витрины, подключенные к этой базе, будут использовать один и тот же тариф сервиса, т.е. отдельно оплачивать новую витрину не нужно.</v8:content>
+														</v8:item>
+													</Title>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияРекламаДругиеВитриныКонтекстноеМеню" id="170"/>
+													<ExtendedTooltip name="ДекорацияРекламаДругиеВитриныРасширеннаяПодсказка" id="171"/>
+													<Events>
+														<Event name="URLProcessing">ДекорацияРекламаОбработкаНавигационнойСсылки</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаРекламаПерваяВитрина" id="172">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Экономьте время и упростите работу с заказами с сервисом mag1c!</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа реклама первая витрина</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Representation>NormalSeparation</Representation>
+											<ExtendedTooltip name="ГруппаРекламаПерваяВитринаРасширеннаяПодсказка" id="173"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияРекламаПерваяВитрина" id="174">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;link СоздатьВебВитрину&gt;Создайте&lt;/&gt; свою веб-витрину &lt;link https://v8.1c.ru/its/services/mag1c/&gt;mag1c&lt;/&gt; и предоставьте покупателям возможность самостоятельно создавать заказы. Они будут автоматически загружаться в вашу программу 1С, что позволит вам сосредоточиться на других задачах.
+
+&lt;link https://demo.mag1c.ru&gt;Посмотрите&lt;/&gt;, как может выглядеть ваша веб-витрина &lt;link https://v8.1c.ru/its/services/mag1c/&gt;mag1c&lt;/&gt;.
+
+Процесс создания займет всего несколько минут и не потребует никаких специальных знаний. Первые 3 месяца использования веб-витрины – бесплатно, далее – всего от 425 рублей в месяц.</v8:content>
+														</v8:item>
+													</Title>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияРекламаПерваяВитринаКонтекстноеМеню" id="175"/>
+													<ExtendedTooltip name="ДекорацияРекламаПерваяВитринаРасширеннаяПодсказка" id="176"/>
+													<Events>
+														<Event name="URLProcessing">ДекорацияРекламаОбработкаНавигационнойСсылки</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПерезапускПрограммы" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница перезапуск программы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выполнено ошибка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаПерезапускПрограммыРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияОшибка3" id="66">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация ошибка</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>AutoSize</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.Маг1СПодготовкаВитриныОтложена</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияОшибка3КонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ДекорацияОшибка3РасширеннаяПодсказка" id="68"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияНадписьОшибка3" id="69">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расширение для работы с mag1c обновлено.
+Перед продолжением работы рекомендуем &lt;link ПерезапуститьПрограмму&gt;перезапустить программу&lt;/&gt;.</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ContextMenu name="ДекорацияНадписьОшибка3КонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ДекорацияНадписьОшибка3РасширеннаяПодсказка" id="71"/>
+							<Events>
+								<Event name="URLProcessing">ДекорацияНадписьОшибка3ОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОшибка" id="82">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ошибка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ошибка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаОшибкаРасширеннаяПодсказка" id="83"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияОшибка" id="84">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация ошибка</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>AutoSize</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.Маг1СПодготовкаВитриныОтложена</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияОшибкаКонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="ДекорацияОшибкаРасширеннаяПодсказка" id="86"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияНадписьОшибка" id="87">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Что-то пошло не так(((
+Подробную информацию можно получить в &lt;link ОткрытьЖурналРегистрации&gt;журнале регистрации&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ContextMenu name="ДекорацияНадписьОшибкаКонтекстноеМеню" id="88"/>
+							<ExtendedTooltip name="ДекорацияНадписьОшибкаРасширеннаяПодсказка" id="89"/>
+							<Events>
+								<Event name="URLProcessing">ДекорацияНадписьОшибкаОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="НадписьОбращениеВТехническуюПоддержку2" id="92">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Чтобы сообщить нам о проблеме, перейдите, пожалуйста, по этой &lt;link Техподдержка&gt;ссылке&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ContextMenu name="НадписьОбращениеВТехническуюПоддержку2КонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="НадписьОбращениеВТехническуюПоддержку2РасширеннаяПодсказка" id="94"/>
+							<Events>
+								<Event name="URLProcessing">НадписьОбращениеВТехническуюПоддержкуОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СрокДействияСсылки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок действия ссылки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументСсылка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяВитрины" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя витрины</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛогинИПП" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин ИПП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеСсылки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание ссылки</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="НастройкиВитрины" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки витрины</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="СтрокаСпискаВитрин" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка списка витрин</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПараметрыСобытия" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры события</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ВременнаяСсылка" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Временная ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗакрытьПриУспехе" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть при успехе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗакрытьФормуБезусловно" id="13">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторЗадания" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СкладДокумента" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьПравоНастройкиВитрины" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть право настройки витрины</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВременнаяСсылкаОтображение" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Временная ссылка отображение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеИнвайта" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание инвайта</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Контрагент" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Получить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить ссылку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Получить</Action>
+		</Command>
+		<Command name="Отозвать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отозвать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отозвать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отозвать</Action>
+		</Command>
+		<Command name="ОчиститьЛокальныйКешНастроек" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить локальный кеш настроек</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить локальный кеш настроек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьЛокальныйКешНастроек</Action>
+		</Command>
+		<Command name="ОткрытьНастройки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьНастройки</Action>
+		</Command>
+		<Command name="СкопироватьВБуферОбмена" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать в буфер обмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Маг1С_СкопироватьВБуфер</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СкопироватьВБуферОбмена</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СоздатьОбращениеВТехническуюПоддержку" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Техподдержка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать обращение в техническую поддержку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НадписьОбращениеВТехническуюПоддержкуНажатие</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ОписаниеСсылки">
+			<Type/>
+		</Parameter>
+		<Parameter name="СтрокаСпискаВитрин">
+			<Type/>
+		</Parameter>
+		<Parameter name="ДокументСсылка">
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+		</Parameter>
+		<Parameter name="ЛогинИПП">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ОписаниеИнвайта">
+			<Type/>
+		</Parameter>
+		<Parameter name="Контрагент">
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

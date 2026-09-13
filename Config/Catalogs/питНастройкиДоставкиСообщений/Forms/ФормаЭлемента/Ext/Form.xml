@@ -1,0 +1,1403 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПроверитьНастройку" id="112">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьНастройку</CommandName>
+				<ExtendedTooltip name="ФормаПроверитьНастройкуРасширеннаяПодсказка" id="113"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ChildItemsWidth>LeftWidest</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="114"/>
+			<ChildItems>
+				<UsualGroup name="ШапкаЛево" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаЛевоРасширеннаяПодсказка" id="115"/>
+					<ChildItems>
+						<InputField name="Наименование" id="6">
+							<DataPath>Объект.Description</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="116"/>
+						</InputField>
+						<InputField name="КаталогОбменов" id="8">
+							<DataPath>Объект.КаталогОбменов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Каталог размещения файлов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Рекомендуется указывать общедоступный сетевой ресурс (необходимо обеспечить доступ к нему как для пользователей так и для рабочих процессов сервера 1С)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ChoiceButton>true</ChoiceButton>
+							<OpenButton>false</OpenButton>
+							<ContextMenu name="КаталогОбменовКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="КаталогОбменовРасширеннаяПодсказка" id="117"/>
+							<Events>
+								<Event name="OnChange">КаталогОбменовПриИзменении</Event>
+								<Event name="StartChoice">КаталогОбменовНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="СпособОбмена" id="10">
+							<DataPath>Объект.СпособОбмена</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Способ доставки файлов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Способ доставки/получения сообщений обмена (0 - файловый, 1 - MAPI, 2 - SMTP/POP3, 3 - FTP)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Локальный каталог</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>MAPI</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>SMTP / POP3</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>FTP</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">3</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>HTTP</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">4</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="СпособОбменаКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="СпособОбменаРасширеннаяПодсказка" id="118"/>
+							<Events>
+								<Event name="OnChange">СпособОбменаПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ШапкаПраво" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаПравоРасширеннаяПодсказка" id="119"/>
+					<ChildItems>
+						<InputField name="Код" id="4">
+							<DataPath>Объект.Code</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КодКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="120"/>
+						</InputField>
+						<CheckBoxField name="КаталогНаКлиенте" id="183">
+							<DataPath>Объект.КаталогНаКлиенте</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КаталогНаКлиентеКонтекстноеМеню" id="184"/>
+							<ExtendedTooltip name="КаталогНаКлиентеРасширеннаяПодсказка" id="185"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ОсновнаяПанель" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ОсновнаяПанельРасширеннаяПодсказка" id="121"/>
+			<ChildItems>
+				<Page name="СтраницаДополнительно" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаДополнительноРасширеннаяПодсказка" id="165"/>
+					<ChildItems>
+						<UsualGroup name="СохранениеКопий" id="15">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сохранение копий</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сохранение копий</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="СохранениеКопийРасширеннаяПодсказка" id="166"/>
+							<ChildItems>
+								<UsualGroup name="Группа1" id="17">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="167"/>
+									<ChildItems>
+										<CheckBoxField name="СохранятьОтправленные" id="26">
+											<DataPath>Объект.СохранятьОтправленные</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Хранить отправленные в:</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сохранять копии отправленных сообщений обмена</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СохранятьОтправленныеКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="СохранятьОтправленныеРасширеннаяПодсказка" id="168"/>
+											<Events>
+												<Event name="OnChange">СохранятьОтправленныеПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<CheckBoxField name="СохранятьПолученные" id="28">
+											<DataPath>Объект.СохранятьПолученные</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Хранить полученные в:</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сохранять копии обработанных (полученных) сообщений обмена</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СохранятьПолученныеКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="СохранятьПолученныеРасширеннаяПодсказка" id="169"/>
+											<Events>
+												<Event name="OnChange">СохранятьПолученныеПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<CheckBoxField name="ИспользоватьВременныйКаталог" id="30">
+											<DataPath>Объект.ИспользоватьВременныйКаталог</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Каталог врем-х файлов:</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Использовать заданный каталог для временных файлов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьВременныйКаталогКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="ИспользоватьВременныйКаталогРасширеннаяПодсказка" id="170"/>
+											<Events>
+												<Event name="OnChange">ИспользоватьВременныйКаталогПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа2" id="18">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="171"/>
+									<ChildItems>
+										<InputField name="КаталогОтправленныхСообщений" id="20">
+											<DataPath>Объект.КаталогОтправленныхСообщений</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> </v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Каталог отправленных сообщений</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ChoiceButton>true</ChoiceButton>
+											<ChoiceListButton>false</ChoiceListButton>
+											<ContextMenu name="КаталогОтправленныхСообщенийКонтекстноеМеню" id="21"/>
+											<ExtendedTooltip name="КаталогОтправленныхСообщенийРасширеннаяПодсказка" id="172"/>
+											<Events>
+												<Event name="StartChoice">КаталогОтправленныхСообщенийНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="КаталогПолученныхСообщений" id="22">
+											<DataPath>Объект.КаталогПолученныхСообщений</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Каталог полученных сообщений</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="КаталогПолученныхСообщенийКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="КаталогПолученныхСообщенийРасширеннаяПодсказка" id="173"/>
+											<Events>
+												<Event name="StartChoice">КаталогПолученныхСообщенийНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="КаталогВременныхФайлов" id="24">
+											<DataPath>Объект.КаталогВременныхФайлов</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Каталог временных файлов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="КаталогВременныхФайловКонтекстноеМеню" id="25"/>
+											<ExtendedTooltip name="КаталогВременныхФайловРасширеннаяПодсказка" id="174"/>
+											<Events>
+												<Event name="StartChoice">КаталогВременныхФайловНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СжатиеСообщений" id="16">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сжатие сообщений</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сжатие сообщений</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="СжатиеСообщенийРасширеннаяПодсказка" id="175"/>
+							<ChildItems>
+								<CheckBoxField name="АрхивироватьСообщенияОбмена" id="32">
+									<DataPath>Объект.АрхивироватьСообщенияОбмена</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Архивировать сообщения обмена</v8:content>
+										</v8:item>
+									</ToolTip>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="АрхивироватьСообщенияОбменаКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="АрхивироватьСообщенияОбменаРасширеннаяПодсказка" id="176"/>
+								</CheckBoxField>
+								<InputField name="ПарольАрхивации" id="34">
+									<DataPath>Объект.ПарольАрхивации</DataPath>
+									<PasswordMode>true</PasswordMode>
+									<ContextMenu name="ПарольАрхивацииКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ПарольАрхивацииРасширеннаяПодсказка" id="177"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДополнительныеРеквизиты" id="206">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные реквизиты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Additional attributes</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="207"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПараметрыДоставки" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры доставки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры доставки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПараметрыДоставкиРасширеннаяПодсказка" id="122"/>
+					<ChildItems>
+						<Pages name="ПараметрыДоставки" id="36">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры доставки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры доставки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ПараметрыДоставкиРасширеннаяПодсказка" id="123"/>
+							<ChildItems>
+								<Page name="СтраницаMAPI" id="37">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>MAPI</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>MAPI</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаMAPIРасширеннаяПодсказка" id="124"/>
+									<ChildItems>
+										<InputField name="АдресЭлектроннойПочты" id="38">
+											<DataPath>Объект.АдресЭлектроннойПочты</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адрес электронной почты, на который будет отправлено сообщение обмена</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ContextMenu name="АдресЭлектроннойПочтыКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="АдресЭлектроннойПочтыРасширеннаяПодсказка" id="125"/>
+											<Events>
+												<Event name="OnChange">АдресЭлектроннойПочтыПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПрофильMAPI" id="40">
+											<DataPath>Объект.ПрофильMAPI</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наименование профиля MAPI</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наименование почтового профиля MAPI.
+Если не указано, то используется почтовый клиент по умолчанию.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ContextMenu name="ПрофильMAPIКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="ПрофильMAPIРасширеннаяПодсказка" id="126"/>
+										</InputField>
+										<InputField name="ПарольMAPI" id="42">
+											<DataPath>Объект.ПарольMAPI</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пароль</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пароль, используемый для подключения к почтовому профилю MAPI.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PasswordMode>true</PasswordMode>
+											<ContextMenu name="ПарольMAPIКонтекстноеМеню" id="43"/>
+											<ExtendedTooltip name="ПарольMAPIРасширеннаяПодсказка" id="127"/>
+										</InputField>
+										<LabelDecoration name="ДекорацияMAPI" id="44">
+											<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>В качестве механизма получения/отправки сообщений обмена будет использован почтовый клиент, установленный в системе, доступ к которому производится с помощью технологии MAPI. Для использования почтового клиента, не являющимся клиентом по умолчанию, необходимо указать наименование почтового профиля.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияMAPIКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="ДекорацияMAPIРасширеннаяПодсказка" id="128"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаSMTPPOP3" id="46">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>SMTP/POP3</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>SMTP/POP3</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаSMTPPOP3РасширеннаяПодсказка" id="129"/>
+									<ChildItems>
+										<CheckBoxField name="ЕдиныеПараметры" id="47">
+											<DataPath>ЕдиныеПараметры</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Единые параметры подключения</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Признак использования единых параметров подключения к почтовым серверам.
+Если включено, то для подключения к серверу SMTP, будут использованы параметры, заданные для сервера POP3.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЕдиныеПараметрыКонтекстноеМеню" id="48"/>
+											<ExtendedTooltip name="ЕдиныеПараметрыРасширеннаяПодсказка" id="130"/>
+											<Events>
+												<Event name="OnChange">ЕдиныеПараметрыПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="АдресЭлектроннойПочты1" id="49">
+											<DataPath>Объект.АдресЭлектроннойПочты</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адрес электронной почты, на который будет отправлено сообщение обмена.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ContextMenu name="АдресЭлектроннойПочты1КонтекстноеМеню" id="50"/>
+											<ExtendedTooltip name="АдресЭлектроннойПочты1РасширеннаяПодсказка" id="131"/>
+											<Events>
+												<Event name="OnChange">АдресЭлектроннойПочты1ПриИзменении</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="Группа3" id="51">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="132"/>
+											<ChildItems>
+												<UsualGroup name="POP3" id="52">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>POP3</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>POP3</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<ExtendedTooltip name="POP3РасширеннаяПодсказка" id="133"/>
+													<ChildItems>
+														<InputField name="СерверPOP3" id="54">
+															<DataPath>Объект.СерверPOP3</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сервер</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Имя сервера POP3 (получения сообщений обмена).</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="СерверPOP3КонтекстноеМеню" id="55"/>
+															<ExtendedTooltip name="СерверPOP3РасширеннаяПодсказка" id="134"/>
+															<Events>
+																<Event name="OnChange">СерверPOP3ПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="ПортPOP3" id="60">
+															<DataPath>Объект.ПортPOP3</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Порт</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Порт сервера POP3 (получения сообщений обмена). По умолчанию: 110.</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="ПортPOP3КонтекстноеМеню" id="61"/>
+															<ExtendedTooltip name="ПортPOP3РасширеннаяПодсказка" id="135"/>
+														</InputField>
+														<InputField name="ПользовательPOP3" id="62">
+															<DataPath>Объект.ПользовательPOP3</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пользователь</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Имя учетной записи, используемое для подключения к серверу POP3 (получения сообщений обмена)</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="ПользовательPOP3КонтекстноеМеню" id="63"/>
+															<ExtendedTooltip name="ПользовательPOP3РасширеннаяПодсказка" id="136"/>
+															<Events>
+																<Event name="OnChange">ПользовательPOP3ПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="ПарольPOP3" id="64">
+															<DataPath>Объект.ПарольPOP3</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пароль</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пароль учетной записи, используемый для подключения к серверу POP3 (получения сообщений обмена)</v8:content>
+																</v8:item>
+															</ToolTip>
+															<PasswordMode>true</PasswordMode>
+															<ContextMenu name="ПарольPOP3КонтекстноеМеню" id="65"/>
+															<ExtendedTooltip name="ПарольPOP3РасширеннаяПодсказка" id="137"/>
+															<Events>
+																<Event name="OnChange">ПарольPOP3ПриИзменении</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="SMTP" id="53">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>SMTP</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>SMTP</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<ExtendedTooltip name="SMTPРасширеннаяПодсказка" id="138"/>
+													<ChildItems>
+														<InputField name="СерверSMTP" id="56">
+															<DataPath>Объект.СерверSMTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сервер</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Имя сервера SMTP (отправки сообщений обмена).</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="СерверSMTPКонтекстноеМеню" id="57"/>
+															<ExtendedTooltip name="СерверSMTPРасширеннаяПодсказка" id="139"/>
+														</InputField>
+														<InputField name="ПортSMTP" id="58">
+															<DataPath>Объект.ПортSMTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Порт</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Порт сервера SMTP (отправки сообщений обмена). По умолчанию: 25.</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="ПортSMTPКонтекстноеМеню" id="59"/>
+															<ExtendedTooltip name="ПортSMTPРасширеннаяПодсказка" id="140"/>
+														</InputField>
+														<InputField name="ПользовательSMTP" id="66">
+															<DataPath>Объект.ПользовательSMTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пользователь</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Имя учетной записи, используемое для подключения к серверу SMTP (отправки сообщений обмена)</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="ПользовательSMTPКонтекстноеМеню" id="67"/>
+															<ExtendedTooltip name="ПользовательSMTPРасширеннаяПодсказка" id="141"/>
+														</InputField>
+														<InputField name="ПарольSMTP" id="68">
+															<DataPath>Объект.ПарольSMTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пароль</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пароль учетной записи, используемый для подключения к серверу SMTP (отправки сообщений обмена)</v8:content>
+																</v8:item>
+															</ToolTip>
+															<PasswordMode>true</PasswordMode>
+															<ContextMenu name="ПарольSMTPКонтекстноеМеню" id="69"/>
+															<ExtendedTooltip name="ПарольSMTPРасширеннаяПодсказка" id="142"/>
+														</InputField>
+														<InputField name="Таймаут" id="70">
+															<DataPath>Объект.Таймаут</DataPath>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Время ожидания удачного исполнения операции в секундах. Значение по умолчанию: 30 секунд.</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="ТаймаутКонтекстноеМеню" id="71"/>
+															<ExtendedTooltip name="ТаймаутРасширеннаяПодсказка" id="143"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаFTP" id="72">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>FTP</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>FTP</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаFTPРасширеннаяПодсказка" id="144"/>
+									<ChildItems>
+										<CheckBoxField name="ВыполнятьТранслитерацию" id="106">
+											<DataPath>Объект.ВыполнятьТранслитерацию</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнять транслитерацию</v8:content>
+												</v8:item>
+											</ToolTip>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВыполнятьТранслитерациюКонтекстноеМеню" id="107"/>
+											<ExtendedTooltip name="ВыполнятьТранслитерациюРасширеннаяПодсказка" id="145"/>
+										</CheckBoxField>
+										<LabelDecoration name="ДекорацияТранслитерация" id="110">
+											<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При установке транслитерации русские буквы в имени файла сообщения на FTP-сервере при отправке или приеме будут транслитерованы для обеспечения совместимости (не все FTP-сервера поддерживают русские символы в наименованиях файлов и папок).</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияТранслитерацияКонтекстноеМеню" id="111"/>
+											<ExtendedTooltip name="ДекорацияТранслитерацияРасширеннаяПодсказка" id="146"/>
+										</LabelDecoration>
+										<UsualGroup name="FTPСервер" id="73">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>FTP-сервер</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>FTP-сервер</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<ChildItemsWidth>LeftWide</ChildItemsWidth>
+											<ExtendedTooltip name="FTPСерверРасширеннаяПодсказка" id="147"/>
+											<ChildItems>
+												<UsualGroup name="Группа4" id="75">
+													<HorizontalStretch>true</HorizontalStretch>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="148"/>
+													<ChildItems>
+														<InputField name="СерверFTP" id="77">
+															<DataPath>Объект.СерверFTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Адрес</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Имя FTP сервера</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="СерверFTPКонтекстноеМеню" id="78"/>
+															<ExtendedTooltip name="СерверFTPРасширеннаяПодсказка" id="149"/>
+															<Events>
+																<Event name="OnChange">СерверFTPПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="КаталогОбменаFTP" id="79">
+															<DataPath>Объект.КаталогОбменаFTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Каталог обмена</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Каталог сохранения и получения сообщений обмена с FTP сервера. Если каталог обмена сообщениями не указан, то сохранение и получение сообщений производится из корневого каталога FTP сервера</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="КаталогОбменаFTPКонтекстноеМеню" id="80"/>
+															<ExtendedTooltip name="КаталогОбменаFTPРасширеннаяПодсказка" id="150"/>
+															<Events>
+																<Event name="OnChange">КаталогОбменаFTPПриИзменении</Event>
+															</Events>
+														</InputField>
+														<UsualGroup name="ПодГруппа41" id="178">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Под группа41</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTipRepresentation>None</ToolTipRepresentation>
+															<Group>Horizontal</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ПодГруппа41РасширеннаяПодсказка" id="179"/>
+															<ChildItems>
+																<CheckBoxField name="ПассивныйРежим" id="88">
+																	<DataPath>Объект.ПассивныйРежим</DataPath>
+																	<TitleLocation>Right</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Использовать пассивный режим соединения с FTP сервером</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ПассивныйРежимКонтекстноеМеню" id="89"/>
+																	<ExtendedTooltip name="ПассивныйРежимРасширеннаяПодсказка" id="151"/>
+																</CheckBoxField>
+																<InputField name="Таймаут1" id="180">
+																	<DataPath>Объект.Таймаут</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Таймаут (сек)</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Таймаут соединения. Желательно задавать положительное значение, но не очень большое чтобы при проверке возможности соединиться с сервером не было слишком длительного периода ожидания</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ContextMenu name="Таймаут1КонтекстноеМеню" id="181"/>
+																	<ExtendedTooltip name="Таймаут1РасширеннаяПодсказка" id="182"/>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа5" id="76">
+													<HorizontalStretch>true</HorizontalStretch>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="152"/>
+													<ChildItems>
+														<InputField name="ПортFTP" id="81">
+															<DataPath>Объект.ПортFTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Порт</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Порт FTP сервера. По умолчанию: 21</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="ПортFTPКонтекстноеМеню" id="82"/>
+															<ExtendedTooltip name="ПортFTPРасширеннаяПодсказка" id="153"/>
+														</InputField>
+														<InputField name="ПользовательFTP" id="84">
+															<DataPath>Объект.ПользовательFTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пользователь</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Имя учетной записи, используемое для входа на FTP сервер</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="ПользовательFTPКонтекстноеМеню" id="85"/>
+															<ExtendedTooltip name="ПользовательFTPРасширеннаяПодсказка" id="154"/>
+														</InputField>
+														<InputField name="ПарольFTP" id="90">
+															<DataPath>Объект.ПарольFTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пароль</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пароль учетной записи, используемый для входа на FTP сервер</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Width>1</Width>
+															<PasswordMode>true</PasswordMode>
+															<ContextMenu name="ПарольFTPКонтекстноеМеню" id="91"/>
+															<ExtendedTooltip name="ПарольFTPРасширеннаяПодсказка" id="155"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ПроксиСервер" id="74">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Прокси-сервер</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Прокси-сервер</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<ExtendedTooltip name="ПроксиСерверРасширеннаяПодсказка" id="156"/>
+											<ChildItems>
+												<UsualGroup name="Группа6" id="92">
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="157"/>
+													<ChildItems>
+														<CheckBoxField name="ИспользоватьПрокси" id="94">
+															<DataPath>ИспользоватьПрокси</DataPath>
+															<TitleLocation>Right</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Использовать прокси</v8:content>
+																</v8:item>
+															</ToolTip>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ИспользоватьПроксиКонтекстноеМеню" id="95"/>
+															<ExtendedTooltip name="ИспользоватьПроксиРасширеннаяПодсказка" id="158"/>
+															<Events>
+																<Event name="OnChange">ИспользоватьПроксиПриИзменении</Event>
+															</Events>
+														</CheckBoxField>
+														<InputField name="ПротоколПроксиFTP" id="108">
+															<DataPath>Объект.ПротоколПроксиFTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Тип</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Вид протокола прокси-сервера FTP</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ListChoiceMode>true</ListChoiceMode>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xs:string">HTTP</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xs:string">HTTPS</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xs:string">FTP</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
+															<ContextMenu name="ПротоколПроксиFTPКонтекстноеМеню" id="109"/>
+															<ExtendedTooltip name="ПротоколПроксиFTPРасширеннаяПодсказка" id="159"/>
+														</InputField>
+														<InputField name="СерверПроксиFTP" id="98">
+															<DataPath>Объект.СерверПроксиFTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Адрес</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сервер прокси FTP</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="СерверПроксиFTPКонтекстноеМеню" id="99"/>
+															<ExtendedTooltip name="СерверПроксиFTPРасширеннаяПодсказка" id="160"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа7" id="93">
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="161"/>
+													<ChildItems>
+														<InputField name="ПортПроксиFTP" id="100">
+															<DataPath>Объект.ПортПроксиFTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Порт</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Порт прокси FTP</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="ПортПроксиFTPКонтекстноеМеню" id="101"/>
+															<ExtendedTooltip name="ПортПроксиFTPРасширеннаяПодсказка" id="162"/>
+														</InputField>
+														<InputField name="ПользовательПроксиFTP" id="102">
+															<DataPath>Объект.ПользовательПроксиFTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пользователь</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пользователь прокси FTP</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="ПользовательПроксиFTPКонтекстноеМеню" id="103"/>
+															<ExtendedTooltip name="ПользовательПроксиFTPРасширеннаяПодсказка" id="163"/>
+														</InputField>
+														<InputField name="ПарольПроксиFTP" id="104">
+															<DataPath>Объект.ПарольПроксиFTP</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пароль</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пароль прокси FTP</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="ПарольПроксиFTPКонтекстноеМеню" id="105"/>
+															<ExtendedTooltip name="ПарольПроксиFTPРасширеннаяПодсказка" id="164"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаHTTP" id="186">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница HTTP</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница HTTP</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаHTTPРасширеннаяПодсказка" id="187"/>
+									<ChildItems>
+										<UsualGroup name="HTTPСервер" id="188">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>HTTP Сервер</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>HTTP Сервер</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<ExtendedTooltip name="HTTPСерверРасширеннаяПодсказка" id="189"/>
+											<ChildItems>
+												<UsualGroup name="HTTPСервер1" id="190">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>HTTPСервер1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>HTTPСервер1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="HTTPСервер1РасширеннаяПодсказка" id="191"/>
+													<ChildItems>
+														<InputField name="АдресСервераHTTP" id="192">
+															<DataPath>Объект.АдресСервераHTTP</DataPath>
+															<ContextMenu name="АдресСервераHTTPКонтекстноеМеню" id="193"/>
+															<ExtendedTooltip name="АдресСервераHTTPРасширеннаяПодсказка" id="194"/>
+															<Events>
+																<Event name="OnChange">АдресСервераHTTPПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="ПортHTTP" id="195">
+															<DataPath>Объект.ПортHTTP</DataPath>
+															<ContextMenu name="ПортHTTPКонтекстноеМеню" id="196"/>
+															<ExtendedTooltip name="ПортHTTPРасширеннаяПодсказка" id="197"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="HTTPСервер2" id="198">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>HTTPСервер1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>HTTPСервер1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="HTTPСервер2РасширеннаяПодсказка" id="199"/>
+													<ChildItems>
+														<InputField name="ПользовательHTTP" id="200">
+															<DataPath>Объект.ПользовательHTTP</DataPath>
+															<ContextMenu name="ПользовательHTTPКонтекстноеМеню" id="201"/>
+															<ExtendedTooltip name="ПользовательHTTPРасширеннаяПодсказка" id="202"/>
+														</InputField>
+														<InputField name="ПарольHTTP" id="203">
+															<DataPath>Объект.ПарольHTTP</DataPath>
+															<PasswordMode>true</PasswordMode>
+															<ContextMenu name="ПарольHTTPКонтекстноеМеню" id="204"/>
+															<ExtendedTooltip name="ПарольHTTPРасширеннаяПодсказка" id="205"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.питНастройкиДоставкиСообщений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЕдиныеПараметры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Единые параметры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьПрокси" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтветНаВопрос" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ на вопрос</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьНастройку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить настройку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить настройку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьНастройку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

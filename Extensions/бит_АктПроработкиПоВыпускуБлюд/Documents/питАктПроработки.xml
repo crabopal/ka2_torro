@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="6e316567-482e-4d56-aeda-5b75cd5505e7">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.питАктПроработки" category="Object">
+				<xr:TypeId>b8697cba-8e2a-4613-804c-10a8ce4ecbaa</xr:TypeId>
+				<xr:ValueId>b1534176-6b4b-44e7-a6cb-a00b5c14b8aa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.питАктПроработки" category="Ref">
+				<xr:TypeId>f4763726-09ef-4ff4-b205-d3ee0835259a</xr:TypeId>
+				<xr:ValueId>5aaa2495-8ddb-4dc6-9f41-92238aefe372</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.питАктПроработки" category="Selection">
+				<xr:TypeId>170d6389-a86c-426b-9530-916d97aa5d99</xr:TypeId>
+				<xr:ValueId>62a38e4b-48c0-4759-8dd0-d19134528688</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.питАктПроработки" category="List">
+				<xr:TypeId>df21bfff-0271-4197-8d65-52c2d116b7be</xr:TypeId>
+				<xr:ValueId>f373748c-c07a-42aa-a4a3-91a429038d19</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.питАктПроработки" category="Manager">
+				<xr:TypeId>ca771b59-2311-4529-af98-726b198639cd</xr:TypeId>
+				<xr:ValueId>54f8a487-aa71-4dc2-8513-f939dbe54275</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>питАктПроработки</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>f50b6a33-49f0-4ea5-ab53-50f0ddc066a1</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="240a2b51-c79d-4172-80af-1bcf6d1b3d82">
+				<InternalInfo>
+					<xr:PropertyState>
+						<xr:Property>Type</xr:Property>
+						<xr:State>MultiState</xr:State>
+					</xr:PropertyState>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументОснование</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4f24e7df-c9cd-4dbb-bfed-fd61e6791a57</ExtendedConfigurationObject>
+					<Type xsi:type="xr:ExtendedProperty">
+						<xr:CheckValue xsi:type="v8:TypeDescription">
+							<v8:Type>cfg:DocumentRef.питРецептура</v8:Type>
+						</xr:CheckValue>
+						<xr:ExtendValue xsi:type="v8:TypeDescription">
+							<v8:Type>cfg:DocumentRef.питВыпускБлюд</v8:Type>
+						</xr:ExtendValue>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

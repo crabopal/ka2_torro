@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="a8021a42-3e0c-4385-b922-7a0836493e60">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПравилаОбменаСПодключаемымОборудованиемOffline" category="Object">
+				<xr:TypeId>c5de4b0d-ae87-428a-99f2-be1aef4db3bf</xr:TypeId>
+				<xr:ValueId>cccdd210-20e2-440a-9800-52fd40b8dc9d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПравилаОбменаСПодключаемымОборудованиемOffline" category="Ref">
+				<xr:TypeId>6003c45c-d6d6-4163-993d-eacd73a5e47e</xr:TypeId>
+				<xr:ValueId>a6eabb16-46cc-48d7-b2f6-0676a82c8472</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПравилаОбменаСПодключаемымОборудованиемOffline" category="Selection">
+				<xr:TypeId>e31753c3-cf74-48c1-9652-eec564fe92d5</xr:TypeId>
+				<xr:ValueId>5953de6d-4ad6-401a-aa51-28284726dda8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПравилаОбменаСПодключаемымОборудованиемOffline" category="List">
+				<xr:TypeId>8fd8af37-f9f2-4646-b231-2f74c6567928</xr:TypeId>
+				<xr:ValueId>f2247920-d8de-46c1-8e47-9359e9ed28dd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПравилаОбменаСПодключаемымОборудованиемOffline" category="Manager">
+				<xr:TypeId>4c24940c-40fb-49dd-bbb4-f68fc61268c7</xr:TypeId>
+				<xr:ValueId>b1e8c0a2-5f3d-4a7e-9c1b-2d6e8f0a4b7c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПравилаОбменаСПодключаемымОборудованиемOffline</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>27363ec4-6822-4db6-ae2e-c161bd247ae9</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<TabularSection uuid="e5fab48e-0319-4b21-9f8a-c463a2d721b8">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.ПравилаОбменаСПодключаемымОборудованиемOffline.битВШТВ_ЕдиницыИзмерения" category="TabularSection">
+						<xr:TypeId>0587a901-f5fe-439e-8a1f-b26e74c57a4e</xr:TypeId>
+						<xr:ValueId>36e01a01-27f1-4b38-8564-5a6a63b4b53c</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.ПравилаОбменаСПодключаемымОборудованиемOffline.битВШТВ_ЕдиницыИзмерения" category="TabularSectionRow">
+						<xr:TypeId>520d718c-d665-4757-ac71-fce4e4204212</xr:TypeId>
+						<xr:ValueId>692b84a4-4602-4427-87fc-7e5132edceda</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>битВШТВ_ЕдиницыИзмерения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единицы измерения для выгрузки (бит)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Список единиц (кг, шт и др.), которые выгружаются на весы по правилу</Comment>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Если список заполнен — на весы попадут товары с этими единицами хранения. Если пуст — используется поле «Единица измерения веса».</v8:content>
+						</v8:item>
+					</ToolTip>
+					<FillChecking>DontCheck</FillChecking>
+					<StandardAttributes>
+						<xr:StandardAttribute name="LineNumber">
+							<xr:LinkByType/>
+							<xr:FillChecking>DontCheck</xr:FillChecking>
+							<xr:MultiLine>false</xr:MultiLine>
+							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+							<xr:CreateOnInput>Auto</xr:CreateOnInput>
+							<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+							<xr:MaxValue xsi:nil="true"/>
+							<xr:ToolTip/>
+							<xr:ExtendedEdit>false</xr:ExtendedEdit>
+							<xr:Format/>
+							<xr:ChoiceForm/>
+							<xr:QuickChoice>Auto</xr:QuickChoice>
+							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+							<xr:EditFormat/>
+							<xr:PasswordMode>false</xr:PasswordMode>
+							<xr:DataHistory>Use</xr:DataHistory>
+							<xr:MarkNegatives>false</xr:MarkNegatives>
+							<xr:MinValue xsi:nil="true"/>
+							<xr:Synonym/>
+							<xr:Comment/>
+							<xr:FullTextSearch>Use</xr:FullTextSearch>
+							<xr:ChoiceParameterLinks/>
+							<xr:FillValue xsi:nil="true"/>
+							<xr:Mask/>
+							<xr:ChoiceParameters/>
+						</xr:StandardAttribute>
+					</StandardAttributes>
+					<Use>ForItem</Use>
+					<LineNumberLength>5</LineNumberLength>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="08241375-d094-43c7-bacf-f5e391ab6b94">
+						<Properties>
+							<Name>ЕдиницаИзмерения</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Единица измерения</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:TypeId>254a3240-79c0-4a3f-9259-5122c9ddd71b</v8:TypeId>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Form>ФормаЭлемента</Form>
+			<Template>ОбновлениеPLUКодовТоваров</Template>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

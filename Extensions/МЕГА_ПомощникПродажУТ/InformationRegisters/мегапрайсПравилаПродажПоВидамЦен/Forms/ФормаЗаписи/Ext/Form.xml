@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Партнер" id="1">
+			<DataPath>Запись.Партнер</DataPath>
+			<ContextMenu name="ПартнерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПартнерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Приоритет" id="28">
+			<DataPath>Запись.Приоритет</DataPath>
+			<ContextMenu name="ПриоритетКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<UsualGroup name="ГруппыУсловий" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группы условий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группы условий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппыУсловийРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<UsualGroup name="ПодобранныеЗначения" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подобранные значения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подобранные значения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="ПодобранныеЗначенияРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<InputField name="Склад" id="25">
+							<DataPath>Запись.Склад</DataPath>
+							<ContextMenu name="СкладКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="ЕдиницаИзмерения" id="13">
+							<DataPath>Запись.ЕдиницаИзмерения</DataPath>
+							<ContextMenu name="ЕдиницаИзмеренияКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ЕдиницаИзмеренияРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="Количество" id="19">
+							<DataPath>Запись.Количество</DataPath>
+							<ContextMenu name="КоличествоКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="КоличествоРасширеннаяПодсказка" id="21"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="УсловияПоНоменклатуре" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Условия по номенклатуре</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Условия по номенклатуре</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="УсловияПоНоменклатуреРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<InputField name="Номенклатура" id="39">
+							<DataPath>Запись.Номенклатура</DataPath>
+							<ContextMenu name="НоменклатураКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="41"/>
+						</InputField>
+						<InputField name="ГруппаНоменклатуры" id="4">
+							<DataPath>Запись.ГруппаНоменклатуры</DataPath>
+							<ContextMenu name="ГруппаНоменклатурыКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ГруппаНоменклатурыРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="НоменклатурнаяГруппа" id="7">
+							<DataPath>Запись.ВидНоменклатуры</DataPath>
+							<ContextMenu name="НоменклатурнаяГруппаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="НоменклатурнаяГруппаРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="Производитель" id="10">
+							<DataPath>Запись.Производитель</DataPath>
+							<ContextMenu name="ПроизводительКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ПроизводительРасширеннаяПодсказка" id="12"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="АвтоматическиНазначить" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматически назначить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматически назначить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="АвтоматическиНазначитьРасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<InputField name="УстановитьВидЦены" id="16">
+					<DataPath>Запись.УстановитьВидЦены</DataPath>
+					<ContextMenu name="УстановитьВидЦеныКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="УстановитьВидЦеныРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="Цена" id="42">
+					<DataPath>Запись.Цена</DataPath>
+					<ContextMenu name="ЦенаКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ЦенаРасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<InputField name="Скидка" id="22">
+					<DataPath>Запись.НаценкаСкидка</DataPath>
+					<ContextMenu name="СкидкаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СкидкаРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.мегапрайсПравилаПродажПоВидамЦен</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

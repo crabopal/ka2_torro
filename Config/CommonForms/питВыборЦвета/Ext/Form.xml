@@ -1,0 +1,2224 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выбор цвета</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<VerticalSpacing>OneAndHalf</VerticalSpacing>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОбщая" id="291">
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<VerticalSpacing>Single</VerticalSpacing>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОбщаяРасширеннаяПодсказка" id="292"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПалитра" id="296">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПалитраРасширеннаяПодсказка" id="297"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПредопределенныеЦвета" id="10">
+							<Group>Vertical</Group>
+							<HorizontalSpacing>Half</HorizontalSpacing>
+							<VerticalSpacing>Half</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПредопределенныеЦветаРасширеннаяПодсказка" id="11"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЦветовРяд1" id="1">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<HorizontalSpacing>Half</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЦветовРяд1РасширеннаяПодсказка" id="2"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияЦвет1" id="7">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#000000</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#000000</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет1КонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="ДекорацияЦвет1РасширеннаяПодсказка" id="9"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет2" id="12">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#434343</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#434343</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет2КонтекстноеМеню" id="13"/>
+											<ExtendedTooltip name="ДекорацияЦвет2РасширеннаяПодсказка" id="14"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет3" id="15">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#666666</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#666666</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет3КонтекстноеМеню" id="16"/>
+											<ExtendedTooltip name="ДекорацияЦвет3РасширеннаяПодсказка" id="17"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет4" id="18">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#999999</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#999999</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет4КонтекстноеМеню" id="19"/>
+											<ExtendedTooltip name="ДекорацияЦвет4РасширеннаяПодсказка" id="20"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет5" id="21">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#B7B7B7</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#B7B7B7</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет5КонтекстноеМеню" id="22"/>
+											<ExtendedTooltip name="ДекорацияЦвет5РасширеннаяПодсказка" id="23"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет6" id="24">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#CCCCCC</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#CCCCCC</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет6КонтекстноеМеню" id="25"/>
+											<ExtendedTooltip name="ДекорацияЦвет6РасширеннаяПодсказка" id="26"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет7" id="27">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#D9D9D9</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#D9D9D9</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет7КонтекстноеМеню" id="28"/>
+											<ExtendedTooltip name="ДекорацияЦвет7РасширеннаяПодсказка" id="29"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет8" id="30">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#EFEFEF</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#EFEFEF</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет8КонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="ДекорацияЦвет8РасширеннаяПодсказка" id="32"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет9" id="33">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#F3F3F3</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#F3F3F3</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет9КонтекстноеМеню" id="34"/>
+											<ExtendedTooltip name="ДекорацияЦвет9РасширеннаяПодсказка" id="35"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет10" id="36">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#FFFFFF</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#FFFFFF</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет10КонтекстноеМеню" id="37"/>
+											<ExtendedTooltip name="ДекорацияЦвет10РасширеннаяПодсказка" id="38"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЦветовРяд2" id="39">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<HorizontalSpacing>Half</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЦветовРяд2РасширеннаяПодсказка" id="40"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияЦвет11" id="41">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#980000</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#980000</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет11КонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="ДекорацияЦвет11РасширеннаяПодсказка" id="43"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет12" id="44">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#FF0000</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#FF0000</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет12КонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="ДекорацияЦвет12РасширеннаяПодсказка" id="46"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет13" id="47">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#FF9900</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#FF9900</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет13КонтекстноеМеню" id="48"/>
+											<ExtendedTooltip name="ДекорацияЦвет13РасширеннаяПодсказка" id="49"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет14" id="50">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#FFFF00</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#FFFF00</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет14КонтекстноеМеню" id="51"/>
+											<ExtendedTooltip name="ДекорацияЦвет14РасширеннаяПодсказка" id="52"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет15" id="53">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#01FF00</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#01FF00</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет15КонтекстноеМеню" id="54"/>
+											<ExtendedTooltip name="ДекорацияЦвет15РасширеннаяПодсказка" id="55"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет16" id="56">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#01FFFF</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#01FFFF</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет16КонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="ДекорацияЦвет16РасширеннаяПодсказка" id="58"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет17" id="59">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#4A86E8</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#4A86E8</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет17КонтекстноеМеню" id="60"/>
+											<ExtendedTooltip name="ДекорацияЦвет17РасширеннаяПодсказка" id="61"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет18" id="62">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#0000FF</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#0000FF</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет18КонтекстноеМеню" id="63"/>
+											<ExtendedTooltip name="ДекорацияЦвет18РасширеннаяПодсказка" id="64"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет19" id="65">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#9900FF</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#9900FF</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет19КонтекстноеМеню" id="66"/>
+											<ExtendedTooltip name="ДекорацияЦвет19РасширеннаяПодсказка" id="67"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет20" id="68">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#FF00FF</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#FF00FF</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет20КонтекстноеМеню" id="69"/>
+											<ExtendedTooltip name="ДекорацияЦвет20РасширеннаяПодсказка" id="70"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЦветовРяд3" id="71">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<HorizontalSpacing>Half</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЦветовРяд3РасширеннаяПодсказка" id="72"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияЦвет21" id="73">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#E6B8AF</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#E6B8AF</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет21КонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="ДекорацияЦвет21РасширеннаяПодсказка" id="75"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет22" id="76">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#F4CCCC</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#F4CCCC</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет22КонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="ДекорацияЦвет22РасширеннаяПодсказка" id="78"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет23" id="79">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#FCE5CD</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#FCE5CD</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет23КонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="ДекорацияЦвет23РасширеннаяПодсказка" id="81"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет24" id="82">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#FFF2CC</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#FFF2CC</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет24КонтекстноеМеню" id="83"/>
+											<ExtendedTooltip name="ДекорацияЦвет24РасширеннаяПодсказка" id="84"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет25" id="85">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#D9EAD3</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#D9EAD3</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет25КонтекстноеМеню" id="86"/>
+											<ExtendedTooltip name="ДекорацияЦвет25РасширеннаяПодсказка" id="87"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет26" id="88">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#D0E0E3</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#D0E0E3</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет26КонтекстноеМеню" id="89"/>
+											<ExtendedTooltip name="ДекорацияЦвет26РасширеннаяПодсказка" id="90"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет27" id="91">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#C9DAF8</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#C9DAF8</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет27КонтекстноеМеню" id="92"/>
+											<ExtendedTooltip name="ДекорацияЦвет27РасширеннаяПодсказка" id="93"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет28" id="94">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#CFE2F3</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#CFE2F3</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет28КонтекстноеМеню" id="95"/>
+											<ExtendedTooltip name="ДекорацияЦвет28РасширеннаяПодсказка" id="96"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет29" id="97">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#D9D2E9</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#D9D2E9</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет29КонтекстноеМеню" id="98"/>
+											<ExtendedTooltip name="ДекорацияЦвет29РасширеннаяПодсказка" id="99"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет30" id="100">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#EAD1DC</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#EAD1DC</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет30КонтекстноеМеню" id="101"/>
+											<ExtendedTooltip name="ДекорацияЦвет30РасширеннаяПодсказка" id="102"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЦветовРяд4" id="103">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<HorizontalSpacing>Half</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЦветовРяд4РасширеннаяПодсказка" id="104"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияЦвет31" id="105">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#DD7E6B</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#DD7E6B</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет31КонтекстноеМеню" id="106"/>
+											<ExtendedTooltip name="ДекорацияЦвет31РасширеннаяПодсказка" id="107"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет32" id="108">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#EA9999</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#EA9999</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет32КонтекстноеМеню" id="109"/>
+											<ExtendedTooltip name="ДекорацияЦвет32РасширеннаяПодсказка" id="110"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет33" id="111">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#F9CB9C</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#F9CB9C</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет33КонтекстноеМеню" id="112"/>
+											<ExtendedTooltip name="ДекорацияЦвет33РасширеннаяПодсказка" id="113"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет34" id="114">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#FFE599</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#FFE599</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет34КонтекстноеМеню" id="115"/>
+											<ExtendedTooltip name="ДекорацияЦвет34РасширеннаяПодсказка" id="116"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет35" id="117">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#B6D7A8</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#B6D7A8</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет35КонтекстноеМеню" id="118"/>
+											<ExtendedTooltip name="ДекорацияЦвет35РасширеннаяПодсказка" id="119"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет36" id="120">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#A2C4C9</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#A2C4C9</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет36КонтекстноеМеню" id="121"/>
+											<ExtendedTooltip name="ДекорацияЦвет36РасширеннаяПодсказка" id="122"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет37" id="123">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#A4C2F4</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#A4C2F4</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет37КонтекстноеМеню" id="124"/>
+											<ExtendedTooltip name="ДекорацияЦвет37РасширеннаяПодсказка" id="125"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет38" id="126">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#9FC5E8</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#9FC5E8</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет38КонтекстноеМеню" id="127"/>
+											<ExtendedTooltip name="ДекорацияЦвет38РасширеннаяПодсказка" id="128"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет39" id="129">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#B4A7D6</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#B4A7D6</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет39КонтекстноеМеню" id="130"/>
+											<ExtendedTooltip name="ДекорацияЦвет39РасширеннаяПодсказка" id="131"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет40" id="132">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#D5A6BD</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#D5A6BD</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет40КонтекстноеМеню" id="133"/>
+											<ExtendedTooltip name="ДекорацияЦвет40РасширеннаяПодсказка" id="134"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЦветовРяд5" id="135">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<HorizontalSpacing>Half</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЦветовРяд5РасширеннаяПодсказка" id="136"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияЦвет41" id="137">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#CC4125</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#CC4125</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет41КонтекстноеМеню" id="138"/>
+											<ExtendedTooltip name="ДекорацияЦвет41РасширеннаяПодсказка" id="139"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет42" id="140">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#E06666</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#E06666</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет42КонтекстноеМеню" id="141"/>
+											<ExtendedTooltip name="ДекорацияЦвет42РасширеннаяПодсказка" id="142"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет43" id="143">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#F6B26B</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#F6B26B</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет43КонтекстноеМеню" id="144"/>
+											<ExtendedTooltip name="ДекорацияЦвет43РасширеннаяПодсказка" id="145"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет44" id="146">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#FFD966</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#FFD966</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет44КонтекстноеМеню" id="147"/>
+											<ExtendedTooltip name="ДекорацияЦвет44РасширеннаяПодсказка" id="148"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет45" id="149">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#93C47D</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#93C47D</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет45КонтекстноеМеню" id="150"/>
+											<ExtendedTooltip name="ДекорацияЦвет45РасширеннаяПодсказка" id="151"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет46" id="152">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#76A5AF</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#76A5AF</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет46КонтекстноеМеню" id="153"/>
+											<ExtendedTooltip name="ДекорацияЦвет46РасширеннаяПодсказка" id="154"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет47" id="155">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#6D9EEB</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#6D9EEB</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет47КонтекстноеМеню" id="156"/>
+											<ExtendedTooltip name="ДекорацияЦвет47РасширеннаяПодсказка" id="157"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет48" id="158">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#6FA8DC</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#6FA8DC</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет48КонтекстноеМеню" id="159"/>
+											<ExtendedTooltip name="ДекорацияЦвет48РасширеннаяПодсказка" id="160"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет49" id="161">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#8E7CC3</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#8E7CC3</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет49КонтекстноеМеню" id="162"/>
+											<ExtendedTooltip name="ДекорацияЦвет49РасширеннаяПодсказка" id="163"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет50" id="164">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#C27BA0</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#C27BA0</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет50КонтекстноеМеню" id="165"/>
+											<ExtendedTooltip name="ДекорацияЦвет50РасширеннаяПодсказка" id="166"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЦветовРяд6" id="167">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<HorizontalSpacing>Half</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЦветовРяд6РасширеннаяПодсказка" id="168"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияЦвет51" id="169">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#A61C00</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#A61C00</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет51КонтекстноеМеню" id="170"/>
+											<ExtendedTooltip name="ДекорацияЦвет51РасширеннаяПодсказка" id="171"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет52" id="172">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#CC0000</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#CC0000</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет52КонтекстноеМеню" id="173"/>
+											<ExtendedTooltip name="ДекорацияЦвет52РасширеннаяПодсказка" id="174"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет53" id="175">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#E69138</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#E69138</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет53КонтекстноеМеню" id="176"/>
+											<ExtendedTooltip name="ДекорацияЦвет53РасширеннаяПодсказка" id="177"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет54" id="178">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#F1C232</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#F1C232</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет54КонтекстноеМеню" id="179"/>
+											<ExtendedTooltip name="ДекорацияЦвет54РасширеннаяПодсказка" id="180"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет55" id="181">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#6AA84F</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#6AA84F</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет55КонтекстноеМеню" id="182"/>
+											<ExtendedTooltip name="ДекорацияЦвет55РасширеннаяПодсказка" id="183"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет56" id="184">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#45818E</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#45818E</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет56КонтекстноеМеню" id="185"/>
+											<ExtendedTooltip name="ДекорацияЦвет56РасширеннаяПодсказка" id="186"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет57" id="187">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#3C78D8</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#3C78D8</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет57КонтекстноеМеню" id="188"/>
+											<ExtendedTooltip name="ДекорацияЦвет57РасширеннаяПодсказка" id="189"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет58" id="190">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#0086C9</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#0086C9</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет58КонтекстноеМеню" id="191"/>
+											<ExtendedTooltip name="ДекорацияЦвет58РасширеннаяПодсказка" id="192"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет59" id="193">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#704DAB</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#704DAB</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет59КонтекстноеМеню" id="194"/>
+											<ExtendedTooltip name="ДекорацияЦвет59РасширеннаяПодсказка" id="195"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет60" id="196">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#BE4C7B</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#BE4C7B</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет60КонтекстноеМеню" id="197"/>
+											<ExtendedTooltip name="ДекорацияЦвет60РасширеннаяПодсказка" id="198"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЦветовРяд7" id="199">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<HorizontalSpacing>Half</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЦветовРяд7РасширеннаяПодсказка" id="200"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияЦвет61" id="201">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#85200C</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#85200C</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет61КонтекстноеМеню" id="202"/>
+											<ExtendedTooltip name="ДекорацияЦвет61РасширеннаяПодсказка" id="203"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет62" id="204">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#990000</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#990000</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет62КонтекстноеМеню" id="205"/>
+											<ExtendedTooltip name="ДекорацияЦвет62РасширеннаяПодсказка" id="206"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет63" id="207">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#B45F06</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#B45F06</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет63КонтекстноеМеню" id="208"/>
+											<ExtendedTooltip name="ДекорацияЦвет63РасширеннаяПодсказка" id="209"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет64" id="210">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#BF9000</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#BF9000</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет64КонтекстноеМеню" id="211"/>
+											<ExtendedTooltip name="ДекорацияЦвет64РасширеннаяПодсказка" id="212"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет65" id="213">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#38761D</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#38761D</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет65КонтекстноеМеню" id="214"/>
+											<ExtendedTooltip name="ДекорацияЦвет65РасширеннаяПодсказка" id="215"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет66" id="216">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#134F5C</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#134F5C</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет66КонтекстноеМеню" id="217"/>
+											<ExtendedTooltip name="ДекорацияЦвет66РасширеннаяПодсказка" id="218"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет67" id="219">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#0054D0</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#0054D0</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет67КонтекстноеМеню" id="220"/>
+											<ExtendedTooltip name="ДекорацияЦвет67РасширеннаяПодсказка" id="221"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет68" id="222">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#005297</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#005297</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет68КонтекстноеМеню" id="223"/>
+											<ExtendedTooltip name="ДекорацияЦвет68РасширеннаяПодсказка" id="224"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет69" id="225">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#391578</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#391578</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет69КонтекстноеМеню" id="226"/>
+											<ExtendedTooltip name="ДекорацияЦвет69РасширеннаяПодсказка" id="227"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет70" id="228">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#871446</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#871446</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет70КонтекстноеМеню" id="229"/>
+											<ExtendedTooltip name="ДекорацияЦвет70РасширеннаяПодсказка" id="230"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЦветовРяд8" id="231">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<HorizontalSpacing>Half</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЦветовРяд8РасширеннаяПодсказка" id="232"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияЦвет71" id="233">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#5B0F00</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#5B0F00</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет71КонтекстноеМеню" id="234"/>
+											<ExtendedTooltip name="ДекорацияЦвет71РасширеннаяПодсказка" id="235"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет72" id="236">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#660000</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#660000</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет72КонтекстноеМеню" id="237"/>
+											<ExtendedTooltip name="ДекорацияЦвет72РасширеннаяПодсказка" id="238"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет73" id="239">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#783F04</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#783F04</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет73КонтекстноеМеню" id="240"/>
+											<ExtendedTooltip name="ДекорацияЦвет73РасширеннаяПодсказка" id="241"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет74" id="242">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#7F6000</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#7F6000</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет74КонтекстноеМеню" id="243"/>
+											<ExtendedTooltip name="ДекорацияЦвет74РасширеннаяПодсказка" id="244"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет75" id="245">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#274E13</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#274E13</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет75КонтекстноеМеню" id="246"/>
+											<ExtendedTooltip name="ДекорацияЦвет75РасширеннаяПодсказка" id="247"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет76" id="248">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#0C343D</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#0C343D</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет76КонтекстноеМеню" id="249"/>
+											<ExtendedTooltip name="ДекорацияЦвет76РасширеннаяПодсказка" id="250"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет77" id="251">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#00438A</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#00438A</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет77КонтекстноеМеню" id="252"/>
+											<ExtendedTooltip name="ДекорацияЦвет77РасширеннаяПодсказка" id="253"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет78" id="254">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#003464</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#003464</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет78КонтекстноеМеню" id="255"/>
+											<ExtendedTooltip name="ДекорацияЦвет78РасширеннаяПодсказка" id="256"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет79" id="257">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#1E0A4D</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#1E0A4D</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет79КонтекстноеМеню" id="258"/>
+											<ExtendedTooltip name="ДекорацияЦвет79РасширеннаяПодсказка" id="259"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ДекорацияЦвет80" id="260">
+											<Width>2</Width>
+											<Height>1</Height>
+											<TextColor>#57082D</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>    </v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<BackColor>#57082D</BackColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+											</Border>
+											<ContextMenu name="ДекорацияЦвет80КонтекстноеМеню" id="261"/>
+											<ExtendedTooltip name="ДекорацияЦвет80РасширеннаяПодсказка" id="262"/>
+											<Events>
+												<Event name="Click">ДекорацияЦветНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНастройка" id="280">
+							<Group>Vertical</Group>
+							<VerticalSpacing>Half</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкаРасширеннаяПодсказка" id="281"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияВыбранныйЦвет" id="293">
+									<Width>14</Width>
+									<Height>5</Height>
+									<BackColor>#339966</BackColor>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+									</Border>
+									<ContextMenu name="ДекорацияВыбранныйЦветКонтекстноеМеню" id="294"/>
+									<ExtendedTooltip name="ДекорацияВыбранныйЦветРасширеннаяПодсказка" id="295"/>
+								</LabelDecoration>
+								<InputField name="Красный" id="282">
+									<DataPath>Красный</DataPath>
+									<Width>5</Width>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="КрасныйКонтекстноеМеню" id="283"/>
+									<ExtendedTooltip name="КрасныйРасширеннаяПодсказка" id="284"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииРучногоЦвета</Event>
+									</Events>
+								</InputField>
+								<InputField name="Зеленый" id="285">
+									<DataPath>Зеленый</DataPath>
+									<Width>5</Width>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ЗеленыйКонтекстноеМеню" id="286"/>
+									<ExtendedTooltip name="ЗеленыйРасширеннаяПодсказка" id="287"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииРучногоЦвета</Event>
+									</Events>
+								</InputField>
+								<InputField name="Синий" id="288">
+									<DataPath>Синий</DataPath>
+									<Width>5</Width>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="СинийКонтекстноеМеню" id="289"/>
+									<ExtendedTooltip name="СинийРасширеннаяПодсказка" id="290"/>
+									<Events>
+										<Event name="OnChange">ПриИзмененииРучногоЦвета</Event>
+									</Events>
+								</InputField>
+								<InputField name="Hex" id="298">
+									<DataPath>Hex</DataPath>
+									<Width>7</Width>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>#000000</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="HexКонтекстноеМеню" id="299"/>
+									<ExtendedTooltip name="HexРасширеннаяПодсказка" id="300"/>
+									<Events>
+										<Event name="OnChange">HexПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПример" id="270">
+					<Group>AlwaysHorizontal</Group>
+					<HorizontalSpacing>None</HorizontalSpacing>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПримерРасширеннаяПодсказка" id="271"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияПримерФона" id="272">
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>#FFFFFF</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пример фона</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<BackColor>#000000</BackColor>
+							<ContextMenu name="ДекорацияПримерФонаКонтекстноеМеню" id="273"/>
+							<ExtendedTooltip name="ДекорацияПримерФонаРасширеннаяПодсказка" id="274"/>
+						</LabelDecoration>
+						<LabelDecoration name="ДекорацияПримерТекста" id="275">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пример текста</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ContextMenu name="ДекорацияПримерТекстаКонтекстноеМеню" id="276"/>
+							<ExtendedTooltip name="ДекорацияПримерТекстаРасширеннаяПодсказка" id="277"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПанель" id="278">
+					<Height>2</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<HorizontalSpacing>Half</HorizontalSpacing>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<VerticalAlign>Bottom</VerticalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПанельРасширеннаяПодсказка" id="279"/>
+					<ChildItems>
+						<Button name="ФормаПрименить" id="3">
+							<Type>UsualButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Command.Применить</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ОК</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ФормаПрименитьРасширеннаяПодсказка" id="4"/>
+						</Button>
+						<Button name="ФормаСбросить" id="5">
+							<Type>UsualButton</Type>
+							<CommandName>Form.StandardCommand.Close</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отмена</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ФормаСброситьРасширеннаяПодсказка" id="6"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Красный" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Красный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Зеленый" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зеленый</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Синий" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипОбъекта" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип объекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Hex" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Hex</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>7</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Применить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Применить</Action>
+		</Command>
+	</Commands>
+</Form>

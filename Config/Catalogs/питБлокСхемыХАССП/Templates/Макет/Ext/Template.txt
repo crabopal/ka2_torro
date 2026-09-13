@@ -1,0 +1,279 @@
+﻿<html>
+<head>
+  <title>Бизнес-схема</title>
+  <!-- <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script> -->
+  <script type="text/javascript" src="%ПутьКБиблиотекеВизуализации%"></script>
+  <link href="../../dist/vis.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    #mynetwork {
+      width: 95%;
+      height: 95%;
+    }
+  </style>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+</head>
+<body>
+<div id="mynetwork"></div>
+
+<script type="text/javascript">
+
+  // create an array with nodes
+  var nodes = new vis.DataSet([
+    %УзлыБлокСхемы%
+  ]);
+  
+  var nodesExtraData = %УзлыБлокСхемыДопИнформация%;
+  
+  // create an array with edges
+  var edges = new vis.DataSet([
+    %СвязиУзловБлокСхемы%
+  ]);
+
+  // create a network
+  var container = document.getElementById('mynetwork');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {
+    nodes: {
+      shape: "box",
+      color: {
+          background: "white",
+          border: "black",
+      },
+      borderWidth: 1,
+       font: { 
+        multi: "html"
+      }
+    },
+    edges: %СвойстваСвязейУзлов%,
+    layout: {
+      //randomSeed: %ИдентификаторСхемы%,
+      improvedLayout: true,
+      //hierarchical: {
+      //  direction: "UD",
+      //  sortMethod: "directed",
+      //  shakeTowards: "nodes",
+      //  nodeSpacing: 180,
+     //   levelSeparation: 80,
+      //  treeSpacing: 180,
+      //  edgeMinimization: true,
+     //   blockShifting: true
+     // }
+      
+    },
+    manipulation: {
+        enabled: false,
+        initiallyActive: false,
+        addNode: true,
+        addEdge: function(edgeData, callback) {
+          if (edgeData.from !== edgeData.to) {
+            edgeData.arrows = "to";
+            callback(edgeData);
+          }
+        },
+        editNode: true,
+        editEdge: true,
+        deleteNode: true,
+        deleteEdge: true,
+        controlNodeStyle:{
+          // all node options are valid.
+        }
+    },
+    interaction: {
+      navigationButtons: true, 
+      dragNodes: true,
+      keyboard: true,
+      multiselect: true
+    },
+    physics: {
+      enabled: false,
+      maxVelocity: 0,
+      maxVelocity: 0,
+      timestep: 0.5,
+      adaptiveTimestep: true,
+      barnesHut: {
+          theta: 0.5,
+          gravitationalConstant: -3000,
+          centralGravity: 0.3,
+          springLength: 95,
+          springConstant: 0.04,
+          damping: 0.09,
+          avoidOverlap: 0
+      },
+      forceAtlas2Based: {
+          theta: 0.5,
+          gravitationalConstant: -120,
+          centralGravity: 0.01,
+          springConstant: 0.08,
+          springLength: 50,
+          damping: 0.4,
+          avoidOverlap: 0
+      },
+      repulsion: {
+          centralGravity: 0.2,
+          springLength: 200,
+          springConstant: 0.05,
+          nodeDistance: 200,
+          damping: 0.09
+      },
+      hierarchicalRepulsion: {
+          centralGravity: 0.05,
+          springLength: 100,
+          springConstant: 0.01,
+          nodeDistance: 140,
+          damping: 0.2,
+          avoidOverlap: 0.1
+      },
+      solver: "forceAtlas2Based",
+      stabilization: {
+          enabled: false,
+          iterations: 1000,
+          updateInterval: 50,
+          onlyDynamicEdges: false,
+          fit: true
+       },
+    },
+    groups: {
+      myGroup: {
+        borderWidth:3
+      }
+    },
+    smoothCurves: true,
+    freezeForStabilization: false
+  };
+var network = new vis.Network(container, data, options);
+
+function addNode(node_object_sting, node_extra_object_sting, edge_type) {
+    var node_object = JSON.parse(node_object_sting);
+    var selectedNodes = network.getSelectedNodes();
+    if (selectedNodes.length == 1) {
+        selectedNode = nodes.get(selectedNodes[0]);
+        node_object.y = selectedNode.y + 100;
+        nodes.add(node_object);
+        if (edge_type == 'Прямая') {
+            edges.add({"from": selectedNode.id, "to": node_object.id, "arrows": "to"});
+        } else {
+            edges.add({"from": node_object.id, "to": selectedNode.id, "arrows": "to"});
+        }
+    }
+    else {
+        node_object.y = -100;
+        nodes.add(node_object);
+    };
+    node_extra_object = JSON.parse(node_extra_object_sting);
+    nodesExtraData.push(node_extra_object);
+};
+
+function levelUp() {
+    var selectedNodes = network.getSelectedNodes();
+    var index;
+    for (index = 0; index < selectedNodes.length; ++index) {
+        selectedNode = nodes.get(selectedNodes[index]);
+        nodes.update({"id": selectedNodes[index], "y": selectedNode.y + 100});
+    }
+};
+
+
+function levelDown() {
+    var selectedNodes = network.getSelectedNodes();
+    var index;
+    for (index = 0; index < selectedNodes.length; ++index) {
+        selectedNode = nodes.get(selectedNodes[index]);
+        nodes.update({"id": selectedNodes[index], "y": selectedNode.y - 100});
+    }
+};
+
+function dragEnd(params){
+    nodes.get().forEach(function(item) {
+        var positions = network.getPositions(item.id);
+        item.x = positions[item.id].x;
+        item.y = positions[item.id].y;
+    });
+}
+
+function afterDrawing(ctx) {
+    picURL = ctx.canvas.toDataURL();
+    
+    // Подписи опасных факторов
+    //nodes.get().forEach(function(item) {
+    //    var positions = network.getPositions(item.id);
+    //    ctx.fillText("Hello World", item.x-50, item.y-25);
+    //});
+    
+}
+
+let timerId = null;
+
+function handlerClick() {
+  var result = "";
+  if (!timerId) {
+    timerId = setTimeout(() => {
+      timerId = clearTimeout(timerId);
+    }, 200);
+  } else {
+    timerId = clearTimeout(timerId);
+    var selectedNodes = network.getSelectedNodes();
+    if (selectedNodes.length > 0) {
+        result = selectedNodes[0];
+    }
+  }
+  return result;
+}
+
+function selectedNodeData() {
+    var result = "";
+    var selectedNodes = network.getSelectedNodes();
+    if (selectedNodes.length > 0) {
+        var index;
+        for (index = 0; index < nodesExtraData.length; ++index) {
+            if (nodesExtraData[index].id == selectedNodes[0]) {
+                result = JSON.stringify(nodesExtraData[index]);
+                break;
+            }
+        }
+    }
+    return result;
+}
+
+function updateNodeData(nodeDataString) {
+    nodeData = JSON.parse(nodeDataString);
+    nodes.update({"id": nodeData.id, "label": nodeData.label});
+    for (index = 0; index < nodesExtraData.length; ++index) {
+        if (nodesExtraData[index].id == nodeData.id) {
+            nodesExtraData[index].name = nodeData.name;
+            break;
+        }
+    }
+}
+
+network.on("afterDrawing", afterDrawing);
+network.on("dragEnd", dragEnd);
+
+function save_pic(){
+    var link = document.createElement("a");
+    link.href = picURL;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
+
+function getNodesData(){
+    return JSON.stringify(nodes.get());
+};
+
+function getEdgesData(){
+    return JSON.stringify(edges.get());
+};
+
+function getNodesDataExtra(){
+    return JSON.stringify(nodesExtraData);
+};
+
+var picURL = "";
+var random_guid = %СлучайныйИдентификатор%;
+
+</script>
+</body>
+</html>

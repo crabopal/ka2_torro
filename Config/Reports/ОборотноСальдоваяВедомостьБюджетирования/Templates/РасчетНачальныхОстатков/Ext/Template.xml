@@ -1,0 +1,1318 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ОборотыСценариев</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Организации</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаАктуальности</dataPath>
+			<field>ДатаАктуальности</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата актуальности</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПриходФакт</dataPath>
+			<field>КоличествоПриходФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество приход факт</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательБюджетов</dataPath>
+			<field>ПоказательБюджетов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатель бюджетов</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ПоказателиБюджетов</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодДень</dataPath>
+			<field>ПериодДень</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период день</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодНеделя</dataPath>
+			<field>ПериодНеделя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период неделя</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодГод</dataPath>
+			<field>ПериодГод</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период год</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодДекада</dataPath>
+			<field>ПериодДекада</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период декада</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодМесяц</dataPath>
+			<field>ПериодМесяц</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период месяц</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодКвартал</dataPath>
+			<field>ПериодКвартал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период квартал</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодПолугодие</dataPath>
+			<field>ПериодПолугодие</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период полугодие</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Аналитика1</dataPath>
+			<field>Аналитика1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика1</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeSet xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:Characteristic.АналитикиСтатейБюджетов</v8:TypeSet>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Аналитика2</dataPath>
+			<field>Аналитика2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика2</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeSet xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:Characteristic.АналитикиСтатейБюджетов</v8:TypeSet>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Аналитика3</dataPath>
+			<field>Аналитика3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика3</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeSet xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:Characteristic.АналитикиСтатейБюджетов</v8:TypeSet>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Аналитика4</dataPath>
+			<field>Аналитика4</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика4</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeSet xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:Characteristic.АналитикиСтатейБюджетов</v8:TypeSet>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Аналитика5</dataPath>
+			<field>Аналитика5</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика5</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeSet xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:Characteristic.АналитикиСтатейБюджетов</v8:TypeSet>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Аналитика6</dataPath>
+			<field>Аналитика6</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика6</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeSet xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:Characteristic.АналитикиСтатейБюджетов</v8:TypeSet>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтруктураПредприятия</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Валюты</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПриходФакт</dataPath>
+			<field>СуммаПриходФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма приход факт</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeId>48fa9d68-ae46-4d76-988a-88927f7a0ca6</v8:TypeId>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоРасходФакт</dataPath>
+			<field>КоличествоРасходФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество расход факт</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаРасходФакт</dataPath>
+			<field>СуммаРасходФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма расход факт</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeId>48fa9d68-ae46-4d76-988a-88927f7a0ca6</v8:TypeId>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаРасходСценария</dataPath>
+			<field>СуммаРасходСценария</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма расход сценария</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeId>48fa9d68-ae46-4d76-988a-88927f7a0ca6</v8:TypeId>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяБюджетов</dataPath>
+			<field>СтатьяБюджетов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статья бюджетов</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтатьиБюджетов</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПриходСценария</dataPath>
+			<field>КоличествоПриходСценария</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество приход сценария</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПриходСценария</dataPath>
+			<field>СуммаПриходСценария</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма приход сценария</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeId>48fa9d68-ae46-4d76-988a-88927f7a0ca6</v8:TypeId>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоРасходСценария</dataPath>
+			<field>КоличествоРасходСценария</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество расход сценария</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сценарий</dataPath>
+			<field>Сценарий</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сценарий</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Сценарии</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНачальныйОстатокСценария</dataPath>
+			<field>СуммаНачальныйОстатокСценария</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма начальный остаток сценария</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоНачальныйОстатокСценария</dataPath>
+			<field>КоличествоНачальныйОстатокСценария</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество начальный остаток сценария</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоНачальныйОстатокФакт</dataPath>
+			<field>КоличествоНачальныйОстатокФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество начальный остаток факт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНачальныйОстатокФакт</dataPath>
+			<field>СуммаНачальныйОстатокФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма начальный остаток факт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Сценарии.Сценарий КАК Сценарий,
+	&amp;ТекстПоляОборотыФактПериодСекунда_ КАК ДатаАктуальности,
+	ОборотыФакт.ПериодДень КАК ПериодДень,
+	ОборотыФакт.ПериодНеделя КАК ПериодНеделя,
+	ОборотыФакт.ПериодДекада КАК ПериодДекада,
+	ОборотыФакт.ПериодМесяц КАК ПериодМесяц,
+	ОборотыФакт.ПериодКвартал КАК ПериодКвартал,
+	ОборотыФакт.ПериодПолугодие КАК ПериодПолугодие,
+	ОборотыФакт.ПериодГод КАК ПериодГод,
+	ОборотыФакт.ПоказательБюджетов КАК ПоказательБюджетов,
+	ВЫБОР
+		КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 1
+			ТОГДА ОборотыФакт.Аналитика1
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ КАК Аналитика1,
+	ВЫБОР
+		КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 2
+			ТОГДА ОборотыФакт.Аналитика2
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ КАК Аналитика2,
+	ВЫБОР
+		КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 3
+			ТОГДА ОборотыФакт.Аналитика3
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ КАК Аналитика3,
+	ВЫБОР
+		КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 4
+			ТОГДА ОборотыФакт.Аналитика4
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ КАК Аналитика4,
+	ВЫБОР
+		КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 5
+			ТОГДА ОборотыФакт.Аналитика5
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ КАК Аналитика5,
+	ВЫБОР
+		КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 6
+			ТОГДА ОборотыФакт.Аналитика6
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ КАК Аналитика6,
+	ОборотыФакт.Организация КАК Организация,
+	ОборотыФакт.Подразделение КАК Подразделение,
+	ОборотыФакт.Валюта КАК Валюта,
+	0 КАК КоличествоПриходСценария,
+	0 КАК СуммаПриходСценария,
+	0 КАК КоличествоРасходСценария,
+	0 КАК СуммаРасходСценария,
+	ОборотыФакт.КоличествоПриход КАК КоличествоПриходФакт,
+	ОборотыФакт.СуммаПриход КАК СуммаПриходФакт,
+	ОборотыФакт.КоличествоРасход КАК КоличествоРасходФакт,
+	ОборотыФакт.СуммаРасход КАК СуммаРасходФакт,
+	0 КАК КоличествоНачальныйОстатокСценария,
+	0 КАК СуммаНачальныйОстатокСценария,
+	0 КАК КоличествоНачальныйОстатокФакт,
+	0 КАК СуммаНачальныйОстатокФакт
+{ВЫБРАТЬ
+	Сценарий.*,
+	ДатаАктуальности,
+	ПериодДень,
+	ПериодНеделя,
+	ПериодДекада,
+	ПериодМесяц,
+	ПериодКвартал,
+	ПериодПолугодие,
+	ПериодГод,
+	ПоказательБюджетов.*,
+	Аналитика1.*,
+	Аналитика2.*,
+	Аналитика3.*,
+	Аналитика4.*,
+	Аналитика5.*,
+	Аналитика6.*,
+	Организация.*,
+	Подразделение.*,
+	Валюта.*,
+	КоличествоПриходСценария,
+	СуммаПриходСценария,
+	КоличествоРасходСценария,
+	СуммаРасходСценария,
+	КоличествоПриходФакт,
+	СуммаПриходФакт,
+	КоличествоРасходФакт,
+	СуммаРасходФакт,
+	КоличествоНачальныйОстатокСценария,
+	СуммаНачальныйОстатокСценария,
+	КоличествоНачальныйОстатокФакт,
+	СуммаНачальныйОстатокФакт}
+ИЗ
+	ОборотыФактПоВлияющимСтатьямБюджетов КАК ОборотыФакт
+		ЛЕВОЕ СОЕДИНЕНИЕ Сценарии КАК Сценарии
+		ПО (ИСТИНА)
+ГДЕ
+	ОборотыФакт.Сценарий = ЗНАЧЕНИЕ(Справочник.Сценарии.ФактическиеДанные)
+{ГДЕ
+	Сценарии.Сценарий.* КАК Сценарий,
+	&amp;ТекстПоляОборотыФактПериодСекунда_ КАК ДатаАктуальности,
+	ОборотыФакт.ПериодДень КАК ПериодДень,
+	ОборотыФакт.ПериодНеделя КАК ПериодНеделя,
+	ОборотыФакт.ПериодДекада КАК ПериодДекада,
+	ОборотыФакт.ПериодМесяц КАК ПериодМесяц,
+	ОборотыФакт.ПериодКвартал КАК ПериодКвартал,
+	ОборотыФакт.ПериодПолугодие КАК ПериодПолугодие,
+	ОборотыФакт.ПериодГод КАК ПериодГод,
+	ОборотыФакт.ПоказательБюджетов.*,
+	(ВЫБОР
+			КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 1
+				ТОГДА ОборотыФакт.Аналитика1
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика1,
+	(ВЫБОР
+			КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 2
+				ТОГДА ОборотыФакт.Аналитика2
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика2,
+	(ВЫБОР
+			КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 3
+				ТОГДА ОборотыФакт.Аналитика3
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика3,
+	(ВЫБОР
+			КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 4
+				ТОГДА ОборотыФакт.Аналитика4
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика4,
+	(ВЫБОР
+			КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 5
+				ТОГДА ОборотыФакт.Аналитика5
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика5,
+	(ВЫБОР
+			КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 6
+				ТОГДА ОборотыФакт.Аналитика6
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика6,
+	ОборотыФакт.Организация.*,
+	ОборотыФакт.Подразделение.*,
+	ОборотыФакт.Валюта.*}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ОборотыФакт.Сценарий,
+	&amp;ТекстПоляОборотыФактПериодСекунда_,
+	ОборотыФакт.ПериодДень,
+	ОборотыФакт.ПериодНеделя,
+	ОборотыФакт.ПериодДекада,
+	ОборотыФакт.ПериодМесяц,
+	ОборотыФакт.ПериодКвартал,
+	ОборотыФакт.ПериодПолугодие,
+	ОборотыФакт.ПериодГод,
+	ОборотыФакт.ПоказательБюджетов,
+	ВЫБОР
+		КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 1
+			ТОГДА ОборотыФакт.Аналитика1
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 2
+			ТОГДА ОборотыФакт.Аналитика2
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 3
+			ТОГДА ОборотыФакт.Аналитика3
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 4
+			ТОГДА ОборотыФакт.Аналитика4
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 5
+			ТОГДА ОборотыФакт.Аналитика5
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 6
+			ТОГДА ОборотыФакт.Аналитика6
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ОборотыФакт.Организация,
+	ОборотыФакт.Подразделение,
+	ОборотыФакт.Валюта,
+	ОборотыФакт.КоличествоПриход,
+	ОборотыФакт.СуммаПриход,
+	ОборотыФакт.КоличествоРасход,
+	ОборотыФакт.СуммаРасход,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0
+ИЗ
+	ОборотыФактПоВлияющимСтатьямБюджетов КАК ОборотыФакт
+ГДЕ
+	ОборотыФакт.Сценарий = ЗНАЧЕНИЕ(Справочник.Сценарии.ИсполнениеБюджета)
+{ГДЕ
+	ОборотыФакт.Сценарий.* КАК Сценарий,
+	&amp;ТекстПоляОборотыФактПериодСекунда_ КАК ДатаАктуальности,
+	ОборотыФакт.ПериодДень,
+	ОборотыФакт.ПериодНеделя,
+	ОборотыФакт.ПериодДекада,
+	ОборотыФакт.ПериодМесяц,
+	ОборотыФакт.ПериодКвартал,
+	ОборотыФакт.ПериодПолугодие,
+	ОборотыФакт.ПериодГод,
+	ОборотыФакт.ПоказательБюджетов.*,
+	(ВЫБОР
+			КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 1
+				ТОГДА ОборотыФакт.Аналитика1
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика1,
+	(ВЫБОР
+			КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 2
+				ТОГДА ОборотыФакт.Аналитика2
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика2,
+	(ВЫБОР
+			КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 3
+				ТОГДА ОборотыФакт.Аналитика3
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика3,
+	(ВЫБОР
+			КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 4
+				ТОГДА ОборотыФакт.Аналитика4
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика4,
+	(ВЫБОР
+			КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 5
+				ТОГДА ОборотыФакт.Аналитика5
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика5,
+	(ВЫБОР
+			КОГДА ОборотыФакт.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 6
+				ТОГДА ОборотыФакт.Аналитика6
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика6,
+	ОборотыФакт.Организация.*,
+	ОборотыФакт.Подразделение.*,
+	ОборотыФакт.Валюта.*}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ОборотыПлан.Сценарий,
+	&amp;ТекстПоляОборотыПланПериодСекунда_,
+	ОборотыПлан.ПериодДень,
+	ОборотыПлан.ПериодНеделя,
+	ОборотыПлан.ПериодДекада,
+	ОборотыПлан.ПериодМесяц,
+	ОборотыПлан.ПериодКвартал,
+	ОборотыПлан.ПериодПолугодие,
+	ОборотыПлан.ПериодГод,
+	ОборотыПлан.ПоказательБюджетов,
+	ВЫБОР
+		КОГДА ОборотыПлан.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 1
+			ТОГДА ОборотыПлан.Аналитика1
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОборотыПлан.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 2
+			ТОГДА ОборотыПлан.Аналитика2
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОборотыПлан.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 3
+			ТОГДА ОборотыПлан.Аналитика3
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОборотыПлан.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 4
+			ТОГДА ОборотыПлан.Аналитика4
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОборотыПлан.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 5
+			ТОГДА ОборотыПлан.Аналитика5
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОборотыПлан.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 6
+			ТОГДА ОборотыПлан.Аналитика6
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ОборотыПлан.Организация,
+	ОборотыПлан.Подразделение,
+	ОборотыПлан.Валюта,
+	ОборотыПлан.КоличествоПриходПлан,
+	ОборотыПлан.СуммаПриходПлан,
+	ОборотыПлан.КоличествоРасходПлан,
+	ОборотыПлан.СуммаРасходПлан,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0
+ИЗ
+	ОборотыПлан КАК ОборотыПлан
+{ГДЕ
+	ОборотыПлан.Сценарий.*,
+	&amp;ТекстПоляОборотыПланПериодСекунда_ КАК ДатаАктуальности,
+	ОборотыПлан.ПериодДень,
+	ОборотыПлан.ПериодНеделя,
+	ОборотыПлан.ПериодДекада,
+	ОборотыПлан.ПериодМесяц,
+	ОборотыПлан.ПериодКвартал,
+	ОборотыПлан.ПериодПолугодие,
+	ОборотыПлан.ПериодГод,
+	ОборотыПлан.ПоказательБюджетов.*,
+	ОборотыПлан.СтатьяБюджетов.*,
+	(ВЫБОР
+			КОГДА ОборотыПлан.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 1
+				ТОГДА ОборотыПлан.Аналитика1
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика1,
+	(ВЫБОР
+			КОГДА ОборотыПлан.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 2
+				ТОГДА ОборотыПлан.Аналитика2
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика2,
+	(ВЫБОР
+			КОГДА ОборотыПлан.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 3
+				ТОГДА ОборотыПлан.Аналитика3
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика3,
+	(ВЫБОР
+			КОГДА ОборотыПлан.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 4
+				ТОГДА ОборотыПлан.Аналитика4
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика4,
+	(ВЫБОР
+			КОГДА ОборотыПлан.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 5
+				ТОГДА ОборотыПлан.Аналитика5
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика5,
+	(ВЫБОР
+			КОГДА ОборотыПлан.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 6
+				ТОГДА ОборотыПлан.Аналитика6
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика6,
+	ОборотыПлан.Организация.*,
+	ОборотыПлан.Подразделение.*,
+	ОборотыПлан.Валюта.*}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Сценарии.Сценарий,
+	&amp;ТекстПоляФактПоПоказателямБюджетовПериодСекунда_,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	ФактПоПоказателямБюджетов.ПоказательБюджетов,
+	ВЫБОР
+		КОГДА ФактПоПоказателямБюджетов.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 1
+			ТОГДА ФактПоПоказателямБюджетов.Аналитика1
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ФактПоПоказателямБюджетов.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 2
+			ТОГДА ФактПоПоказателямБюджетов.Аналитика2
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ФактПоПоказателямБюджетов.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 3
+			ТОГДА ФактПоПоказателямБюджетов.Аналитика3
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ФактПоПоказателямБюджетов.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 4
+			ТОГДА ФактПоПоказателямБюджетов.Аналитика4
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ФактПоПоказателямБюджетов.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 5
+			ТОГДА ФактПоПоказателямБюджетов.Аналитика5
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ФактПоПоказателямБюджетов.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 6
+			ТОГДА ФактПоПоказателямБюджетов.Аналитика6
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ФактПоПоказателямБюджетов.Организация,
+	ФактПоПоказателямБюджетов.Подразделение,
+	ФактПоПоказателямБюджетов.Валюта,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	ВЫБОР
+		КОГДА АктуальныеДатыОстатковПоСценариям.Сценарий ЕСТЬ NULL
+			ТОГДА ФактПоПоказателямБюджетов.Количество
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА АктуальныеДатыОстатковПоСценариям.Сценарий ЕСТЬ NULL
+			ТОГДА ФактПоПоказателямБюджетов.Сумма
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ФактПоПоказателямБюджетов.Количество,
+	ФактПоПоказателямБюджетов.Сумма
+ИЗ
+	ФактПоПоказателямБюджетов КАК ФактПоПоказателямБюджетов
+		ЛЕВОЕ СОЕДИНЕНИЕ Сценарии КАК Сценарии
+		ПО (ИСТИНА)
+		ЛЕВОЕ СОЕДИНЕНИЕ АктуальныеДатыОстатковПоСценариям КАК АктуальныеДатыОстатковПоСценариям
+		ПО ФактПоПоказателямБюджетов.ПоказательБюджетов = АктуальныеДатыОстатковПоСценариям.ПоказательБюджетов
+			И (Сценарии.Сценарий = АктуальныеДатыОстатковПоСценариям.Сценарий)
+{ГДЕ
+	Сценарии.Сценарий.*,
+	&amp;ТекстПоляФактПоПоказателямБюджетовПериодСекунда_ КАК ДатаАктуальности,
+	ФактПоПоказателямБюджетов.ПоказательБюджетов.*,
+	(ВЫБОР
+			КОГДА ФактПоПоказателямБюджетов.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 1
+				ТОГДА ФактПоПоказателямБюджетов.Аналитика1
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика1,
+	(ВЫБОР
+			КОГДА ФактПоПоказателямБюджетов.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 2
+				ТОГДА ФактПоПоказателямБюджетов.Аналитика2
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика2,
+	(ВЫБОР
+			КОГДА ФактПоПоказателямБюджетов.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 3
+				ТОГДА ФактПоПоказателямБюджетов.Аналитика3
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика3,
+	(ВЫБОР
+			КОГДА ФактПоПоказателямБюджетов.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 4
+				ТОГДА ФактПоПоказателямБюджетов.Аналитика4
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика4,
+	(ВЫБОР
+			КОГДА ФактПоПоказателямБюджетов.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 5
+				ТОГДА ФактПоПоказателямБюджетов.Аналитика5
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика5,
+	(ВЫБОР
+			КОГДА ФактПоПоказателямБюджетов.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 6
+				ТОГДА ФактПоПоказателямБюджетов.Аналитика6
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ).* КАК Аналитика6,
+	ФактПоПоказателямБюджетов.Организация.*,
+	ФактПоПоказателямБюджетов.Подразделение.*,
+	ФактПоПоказателямБюджетов.Валюта.*}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ОстаткиПоРасчетнымПоказателям.Сценарий,
+	&amp;ТекстПоляОстаткиПоРасчетнымПоказателямДатаОстатков_,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов,
+	ВЫБОР
+		КОГДА ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 1
+			ТОГДА ОстаткиПоРасчетнымПоказателям.Аналитика1
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 2
+			ТОГДА ОстаткиПоРасчетнымПоказателям.Аналитика2
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 3
+			ТОГДА ОстаткиПоРасчетнымПоказателям.Аналитика3
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 4
+			ТОГДА ОстаткиПоРасчетнымПоказателям.Аналитика4
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 5
+			ТОГДА ОстаткиПоРасчетнымПоказателям.Аналитика5
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 6
+			ТОГДА ОстаткиПоРасчетнымПоказателям.Аналитика6
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ,
+	ОстаткиПоРасчетнымПоказателям.Организация,
+	ОстаткиПоРасчетнымПоказателям.Подразделение,
+	ОстаткиПоРасчетнымПоказателям.Валюта,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	ОстаткиПоРасчетнымПоказателям.Количество,
+	ОстаткиПоРасчетнымПоказателям.Сумма,
+	0,
+	0
+ИЗ
+	ОстаткиПоРасчетнымПоказателям КАК ОстаткиПоРасчетнымПоказателям
+{ГДЕ
+	ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.*,
+	&amp;ТекстПоляОстаткиПоРасчетнымПоказателямДатаОстатков_ КАК ДатаАктуальности,
+	(ВЫБОР
+			КОГДА ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 1
+				ТОГДА ОстаткиПоРасчетнымПоказателям.Аналитика1
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ) КАК Аналитика1,
+	(ВЫБОР
+			КОГДА ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 2
+				ТОГДА ОстаткиПоРасчетнымПоказателям.Аналитика2
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ) КАК Аналитика2,
+	(ВЫБОР
+			КОГДА ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 3
+				ТОГДА ОстаткиПоРасчетнымПоказателям.Аналитика3
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ) КАК Аналитика3,
+	(ВЫБОР
+			КОГДА ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 4
+				ТОГДА ОстаткиПоРасчетнымПоказателям.Аналитика4
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ) КАК Аналитика4,
+	(ВЫБОР
+			КОГДА ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 5
+				ТОГДА ОстаткиПоРасчетнымПоказателям.Аналитика5
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ) КАК Аналитика5,
+	(ВЫБОР
+			КОГДА ОстаткиПоРасчетнымПоказателям.ПоказательБюджетов.КоличествоИспользуемыхАналитик &gt;= 6
+				ТОГДА ОстаткиПоРасчетнымПоказателям.Аналитика6
+			ИНАЧЕ НЕОПРЕДЕЛЕНО
+		КОНЕЦ) КАК Аналитика6,
+	ОстаткиПоРасчетнымПоказателям.Организация.*,
+	ОстаткиПоРасчетнымПоказателям.Подразделение.*,
+	ОстаткиПоРасчетнымПоказателям.Валюта.*}</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ПериодДень</dataPath>
+		<expression>ЕстьNULL(ПериодДень, ДатаВремя(1,1,1))</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период день</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПериодНеделя</dataPath>
+		<expression>ЕстьNULL(ПериодНеделя, ДатаВремя(1,1,1))</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период неделя</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПериодДекада</dataPath>
+		<expression>ЕстьNULL(ПериодДекада, ДатаВремя(1,1,1))</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период декада</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПериодМесяц</dataPath>
+		<expression>ЕстьNULL(ПериодМесяц, ДатаВремя(1,1,1))</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период месяц</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПериодКвартал</dataPath>
+		<expression>ЕстьNULL(ПериодКвартал, ДатаВремя(1,1,1))</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период квартал</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПериодПолугодие</dataPath>
+		<expression>ЕстьNULL(ПериодПолугодие, ДатаВремя(1,1,1))</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период полугодие</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ПериодГод</dataPath>
+		<expression>ЕстьNULL(ПериодГод, ДатаВремя(1,1,1))</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период год</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Сумма</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сумма</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Количество</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СуммаФакт</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сумма факт</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоФакт</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество факт</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>ЕСТЬNULL(Сумма(КоличествоНачальныйОстатокСценария), 0)
++ ЕСТЬNULL(Сумма(КоличествоПриходСценария), 0)
+- ЕСТЬNULL(Сумма(КоличествоРасходСценария), 0)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоФакт</dataPath>
+		<expression>ЕСТЬNULL(Сумма(КоличествоНачальныйОстатокФакт), 0)
++ ЕСТЬNULL(Сумма(КоличествоПриходФакт), 0)
+- ЕСТЬNULL(Сумма(КоличествоРасходФакт), 0)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Сумма</dataPath>
+		<expression>ЕСТЬNULL(Сумма(СуммаНачальныйОстатокСценария), 0)
++ ЕСТЬNULL(Сумма(СуммаПриходСценария), 0)
+- ЕСТЬNULL(Сумма(СуммаРасходСценария), 0)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаФакт</dataPath>
+		<expression>ЕСТЬNULL(Сумма(СуммаНачальныйОстатокФакт), 0)
++ ЕСТЬNULL(Сумма(СуммаПриходФакт), 0)
+- ЕСТЬNULL(Сумма(СуммаРасходФакт), 0)</expression>
+	</totalField>
+	<parameter>
+		<name>ТекстПоляОборотыФактПериодСекунда_</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текст поля обороты факт период секунда</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ТекстПоляОборотыПланПериодСекунда_</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текст поля обороты план период секунда</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ТекстПоляОстаткиПоРасчетнымПоказателямДатаОстатков_</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текст поля остатки по расчетным показателям дата остатков</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ТекстПоляФактПоПоказателямБюджетовПериодСекунда_</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текст поля факт по показателям бюджетов период секунда</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоФакт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сумма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаФакт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Валюта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Организация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоказательБюджетов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Аналитика1</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Аналитика2</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Аналитика3</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Аналитика4</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Аналитика5</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Аналитика6</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сценарий</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ПоказательБюджетов</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Аналитика1</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Аналитика2</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Аналитика3</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Аналитика4</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Аналитика5</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Аналитика6</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Валюта</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Организация</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Подразделение</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Сценарий</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:use>false</dcsset:use>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

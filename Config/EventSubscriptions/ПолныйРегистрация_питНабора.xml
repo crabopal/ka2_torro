@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<EventSubscription uuid="b60d44f8-f92c-431f-98c0-8d148c050e68">
+		<Properties>
+			<Name>ПолныйРегистрация_питНабора</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общепит полный регистрация набора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Full set registration</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Source>
+				<v8:Type>cfg:InformationRegisterRecordSet.питСоответствияОбъектовFoodCOST</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питАудиторскийСлед</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питХимикоэнергетическиеХарактеристики</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питЗаменыИнгредиентов</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питСоответствиеНоменклатурыСкладаПроизводства</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питОчередьОтложенногоПроведения</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питБракеражныйЖурнал</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питСоответствияОбъектовRKeeper</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питВидыНоменклатурыОбщепит</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питСоответствияОбъектовIIKO</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питМодификаторыНоменклатуры</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питОплатыПоЧекам</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питОбработкаСырья</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питХЭХДляПечати</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питАктуальныеРецептуры</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питРолиПользователейФронта</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питПродукцияККТ</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питПродажиПоЧекам</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питВидыПлановОбщепит</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питТиповыеДокументы</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.питПроизводство</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питСвязиУзловХАССП</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питМаршрутизацияПечати</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питУчетДанныхПродаж</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питСвязанныеЗаказы</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питСоответствияОбъектовStoreHouse</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питПродажиМодификаторовПоЧекам</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.питСезонныеПроценты</v8:Type>
+			</Source>
+			<Event>BeforeWrite</Event>
+			<Handler>CommonModule.питОбработчикиПодписокНаСобытия.ПолныйРегистрация_питНабораПередЗаписью</Handler>
+		</Properties>
+	</EventSubscription>
+</MetaDataObject>

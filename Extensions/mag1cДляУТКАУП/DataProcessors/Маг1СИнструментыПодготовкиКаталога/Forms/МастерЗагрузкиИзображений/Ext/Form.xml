@@ -1,0 +1,2140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Загрузка изображений</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСоздатьОбращениеВТехническуюПоддержку" id="357">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьОбращениеВТехническуюПоддержку</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьОбращениеВТехническуюПоддержкуРасширеннаяПодсказка" id="358"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="373">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="374"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОсновнаяПанель" id="165">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяПанельРасширеннаяПодсказка" id="166"/>
+			<ChildItems>
+				<Pages name="СтраницыТовары" id="192">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы товары</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы товары</v8:content>
+						</v8:item>
+					</ToolTip>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="СтраницыТоварыРасширеннаяПодсказка" id="193"/>
+					<ChildItems>
+						<Page name="СтраницаТовары" id="194">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница товары</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница товары</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ExtendedTooltip name="СтраницаТоварыРасширеннаяПодсказка" id="195"/>
+							<ChildItems>
+								<RadioButtonField name="ФильтрПоАктивности" id="291">
+									<DataPath>ФильтрПоАктивности</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В настройках витрины указано, что нужно отображать только товары, по которым есть остатки, были продажи за последние 30 дней или есть заказы поставщикам</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<RadioButtonType>Tumbler</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Все</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ВсеТовары</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Только отображаемые на витрине</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">АктивныеТовары</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ФильтрПоАктивностиКонтекстноеМеню" id="292"/>
+									<ExtendedTooltip name="ФильтрПоАктивностиРасширеннаяПодсказка" id="293"/>
+									<Events>
+										<Event name="OnChange">ФильтрПоАктивностиПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<RadioButtonField name="РежимОтображения" id="17">
+									<DataPath>РежимОтображения</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Tumbler</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Все</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ВсеТовары</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Товары без изображений</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ТоварыБезИзображений</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Только группы</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ТолькоГруппы</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="РежимОтображенияКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="РежимОтображенияРасширеннаяПодсказка" id="19"/>
+									<Events>
+										<Event name="OnChange">РежимОтображенияПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<UsualGroup name="ГруппаНоменклатура" id="163">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<United>false</United>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНоменклатураРасширеннаяПодсказка" id="164"/>
+									<ChildItems>
+										<Table name="ДеревоТоваровСИзображениями" id="20">
+											<Representation>Tree</Representation>
+											<ReadOnly>true</ReadOnly>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<SelectionMode>SingleRow</SelectionMode>
+											<Header>false</Header>
+											<HorizontalLines>false</HorizontalLines>
+											<VerticalLines>false</VerticalLines>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<InitialTreeView>ExpandAllLevels</InitialTreeView>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>ДеревоТоваровСИзображениями</DataPath>
+											<RowPictureDataPath>ДеревоТоваровСИзображениями.КартинкаСтроки</RowPictureDataPath>
+											<RowsPicture>
+												<xr:Ref>CommonPicture.Маг1СИерархияСправочника</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</RowsPicture>
+											<SearchStringLocation>CommandBar</SearchStringLocation>
+											<ContextMenu name="ДеревоТоваровСИзображениямиКонтекстноеМеню" id="21"/>
+											<AutoCommandBar name="ДеревоТоваровСИзображениямиКоманднаяПанель" id="22">
+												<ChildItems>
+													<Button name="ПоказатьСкрытьКодыИАртикулы" id="334">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПоказатьСкрытьКодыИАртикулы</CommandName>
+														<ExtendedTooltip name="ПоказатьСкрытьКодыИАртикулыРасширеннаяПодсказка" id="335"/>
+													</Button>
+													<Button name="ОбновитьСтраницуЗагрузкаИзображений" id="94">
+														<Type>CommandBarButton</Type>
+														<Representation>PictureAndText</Representation>
+														<CommandName>Form.Command.ОбновитьСтраницуЗагрузкаИзображений</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Скрыть обработанные товары и картинки</v8:content>
+															</v8:item>
+														</Title>
+														<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+														<ExtendedTooltip name="ОбновитьСтраницуЗагрузкаИзображенийРасширеннаяПодсказка" id="95"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ДеревоТоваровСИзображениямиРасширеннаяПодсказка" id="23"/>
+											<SearchStringAddition name="ДеревоТоваровСИзображениямиСтрокаПоиска" id="24">
+												<AdditionSource>
+													<Item>ДеревоТоваровСИзображениями</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДеревоТоваровСИзображениямиСтрокаПоискаКонтекстноеМеню" id="25"/>
+												<ExtendedTooltip name="ДеревоТоваровСИзображениямиСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ДеревоТоваровСИзображениямиСостояниеПросмотра" id="27">
+												<AdditionSource>
+													<Item>ДеревоТоваровСИзображениями</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДеревоТоваровСИзображениямиСостояниеПросмотраКонтекстноеМеню" id="28"/>
+												<ExtendedTooltip name="ДеревоТоваровСИзображениямиСостояниеПросмотраРасширеннаяПодсказка" id="29"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ДеревоТоваровСИзображениямиУправлениеПоиском" id="30">
+												<AdditionSource>
+													<Item>ДеревоТоваровСИзображениями</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ДеревоТоваровСИзображениямиУправлениеПоискомКонтекстноеМеню" id="31"/>
+												<ExtendedTooltip name="ДеревоТоваровСИзображениямиУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="DragCheck">ДеревоТоваровСИзображениямиПроверкаПеретаскивания</Event>
+												<Event name="Selection">ДеревоТоваровСИзображениямиВыбор</Event>
+												<Event name="OnActivateRow">ДеревоТоваровСИзображениямиПриАктивизацииСтроки</Event>
+												<Event name="DragStart">ДеревоТоваровСИзображениямиНачалоПеретаскивания</Event>
+												<Event name="Drag">ДеревоТоваровСИзображениямиПеретаскивание</Event>
+											</Events>
+											<ChildItems>
+												<PictureField name="ДеревоТоваровСИзображениямиЕстьКартинка" id="128">
+													<DataPath>ДеревоТоваровСИзображениями.ЕстьКартинка</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<PictureSize>AutoSize</PictureSize>
+													<ValuesPicture>
+														<xr:Ref>CommonPicture.Маг1СИзображение16</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</ValuesPicture>
+													<ContextMenu name="ДеревоТоваровСИзображениямиЕстьКартинкаКонтекстноеМеню" id="129"/>
+													<ExtendedTooltip name="ДеревоТоваровСИзображениямиЕстьКартинкаРасширеннаяПодсказка" id="130"/>
+												</PictureField>
+												<ColumnGroup name="ДеревоТоваровСИзображениямиГруппаНаименованиеАртикулКод" id="319">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дерево товаров с изображениями группа наименование артикул код</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дерево товаров с изображениями группа наименование артикул код</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>InCell</Group>
+													<ExtendedTooltip name="ДеревоТоваровСИзображениямиГруппаНаименованиеАртикулКодРасширеннаяПодсказка" id="320"/>
+													<ChildItems>
+														<InputField name="ДеревоТоваровСИзображениямиНаименование" id="110">
+															<DataPath>ДеревоТоваровСИзображениями.Наименование</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ДеревоТоваровСИзображениямиНаименованиеКонтекстноеМеню" id="111"/>
+															<ExtendedTooltip name="ДеревоТоваровСИзображениямиНаименованиеРасширеннаяПодсказка" id="112"/>
+														</InputField>
+														<InputField name="ДеревоТоваровСИзображениямиКод" id="281">
+															<DataPath>ДеревоТоваровСИзображениями.Код</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ДеревоТоваровСИзображениямиКодКонтекстноеМеню" id="282"/>
+															<ExtendedTooltip name="ДеревоТоваровСИзображениямиКодРасширеннаяПодсказка" id="283"/>
+														</InputField>
+														<InputField name="ДеревоТоваровСИзображениямиАртикул" id="284">
+															<DataPath>ДеревоТоваровСИзображениями.Артикул</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ДеревоТоваровСИзображениямиАртикулКонтекстноеМеню" id="285"/>
+															<ExtendedTooltip name="ДеревоТоваровСИзображениямиАртикулРасширеннаяПодсказка" id="286"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+												<InputField name="ДеревоТоваровСИзображениямиФайлКартинкиАдрес" id="125">
+													<DataPath>ДеревоТоваровСИзображениями.ФайлКартинкиАдрес</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДеревоТоваровСИзображениямиФайлКартинкиАдресКонтекстноеМеню" id="126"/>
+													<ExtendedTooltip name="ДеревоТоваровСИзображениямиФайлКартинкиАдресРасширеннаяПодсказка" id="127"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+								<Pages name="ИзображенияТекущегоЭлементаСтраницы" id="270">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изображения текущего элемента страницы</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изображения текущего элемента страницы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="ИзображенияТекущегоЭлементаСтраницыРасширеннаяПодсказка" id="271"/>
+									<ChildItems>
+										<Page name="ИзображенияТекущегоЭлементаСтраницаНеВыбранТовар" id="294">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Изображения текущего элемента страница группа товаров</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Изображения текущего элемента страница группа товаров</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="ИзображенияТекущегоЭлементаСтраницаНеВыбранТоварРасширеннаяПодсказка" id="295"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация2" id="296">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>При выборе товара тут отобразятся его картинки</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<ContextMenu name="Декорация2КонтекстноеМеню" id="297"/>
+													<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="298"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="ИзображенияТекущегоЭлементаСтраницаГруппаТоваров" id="272">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Изображения текущего элемента страница группа товаров</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Изображения текущего элемента страница группа товаров</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="ИзображенияТекущегоЭлементаСтраницаГруппаТоваровРасширеннаяПодсказка" id="273"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаКатегорияРекомендации" id="307">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа категория рекомендации</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа категория рекомендации</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<HorizontalAlign>Left</HorizontalAlign>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКатегорияРекомендацииРасширеннаяПодсказка" id="308"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияКартинкаКатегорииРекомендации" id="278">
+															<MaxWidth>42</MaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
+															<VerticalStretch>false</VerticalStretch>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Рекомендации по выбору изображения для группы товаров
+    - пропорции картинки – 1:1 (квадрат)
+    - цвет фона – белый или прозрачный</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияКартинкаКатегорииРекомендацииКонтекстноеМеню" id="279"/>
+															<ExtendedTooltip name="ДекорацияКартинкаКатегорииРекомендацииРасширеннаяПодсказка" id="280"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДекорацияДлинаНаименованияКатегорииРекомендация1" id="304">
+															<MaxWidth>42</MaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
+															<VerticalStretch>false</VerticalStretch>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Если для группы товаров назначена картинка, то рекомендутся установить наименование длиной менее 50 символов.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияДлинаНаименованияКатегорииРекомендация1КонтекстноеМеню" id="305"/>
+															<ExtendedTooltip name="ДекорацияДлинаНаименованияКатегорииРекомендация1РасширеннаяПодсказка" id="306"/>
+														</LabelDecoration>
+														<UsualGroup name="БанерОшибкаДлиныНаименования" id="381">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Банер ошибка длины наименования</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Банер ошибка длины наименования</v8:content>
+																</v8:item>
+															</ToolTip>
+															<VerticalAlign>Center</VerticalAlign>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<BackColor>auto</BackColor>
+															<ExtendedTooltip name="БанерОшибкаДлиныНаименованияРасширеннаяПодсказка" id="382"/>
+															<ChildItems>
+																<PictureDecoration name="Декорация1" id="383">
+																	<Picture>
+																		<xr:Ref>CommonPicture.Маг1С_Ошибка</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="Декорация1КонтекстноеМеню" id="384"/>
+																	<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="385"/>
+																</PictureDecoration>
+																<LabelDecoration name="ДекорацияДлинаНаименованияКатегорииРекомендация2" id="309">
+																	<MaxWidth>42</MaxWidth>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<VerticalStretch>false</VerticalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текущая длина наименоваиня группы - 150</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ДекорацияДлинаНаименованияКатегорииРекомендация2КонтекстноеМеню" id="310"/>
+																	<ExtendedTooltip name="ДекорацияДлинаНаименованияКатегорииРекомендация2РасширеннаяПодсказка" id="311"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаКартинкаКатегории" id="314">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа картинка категории</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа картинка категории</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКартинкаКатегорииРасширеннаяПодсказка" id="315"/>
+													<ChildItems>
+														<PictureField name="КартинкаКатегорииФайлАдрес" id="299">
+															<DataPath>КартинкаКатегорииФайлАдрес</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<GroupVerticalAlign>Center</GroupVerticalAlign>
+															<Width>16</Width>
+															<Height>6</Height>
+															<HorizontalStretch>false</HorizontalStretch>
+															<VerticalStretch>false</VerticalStretch>
+															<PictureSize>Proportionally</PictureSize>
+															<Hyperlink>true</Hyperlink>
+															<NonselectedPictureText>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Добавить изображение</v8:content>
+																</v8:item>
+															</NonselectedPictureText>
+															<EnableDrag>true</EnableDrag>
+															<ContextMenu name="КартинкаКатегорииФайлАдресКонтекстноеМеню" id="300">
+																<ChildItems>
+																	<Button name="КартинкаКатигорииФайлАдресУдалить" id="302">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.УдалитьКартинкуКатегории</CommandName>
+																		<ExtendedTooltip name="КартинкаКатигорииФайлАдресУдалитьРасширеннаяПодсказка" id="303"/>
+																	</Button>
+																	<Button name="ИзменитьКартинкуКатегории" id="312">
+																		<Type>CommandBarHyperlink</Type>
+																		<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+																		<CommandName>Form.Command.ИзменитьКартинкуКатегории</CommandName>
+																		<Title>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Изменить</v8:content>
+																			</v8:item>
+																		</Title>
+																		<ExtendedTooltip name="ИзменитьКартинкуКатегорииРасширеннаяПодсказка" id="313"/>
+																	</Button>
+																</ChildItems>
+															</ContextMenu>
+															<ExtendedTooltip name="КартинкаКатегорииФайлАдресРасширеннаяПодсказка" id="301"/>
+															<Events>
+																<Event name="DragCheck">КартинкаТекущийФайлАдресПроверкаПеретаскивания</Event>
+																<Event name="Drag">КартинкаТекущийФайлАдресПеретаскивание</Event>
+																<Event name="Click">КартинкаТекущийФайлАдресНажатие</Event>
+															</Events>
+														</PictureField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+										<Page name="ИзображенияТекущегоЭлементаСтраницаТовар" id="276">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Изображения текущего элемента страница товар</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Изображения текущего элемента страница товар</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="ИзображенияТекущегоЭлементаСтраницаТоварРасширеннаяПодсказка" id="277"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаКнопкаВлево" id="260">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кнопка влево</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кнопка влево</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКнопкаВлевоРасширеннаяПодсказка" id="261"/>
+													<ChildItems>
+														<PictureDecoration name="ДекорацияПрокруткаИзображенийВлево" id="48">
+															<Width>3</Width>
+															<Height>6</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Декорация прокрутка изображений влево</v8:content>
+																</v8:item>
+															</Title>
+															<Hyperlink>true</Hyperlink>
+															<Picture>
+																<xr:Ref>CommonPicture.Маг1ССтрелкаВлево16</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ДекорацияПрокруткаИзображенийВлевоКонтекстноеМеню" id="49"/>
+															<ExtendedTooltip name="ДекорацияПрокруткаИзображенийВлевоРасширеннаяПодсказка" id="50"/>
+															<Events>
+																<Event name="Click">ДекорацияПрокруткаИзображенийВлевоНажатие</Event>
+															</Events>
+														</PictureDecoration>
+														<LabelDecoration name="ДекорацияПрокруткаИзображенийВлевоЗаглушка" id="262">
+															<ContextMenu name="ДекорацияПрокруткаИзображенийВлевоЗаглушкаКонтекстноеМеню" id="263"/>
+															<ExtendedTooltip name="ДекорацияПрокруткаИзображенийВлевоЗаглушкаРасширеннаяПодсказка" id="264"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаТекущийФайл1" id="51">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа текущий файл1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа текущий файл1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Group>Vertical</Group>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаТекущийФайл1РасширеннаяПодсказка" id="52"/>
+													<ChildItems>
+														<PictureField name="КартинкаТекущийФайл1Адрес" id="53">
+															<DataPath>КартинкаТекущийФайл1Адрес</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<Width>15</Width>
+															<Height>5</Height>
+															<HorizontalStretch>false</HorizontalStretch>
+															<VerticalStretch>false</VerticalStretch>
+															<PictureSize>Proportionally</PictureSize>
+															<Hyperlink>true</Hyperlink>
+															<EnableDrag>true</EnableDrag>
+															<ContextMenu name="КартинкаТекущийФайл1АдресКонтекстноеМеню" id="54">
+																<ChildItems>
+																	<Button name="КартинкаТекущийФайл1АдресКонтекстноеМенюУдалитьИзображениеТовара1" id="56">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.УдалитьИзображениеТовара1</CommandName>
+																		<ExtendedTooltip name="КартинкаТекущийФайл1АдресКонтекстноеМенюУдалитьИзображениеТовара1РасширеннаяПодсказка" id="57"/>
+																	</Button>
+																</ChildItems>
+															</ContextMenu>
+															<ExtendedTooltip name="КартинкаТекущийФайл1АдресРасширеннаяПодсказка" id="55"/>
+															<Events>
+																<Event name="DragCheck">КартинкаТекущийФайлАдресПроверкаПеретаскивания</Event>
+																<Event name="Drag">КартинкаТекущийФайлАдресПеретаскивание</Event>
+																<Event name="Click">КартинкаТекущийФайлАдресНажатие</Event>
+															</Events>
+														</PictureField>
+														<Pages name="КомандыИзображения1Страницы" id="196">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Команды изображения1 страницы</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Команды изображения1 страницы</v8:content>
+																</v8:item>
+															</ToolTip>
+															<PagesRepresentation>None</PagesRepresentation>
+															<ExtendedTooltip name="КомандыИзображения1СтраницыРасширеннаяПодсказка" id="197"/>
+															<ChildItems>
+																<Page name="КомандыИзображения1СтраницаЭтоПустое" id="202">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения 1 страница это пустое</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения1 страница не это основное</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ExtendedTooltip name="КомандыИзображения1СтраницаЭтоПустоеРасширеннаяПодсказка" id="203"/>
+																	<ChildItems>
+																		<LabelDecoration name="ДекорацияПустаяСтрока1" id="154">
+																			<MaxWidth>17</MaxWidth>
+																			<ContextMenu name="ДекорацияПустаяСтрока1КонтекстноеМеню" id="155"/>
+																			<ExtendedTooltip name="ДекорацияПустаяСтрока1РасширеннаяПодсказка" id="156"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</Page>
+																<Page name="КомандыИзображения1СтраницаЭтоНеОсновное" id="198">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения 1 страница это не основное</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения1 страница это не основное</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<Group>AlwaysHorizontal</Group>
+																	<ExtendedTooltip name="КомандыИзображения1СтраницаЭтоНеОсновноеРасширеннаяПодсказка" id="199"/>
+																	<ChildItems>
+																		<Button name="УстановитьИзображениеОсновным1" id="58">
+																			<Type>Hyperlink</Type>
+																			<CommandName>Form.Command.УстановитьИзображениеОсновным1</CommandName>
+																			<ExtendedTooltip name="УстановитьИзображениеОсновным1РасширеннаяПодсказка" id="59"/>
+																		</Button>
+																	</ChildItems>
+																</Page>
+																<Page name="КомандыИзображения1СтраницаЭтоОсновное" id="200">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения 1 страница это основное</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения1 страница не это основное</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ExtendedTooltip name="КомандыИзображения1СтраницаЭтоОсновноеРасширеннаяПодсказка" id="201"/>
+																	<ChildItems>
+																		<LabelDecoration name="ДекорацияЭтоОсновноеИзображение1" id="60">
+																			<Height>1</Height>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Это основное</v8:content>
+																				</v8:item>
+																			</Title>
+																			<HorizontalAlign>Center</HorizontalAlign>
+																			<ContextMenu name="ДекорацияЭтоОсновноеИзображение1КонтекстноеМеню" id="61"/>
+																			<ExtendedTooltip name="ДекорацияЭтоОсновноеИзображение1РасширеннаяПодсказка" id="62"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</Page>
+															</ChildItems>
+														</Pages>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаТекущийФайл2" id="63">
+													<HorizontalStretch>false</HorizontalStretch>
+													<Group>Vertical</Group>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаТекущийФайл2РасширеннаяПодсказка" id="64"/>
+													<ChildItems>
+														<PictureField name="КартинкаТекущийФайл2Адрес" id="65">
+															<DataPath>КартинкаТекущийФайл2Адрес</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<Width>15</Width>
+															<Height>5</Height>
+															<HorizontalStretch>false</HorizontalStretch>
+															<VerticalStretch>false</VerticalStretch>
+															<PictureSize>Proportionally</PictureSize>
+															<Hyperlink>true</Hyperlink>
+															<EnableDrag>true</EnableDrag>
+															<ContextMenu name="КартинкаТекущийФайл2АдресКонтекстноеМеню" id="66">
+																<ChildItems>
+																	<Button name="КартинкаТекущийФайл2АдресКонтекстноеМенюУдалитьИзображениеТовара2" id="68">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.УдалитьИзображениеТовара2</CommandName>
+																		<ExtendedTooltip name="КартинкаТекущийФайл2АдресКонтекстноеМенюУдалитьИзображениеТовара2РасширеннаяПодсказка" id="69"/>
+																	</Button>
+																</ChildItems>
+															</ContextMenu>
+															<ExtendedTooltip name="КартинкаТекущийФайл2АдресРасширеннаяПодсказка" id="67"/>
+															<Events>
+																<Event name="DragCheck">КартинкаТекущийФайлАдресПроверкаПеретаскивания</Event>
+																<Event name="Drag">КартинкаТекущийФайлАдресПеретаскивание</Event>
+																<Event name="Click">КартинкаТекущийФайлАдресНажатие</Event>
+															</Events>
+														</PictureField>
+														<Pages name="КомандыИзображения2Страницы" id="204">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Команды изображения 2 страницы</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Команды изображения1 страницы</v8:content>
+																</v8:item>
+															</ToolTip>
+															<PagesRepresentation>None</PagesRepresentation>
+															<ExtendedTooltip name="КомандыИзображения2СтраницыРасширеннаяПодсказка" id="205"/>
+															<ChildItems>
+																<Page name="КомандыИзображения2СтраницаЭтоПустое" id="210">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения 2 страница это пустое</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения1 страница не это основное</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ExtendedTooltip name="КомандыИзображения2СтраницаЭтоПустоеРасширеннаяПодсказка" id="211"/>
+																	<ChildItems>
+																		<LabelDecoration name="ДекорацияПустаяСтрока2" id="157">
+																			<MaxWidth>17</MaxWidth>
+																			<ContextMenu name="ДекорацияПустаяСтрока2КонтекстноеМеню" id="158"/>
+																			<ExtendedTooltip name="ДекорацияПустаяСтрока2РасширеннаяПодсказка" id="159"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</Page>
+																<Page name="КомандыИзображения2СтраницаЭтоНеОсновное" id="206">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения 2 страница это не основное</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения1 страница это не основное</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ExtendedTooltip name="КомандыИзображения2СтраницаЭтоНеОсновноеРасширеннаяПодсказка" id="207"/>
+																	<ChildItems>
+																		<Button name="УстановитьИзображениеОсновным2" id="70">
+																			<Type>Hyperlink</Type>
+																			<CommandName>Form.Command.УстановитьИзображениеОсновным2</CommandName>
+																			<ExtendedTooltip name="УстановитьИзображениеОсновным2РасширеннаяПодсказка" id="71"/>
+																		</Button>
+																	</ChildItems>
+																</Page>
+																<Page name="КомандыИзображения2СтраницаЭтоОсновное" id="208">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения 2 страница это основное</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения1 страница не это основное</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ExtendedTooltip name="КомандыИзображения2СтраницаЭтоОсновноеРасширеннаяПодсказка" id="209"/>
+																	<ChildItems>
+																		<LabelDecoration name="ДекорацияЭтоОсновноеИзображение2" id="72">
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Это основное</v8:content>
+																				</v8:item>
+																			</Title>
+																			<HorizontalAlign>Center</HorizontalAlign>
+																			<ContextMenu name="ДекорацияЭтоОсновноеИзображение2КонтекстноеМеню" id="73"/>
+																			<ExtendedTooltip name="ДекорацияЭтоОсновноеИзображение2РасширеннаяПодсказка" id="74"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</Page>
+															</ChildItems>
+														</Pages>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаТекущийФайл3" id="75">
+													<HorizontalStretch>false</HorizontalStretch>
+													<Group>Vertical</Group>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаТекущийФайл3РасширеннаяПодсказка" id="76"/>
+													<ChildItems>
+														<PictureField name="КартинкаТекущийФайл3Адрес" id="77">
+															<DataPath>КартинкаТекущийФайл3Адрес</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<Width>15</Width>
+															<Height>5</Height>
+															<HorizontalStretch>false</HorizontalStretch>
+															<VerticalStretch>false</VerticalStretch>
+															<PictureSize>Proportionally</PictureSize>
+															<Hyperlink>true</Hyperlink>
+															<EnableDrag>true</EnableDrag>
+															<ContextMenu name="КартинкаТекущийФайл3АдресКонтекстноеМеню" id="78">
+																<ChildItems>
+																	<Button name="КартинкаТекущийФайл3АдресКонтекстноеМенюУдалитьИзображениеТовара3" id="80">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.УдалитьИзображениеТовара3</CommandName>
+																		<ExtendedTooltip name="КартинкаТекущийФайл3АдресКонтекстноеМенюУдалитьИзображениеТовара3РасширеннаяПодсказка" id="81"/>
+																	</Button>
+																</ChildItems>
+															</ContextMenu>
+															<ExtendedTooltip name="КартинкаТекущийФайл3АдресРасширеннаяПодсказка" id="79"/>
+															<Events>
+																<Event name="DragCheck">КартинкаТекущийФайлАдресПроверкаПеретаскивания</Event>
+																<Event name="Drag">КартинкаТекущийФайлАдресПеретаскивание</Event>
+																<Event name="Click">КартинкаТекущийФайлАдресНажатие</Event>
+															</Events>
+														</PictureField>
+														<Pages name="КомандыИзображения3Страницы" id="212">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Команды изображения 3 страницы</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Команды изображения1 страницы</v8:content>
+																</v8:item>
+															</ToolTip>
+															<PagesRepresentation>None</PagesRepresentation>
+															<ExtendedTooltip name="КомандыИзображения3СтраницыРасширеннаяПодсказка" id="213"/>
+															<ChildItems>
+																<Page name="КомандыИзображения3СтраницаЭтоПустое" id="218">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения 3 страница это пустое</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения1 страница не это основное</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ExtendedTooltip name="КомандыИзображения3СтраницаЭтоПустоеРасширеннаяПодсказка" id="219"/>
+																	<ChildItems>
+																		<LabelDecoration name="ДекорацияПустаяСтрока3" id="160">
+																			<MaxWidth>17</MaxWidth>
+																			<ContextMenu name="ДекорацияПустаяСтрока3КонтекстноеМеню" id="161"/>
+																			<ExtendedTooltip name="ДекорацияПустаяСтрока3РасширеннаяПодсказка" id="162"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</Page>
+																<Page name="КомандыИзображения3СтраницаЭтоНеОсновное" id="214">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения 3 страница это не основное</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения1 страница это не основное</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ExtendedTooltip name="КомандыИзображения3СтраницаЭтоНеОсновноеРасширеннаяПодсказка" id="215"/>
+																	<ChildItems>
+																		<Button name="УстановитьИзображениеОсновным3" id="82">
+																			<Type>Hyperlink</Type>
+																			<CommandName>Form.Command.УстановитьИзображениеОсновным3</CommandName>
+																			<ExtendedTooltip name="УстановитьИзображениеОсновным3РасширеннаяПодсказка" id="83"/>
+																		</Button>
+																	</ChildItems>
+																</Page>
+																<Page name="КомандыИзображения3СтраницаЭтоОсновное" id="216">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения 3 страница это основное</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды изображения1 страница не это основное</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ExtendedTooltip name="КомандыИзображения3СтраницаЭтоОсновноеРасширеннаяПодсказка" id="217"/>
+																	<ChildItems>
+																		<LabelDecoration name="ДекорацияЭтоОсновноеИзображение3" id="84">
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Это основное</v8:content>
+																				</v8:item>
+																			</Title>
+																			<HorizontalAlign>Center</HorizontalAlign>
+																			<ContextMenu name="ДекорацияЭтоОсновноеИзображение3КонтекстноеМеню" id="85"/>
+																			<ExtendedTooltip name="ДекорацияЭтоОсновноеИзображение3РасширеннаяПодсказка" id="86"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</Page>
+															</ChildItems>
+														</Pages>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаКнопкаВправо" id="265">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кнопка вправо</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кнопка вправо</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКнопкаВправоРасширеннаяПодсказка" id="266"/>
+													<ChildItems>
+														<PictureDecoration name="ДекорацияПрокруткаИзображенийВправо" id="87">
+															<Width>3</Width>
+															<Height>6</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Декорация прокрутка изображений вправо</v8:content>
+																</v8:item>
+															</Title>
+															<Hyperlink>true</Hyperlink>
+															<Picture>
+																<xr:Ref>CommonPicture.Маг1ССтрелкаВправо16</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ДекорацияПрокруткаИзображенийВправоКонтекстноеМеню" id="88"/>
+															<ExtendedTooltip name="ДекорацияПрокруткаИзображенийВправоРасширеннаяПодсказка" id="89"/>
+															<Events>
+																<Event name="Click">ДекорацияПрокруткаИзображенийВправоНажатие</Event>
+															</Events>
+														</PictureDecoration>
+														<LabelDecoration name="ДекорацияПрокруткаИзображенийВправоЗаглушка" id="267">
+															<ContextMenu name="ДекорацияПрокруткаИзображенийВправоЗаглушкаКонтекстноеМеню" id="268"/>
+															<ExtendedTooltip name="ДекорацияПрокруткаИзображенийВправоЗаглушкаРасширеннаяПодсказка" id="269"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+				<Pages name="СтраницыИзображений" id="148">
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="СтраницыИзображенийРасширеннаяПодсказка" id="149"/>
+					<ChildItems>
+						<Page name="СтраницаЗагрузкаИзображений" id="150">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница загрузка изображений</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СтраницаЗагрузкаИзображенийРасширеннаяПодсказка" id="151"/>
+							<ChildItems>
+								<InputField name="ПутьККаталогуКартинок" id="131">
+									<DataPath>ПутьККаталогуКартинок</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Папка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выберите папку с картинками и перетащите их на строку товара или группы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ПутьККаталогуКартинокКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="ПутьККаталогуКартинокРасширеннаяПодсказка" id="133"/>
+									<Events>
+										<Event name="StartChoice">ПутьККаталогуКартинокНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="ГруппаДекорацияДобавитьПапку" id="368">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа декорация добавить папку</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа декорация добавить папку</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДекорацияДобавитьПапкуРасширеннаяПодсказка" id="369"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияДобавитьПапку" id="257">
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация добавить папку</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выберите папку с картинками</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<PictureSize>Proportionally</PictureSize>
+											<ImageScale>50</ImageScale>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выберите папку с картинками</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<Picture>
+												<xr:Ref>CommonPicture.Маг1С_ОткрытьПапку</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ДекорацияДобавитьПапкуКонтекстноеМеню" id="258"/>
+											<ExtendedTooltip name="ДекорацияДобавитьПапкуРасширеннаяПодсказка" id="259"/>
+											<Events>
+												<Event name="Click">ДекорацияДобавитьПапкуНажатие</Event>
+											</Events>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаИзображения" id="170">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ShowTitle>false</ShowTitle>
+							<ScrollOnCompress>true</ScrollOnCompress>
+							<ExtendedTooltip name="СтраницаИзображенияРасширеннаяПодсказка" id="171"/>
+							<ChildItems>
+								<InputField name="ПутьККаталогуКартинок1" id="234">
+									<DataPath>ПутьККаталогуКартинок</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Папка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выберите папку с картинками и перетащите их на строку товара или группы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ПутьККаталогуКартинок1КонтекстноеМеню" id="235"/>
+									<ExtendedTooltip name="ПутьККаталогуКартинок1РасширеннаяПодсказка" id="236"/>
+									<Events>
+										<Event name="StartChoice">ПутьККаталогуКартинокНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="СписокИзображенийКолонки" id="172">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СписокИзображенийКолонкиРасширеннаяПодсказка" id="173"/>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаКолесоЗагрузкиИзображений" id="182">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СтраницаКолесоЗагрузкиИзображенийРасширеннаяПодсказка" id="183"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияКолесоЗагрузки" id="184">
+									<PictureSize>AutoSize</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.Маг1СДлительнаяОперация48</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ДекорацияКолесоЗагрузкиКонтекстноеМеню" id="185"/>
+									<ExtendedTooltip name="ДекорацияКолесоЗагрузкиРасширеннаяПодсказка" id="186"/>
+								</PictureDecoration>
+								<LabelDecoration name="ДекорацияВыполняетсяЗагрузкаИзображений" id="187">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изображения загружаются</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияВыполняетсяЗагрузкаИзображенийКонтекстноеМеню" id="188"/>
+									<ExtendedTooltip name="ДекорацияВыполняетсяЗагрузкаИзображенийРасширеннаяПодсказка" id="189"/>
+								</LabelDecoration>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Маг1СИнструментыПодготовкиКаталога</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДеревоТоваровСИзображениями" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево товаров с изображениями</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ЭтоГруппа" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КартинкаСтроки" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФайлКартинкиАдрес" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл картинки адрес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьКартинка" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Код" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Артикул" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Артикул</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИзображенияТекущегоТовара" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изображения текущего товара</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Адрес" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ВладелецФайла" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Владелец файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ЭтоОсновное" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это основное</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИндексТекущегоИзображения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Индекс текущего изображения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КартинкаТекущийФайл1Адрес" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка текущий файл1 адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КартинкаТекущийФайл2Адрес" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка текущий файл адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КартинкаТекущийФайл3Адрес" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка текущий файл адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоКолонокИзображений" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество колонок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоискИзображений_ИдентификаторПоиска" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск изображений идентификатор поиска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоискИзображений_Маски" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск изображений маски</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Маска" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Маска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПоискЗавершен" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск завершен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПоискИзображений_Файлы" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск изображений файлы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Файл" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="РежимОтображения" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим отображения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокИзображений" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Список картинок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список изображений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номер" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Адрес" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Адрес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяРеквизита" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Имя реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяЭлемента" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Имя элемента</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Скрыть" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Скрыть</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИмяБезРасширения" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя без расширения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РасширениеБезТочки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расширение без точки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НеактивноеАдрес" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Неактивное адрес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Неактивное" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Неактивное</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокПрисоединенныхИзображений" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список присоединенных изображений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ИмяЭлемента" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя элемента</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПоследнийНомерИзображения" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последний номер изображения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьККаталогуКартинок" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиСоединенияССерверами" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки соединения с серверами</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ТекущаяСтрокаИзображений" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая строка изображений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиВитрины" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки витрины</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="НастройкиФильтровНоменклатуры" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки фильтров номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="РасширенияИзображений" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширения изображений</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="НетИзображенияАдрес" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нет изображения адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяСправочникаКартинокНоменклатуры" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя справочника картинок номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиУчетнойСистемы" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки учетной системы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ФильтрПоАктивности" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фильтр по активности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КартинкаКатегорииФайлАдрес" id="22">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МаксимальнаяДлинаНаименованияКатегории" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Максимальная длина наименования категории</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказатьКодАртикул" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать коды и артикулы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПоказатьКодАртикул</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УдалитьИзображениеТовара1" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить изображение товара</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьИзображениеТовара</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="УдалитьИзображениеТовара2" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить изображение товара</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьИзображениеТовара</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="УдалитьИзображениеТовара3" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить изображение товара</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьИзображениеТовара</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="УстановитьИзображениеОсновным1" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать основным</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить изображение основным</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаУстановитьИзображениеОсновным</Action>
+		</Command>
+		<Command name="УстановитьИзображениеОсновным2" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать основным</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить изображение основным</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаУстановитьИзображениеОсновным</Action>
+		</Command>
+		<Command name="УстановитьИзображениеОсновным3" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать основным</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить изображение основным</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаУстановитьИзображениеОсновным</Action>
+		</Command>
+		<Command name="ОбновитьСтраницуЗагрузкаИзображений" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьСтраницуЗагрузкаИзображений</Action>
+		</Command>
+		<Command name="УдалитьКартинкуКатегории" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить картинку категории</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить картинку категории</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьКартинкуКатегории</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ИзменитьКартинкуКатегории" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить картинку категории</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить картинку катергории</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьКартинкуКатегории</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПоказатьСкрытьКодыИАртикулы" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать или скрыть коды и артикулы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть коды и артикулы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСкрытьКодыИАртикулы</Action>
+		</Command>
+		<Command name="СоздатьОбращениеВТехническуюПоддержку" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Техподдержка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать обращение в техническую поддержку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НадписьОбращениеВТехническуюПоддержкуНажатие</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="НастройкиВитрины">
+			<Type/>
+		</Parameter>
+		<Parameter name="НастройкиУчетнойСистемы">
+			<Type/>
+		</Parameter>
+	</Parameters>
+</Form>

@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНаименованиеИГруппа" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование и группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование и группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>80</Width>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="ГруппаНаименованиеИГруппаРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>36</MaxWidth>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<UsualGroup name="ГруппаПрефикс" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа префикс</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа префикс</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>20</Width>
+					<Group>Horizontal</Group>
+					<HorizontalSpacing>None</HorizontalSpacing>
+					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПрефиксРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьПрефикс" id="46">
+							<Width>8</Width>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Префикс: </v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьПрефиксКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="НадписьПрефиксРасширеннаяПодсказка" id="48"/>
+						</LabelDecoration>
+						<InputField name="ОбщепитПрефикс" id="9">
+							<DataPath>Объект.питПрефикс</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Префикс</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<Width>20</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="ОбщепитПрефиксКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="ОбщепитПрефиксРасширеннаяПодсказка" id="11"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаТипЦенИПереключатель" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа тип цен и переключатель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа тип цен и переключатель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="ГруппаТипЦенИПереключательРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<InputField name="ТипОбмена" id="41">
+					<DataPath>Объект.питТипДрайвера</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приложение</v8:content>
+						</v8:item>
+					</Title>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>36</MaxWidth>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>1С:Общепит и 1С:УПО</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>1С-Рарус:Фастфуд Evo</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">3</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>1С-Рарус:Ресторан Evo</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">4</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ТипОбменаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТипОбменаРасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="OnChange">ТипОбменаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelDecoration name="НадписьПерейтиВКУ" id="77">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настроить кассовый узел</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="НадписьПерейтиВКУКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="НадписьПерейтиВКУРасширеннаяПодсказка" id="79"/>
+					<Events>
+						<Event name="Click">НадписьПерейтиВКУНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="СтраницыГиперссылокНаМагазинПриложенийЭвотор" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы гиперссылок на магазин приложений эвотор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы гиперссылок на магазин приложений эвотор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыГиперссылокНаМагазинПриложенийЭвоторРасширеннаяПодсказка" id="84"/>
+			<ChildItems>
+				<Page name="СтраницаОбменОбщепитСЭвотор" id="85">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница обмен общепит с эвотор</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница обмен общепит с эвотор</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОбменОбщепитСЭвоторРасширеннаяПодсказка" id="86"/>
+					<ChildItems>
+						<LabelDecoration name="ОбщепитПриобрестиПриложениеОбщепитЭвотор" id="94">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Приобрести приложение в личном кабинете Эвотор</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ОбщепитПриобрестиПриложениеОбщепитЭвоторКонтекстноеМеню" id="95"/>
+							<ExtendedTooltip name="ОбщепитПриобрестиПриложениеОбщепитЭвоторРасширеннаяПодсказка" id="96"/>
+							<Events>
+								<Event name="Click">ОбщепитПриобрестиПриложениеОбщепитЭвоторНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОбменБПСЭвотор" id="87">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница обмен БПСЭвотор</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница обмен БПСЭвотор</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОбменБПСЭвоторРасширеннаяПодсказка" id="88"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация1" id="89">
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="90"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="91"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОбменОбщепитСРарусФастфуд" id="92">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница обмен общепит с рарус фастфуд</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница обмен общепит с рарус фастфуд</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОбменОбщепитСРарусФастфудРасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<LabelDecoration name="ОбщепитПриобрестиПриложениеОбщепитРарусФастфуд" id="97">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Приобрести приложение в личном кабинете Эвотор</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ОбщепитПриобрестиПриложениеОбщепитРарусФастфудКонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="ОбщепитПриобрестиПриложениеОбщепитРарусФастфудРасширеннаяПодсказка" id="99"/>
+							<Events>
+								<Event name="Click">ОбщепитПриобрестиПриложениеОбщепитРарусФастфудНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОбменОбщепитСРарусРесторан" id="116">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОбменОбщепитСРарусРесторанРасширеннаяПодсказка" id="117"/>
+					<ChildItems>
+						<LabelDecoration name="ОбщепитПриобрестиПриложениеОбщепитРарусРесторан" id="118">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Приобрести приложение в личном кабинете Эвотор</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ОбщепитПриобрестиПриложениеОбщепитРарусРесторанКонтекстноеМеню" id="119"/>
+							<ExtendedTooltip name="ОбщепитПриобрестиПриложениеОбщепитРарусРесторанРасширеннаяПодсказка" id="120"/>
+							<Events>
+								<Event name="Click">ОбщепитПриобрестиПриложениеОбщепитРарусРесторанНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ЗагрузкаДанных" id="73">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="ЗагрузкаДанныхРасширеннаяПодсказка" id="74"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКассаККМ" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тип обмена</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тип обмена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<HorizontalSpacing>None</HorizontalSpacing>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКассаККМРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<InputField name="ОбщепитКассаККМ" id="63">
+							<DataPath>Объект.питКассаККМ</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>36</MaxWidth>
+							<ContextMenu name="ОбщепитКассаККМКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ОбщепитКассаККМРасширеннаяПодсказка" id="65"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВыполнятьЗагрузку" id="68">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выполнять загрузку</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выполнять загрузку</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВыполнятьЗагрузкуРасширеннаяПодсказка" id="69"/>
+					<ChildItems>
+						<CheckBoxField name="ВыполнятьЗагрузкуИзДанныхПродажФронта" id="70">
+							<DataPath>Объект.питВыполнятьЗагрузкуИзДанныхПродажФронта</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыполнятьЗагрузкуИзДанныхПродажФронтаКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ВыполнятьЗагрузкуИзДанныхПродажФронтаExtendedTooltip" id="72"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="питЗагружатьНоменклатуру" id="113">
+					<DataPath>Объект.питЗагружатьНоменклатуру</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загружать номенклатуру</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="питЗагружатьНоменклатуруКонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="питЗагружатьНоменклатуруРасширеннаяПодсказка" id="115"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ВыгрузкаДанных" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="ВыгрузкаДанныхРасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<InputField name="ОбщепитТипЦен" id="36">
+					<DataPath>Объект.питТипЦен</DataPath>
+					<Width>33</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>36</MaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ОбщепитТипЦенКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ОбщепитТипЦенРасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<UsualGroup name="ГруппаТипИерархии" id="103">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тип иерархии</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тип иерархии</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalSpacing>Half</HorizontalSpacing>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаТипИерархииРасширеннаяПодсказка" id="104"/>
+					<ChildItems>
+						<InputField name="ОбщепитТипВыгружаемойИерархии" id="100">
+							<DataPath>Объект.питТипВыгружаемойИерархии</DataPath>
+							<Width>35</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>36</MaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Иерархия номенклатуры</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Иерархия видов меню</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ОбщепитТипВыгружаемойИерархииКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="ОбщепитТипВыгружаемойИерархииРасширеннаяПодсказка" id="102"/>
+						</InputField>
+						<UsualGroup name="ГруппаПодробнееПроТипИерархии" id="105">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>?</v8:content>
+								</v8:item>
+							</Title>
+							<TitleTextColor>style:ГиперссылкаЦвет</TitleTextColor>
+							<Group>Vertical</Group>
+							<Behavior>PopUp</Behavior>
+							<ExtendedTooltip name="ГруппаПодробнееПроТипИерархииРасширеннаяПодсказка" id="106"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЗаголовокТипИерархии" id="110">
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Реквизит: Тип выгружаемой иерархии</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЗаголовокТипИерархииКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="ДекорацияЗаголовокТипИерархииРасширеннаяПодсказка" id="112"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияОписаниеТипВыгружаемойИерархии" id="107">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Описание: признак, который определяет способ формирования иерархии выгружаемых позиций. 
+
+В случае, если указан тип "Иерархия номенклатуры", то иерархия выгружаемых позиций будет совпадать с иерархией справочника "Номенклатура". Если указан тип "Иерархия видов меню", то иерархия будет совпадать с иерархией справочника "Виды меню". 
+
+Стоит отметить, что в облако Эвотор будут отправлены только уникальные номенклатурные позиции, независимо от того сколько раз они встречаются в указанных видах меню. Т.е., если одна и та же номенклатурная позиция входит в состав разных видов меню, то в облако Эвотор она выгрузится только в составе одного из видов меню.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияОписаниеТипВыгружаемойИерархииКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="ДекорацияОписаниеТипВыгружаемойИерархииРасширеннаяПодсказка" id="109"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИндивидуальныйСписокВидовМеню" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виды меню выгружаемой номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа индивидуальный список видов меню</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="ГруппаИндивидуальныйСписокВидовМенюРасширеннаяПодсказка" id="13"/>
+					<ChildItems>
+						<Table name="ОбщепитВидыМеню" id="14">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<AutoMarkIncomplete>false</AutoMarkIncomplete>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.питВидыМеню</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОбщепитВидыМенюКонтекстноеМеню" id="15"/>
+							<AutoCommandBar name="ОбщепитВидыМенюКоманднаяПанель" id="16"/>
+							<ExtendedTooltip name="ОбщепитВидыМенюРасширеннаяПодсказка" id="17"/>
+							<SearchStringAddition name="ОбщепитВидыМенюСтрокаПоиска" id="18">
+								<AdditionSource>
+									<Item>ОбщепитВидыМеню</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбщепитВидыМенюСтрокаПоискаКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="ОбщепитВидыМенюСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОбщепитВидыМенюСостояниеПросмотра" id="21">
+								<AdditionSource>
+									<Item>ОбщепитВидыМеню</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбщепитВидыМенюСостояниеПросмотраКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="ОбщепитВидыМенюСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОбщепитВидыМенюУправлениеПоиском" id="24">
+								<AdditionSource>
+									<Item>ОбщепитВидыМеню</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбщепитВидыМенюУправлениеПоискомКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="ОбщепитВидыМенюУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ОбщепитВидыМенюПередНачаломДобавления</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ОбщепитВидыМенюВидМеню" id="30">
+									<DataPath>Объект.питВидыМеню.ВидМеню</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОбщепитВидыМенюВидМенюКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="ОбщепитВидыМенюВидМенюРасширеннаяПодсказка" id="32"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExchangePlanObject.ОбменСПодключаемымОборудованиемOffline</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ОбменСРарусЭвоторДоступен" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с рарус эвотор доступен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Delete</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="72">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗаписатьИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="73"/>
+			</Button>
+			<Button name="ФормаЗаписать" id="70">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Записать</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="71"/>
+			</Button>
+			<Button name="ФормаПеречитать" id="74">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Reread</CommandName>
+				<ExtendedTooltip name="ФормаПеречитатьРасширеннаяПодсказка" id="75"/>
+			</Button>
+			<Button name="ФормаСкопировать" id="76">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Copy</CommandName>
+				<ExtendedTooltip name="ФормаСкопироватьРасширеннаяПодсказка" id="77"/>
+			</Button>
+			<Button name="ФормаУстановитьПометкуУдаления" id="78">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>
+				<ExtendedTooltip name="ФормаУстановитьПометкуУдаленияРасширеннаяПодсказка" id="79"/>
+			</Button>
+			<Button name="ФормаПоказатьВСписке" id="80">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.ShowInList</CommandName>
+				<ExtendedTooltip name="ФормаПоказатьВСпискеРасширеннаяПодсказка" id="81"/>
+			</Button>
+			<Button name="ФормаИсторияИзменений" id="82">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.ChangeHistory</CommandName>
+				<ExtendedTooltip name="ФормаИсторияИзмененийРасширеннаяПодсказка" id="83"/>
+			</Button>
+			<Button name="ФормаСправка" id="84">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="85"/>
+			</Button>
+			<Button name="ФормаИзменитьФорму" id="86">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+				<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="87"/>
+			</Button>
+			<Button name="ФормаСохранитьЗначения" id="88">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.SaveValues</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьЗначенияРасширеннаяПодсказка" id="89"/>
+			</Button>
+			<Button name="ФормаВосстановитьЗначения" id="90">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.RestoreValues</CommandName>
+				<ExtendedTooltip name="ФормаВосстановитьЗначенияРасширеннаяПодсказка" id="91"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНаименованиеКод" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНаименованиеКодExtendedTooltip" id="42"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="43"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="44"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаОсновная" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаОсновнаяExtendedTooltip" id="46"/>
+			<ChildItems>
+				<Page name="ГруппаМодификаторы" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Модификаторы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Модификаторы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаМодификаторыExtendedTooltip" id="47"/>
+					<ChildItems>
+						<Table name="Модификаторы" id="17">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.Модификаторы</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="МодификаторыКонтекстноеМеню" id="18"/>
+							<AutoCommandBar name="МодификаторыКоманднаяПанель" id="19"/>
+							<ExtendedTooltip name="МодификаторыExtendedTooltip" id="48"/>
+							<SearchStringAddition name="МодификаторыСтрокаПоиска" id="58">
+								<AdditionSource>
+									<Item>Модификаторы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МодификаторыСтрокаПоискаКонтекстноеМеню" id="59"/>
+								<ExtendedTooltip name="МодификаторыСтрокаПоискаРасширеннаяПодсказка" id="60"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="МодификаторыСостояниеПросмотра" id="61">
+								<AdditionSource>
+									<Item>Модификаторы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МодификаторыСостояниеПросмотраКонтекстноеМеню" id="62"/>
+								<ExtendedTooltip name="МодификаторыСостояниеПросмотраРасширеннаяПодсказка" id="63"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="МодификаторыУправлениеПоиском" id="64">
+								<AdditionSource>
+									<Item>Модификаторы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="МодификаторыУправлениеПоискомКонтекстноеМеню" id="65"/>
+								<ExtendedTooltip name="МодификаторыУправлениеПоискомРасширеннаяПодсказка" id="66"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="МодификаторыНомерСтроки" id="20">
+									<DataPath>Объект.Модификаторы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МодификаторыНомерСтрокиКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="МодификаторыНомерСтрокиExtendedTooltip" id="49"/>
+								</LabelField>
+								<InputField name="МодификаторыМодификатор" id="22">
+									<DataPath>Объект.Модификаторы.Модификатор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МодификаторыМодификаторКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="МодификаторыМодификаторExtendedTooltip" id="50"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПараметры" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа параметры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПараметрыExtendedTooltip" id="51"/>
+					<ChildItems>
+						<InputField name="ЗначениеЦветФонаКнопок" id="32">
+							<DataPath>ЗначениеЦветФонаКнопок</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<Width>50</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ЗначениеЦветФонаКнопокКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ЗначениеЦветФонаКнопокExtendedTooltip" id="45"/>
+							<Events>
+								<Event name="OnChange">ЗначениеЦветФонаКнопокПриИзменении</Event>
+							</Events>
+						</InputField>
+						<LabelDecoration name="ДекорацияЦветКнопок" id="67">
+							<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Устанавливает для фронта цвет фона кнопок</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияЦветКнопокКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ДекорацияЦветКнопокРасширеннаяПодсказка" id="69"/>
+						</LabelDecoration>
+						<CheckBoxField name="ОбязательныйВыбор" id="38">
+							<DataPath>Объект.ОбязательныйВыбор</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контролировать количество при выборе из данного набора</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОбязательныйВыборКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ОбязательныйВыборExtendedTooltip" id="52"/>
+							<Events>
+								<Event name="OnChange">ОбязательныйВыборПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияОбязательныйВыбор" id="40">
+							<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Устанавливает для фронта режим контроля количества выбираемых модификаторов к основному блюду</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияОбязательныйВыборКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ДекорацияОбязательныйВыборExtendedTooltip" id="53"/>
+						</LabelDecoration>
+						<InputField name="МинимальноеКоличествоМодификаторов" id="9">
+							<DataPath>Объект.МинимальноеКоличествоМодификаторов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Минимальное количество модификаторов (ограничение "снизу")</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<SpinButton>true</SpinButton>
+							<ContextMenu name="МинимальноеКоличествоМодификаторовКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="МинимальноеКоличествоМодификаторовExtendedTooltip" id="54"/>
+						</InputField>
+						<LabelDecoration name="ДекорацияМиним" id="34">
+							<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Устанавливает минимальное количество модификаторов, которые требуется набрать к основному блюду из текущего набора.
+При значении, равном 0, указание модификаторов из данного набора не обязательно</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияМинимКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ДекорацияМинимExtendedTooltip" id="55"/>
+						</LabelDecoration>
+						<InputField name="МаксимальноеКоличествоМодификаторов" id="11">
+							<DataPath>Объект.МаксимальноеКоличествоМодификаторов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Максимальное количество модификаторов (ограничение "сверху")</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<SpinButton>true</SpinButton>
+							<ContextMenu name="МаксимальноеКоличествоМодификаторовКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="МаксимальноеКоличествоМодификаторовExtendedTooltip" id="56"/>
+						</InputField>
+						<LabelDecoration name="ДекорацияМаксимум" id="36">
+							<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Устанавливает максимальное количество модификаторов, которое допустимо набрать к основному блюду из текущего набора.
+При значении, равном 0, отсутствует ограничение на максимальное количество подбираемых модификаторов</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияМаксимумКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ДекорацияМаксимумExtendedTooltip" id="57"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаДополнительныеРеквизиты" id="92">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные реквизиты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Additional attributes</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="93"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.питГруппыМодификаторов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЗначениеЦветФонаКнопок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет фона кнопок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Записать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьЭлемент</Action>
+		</Command>
+		<Command name="ЗаписатьИЗакрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьИЗакрыть</Action>
+		</Command>
+	</Commands>
+</Form>

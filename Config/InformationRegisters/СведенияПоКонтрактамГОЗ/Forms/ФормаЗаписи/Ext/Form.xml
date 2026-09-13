@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На дату</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="НаправлениеДеятельности" id="4">
+			<DataPath>Запись.НаправлениеДеятельности</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>30</MaxWidth>
+			<ContextMenu name="НаправлениеДеятельностиКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаправлениеДеятельностиРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="ГруппаОсновныеСведения" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основные сведения</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновныеСведенияРасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<UsualGroup name="ЗавершениеКонтракта" id="63">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Завершение контракта</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЗавершениеКонтрактаРасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<CheckBoxField name="ОбязательстваПоКонтрактуВыполнены" id="65">
+							<DataPath>Запись.ОбязательстваПоКонтрактуВыполнены</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОбязательстваПоКонтрактуВыполненыКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="ОбязательстваПоКонтрактуВыполненыРасширеннаяПодсказка" id="67"/>
+							<Events>
+								<Event name="OnChange">ОбязательстваПоКонтрактуВыполненыПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ФактическаяДатаЗавершения" id="55">
+							<DataPath>Запись.ФактическаяДатаЗавершения</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ФактическаяДатаЗавершенияКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ФактическаяДатаЗавершенияРасширеннаяПодсказка" id="57"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="НомерКонтракта" id="46">
+					<DataPath>Запись.НомерКонтракта</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>30</MaxWidth>
+					<ContextMenu name="НомерКонтрактаКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="НомерКонтрактаРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ДатаЗаключенияКонтракта" id="49">
+					<DataPath>Запись.ДатаЗаключенияКонтракта</DataPath>
+					<ContextMenu name="ДатаЗаключенияКонтрактаКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ДатаЗаключенияКонтрактаРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="НомерОтдельногоСчета" id="52">
+					<DataPath>Запись.НомерОтдельногоСчета</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>30</MaxWidth>
+					<ContextMenu name="НомерОтдельногоСчетаКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="НомерОтдельногоСчетаРасширеннаяПодсказка" id="54"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЦелевыеПараметры" id="68">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Целевые параметры</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<ExtendedTooltip name="ГруппаЦелевыеПараметрыРасширеннаяПодсказка" id="69"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЦелевыеПараметрыЛево" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа целевые параметры право</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЦелевыеПараметрыЛевоРасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОсновныеПараметрыКонтракта" id="70" DisplayImportance="Low">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основные параметры контракта</v8:content>
+								</v8:item>
+							</Title>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаОсновныеПараметрыКонтрактаРасширеннаяПодсказка" id="71"/>
+							<ChildItems>
+								<InputField name="ПлановаяДатаЗавершения" id="7">
+									<DataPath>Запись.ПлановаяДатаЗавершения</DataPath>
+									<ContextMenu name="ПлановаяДатаЗавершенияКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ПлановаяДатаЗавершенияРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="ОбъемФинансированияКонтракта" id="10">
+									<DataPath>Запись.ОбъемФинансированияКонтракта</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Объем финансирования</v8:content>
+										</v8:item>
+									</Title>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="ОбъемФинансированияКонтрактаКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ОбъемФинансированияКонтрактаРасширеннаяПодсказка" id="12"/>
+								</InputField>
+								<InputField name="ПрибыльКонтракта" id="34">
+									<DataPath>Запись.ПрибыльКонтракта</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="ПрибыльКонтрактаКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ПрибыльКонтрактаРасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<InputField name="СуммаВозмещаемыхРасходов" id="58">
+									<DataPath>Запись.СуммаВозмещаемыхРасходов</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="СуммаВозмещаемыхРасходовКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="СуммаВозмещаемыхРасходовРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="СуммаНДС" id="13">
+									<DataPath>Запись.СуммаНДС</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="СуммаНДСКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="СуммаНДСРасширеннаяПодсказка" id="15"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИспользованиеЗаемныхСредств" id="72">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использование заемных средств</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаИспользованиеЗаемныхСредствРасширеннаяПодсказка" id="73"/>
+							<ChildItems>
+								<InputField name="ОбъемКредитования" id="40">
+									<DataPath>Запись.ОбъемКредитования</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="ОбъемКредитованияКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ОбъемКредитованияРасширеннаяПодсказка" id="42"/>
+								</InputField>
+								<InputField name="ПроцентыПоКредитам" id="43">
+									<DataPath>Запись.ПроцентыПоКредитам</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="ПроцентыПоКредитамКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ПроцентыПоКредитамРасширеннаяПодсказка" id="45"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЦелевыеПараметрыПраво" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа целевые параметры право</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЦелевыеПараметрыПравоРасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЦелевыеЗатраты" id="78">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Целевые затраты</v8:content>
+								</v8:item>
+							</Title>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаЦелевыеЗатратыРасширеннаяПодсказка" id="79"/>
+							<ChildItems>
+								<InputField name="ЗатратыНаМатериалы" id="16">
+									<DataPath>Запись.ЗатратыНаМатериалы</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="ЗатратыНаМатериалыКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ЗатратыНаМатериалыРасширеннаяПодсказка" id="18"/>
+								</InputField>
+								<InputField name="ЗатратыНаОплатуТруда" id="19">
+									<DataPath>Запись.ЗатратыНаОплатуТруда</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="ЗатратыНаОплатуТрудаКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ЗатратыНаОплатуТрудаРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<InputField name="ПрочиеПроизводственныеЗатраты" id="22">
+									<DataPath>Запись.ПрочиеПроизводственныеЗатраты</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="ПрочиеПроизводственныеЗатратыКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ПрочиеПроизводственныеЗатратыРасширеннаяПодсказка" id="24"/>
+								</InputField>
+								<InputField name="ОбщепроизводственныеЗатраты" id="25">
+									<DataPath>Запись.ОбщепроизводственныеЗатраты</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="ОбщепроизводственныеЗатратыКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ОбщепроизводственныеЗатратыРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<InputField name="ОбщехозяйственныеЗатраты" id="28">
+									<DataPath>Запись.ОбщехозяйственныеЗатраты</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="ОбщехозяйственныеЗатратыКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ОбщехозяйственныеЗатратыРасширеннаяПодсказка" id="30"/>
+								</InputField>
+								<InputField name="КоммерческиеРасходы" id="31">
+									<DataPath>Запись.КоммерческиеРасходы</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="КоммерческиеРасходыКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="КоммерческиеРасходыРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="УправленческиеРасходы" id="37">
+									<DataPath>Запись.УправленческиеРасходы</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>13</MaxWidth>
+									<ContextMenu name="УправленческиеРасходыКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="УправленческиеРасходыРасширеннаяПодсказка" id="39"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.СведенияПоКонтрактамГОЗ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

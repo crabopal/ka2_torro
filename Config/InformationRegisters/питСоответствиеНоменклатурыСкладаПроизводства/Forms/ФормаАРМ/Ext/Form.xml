@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Соответствие номенклатуры склада и производства</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОсновная" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<Table name="НоменклатураПроизводства" id="1">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>НоменклатураПроизводства</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="НоменклатураПроизводстваКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="НоменклатураПроизводстваКоманднаяПанель" id="3">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="НоменклатураПроизводстваДобавить" id="44">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.НоменклатураПроизводства.StandardCommand.Add</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="НоменклатураПроизводстваДобавитьРасширеннаяПодсказка" id="45"/>
+							</Button>
+							<Button name="Удалить" id="46">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.НоменклатураПроизводства.StandardCommand.Delete</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="47"/>
+							</Button>
+							<Button name="НоменклатураПроизводстваНайти" id="54">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.НоменклатураПроизводства.StandardCommand.Find</CommandName>
+								<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="НоменклатураПроизводстваНайтиРасширеннаяПодсказка" id="55"/>
+							</Button>
+							<Button name="НоменклатураПроизводстваОтменитьПоиск" id="56">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.НоменклатураПроизводства.StandardCommand.CancelSearch</CommandName>
+								<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="НоменклатураПроизводстваОтменитьПоискРасширеннаяПодсказка" id="57"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="НоменклатураПроизводстваРасширеннаяПодсказка" id="4"/>
+					<SearchStringAddition name="НоменклатураПроизводстваСтрокаПоиска" id="5">
+						<AdditionSource>
+							<Item>НоменклатураПроизводства</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НоменклатураПроизводстваСтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="НоменклатураПроизводстваСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="НоменклатураПроизводстваСостояниеПросмотра" id="8">
+						<AdditionSource>
+							<Item>НоменклатураПроизводства</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НоменклатураПроизводстваСостояниеПросмотраКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="НоменклатураПроизводстваСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="НоменклатураПроизводстваУправлениеПоиском" id="11">
+						<AdditionSource>
+							<Item>НоменклатураПроизводства</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="НоменклатураПроизводстваУправлениеПоискомКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="НоменклатураПроизводстваУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">НоменклатураПроизводстваПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">НоменклатураПроизводстваПередУдалением</Event>
+						<Event name="OnActivateRow">НоменклатураПроизводстваПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="НоменклатураПроизводстваАналог" id="14">
+							<DataPath>НоменклатураПроизводства.Номенклатура</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номенклатура производства</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НоменклатураПроизводстваАналогКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="НоменклатураПроизводстваАналогРасширеннаяПодсказка" id="16"/>
+						</InputField>
+						<InputField name="НоменклатураПроизводстваНоменклатураЕдиницаИзмеренияНаименование" id="61">
+							<DataPath>НоменклатураПроизводства.Номенклатура.ЕдиницаИзмерения.Description</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ед. изм.</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НоменклатураПроизводстваНоменклатураЕдиницаИзмеренияНаименованиеКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="НоменклатураПроизводстваНоменклатураЕдиницаИзмеренияНаименованиеРасширеннаяПодсказка" id="63"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="НоменклатураСкладская" id="17">
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>НоменклатураСкладская</DataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="НоменклатураСкладскаяКонтекстноеМеню" id="18"/>
+					<AutoCommandBar name="НоменклатураСкладскаяКоманднаяПанель" id="19">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="НоменклатураСкладскаяСоздать" id="50">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.НоменклатураСкладская.StandardCommand.Create</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="НоменклатураСкладскаяСоздатьРасширеннаяПодсказка" id="51"/>
+							</Button>
+							<Button name="НоменклатураСкладскаяУдалить" id="48">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.НоменклатураСкладская.StandardCommand.Delete</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="НоменклатураСкладскаяУдалитьРасширеннаяПодсказка" id="49"/>
+							</Button>
+							<Button name="НоменклатураСкладскаяИзменить" id="52">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Item.НоменклатураСкладская.StandardCommand.Change</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="НоменклатураСкладскаяИзменитьРасширеннаяПодсказка" id="53"/>
+							</Button>
+							<Button name="НоменклатураСкладскаяПовыситьПриоритет" id="67">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПовыситьПриоритет</CommandName>
+								<ExtendedTooltip name="НоменклатураСкладскаяПовыситьПриоритетРасширеннаяПодсказка" id="68"/>
+							</Button>
+							<Button name="НоменклатураСкладскаяПонизитьПриоритет" id="69">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПонизитьПриоритет</CommandName>
+								<ExtendedTooltip name="НоменклатураСкладскаяПонизитьПриоритетРасширеннаяПодсказка" id="70"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="НоменклатураСкладскаяРасширеннаяПодсказка" id="20"/>
+					<SearchStringAddition name="НоменклатураСкладскаяСтрокаПоиска" id="21">
+						<AdditionSource>
+							<Item>НоменклатураСкладская</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НоменклатураСкладскаяСтрокаПоискаКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="НоменклатураСкладскаяСтрокаПоискаРасширеннаяПодсказка" id="23"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="НоменклатураСкладскаяСостояниеПросмотра" id="24">
+						<AdditionSource>
+							<Item>НоменклатураСкладская</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НоменклатураСкладскаяСостояниеПросмотраКонтекстноеМеню" id="25"/>
+						<ExtendedTooltip name="НоменклатураСкладскаяСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="НоменклатураСкладскаяУправлениеПоиском" id="27">
+						<AdditionSource>
+							<Item>НоменклатураСкладская</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="НоменклатураСкладскаяУправлениеПоискомКонтекстноеМеню" id="28"/>
+						<ExtendedTooltip name="НоменклатураСкладскаяУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">НоменклатураСкладскаяПередНачаломДобавления</Event>
+						<Event name="BeforeRowChange">НоменклатураСкладскаяПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="НоменклатураСкладскаяКоэффициент" id="41">
+							<DataPath>НоменклатураСкладская.Коэффициент</DataPath>
+							<ContextMenu name="НоменклатураСкладскаяКоэффициентКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="НоменклатураСкладскаяКоэффициентРасширеннаяПодсказка" id="43"/>
+						</LabelField>
+						<LabelField name="НоменклатураСкладскаяНоменклатураСкладская" id="33">
+							<DataPath>НоменклатураСкладская.НоменклатураСкладская</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номенклатура складская</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НоменклатураСкладскаяНоменклатураСкладскаяКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="НоменклатураСкладскаяНоменклатураСкладскаяРасширеннаяПодсказка" id="35"/>
+						</LabelField>
+						<LabelField name="НоменклатураСкладскаяНоменклатураСкладскаяЕдиницаИзмерения" id="64">
+							<DataPath>НоменклатураСкладская.НоменклатураСкладская.ЕдиницаИзмерения</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ед. изм.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НоменклатураСкладскаяНоменклатураСкладскаяЕдиницаИзмеренияКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="НоменклатураСкладскаяНоменклатураСкладскаяЕдиницаИзмеренияРасширеннаяПодсказка" id="66"/>
+						</LabelField>
+						<LabelField name="НоменклатураСкладскаяПриоритет" id="58">
+							<DataPath>НоменклатураСкладская.Приоритет</DataPath>
+							<ContextMenu name="НоменклатураСкладскаяПриоритетКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="НоменклатураСкладскаяПриоритетРасширеннаяПодсказка" id="60"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НоменклатураПроизводства" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура производства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номенклатура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕдиницаИзмерения" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед. изм.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НоменклатураСкладская" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура складская</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>НоменклатураСкладская.Коэффициент</Field>
+				<Field>НоменклатураСкладская.НоменклатураПроизводственная</Field>
+				<Field>НоменклатураСкладская.НоменклатураСкладская</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	питСоответствиеНоменклатурыСкладаПроизводства.НоменклатураСкладская КАК НоменклатураСкладская,
+	питСоответствиеНоменклатурыСкладаПроизводства.НоменклатураПроизводственная КАК НоменклатураПроизводственная,
+	питСоответствиеНоменклатурыСкладаПроизводства.Коэффициент КАК Коэффициент,
+	питСоответствиеНоменклатурыСкладаПроизводства.Приоритет КАК Приоритет
+ИЗ
+	РегистрСведений.питСоответствиеНоменклатурыСкладаПроизводства КАК питСоответствиеНоменклатурыСкладаПроизводства
+
+</QueryText>
+				<MainTable>InformationRegister.питСоответствиеНоменклатурыСкладаПроизводства</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Приоритет</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЕстьПраваНаРедактирование" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть права на редактирование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПовыситьПриоритет" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повысить приоритет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повысить приоритет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveUp</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПовыситьПриоритет</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПонизитьПриоритет" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Понизить приоритет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Понизить приоритет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveDown</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПонизитьПриоритет</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>

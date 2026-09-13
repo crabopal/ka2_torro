@@ -1,0 +1,3227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Клеверенс: Расширенные настройки</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Cleverence: Advanced settings</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>kk</v8:lang>
+			<v8:content>Cleverence: Кеңейтілген орнатулар</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uz</v8:lang>
+			<v8:content>Cleverence: Kengaytirilgan sozlamalar</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>be</v8:lang>
+			<v8:content>Cleverence: Расшырэныя налады</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Cleverence: Розширені налаштування</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>ka</v8:lang>
+			<v8:content>Cleverence: გაფართოებული პარამეტრები</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>tr</v8:lang>
+			<v8:content>Cleverence: Gelişmiş ayarlar</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>es</v8:lang>
+			<v8:content>Cleverence: Configuraciones avanzadas</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>ro</v8:lang>
+			<v8:content>Cleverence: Setări avansate</v8:content>
+		</v8:item>
+	</Title>
+	<Width>70</Width>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="16">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотреть и настроить все произвольные коды, которые используются в настройках бизнес-процессов и вызываются при обмене документами.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Переглянути та налаштувати всі довільні коди, які використовуються в налаштуваннях бізнес-процесів і викликаються при обміні документами.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>View and configure all custom codes used in business process settings and called during document exchange</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ნახვა და კონფიგურაცია ყველა შემთხვევითი კოდი, რომელიც გამოიყენება ბიზნეს პროცესების კონფიგურაციებში და გამოძახებისას დოკუმენტებთან.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Бизнес процестерінің орнатуларында пайдаланылатын және құжаттармен алмасу кезінде шағымдалатын барлық әрекет кодтарын қарау және орнату  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Biznes jarayonlar sozlamalarida ishlatiladigan va hujjatlarni almashuvda chaqiriladigan barcha ixtiyoriy kodlarni ko'rish va sozlash  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Праглядзець і наладзіць усе давольныя коды, якія выкарыстоўваюцца ў наладах бізнес-працэсаў і выклікаюцца пры абмене дакументамі</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>İş süreçleri ayarlarında kullanılan ve belgelerle değişimde çağrılan tüm özel kodları görüntüle ve yapılandır</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Ver y configurar todos los códigos arbitrarios utilizados en la configuración de procesos comerciales y llamados durante el intercambio de documentos</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Vizualizare și configurare toate codurile arbitrare utilizate în setările proceselor de afaceri și apelate în schimbul de documente</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="18"/>
+		</LabelDecoration>
+		<Button name="СписокПроизвольныхКодов" id="19">
+			<Type>UsualButton</Type>
+			<DefaultItem>true</DefaultItem>
+			<Width>24</Width>
+			<CommandName>Form.Command.ОткрытьФормуСпискаПроизвольныхКодов</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список произвольных кодов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>List of arbitrary codes</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Қолданбалы кодтар тізімі</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Ixtiyoriy kodlar ro'yxati</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Спіс давольных кодаў</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Список довільних кодів  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>შემთხვევითი კოდების სია</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Rastgele kod listesi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Lista de códigos arbitrarios</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Lista de coduri arbitrare</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СписокПроизвольныхКодовРасширеннаяПодсказка" id="20"/>
+		</Button>
+		<LabelDecoration name="Декорация18" id="105">
+			<ContextMenu name="Декорация18КонтекстноеМеню" id="106"/>
+			<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="107"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация14" id="102">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включите опцию, чтобы получать сообщения на ТСД по результатам обработки завершенных на нем документов (только для онлайн-обмена)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Увімкніть опцію, щоб отримувати повідомлення на Мобільний пристрій за результатами обробки завершених на ньому документів (тільки для онлайн-обміну)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enable the option to receive messages on the Mobile device based on the processing results of completed documents on it (for online exchange only)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ჩართეთ პარამეტრი, რომ მიიღოთ შეტყობინებები მობილურ მოწყობაში დოკუმენტების დასრულების შედეგების შესრულების შემდეგ (მხოლოდ ონლაინ გაცვლაში)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Мобильді құрылғыға құжаттарды өңдеу аяқталған соң жіберілген хабарламаларды алу үшін опцияны қосыңыз (тек онлайн-алмасу үшін)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Мобил қурилмага қўнғироқ қилиш учун документларни ҳимоя қилишнинг натижалари бўйича хабарлар олиш учун опсияни ёқинг (фақат онлайн алмаштириш учун)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Уключыце апцыю, каб атрымліваць паведамленні на Мабільнае прылад по выніках апрацоўкі завершаных на ім дакументаў (толькі для онлайн-абмену)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tamamlanan belgelerle ilgili işlemlerin sonuçlarına göre Mobil cihazınıza mesaj almak için seçeneği etkinleştirin (yalnızca çevrimiçi değişim için)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Active la opción para recibir mensajes en el dispositivo móvil sobre los resultados del procesamiento de documentos completados en él (solo para intercambio en línea)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Activați opțiunea pentru a primi mesaje pe Dispozitivul Mobil în urma procesării documentelor finalizate pe acesta (doar pentru schimbul online)</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация14КонтекстноеМеню" id="103"/>
+			<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="104"/>
+		</LabelDecoration>
+		<InputField name="ВыводитьСообщенияНаТСДПослеЗагрузкиДокументов" id="99">
+			<DataPath>ВыводитьСообщенияНаТСДПослеЗагрузкиДокументов</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправка сообщений на ТСД при онлайн-обмене</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відправлення повідомлень на Мобільний пристрій під час онлайн-обміну</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Sending messages to Mobile device during online exchange</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Онлайн алмасу кезінде Мобильді құрылға хабарлама жіберу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Onlayn almashishda Mobil qurilmaga xabar yuborish</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Адпраўка паведамленняў на Мабільнае прылада пры онлайн-абмене</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>შეტყობინების გაგზავნა მობილურ მოწყობაზე ონლაინ გაცვლით</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Çevrimiçi değişim sırasında Mobil cihaza mesaj gönderme</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Envío de mensajes al dispositivo móvil durante el intercambio en línea</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Trimiterea mesajelor către dispozitivul mobil în timpul schimbului online</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Left</TitleLocation>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChooseType>false</ChooseType>
+			<TextEdit>false</TextEdit>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Не отправлять</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Не відправляти</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Do not send</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>kk</v8:lang>
+								<v8:content>Жібермеу</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uz</v8:lang>
+								<v8:content>Ўтказманг</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>be</v8:lang>
+								<v8:content>Не адпраўляць</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ka</v8:lang>
+								<v8:content>არ გაიგზავნოს</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Göndermeyin</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es</v8:lang>
+								<v8:content>No enviar</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ro</v8:lang>
+								<v8:content>Nu trimite</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">НеВыводить</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Только ошибки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Тільки помилки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Errors only</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>kk</v8:lang>
+								<v8:content>Тек қателер</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uz</v8:lang>
+								<v8:content>Faqat xatolar</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>be</v8:lang>
+								<v8:content>Толькі памылкі</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ka</v8:lang>
+								<v8:content>მხოლოდ შეცდომები</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Sadece hatalar</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es</v8:lang>
+								<v8:content>Solo errores</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ro</v8:lang>
+								<v8:content>Doar erori</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ТолькоОшибки</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Все сообщения</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Усі повідомлення</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>All messages</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>kk</v8:lang>
+								<v8:content>Барлық хабарламалар</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uz</v8:lang>
+								<v8:content>Barcha xabarlari</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>be</v8:lang>
+								<v8:content>Усе паведамленні</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ka</v8:lang>
+								<v8:content>ყველი შეტყობინება</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Tüm mesajlar</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es</v8:lang>
+								<v8:content>Todos los mensajes</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ro</v8:lang>
+								<v8:content>Toate mesajele</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ВсяИнформация</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ВыводитьСообщенияНаТСДПослеЗагрузкиДокументовКонтекстноеМеню" id="100"/>
+			<ExtendedTooltip name="ВыводитьСообщенияНаТСДПослеЗагрузкиДокументовРасширеннаяПодсказка" id="101"/>
+			<Events>
+				<Event name="OnChange">ВыводитьСообщенияНаТСДПослеЗагрузкиДокументовПриИзменении</Event>
+			</Events>
+		</InputField>
+		<LabelDecoration name="Декорация5" id="30">
+			<ContextMenu name="Декорация5КонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="32"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация2" id="21">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включите опцию, чтобы видеть возникающие ошибки, входы и выходы из вызываемых онлайн-методов, длительность выполняемых операций и другую информацию в журнале регистрации 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Увімкніть опцію, щоб бачити виникаючі помилки, входи та виходи з викликаних онлайн-методів, тривалість виконуваних операцій та іншу інформацію в журналі реєстрації 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enable the option to see errors, inputs and outputs from called online methods, duration of performed operations, and other information in the 1C log</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ჩართეთ პარამეტრი, რომ ნახოთ გამოსვლები, შესადარებები და გამოძახებული ონლაინ მეთოდების შედეგები, შესრულებული ოპერაციების ხანდაზმი და სხვა ინფორმაცია 1C-ის რეგისტრაციის ჟურნალში</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Онлайн-методтарды шақыруларды, кірулерді және шығуларды, орындалатын операциялардың уақытын және басқа ақпараттарды 1С тіркеу журналында көру үшін опцияны қосыңыз</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Хатолар, киришлар ва чиқишларни, онлайн-усулларни бажариш муддатларини ва бошқа маълумотларни 1С рўйхатлар журналида кўринишини танишлаш учун опсияни ёқинг</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Уключыце апцыю, каб бачыць узнікаваныя памылкі, уваходы і выходы з вызываных онлайн-метадаў, трываласць выкананых аперацый і іншую інфармацыю ў часопісе рэгістрацыі 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>1C kayıt defterinde hataları, çağrılan çevrimiçi yöntemlerden giriş ve çıkışları, yürütülen işlemlerin süresini ve diğer bilgileri görmek için seçeneği etkinleştirin</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Active la opción para ver errores, entradas y salidas de los métodos en línea llamados, la duración de las operaciones realizadas y otra información en el registro de 1C</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Activați opțiunea pentru a vedea erorile apărute, intrările și ieșirile din metodele online apelate, durata operațiilor efectuate și alte informații în jurnalul de înregistrare 1C</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="23"/>
+		</LabelDecoration>
+		<InputField name="РежимОтладки" id="1">
+			<DataPath>РежимОтладки</DataPath>
+			<SkipOnInput>true</SkipOnInput>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логирование событий в журнал регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Event logging in registration journal</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Жазу журналында оқиғаларды журналдау</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Рўйхатга событияларни логлаш</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Логирование событий в журнал регистрации: Лагіраванне падзей у журнал рэгістрацыі</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Логування подій в журнал реєстрації</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>მოვლენების ლოგირება რეგისტრაციის ჟურნალში</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Olayların kayıt defterine kaydedilmesi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Registrar eventos en el registro de eventos</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Jurnalizarea evenimentelor în jurnalul de înregistrare</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ListChoiceMode>true</ListChoiceMode>
+			<AutoChoiceIncomplete>false</AutoChoiceIncomplete>
+			<AutoMarkIncomplete>false</AutoMarkIncomplete>
+			<ChooseType>false</ChooseType>
+			<TextEdit>false</TextEdit>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Не логировать</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Do not log</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>kk</v8:lang>
+								<v8:content>Логлау жасау</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uz</v8:lang>
+								<v8:content>Логлашни ишлатманг</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>be</v8:lang>
+								<v8:content>Не лагаваць</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Не логувати</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ka</v8:lang>
+								<v8:content>ლოგირება არ შეინახოს</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Günlük tutmayın</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es</v8:lang>
+								<v8:content>No hacer log</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ro</v8:lang>
+								<v8:content>Nu se înregistrează</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">Выключена</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Только ошибки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Errors only</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>kk</v8:lang>
+								<v8:content>Тек қателер</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uz</v8:lang>
+								<v8:content>Faqat xatolar</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>be</v8:lang>
+								<v8:content>Толькі памылкі</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Тільки помилки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ka</v8:lang>
+								<v8:content>მხოლოდ შეცდომები</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Sadece hatalar</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es</v8:lang>
+								<v8:content>Solo errores</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ro</v8:lang>
+								<v8:content>Doar erori</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ТолькоОшибки</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вся информация</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>All information</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>kk</v8:lang>
+								<v8:content>Барлық ақпарат</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uz</v8:lang>
+								<v8:content>Barcha ma'lumotlar</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>be</v8:lang>
+								<v8:content>Уся інфармацыя</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Вся інформація</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ka</v8:lang>
+								<v8:content>ყველა ინფორმაცია</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>tr</v8:lang>
+								<v8:content>Tüm bilgi</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>es</v8:lang>
+								<v8:content>Toda la información</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>ro</v8:lang>
+								<v8:content>Toate informațiile</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ВсяИнформация</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="РежимОтладкиКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="РежимОтладкиРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">РежимОтладкиПриИзменении</Event>
+			</Events>
+		</InputField>
+		<LabelDecoration name="Декорация6" id="33">
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<ContextMenu name="Декорация6КонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="35"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация3" id="24">
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установите этот флаг, если хотите, чтобы мобильное устройство всегда пользовалось выгруженной копией номенклатуры и никогда не обращалось за товарами в 1С.  Это может понадобиться, если запросы в 1С выполняются слишком долго и тормозят работу.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановіть цей прапорець, якщо хочете, щоб мобільний пристрій завжди користувався вивантаженою копією номенклатури і ніколи не звертався за товарами в 1С. Це може знадобитися, якщо запити в 1С виконуються занадто довго і гальмують роботу.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set this flag if you want the mobile device to always use the preloaded copy of the nomenclature and never request products from 1C. This may be necessary if requests to 1C take too long and slow down work.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>თუ გსურთ, რომ მობილური მოწყობილობა ყოფილი ნომენკლატურის გამოყენებით და არა 1C-ში პროდუქციის მოთხოვნების შესრულებით, დაყენეთ ეს ფლაგი. ეს შესაძლებელია, თუ 1C-ში მოთხოვნები შესრულება ძლიერია და სწორების საქმეს შეწყვეტებს.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Мобильді құрылғының қол жетімді номенклатурасымен қолдануын өзгерту қажет болса, 1С-де тауарларға сұраулар тым уақыт алады және жұмысты түрлілігін тоқтатады деп ойлайсыз, онда бұл флагды орнатыңыз.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Agar mobil qurilma doim oldindan yuklangan nomenklatura nusxasidan foydalanishni xohlaysiz bo'lsangiz va hech qachon 1C dan tovar so'ro'q qilmasligini xohlaysiz bo'lsangiz, ushbu bayroqni o'rnatib qo'ying. Bu, agar 1C ga so'rovlarni bajarish juda uzun va ishni to'xtatish mumkinligini talqin qilish uchun kerak bo'lishi mumkin.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Устанавіце гэты сцяг, калі хочаце, каб мабільнае прылада заўсёды карысталася загружанай копіяй наменклатуры і ніколі не звярталася за таварамі ў 1С. Гэта можа патрэбіцца, калі запыты ў 1С выконваюцца занадта доўга і тармозяць працу.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Eğer 1C'de sorgular çok uzun sürüyorsa ve işleri yavaşlatıyorsa, mobil cihazın her zaman indirilen bir nomenklatür kopyasını kullanmasını ve hiçbir zaman 1C'den ürünler için sorgu yapmamasını istiyorsanız, bu bayrağı işaretleyin. Bu, işleri yavaşlatan 1C sorguları durumunda gerekebilir.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Marque esta casilla si desea que el dispositivo móvil siempre utilice una copia descargada de la nomenclatura y nunca consulte productos en 1C. Esto puede ser necesario si las consultas a 1C tardan demasiado y ralentizan el trabajo.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Bifați această opțiune dacă doriți ca dispozitivul mobil să folosească întotdeauna o copie preîncărcată a nomenclatorului și să nu solicite niciodată produsele din 1C. Acest lucru poate fi necesar dacă cererile către 1C durează prea mult și încetinesc activitatea.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="26"/>
+		</LabelDecoration>
+		<CheckBoxField name="ЗапретНаСправочникиВОнлайне" id="4">
+			<DataPath>ОнлайнЗапретНаСправочники</DataPath>
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запретить онлайн запрос к справочнику товаров</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Prohibit online queries to the goods directory</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Тауарлар тізіміне онлайн сұрау жасауға рұқсат бермеу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Mahsulotlar ro'yxatiga onlayn so'rovni taqiqlash</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Забараніць онлайн запыт да даведніка тавараў</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заборонити онлайн запит до довідника товарів</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>პროდუქციის სარეფერენციო ცხრილის მოთხოვნა ინტერნეტით აკრძალვა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ürün rehberine çevrimiçi sorgu yapmayı engelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Prohibir la consulta en línea del catálogo de productos</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Interziceți cererile online către catalogul de produse</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапретНаСправочникиВОнлайнеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ЗапретНаСправочникиВОнлайнеРасширеннаяПодсказка" id="6"/>
+		</CheckBoxField>
+		<LabelDecoration name="Декорация7" id="36">
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<ContextMenu name="Декорация7КонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="38"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация4" id="27">
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установите этот флаг, если хотите, чтобы мобильное устройство всегда пользовалось выгруженной копией остатков и цен и никогда не обращалось за ними в 1С.  Это может сильно ускорить работу с остатками.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановіть цей прапорець, якщо хочете, щоб мобільний пристрій завжди користувався вивантаженою копією залишків та цін і ніколи не звертався за ними в 1С. Це може значно прискорити роботу з залишками.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set this flag if you want the mobile device to always use the unloaded copy of balances and prices and never request them from 1C. This can greatly speed up working with balances.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>დააყენეთ ეს დროში, თუ გსურთ, რომ მობილურ მოწყობილობას ყოველთვის გამოიყენოს გადატვირთული ნაშთების და ფასების კოპიით და არ გამოიყენოს 1ს-ის მისამართებისთვის.  ეს შეიძლება ძლიერად გაასწოროს ნაშთების სამუშაო.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Мобиль құрылғысының өмір сүруінен қалыпты остатқа және бағаларға әрдайым қолдану қажет болса, 1С-ге қайтарылмасыз жоқ көшірмесін орнатыңыз. Бұл остатқалармен жұмыс істеу қабілетін көтере алады.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Мобил устройтмангизнинг остатоклар ва нархларнинг юкланган нусхасидан фойдаланишини хоҳлайсиз, ҳаргиз 1Сга мурожаат қилмаслиги учун ушбу байроқни танланг. Бу остатоклар билан ишлашни тезлаштириши мумкин.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Устаноўце гэты сцяг, калі хочаце, каб мабільнае прылада заўсёды карысталася выгружанай копіяй застаткаў і цэн і ніколі не звярталася за імі ў 1С. Гэта можа значна паскарчыць працу з застаткамі.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Aşağıdaki 'Rusça' metinleri 'Türkçe'ye çevirin.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Establezca esta bandera si desea que el dispositivo móvil siempre utilice una copia descargada de los saldos y precios y nunca consulte a 1C. Esto puede acelerar significativamente el trabajo con los saldos.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Instalați acest steag dacă doriți ca dispozitivul mobil să utilizeze întotdeauna o copie descărcată a stocurilor și prețurilor și să nu se bazeze niciodată pe ele în 1C. Acest lucru poate accelera semnificativ lucrul cu stocurile.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация4КонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="29"/>
+		</LabelDecoration>
+		<CheckBoxField name="ЗапретНаОстаткиИЦеныВОнлайне" id="7">
+			<DataPath>ОнлайнЗапретНаОстаткиИЦены</DataPath>
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запретить онлайн запрос к остаткам и ценам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Prohibit online queries for balances and prices</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Қалдықтар мен бағаларға онлайн сұрау жасауға рұқсат бермеу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Qoldiq va narxlarga onlayn so'rovni taqiqlash</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Забараніць онлайн запыт да застаткаў і цан</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заборонити онлайн запит до залишків і цін</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ნაშრომების და ფასების მოთხოვნა ინტერნეტით აკრძალვა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kalanlara ve fiyatlara çevrimiçi sorgu yapmayı engelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Prohibir la consulta en línea de existencias y precios</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Interziceți cererile online către stocuri și prețuri</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапретНаОстаткиИЦеныВОнлайнеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ЗапретНаОстаткиИЦеныВОнлайнеРасширеннаяПодсказка" id="9"/>
+		</CheckBoxField>
+		<LabelDecoration name="Декорация8" id="39">
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установите этот флаг, если хотите, чтобы в списке документов (заданий) на мобильном устройстве отображались только заранее выгруженные документы. Если флаг снят, то при заходе в список доступных документов на мобильном устройстве каждый раз выполняется запрос в 1С.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановіть цей прапорець, якщо хочете, щоб у списку документів (завдань) на мобільному пристрої відображалися лише заздалегідь вивантажені документи. Якщо прапорець знятий, то при вході в список доступних документів на мобільному пристрої кожен раз виконується запит в 1С.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Set this flag if you want only preloaded documents to be displayed in the list of documents (tasks) on the mobile device. If the flag is off, each time you enter the list of available documents on the mobile device, a request to 1C is made.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>დოკუმენტების (დავალებების) სიაში მხედველი დოკუმენტები მობილურ მოწყობილობაში მხედველი დოკუმენტების წამოღებისთვის მხედველი დოკუმენტების წინასწარ გამოსაჩენად ფლაგის დაყენება. თუ ფლაგი არ არის დაყენილი, მაშინ მობილურ მოწყობილობის სიაში შემოსული ყველა დოკუმენტის წინასწარ გამოსაჩენად 1C-ში ყოფილი მოთხოვნების შესრულება ხდება.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Мобильді құрылғыдағы құжаттар тізімінде тек алдын ала шығарылған құжаттар көрсетілгенде, бұл флагды орнатыңыз. Флаг қойылған кезде, мобильді құрылғыдағы қол жетімді құжаттар тізіміне кіретін уақытта 1С-де сұрау орындалады.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Agar mobil qurilma uchun hujjatlar (vazifalar) ro'yxatida faqat oldindan yuklangan hujjatlarni ko'rsatishni xohlaysiz bo'lsangiz, ushbu bayroqni o'rnating. Agar bayroq olib tashlansa, mobil qurilma uchun mavjud hujjatlarni ro'yxatga kirishda har safar 1C ga so'rov jo'natiladi.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Устанавіце гэты сцяг, калі хочаце, каб у спісе дакументаў (заданняў) на мабільным прыладзе адлюстроўваліся толькі наперад загружаныя дакументы. Калі сцяг зняты, то пры ўваходзе ў спіс даступных дакументаў на мабільным прыладзе кожны раз выконваецца запыт у 1С.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Bu bayrağı işaretleyin, eğer mobil cihazda belgelerin (görevlerin) listesinde yalnızca önceden indirilen belgelerin görüntülenmesini istiyorsanız. Bayrak kaldırılmışsa, mobil cihazda mevcut belgeler listesine her girişte 1C'de sorgu yapılır.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Marque esta casilla si desea que en la lista de documentos (tareas) en el dispositivo móvil solo se muestren los documentos pre-cargados. Si la casilla está desmarcada, al acceder a la lista de documentos disponibles en el dispositivo móvil, se realiza una consulta a 1C cada vez.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Bifați această opțiune dacă doriți ca în lista de documente (sarcini) de pe dispozitivul mobil să fie afișate doar documentele preîncărcate. Dacă bifați opțiunea, atunci la accesarea listei de documente disponibile pe dispozitivul mobil, se va face o cerere către 1C de fiecare dată.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация8КонтекстноеМеню" id="40"/>
+			<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="41"/>
+		</LabelDecoration>
+		<CheckBoxField name="ЗапретНаДокументыВОнлайне" id="10">
+			<DataPath>ОнлайнЗапретНаДокументы</DataPath>
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запретить онлайн запрос к документам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Prohibit online document queries</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Документтерге онлайн сұрау жасауға рұқсат бермеу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Hujjatlarga onlayn so'rovni taqiqlash</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Забараніць онлайн запыт да дакументаў</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заборонити онлайн запит до документів</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>დოკუმენტების მოთხოვნა ინტერნეტით აკრძალვა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Belgelere çevrimiçi sorgu yapmayı engelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Prohibir la consulta en línea de documentos</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Interziceți cererile online către documente</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапретНаДокументыВОнлайнеКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЗапретНаДокументыВОнлайнеРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<LabelDecoration name="Декорация10" id="48">
+			<ContextMenu name="Декорация10КонтекстноеМеню" id="49"/>
+			<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="50"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация9" id="45">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключите работу с маркированным товаром (обувь, табак, ЕГАИС и т.д.), если они вам не требуются, для ускорения работы справочника товаров. Справочник товаров не будет учитывать особенности маркированной продукции.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відключіть роботу з маркованим товаром (взуття, тютюн, ЕГАІС тощо), якщо вони вам не потрібні, для прискорення роботи довідника товарів. Довідник товарів не буде враховувати особливості маркованої продукції.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Disable working with marked goods (shoes, tobacco, EGAIS, etc.) if not needed, to speed up the work with the goods directory. The goods directory will not take into account the features of marked products.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>გამორიცხეთ მარკირებული პროდუქციის საქმე (ფეხსაცმელი, ტაბაკი, ეგაის და ა.შ.), თუ ისინი არ გჭირდებათ, რათა საქმეს სწრაფად შეასრულოთ პროდუქციის საქმეს. პროდუქციის საქმე არ იქნება მითითებული პროდუქციის სახის სპეციფიკაციებს.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Маркиланған өнімдермен (аяқ киім, табак, ЕГАИС және т.б.) жұмыс істеу керек болмаса, олармен жұмыс істеу жылдамдату үшін жұмыс істеу құжатымен жұмыс істемейтіндікті алып тастаңыз. Өнімдердің тізімі маркиланған өнімдердің арнайылықтарын есептемейді.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Belgilangan mahsulotlar bilan ishlashni o'chiring (poyafzal, tutun, EGAIS va h.k.), agar ular sizga kerak bo'lmasa, tovarlar ro'yxatini tezlashtirish uchun. Tovarlar ro'yxati belgilangan mahsulotlar xususiyatlarini hisobga olmaydi.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Адключыце працу з маркіраваным таварам (взутак, табак, ЕГАІС і г.д.), калі яны вам не патрэбныя, для паскарэння працы даведніка тавараў. Даведнік тавараў не будзе ўлічваць асаблівасці маркіраванай прадукцыі.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>İhtiyacınız olmayan işaretli ürünlerle (ayakkabı, tütün, EGAIS vb.) çalışmayı durdurun, ürün rehberinin performansını artırmak için. Ürün rehberi, işaretli ürünlerin özelliklerini dikkate almayacaktır.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Desactive el trabajo con productos marcados (calzado, tabaco, EGAIS, etc.) si no los necesita, para acelerar el trabajo con el directorio de productos. El directorio de productos no tendrá en cuenta las características de los productos marcados.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Dezactivați lucrul cu produsele marcate (încălțăminte, tutun, EGAIS etc.), dacă nu le necesitați, pentru a accelera lucrul cu registru de produse. Registru de produse nu va ține cont de caracteristicile produselor marcate.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация9КонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="47"/>
+		</LabelDecoration>
+		<CheckBoxField name="РаботаБезАлкоголя" id="42">
+			<DataPath>РаботаБезАлкоголя</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не учитывать особенности маркировки товаров</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Do not consider product labeling features</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Тауарлардың белгілерін есептемеу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Mahsulotlar belgilash xususiyatlarini e'lon qilish mumkin emas</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Не ўлічваць асаблівасці маркіравкі тавараў</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Не враховувати особливості маркування товарів</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>პროდუქციის მწარმოებლობის მარკირების სპეციფიკებების შესამოწმებლად არ შეიძლება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ürün etiketleme özelliklerini dikkate almayın</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>No tener en cuenta las peculiaridades del etiquetado de productos</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>A nu se lua în considerare particularitățile marcării produselor</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РаботаБезАлкоголяКонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="РаботаБезАлкоголяРасширеннаяПодсказка" id="44"/>
+			<Events>
+				<Event name="OnChange">РаботаСАлкоголемПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<CheckBoxField name="ОтключитьСжатиеДанных" id="67">
+			<DataPath>ОтключитьСжатиеДанных</DataPath>
+			<Visible>false</Visible>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтключитьСжатиеДанныхКонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="ОтключитьСжатиеДанныхРасширеннаяПодсказка" id="69"/>
+			<Events>
+				<Event name="OnChange">ОтключитьСжатиеДанныхПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<CheckBoxField name="ОтключитьРаботуВФоне" id="86">
+			<DataPath>ОтключитьРаботуВФоне</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запретить использование фоновых заданий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Prohibit the use of background tasks</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заборонити використання фонових завдань</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Фондық тапсырмаларды қолдануға рұқсат бермеу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Fon vazifalaridan foydalanishni taqiqlash</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Забараніць выкарыстанне фонавых задач</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ფონური დავალებების გამოსახულების აკრძალვა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Arka plan görevlerini kullanmayı engelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Prohibir el uso de tareas en segundo plano</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Interziceți utilizarea sarcinilor de fundal</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтключитьРаботуВФонеКонтекстноеМеню" id="87"/>
+			<ExtendedTooltip name="ОтключитьРаботуВФонеРасширеннаяПодсказка" id="88"/>
+			<Events>
+				<Event name="OnChange">ОтключитьРаботуВФонеПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<LabelDecoration name="Декорация21" id="108">
+			<ContextMenu name="Декорация21КонтекстноеМеню" id="109"/>
+			<ExtendedTooltip name="Декорация21РасширеннаяПодсказка" id="110"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация19" id="111">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматическое обновление компонентов продукта из подключенной базы Клеверенс</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Автоматичне оновлення компонентів продукту з підключеної бази Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Automatic update of product components from connected Cleverence database</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>პროდუქტის კომპონენტების ავტომატური განახლება Cleverence-ს დაკავშირებული ბაზიდან</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Cleverence қосылған базасынан өнім компоненттерін автоматты түрде жаңарту  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Cleverencega bog'liq bazadan mahsulot komponentlarini avtomatik yangilash  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Аўтаматычнае абнаўленне кампанентаў прадукта з падключанай базай Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Cleverence bağlı veritabanından ürün bileşenlerinin otomatik güncellenmesi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Actualización automática de componentes del producto desde la base de datos conectada de Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Actualizarea automată a componentelor produsului din baza de date Cleverence conectată</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация19КонтекстноеМеню" id="112"/>
+			<ExtendedTooltip name="Декорация19РасширеннаяПодсказка" id="113"/>
+		</LabelDecoration>
+		<CheckBoxField name="ОтключитьОбновление_ОсновнаяОбработка" id="114">
+			<DataPath>ОтключитьОбновление_ОсновнаяОбработка</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтключитьОбновление_ОсновнаяОбработкаКонтекстноеМеню" id="115"/>
+			<ExtendedTooltip name="ОтключитьОбновление_ОсновнаяОбработкаРасширеннаяПодсказка" id="116"/>
+			<Events>
+				<Event name="OnChange">ОтключитьОбновление_ОсновнаяОбработкаПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<CheckBoxField name="ОтключитьОбновление_ИнтеграционнаяОбработка" id="117">
+			<DataPath>ОтключитьОбновление_ИнтеграционнаяОбработка</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтключитьОбновление_ИнтеграционнаяОбработкаКонтекстноеМеню" id="118"/>
+			<ExtendedTooltip name="ОтключитьОбновление_ИнтеграционнаяОбработкаРасширеннаяПодсказка" id="119"/>
+			<Events>
+				<Event name="OnChange">ОтключитьОбновление_ИнтеграционнаяОбработкаПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<LabelDecoration name="Декорация20" id="120">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с кнопками обмена Клеверенс в справочниках и документах</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Робота з кнопками обміну Cleverence в довідниках та документах</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Working with Cleverence exchange buttons in directories and documents</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>მუშაობა Cleverence-ის გაცვლით ღილაკებით დირექტორიებში და დოკუმენტებში</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Cleverence аймақтары мен құжаттарда алмасу түймелерімен жұмыс істеу  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Cleverence almashuvlari va hujjatlarda almashuv tugmachalari bilan ish  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Праца з кнопкамі абмену Cleverence ў даведніках і дакументах</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Rehberlerde ve belgelerde Cleverence veri alışverişi düğmeleriyle çalışma</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Trabajar con botones de intercambio de Cleverence en diccionarios y documentos</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Muncă cu butoanele de schimb Cleverence în dicționare și documente</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация20КонтекстноеМеню" id="121"/>
+			<ExtendedTooltip name="Декорация20РасширеннаяПодсказка" id="122"/>
+		</LabelDecoration>
+		<CheckBoxField name="ВключитьРаботуСКнопкамиОбмена" id="123">
+			<DataPath>ВключитьРаботуСКнопкамиОбмена</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить работу с кнопками обмена для пользователей с ролью "Работа с кнопками обмена"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enable exchange button operation for users with the role "Exchange button operation"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>"Алмасу түймелерімен жұмыс істеу" рөлі бар пайдаланушылар үшін алмасу түймелерімен жұмыс істеу қосу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>"Алмаштириш тугмалари билан ишлаш" ролига эga фойдаланувчилар учун алмаштириш тугмалари билан ишлашни ёқиш</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Уключыць працу з кнопкамі абмену для карыстальнікаў з роллю "Працоўца з кнопкамі абмену"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Увімкнути роботу з кнопками обміну для користувачів з роллю "Робота з кнопками обміну"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ჩართეთ სამუშაო ღილაკების სამუშაო მომხმარებელებისთვის, რომლებიც როლით "სამუშაო ღილაკების სამუშაო" მქონდებიან</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>"Değişim düğmeleriyle çalışma" rolüne sahip kullanıcılar için değişim düğmeleriyle çalışmayı etkinleştir</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Activar el trabajo con los botones de intercambio para usuarios con el rol "Trabajo con botones de intercambio"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Activare lucrul cu butoanele de schimb pentru utilizatorii cu rolul "Lucrul cu butoanele de schimb"</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВключитьРаботуСКнопкамиОбменаКонтекстноеМеню" id="124"/>
+			<ExtendedTooltip name="ВключитьРаботуСКнопкамиОбменаРасширеннаяПодсказка" id="125"/>
+			<Events>
+				<Event name="OnChange">ВключитьРаботуСКнопкамиОбменаПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<LabelDecoration name="Декорация12" id="56">
+			<ContextMenu name="Декорация12КонтекстноеМеню" id="57"/>
+			<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="58"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация11" id="53">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка таймаутов для обращений к базе Клеверенс через REST API</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Налаштування таймаутів для звернень до бази Cleverence через REST API</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Configure timeouts for accessing the Cleverence database via REST API</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>Cleverence-ს ბაზას წვდომისას REST API-ს მეშვეობით დაყენება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Cleverence базасына REST API арқылы қосылу үшін таймауттарды түзету</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Cleverence orqali REST API orqali so'rovlar uchun taym-aut sozlash</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Наладка таймаўтаў для зваротаў да базы Cleverence праз REST API</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Cleverence veritabanına REST API üzerinden erişim için zaman aşımı yapılandırması</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Configuración de tiempos de espera para las consultas a la base de datos de Cleverence a través de la API REST</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Configurarea timeout-urilor pentru accesarea bazei de date Cleverence prin intermediul API-ului REST</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация11КонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="55"/>
+		</LabelDecoration>
+		<Button name="ОткрытьФормуНастройкиТаймаутов" id="51">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОткрытьФормуНастройкиТаймаутов</CommandName>
+			<ExtendedTooltip name="ОткрытьФормуНастройкиТаймаутовРасширеннаяПодсказка" id="52"/>
+		</Button>
+		<UsualGroup name="ОбновлениеКэша" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновление пользовательского кэша настроек</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update user settings cache</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Пайдаланушы параметрлер кэшін жаңарту</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Sozlamalar foydalanuvchi keshini yangilash</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Абнаўленне кэша карыстальніцкіх налад</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оновлення користувацького кешу налаштувань</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>მომხმარებლის პარამეტრების კეშის განახლება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kullanıcı önbelleğinin ayarlarını güncelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Actualización de la caché de configuración de usuario</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Actualizarea cache-ului de setări ale utilizatorului</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+			<TitleFont ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновление кэша</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cache update</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оновлення кешу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Кэш жаңарту</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Keshni yangilang</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Абнаўленне кэша</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>კეშის განახლება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Önbelleği güncelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Actualización de caché</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Actualizare cache</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<United>false</United>
+			<ExtendedTooltip name="ОбновлениеКэшаРасширеннаяПодсказка" id="83"/>
+			<ChildItems>
+				<Button name="ОбновитьМетаданныеДокументов1С" id="73">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновитьМетаданныеДокументов1С</CommandName>
+					<ExtendedTooltip name="ОбновитьМетаданныеДокументов1СРасширеннаяПодсказка" id="74"/>
+				</Button>
+				<Button name="ОбновитьМетаданныеДокументовMS" id="75">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновитьМетаданныеДокументовMS</CommandName>
+					<ExtendedTooltip name="ОбновитьМетаданныеДокументовMSРасширеннаяПодсказка" id="76"/>
+				</Button>
+				<Button name="ОбновитьНастройкиMobileSMARTS" id="84">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновитьНастройкиMobileSMARTS</CommandName>
+					<ExtendedTooltip name="ОбновитьНастройкиMobileSMARTSРасширеннаяПодсказка" id="85"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация15" id="77">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включение отображения всех подсказок для текущего пользователя.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Увімкнення відображення всіх підказок для поточного користувача.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enable display of all tooltips for the current user.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ყველა მიმდინარე მომხმარებლისთვის ყველა მინიშნების ჩვენების ჩართვა.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Ағымдағы пайдаланушы үшін барлық көмекшілерді көрсету.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Жорий фойдаланувчи учун барча эслатмаларни кўрсатишни ёқиш.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Уключэнне адлюстравання ўсіх падказак для бягучага карыстальніка.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Geçerli kullanıcı için tüm ipuçlarının görüntülenmesini etkinleştir.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Habilitar la visualización de todas las sugerencias para el usuario actual.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Activarea afișării tuturor sugestiilor pentru utilizatorul curent.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация15КонтекстноеМеню" id="78"/>
+			<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="79"/>
+		</LabelDecoration>
+		<Button name="ОтобразитьВсеИнформационныеСообщения" id="80">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОтобразитьВсеИнформационныеСообщения</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Восстановить все подсказки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Restore all tooltips</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Барлық кері бұларды қалпына келтіру</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Barcha ko'rsatmalarini qayta tiklash</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Аднавіць усе падказкі</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відновити всі підказки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ყურადღება! ყურადღებაების ყველა აღდგენა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tüm ipuçlarını geri yükle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Restaurar todas las sugerencias</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Restaurare toate sugestiile</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ОтобразитьВсеИнформационныеСообщенияРасширеннаяПодсказка" id="81"/>
+		</Button>
+		<LabelDecoration name="Декорация16" id="89">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистка всех сохраненных настроек пользователя из хранилища 1С, таких как Настройки подключения к базе Клеверенс, расположение компоненты и т.д. После очистки потребуется заново настроить подключение к базе.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очищення всіх збережених налаштувань користувача з сховища 1С, таких як Налаштування підключення до бази Cleverence, розташування компоненти тощо. Після очищення потрібно буде знову налаштувати підключення до бази.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Clear all user saved settings from 1C storage, such as Cleverence database connection settings, component location, etc. After clearing, you will need to reconfigure the database connection.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>მომხმარებელის ყველა შენახული 1C პარამეტრების გასუფთავება, როგორიცაა Cleverence-ს ბაზასთან დაკავშირება, კომპონენტის მდებარეობა და ა.შ. გასუფთავების შემდეგ საჭირო იქნება ხელახლა დაკავშირება ბაზასთან.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>1С сақтау орындарынан пайдаланушының барлық сақталған параметрлерін тазалау, Cleverence базасына қосылу параметрлері, компоненттің орналасуы және т.б. Тазаландырылған кейін базаға қайта қосу қажет болады.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Foydalanuvchi sozlamalarini tozalash, masalan, Cleverence bazasiga ulanish sozlamalari, komponent joylashuvi va h.k. Tozalanganidan so'ng, qayta ulanish sozlamalari sozlanishi kerak.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Ачысцка ўсіх захаваных налад карыстальніка з сховішча 1С, такіх як Налады падлучэння да базы Cleverence, размяшчэнне кампаненты і г. д. Пасля ачыскі патрабуецца зноў наладзіць падлучэнне да базы.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kullanıcı ayarlarının 1C depolamasından temizlenmesi, Cleverence veritabanına bağlantı ayarları, bileşen konumu vb. gibi ayarları içerir. Temizlendikten sonra veritabanına yeniden bağlanmak gerekecektir.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Limpiar todas las configuraciones guardadas del usuario del almacenamiento 1C, como las configuraciones de conexión a la base de datos Cleverence, la ubicación de componentes, etc. Después de la limpieza, será necesario configurar nuevamente la conexión a la base de datos.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Ștergerea tuturor setărilor salvate ale utilizatorului din depozitul 1C, cum ar fi setările de conectare la baza de date Cleverence, locația componentei etc. După ștergere, va trebui să reconfigurați din nou conexiunea la baza de date.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация16КонтекстноеМеню" id="90"/>
+			<ExtendedTooltip name="Декорация16РасширеннаяПодсказка" id="91"/>
+		</LabelDecoration>
+		<Button name="ОчиститьХранилищеОбщихНастроек" id="92">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОчиститьХранилищеОбщихНастроек1С</CommandName>
+			<ExtendedTooltip name="ОчиститьХранилищеОбщихНастроекРасширеннаяПодсказка" id="93"/>
+		</Button>
+		<LabelDecoration name="Декорация17" id="130">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>70</MaxWidth>
+			<TextColor>#536AC2</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импорт/экспорт настроек Клеверенс</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очищення всіх збережених налаштувань користувача з сховища 1С, таких як Налаштування підключення до бази Cleverence, розташування компоненти тощо. Після очищення потрібно буде знову налаштувати підключення до бази.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Clear all user saved settings from 1C storage, such as Cleverence database connection settings, component location, etc. After clearing, you will need to reconfigure the database connection.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>მომხმარებელის ყველა შენახული 1C პარამეტრების გასუფთავება, როგორიცაა Cleverence-ს ბაზასთან დაკავშირება, კომპონენტის მდებარეობა და ა.შ. გასუფთავების შემდეგ საჭირო იქნება ხელახლა დაკავშირება ბაზასთან.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>1С сақтау орындарынан пайдаланушының барлық сақталған параметрлерін тазалау, Cleverence базасына қосылу параметрлері, компоненттің орналасуы және т.б. Тазаландырылған кейін базаға қайта қосу қажет болады.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Foydalanuvchi sozlamalarini tozalash, masalan, Cleverence bazasiga ulanish sozlamalari, komponent joylashuvi va h.k. Tozalanganidan so'ng, qayta ulanish sozlamalari sozlanishi kerak.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Ачысцка ўсіх захаваных налад карыстальніка з сховішча 1С, такіх як Налады падлучэння да базы Cleverence, размяшчэнне кампаненты і г. д. Пасля ачыскі патрабуецца зноў наладзіць падлучэнне да базы.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kullanıcı ayarlarının 1C depolamasından temizlenmesi, Cleverence veritabanına bağlantı ayarları, bileşen konumu vb. gibi ayarları içerir. Temizlendikten sonra veritabanına yeniden bağlanmak gerekecektir.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Limpiar todas las configuraciones guardadas del usuario del almacenamiento 1C, como las configuraciones de conexión a la base de datos Cleverence, la ubicación de componentes, etc. Después de la limpieza, será necesario configurar nuevamente la conexión a la base de datos.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Ștergerea tuturor setărilor salvate ale utilizatorului din depozitul 1C, cum ar fi setările de conectare la baza de date Cleverence, locația componentei etc. După ștergere, va trebui să reconfigurați din nou conexiunea la baza de date.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация17КонтекстноеМеню" id="131"/>
+			<ExtendedTooltip name="Декорация17РасширеннаяПодсказка" id="132"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаИмпортЭкспортНастроек" id="133">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа импорт экспорт настроек</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа импорт экспорт настроек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИмпортЭкспортНастроекРасширеннаяПодсказка" id="134"/>
+			<ChildItems>
+				<Button name="ОткрытьФормуИмпортаНастроек" id="126">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОткрытьФормуИмпортаНастроек</CommandName>
+					<ExtendedTooltip name="ОткрытьФормуИмпортаНастроекРасширеннаяПодсказка" id="127"/>
+				</Button>
+				<Button name="ОткрытьФормуЭкспортаНастроек" id="128">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОткрытьФормуЭкспортаНастроек</CommandName>
+					<ExtendedTooltip name="ОткрытьФормуЭкспортаНастроекРасширеннаяПодсказка" id="129"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КлеверенсТСД_ОсновнаяОбработка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="РежимОтладки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим отладки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Debug mode</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Дебаг режимі  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Debug rejimi  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Рэжым дэбагавання</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Режим відлагодження</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>დებაგირების რეჟიმი</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Hata Ayıklama Modu</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Modo de depuración</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Modul de depanare</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОнлайнЗапретНаДокументы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Онлайн запрет на документы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Online document restriction</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Онлайн документтерге тыйым салу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Onlayn hujjatlarga taqiqlanadi  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Інтэрнэт забарона на дакументы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Онлайн заборона на документи</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ონლაინ დოკუმენტების დაბლოკვა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Çevrimiçi belge yasağı</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Restricción en línea de documentos</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Interdicție online pentru documente</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОнлайнЗапретНаОстаткиИЦены" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Онлайн запрет на остатки и цены</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Online restrictions on balances and prices</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Онлайн қалдықтар мен бағаларды тыйым салу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Onlayn qolganlar va narxlar taqiqlanadi  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Інтэрнэт забарона на застаткі і цэны</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Онлайн заборона на залишки та ціни</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ონლაინ ნარჩუნებების და ფასების დაბლოკვა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Çevrimiçi stok ve fiyat yasağı</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Restricción en línea de existencias y precios</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Interdicție online pentru stocuri și prețuri</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОнлайнЗапретНаСправочники" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Онлайн запрет на справочники</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Online restrictions on directories</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Онлайн анықтамаларды тыйым салу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Onlayn ma'lumotlar taqiqlanadi  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Інтэрнэт забарона на даведнікі</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Онлайн заборона на довідники</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ონლაინ საშუალებების დაბლოკვა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Çevrimiçi referans yasağı</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Restricción en línea de directorios</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Interdicție online pentru referințe</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РаботаБезАлкоголя" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа без алкоголя</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Work without alcohol</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Алкогольсіз жұмыс  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Alkogolsiz ish  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Праца без алкаголю</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Робота без алкоголю</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>მუშაობა უმანკოლოვანის გარეშე</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Alkol olmadan çalışma</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Trabajo sin alcohol</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Muncă fără alcool</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьКОсновнойОбработке" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к основной обработке</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Main processing path</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Негізгі өңдеу жолы  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Asosiy ishlash yo'li  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Шлях да галоўнай апрацоўкі</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Шлях до основної обробки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ძირითადი დამუშავების გზა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ana işleme yol</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Ruta de procesamiento principal</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Calea către procesarea principală</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ID_ТекущейБазы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ID текущей базы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Current database ID</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Ағымдағы базаның ID-сы  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Joriy bazaning IDsi  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>ID бягучай базы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>ІД поточної бази</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>მიმდინარე ბაზის ID</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Geçerli veritabanı kimliği</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>ID de base de datos actual</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>ID bazei de date curente</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>40</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтключитьСжатиеДанных" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не использовать сжатие данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Do not use data compression</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Не використовувати стиснення даних</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Деректерді қысқартпау</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Маълумотларни биргаликда сиклашни ишлатманг</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Не выкарыстоўваць стымуляцыю дадзеных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>მონაცემთა შემცვლელი არ გამოიყენოს</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Veri sıkıştırma kullanmayın</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>No utilizar compresión de datos</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Nu utilizați compresia datelor</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтключитьРаботуВФоне" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить работу в фоне</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Disable background work</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відключити роботу в фоні</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Фонда жұмыс жасау өшіру</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Фонда ишни қўллашни ортиқча қилиш</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Адключыць працу ў фоне</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>გამორთეთ ფონში მუშაობა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Arka planda çalışmayı devre dışı bırak</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Desactivar el trabajo en segundo plano</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Dezactivați lucrul în fundal</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводитьСообщенияНаТСДПослеЗагрузкиДокументов" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить сообщения на ТСД после загрузки документов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Виводити повідомлення на Мобільний пристрій після завантаження документів</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Display messages on the Mobile device after loading documents</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Документтерді жүктеуден кейін Мобильді құрылғыға хабарлама шығару</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Hujjatlarni yuklashdan so'ng xabarlarini mobil qurilmaga chiqarish</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Выводзіць паведамленні на Мабільнае прылада пасля загрузкі дакументаў</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>შეტყობინებების გამოტანა მობილურ მოწყობებზე დოკუმენტების ჩატვირთვის შემდეგ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Belgeleri yükleme sonrası Mobil cihaza mesaj gönder</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Mostrar mensajes en el dispositivo móvil después de cargar documentos</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Afișați mesajele pe Dispozitivul mobil după descărcarea documentelor</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтключитьОбновление_ИнтеграционнаяОбработка" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить обновление интеграционного расширения/интеграционной обработки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відключити оновлення інтеграційного розширення/інтеграційної обробки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Disable integration extension/integration processing update</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>გამორთეთ ინტეგრაციის გაფართოების/ინტეგრაციის დამუშავების განახლება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Интеграциялық кеңейту/интеграциялық өңдеуді өшіру</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Интеграция кенгаши/интеграция ишлаб чиқаришни қўллашни ортиқча қилиш</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Адключыць абнаўленне інтэграцыйнага пашырэння/інтэграцыйнай апрацоўкі</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Entegrasyon genişletme / entegrasyon işlem güncellemesini devre dışı bırak</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Desactivar la actualización de la extensión/integración de procesamiento</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Dezactivați actualizarea extensiei/integrării de bază</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтключитьОбновление_ОсновнаяОбработка" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить обновление основного расширения/основной обработки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відключити оновлення основного розширення/основної обробки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Disable main extension/main processing update</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>გამორთეთ ძირის გაფართოების/ძირის დამუშავების განახლება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Негізгі кеңейту/негізгі өңдеуді өшіру</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Асосий кенгаши/асосий ишлаб чиқаришни қўллашни ортиқча қилиш</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Адключыць абнаўленне асноўнага пашырэння/асноўнай апрацоўкі</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Ana genişletme / ana işlem güncellemesini devre dışı bırak</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Desactivar la actualización de la extensión/principal de procesamiento</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Dezactivați actualizarea extensiei/integrării principale</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтключитьРаботуСКнопкамиОбмена" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить работу с кнопками обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відключити роботу з кнопками обміну</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Disable exchange button operation</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>გამორთეთ გაცვლითი ღილაკების მუშაობა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Алмасу түймелерімен жұмыс жасау өшіру</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Алмаштириш тугмалари билан ишни қўллашни ортиқча қилиш</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Адключыць працу з кнопкамі абмену</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Değişim düğmeleriyle çalışmayı devre dışı bırak</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Desactivar el trabajo con los botones de intercambio</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Dezactivați lucrul cu butoanele de schimb</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВключитьРаботуСКнопкамиОбмена" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить работу с кнопками обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Увімкнути роботу з кнопками обміну</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enable exchange button operation</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ჩართეთ სამუშაო ღილაკების სამუშაო</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Алмасу түймелерімен жұмыс істеу қосу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Алмаштириш тугмалари билан ишлашни ёқиш</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Уключыць працу з кнопкамі абмену</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Değişim düğmeleriyle çalışmayı etkinleştir</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Activar el trabajo con los botones de intercambio</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Activare lucrul cu butoanele de schimb</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьФормуСпискаПроизвольныхКодов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму списка произвольных кодов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Open arbitrary code list form</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Қолданбалы кодтар тізімін ашу формасын ашу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Tasodifiy kodlar ro'yxatini ochish</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Адкрыць форму спісу давольных кодаў</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити форму списку довільних кодів</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>გახსენი შემთხვევითი კოდების სიაშიშეს</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Rastgele kod listesi formunu aç</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Abrir formulario de lista de códigos arbitrarios</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Deschideți forma listei de coduri arbitrare</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму списка произвольных кодов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Open arbitrary code list form</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Қолданбалы кодтар тізімін ашу формасын ашу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Tasodifiy kodlar ro'yxatini ochish</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Адкрыць форму спісу давольных кодаў</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити форму списку довільних кодів</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>გახსენი შემთხვევითი კოდების სიაშიშეს</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Rastgele kod listesi formunu aç</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Abrir formulario de lista de códigos arbitrarios</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Deschideți forma listei de coduri arbitrare</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФормуСпискаПроизвольныхКодов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьФормуНастройкиТаймаутов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму настройки таймаутов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Open timeout settings form</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Таймауттарды орнату формасын ашу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Таймаутларни sozlash формасини ochish</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Адкрыць форму налад таймаўтаў</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити форму налаштування таймаутів</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>გახსენი დამყვანების ფორმა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Zaman aşımı ayar formunu aç</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Abrir formulario de configuración de tiempos de espera</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Deschideți forma de configurare a timeout-urilor</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму настройки таймаутов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Open timeout settings form</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Таймауттарды орнату формасын ашу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Таймаутларни sozlash формасини ochish</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Адкрыць форму налад таймаўтаў</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити форму налаштування таймаутів</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>გახსენი დამყვანების ფორმა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Zaman aşımı ayar formunu aç</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Abrir formulario de configuración de tiempos de espera</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Deschideți forma de configurare a timeout-urilor</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФормуНастройкиТаймаутов</Action>
+		</Command>
+		<Command name="СоздатьИВыгрузитьПользователей" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление пользователями Клеверенс</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>User management Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Cleverence пайдаланушыларды басқару</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Cleverence foydalanuvchilarini boshqarish</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Кіраванне карыстальнікамі Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Управління користувачами Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>Cleverence-ს მომხმარებელების მართვა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Cleverence kullanıcı yönetimi</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Gestión de usuarios de Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Managementul utilizatorilor Cleverence</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать и выгрузить пользователей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Create and export users</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Пайдаланушыларды жасау және шығару</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Фойдаланувчиларни яратиш ва юклаш  </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Стварыць і выгрузіць карыстальнікаў</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити та вивантажити користувачів</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>მომხმარებების შექმნა და გამოტანა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Kullanıcılar oluştur ve dışa aktar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Crear y exportar usuarios</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Creați și descărcați utilizatori</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьИВыгрузитьПользователей</Action>
+		</Command>
+		<Command name="ОбновитьМетаданныеДокументов1С" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить метаданные документов 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update 1C document metadata</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оновити метадані документів 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>1С құжаттарының метадеректерін жаңарту</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>1C hujjatlari metadatani yangilang</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Абнавіць метададзеныя дакументаў 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>1C-ის დოკუმენტების მეტადანიების განახლება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>1C belge meta verilerini güncelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Actualizar metadatos de documentos 1C</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Actualizare metadate documente 1C</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить метаданные документов 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update 1C document metadata</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оновити метадані документів 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>1С құжаттарының метадеректерін жаңарту</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>1C hujjatlari metadatani yangilang</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Абнавіць метададзеныя дакументаў 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>1C-ის დოკუმენტების მეტადანიების განახლება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>1C belge meta verilerini güncelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Actualizar metadatos de documentos 1C</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Actualizare metadate documente 1C</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьМетаданныеДокументов1С</Action>
+		</Command>
+		<Command name="ОбновитьМетаданныеДокументовMS" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить метаданные Клеверенс</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update Cleverence metadata</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оновити метадані Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Cleverence метадеректерін жаңарту</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Cleverence metadatani yangilang</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Абнавіць метададзеныя Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>Cleverence-ის მეტადანიების განახლება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Cleverence meta verilerini güncelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Actualizar metadatos Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Actualizare metadate Cleverence</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить метаданные документов Клеверенс</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update Cleverence document metadata</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оновити метадані документів Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Cleverence құжаттарының метадеректерін жаңарту</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Cleverence hujjatlari metadatani yangilang</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Абнавіць метададзеныя дакументаў Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>Cleverence-ის დოკუმენტების მეტადანიების განახლება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Cleverence belge meta verilerini güncelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Actualizar metadatos de documentos Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Actualizare metadate documente Cleverence</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьМетаданныеДокументовMS</Action>
+		</Command>
+		<Command name="ОтобразитьВсеИнформационныеСообщения" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобразить все информационные сообщения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Display all informational messages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відобразити всі інформаційні повідомлення</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Барлық ақпараттық хабарламаларды көрсету</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Barcha ma'lumotlar xabarlarni ko'rsatish</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Паказаць усе інфармацыйныя паведамленні</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ჩვენება ყველა ინფორმაციული შეტყობინება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tüm bilgi mesajlarını göster</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Mostrar todos los mensajes informativos</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Afișați toate mesajele informative</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобразить все информационные сообщения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Display all informational messages</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відобразити всі інформаційні повідомлення</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Барлық ақпараттық хабарламаларды көрсету</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Barcha ma'lumotlar xabarlarni ko'rsatish</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Паказаць усе інфармацыйныя паведамленні</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ჩვენება ყველა ინფორმაციული შეტყობინება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tüm bilgi mesajlarını göster</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Mostrar todos los mensajes informativos</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Afișați toate mesajele informative</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтобразитьВсеИнформационныеСообщения</Action>
+		</Command>
+		<Command name="ОбновитьНастройкиMobileSMARTS" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить настройки Клеверенс</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update Cleverence settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оновити налаштування Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Cleverence параметрлерін жаңарту</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Cleverence sozlamalarini yangilang</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Абнавіць налады Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>Cleverence-ის პარამეტრების განახლება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Cleverence ayarlarını güncelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Actualizar configuraciones Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Actualizare setări Cleverence</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить настройки Клеверенс</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Update Cleverence settings</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оновити налаштування Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Cleverence параметрлерін жаңарту</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Cleverence sozlamalarini yangilang</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Абнавіць налады Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>Cleverence-ის პარამეტრების განახლება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Cleverence ayarlarını güncelle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Actualizar configuraciones Cleverence</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Actualizare setări Cleverence</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьНастройкиMobileSMARTS</Action>
+		</Command>
+		<Command name="ОчиститьХранилищеОбщихНастроек1С" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить хранилище общих настроек 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Clear common 1C settings storage</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>1С жалпы параметрлердің сақтау орындарын тазалау</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>1C umumiy sozlamalar saqlash joyini tozalash</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Ачысціць сховішча агульных налад 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистити сховище загальних налаштувань 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>გასუფთავება 1C-ის საერთო პარამეტრების საქმეები</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>1C genel ayarlar depolamasını temizle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Limpiar almacenamiento de configuraciones comunes 1C</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Ștergeți depozitul de setări comune 1C</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить хранилище общих настроек1 С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Clear common 1C settings storage</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистити сховище загальних налаштувань1 С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>1 С жалпы параметрлердің сақтау орындарын тазалау</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>1C umumiy sozlamalar saqlash joyini tozalash</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Ачысціць сховішча агульных налад1 С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>გასუფთავება 1C-ის საერთო პარამეტრების საქმეები</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>1C genel ayarlar depolamasını temizle</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Limpiar almacenamiento de configuraciones comunes 1C</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Ștergeți depozitul de setări comune 1C</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьХранилищеОбщихНастроек</Action>
+		</Command>
+		<Command name="СкопироватьНастройкиПодключенияДругимПользователям1С" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать настройки подключения другим пользователям 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Скопіювати налаштування підключення іншим користувачам 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Copy connection settings to other 1C users</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Басқа пайдаланушыларға 1С-ге қосылу параметрлерін көшіру</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Boshqa 1C foydalanuvchilarga ulanish sozlamalarini nusxa olish</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Скапіраваць налады падлучэння іншым карыстальнікам 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>კოპირება კავშირის პარამეტრებს სხვა 1ს მომხმარებელებს</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Diğer 1C kullanıcılarına bağlantı ayarlarını kopyala</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Copiar configuraciones de conexión a otros usuarios de 1C</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Copiați setările de conectare altor utilizatori 1C</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать настройки подключения другим пользователям 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Скопіювати налаштування підключення іншим користувачам 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Copy connection settings to other 1C users</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Басқа пайдаланушыларға 1С-ге қосылу параметрлерін көшіру</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Boshqa 1C foydalanuvchilarga ulanish sozlamalarini nusxa olish</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Скапіраваць налады падлучэння іншым карыстальнікам 1С</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>კოპირება კავშირის პარამეტრებს სხვა 1ს მომხმარებელებს</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Diğer 1C kullanıcılarına bağlantı ayarlarını kopyala</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Copiar configuraciones de conexión a otros usuarios de 1C</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Copiați setările de conectare altor utilizatori 1C</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СкопироватьНастройкиПодключенияДругимПользователям1С</Action>
+		</Command>
+		<Command name="ОткрытьФормуИмпортаНастроек" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импортировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму импорта настроек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФормуИмпортаНастроек</Action>
+		</Command>
+		<Command name="ОткрытьФормуЭкспортаНастроек" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспортировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму экспорта настроек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФормуЭкспортаНастроек</Action>
+		</Command>
+	</Commands>
+</Form>
